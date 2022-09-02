@@ -160,7 +160,7 @@ body {
 .head .logo_on_screen {
     position: fixed;
     top: 62px;
-    left: 30px;
+    left: 27px;
 
     width: 90px;
     height: 25px;
@@ -179,12 +179,12 @@ body {
 .head span {
     position: fixed;
     color: rgb(252, 252, 252);
-    font-size: 17px;
+    font-size: 16px;
     text-align: left;
     padding-left: 10px;
 
     top: 62px;
-    right: 30px;
+    right: 27px;
 
     
     
@@ -400,20 +400,30 @@ body {
     /* z-index: 1; */
 }
 
-.login-2 {
-    
+.login button {
+    margin-top: 20px;
+    color: red;
+    width: 130px;
+    height: 40px;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 6%;
+    border-width: 0px;
+    cursor: pointer;
 }
 
 .login-2 .mainPage_text, .login-3 .mainPage_text, .login-4 .mainPage_text {
 /* width: 100%; */
 text-align:left;
-margin-top: 8px;
 
 } 
 
-.login-2 .mainPage_text span {
-font-size: 15px;
+.login-2 .mainPage_text span,
+.login-3 .mainPage_text span,
+.login-4 .mainPage_text span {
+font-size: 17px;
 line-height: 1.6rem;
+font-weight: 500;
 }
 
 .login-1 {
@@ -516,17 +526,14 @@ line-height: 1.6rem;
     
     /* padding: 20px 20px; */
     color: rgb(255, 255, 255);
-    font-size: 18px; 
+    font-size: 17px; 
     font-weight: 500;
 }
 
-.login-1 .mainPage_text:first-child {
+.mainPage_text:first-child {
     margin-top: 15px;
 }
 
-.login-1 .mainPage_text:last-child {
-    /* margin-bottom: 20px; */
-}
     
 .formulier  {
     position: relative;
@@ -555,11 +562,11 @@ line-height: 1.6rem;
 
 .formulier div {
     padding: 10px 10px;
-    color: rgb(2, 102, 139);
+    color: red;
     background-color: #eaeaeac7;
     font-size: 15px; 
     font-weight: 600;
-    border: 0.4px solid rgb(4, 147, 47);
+    border: 0.4px solid red;
 }
 
 .formulier1 {
@@ -686,6 +693,8 @@ footer p {
         background-color:  rgb(255, 255, 255);
         /* rang  */
     }
+
+
 /* 
 
 git pull
