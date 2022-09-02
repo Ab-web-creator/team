@@ -59,6 +59,10 @@ mainDiv.addEventListener('scroll', () => {
     
     h1.classList.add('active')
     l1.classList.add('active')
+
+    h1.style.opacity = 0
+    l1.style.opacity = 0
+
   }
 
   if (

@@ -144,6 +144,7 @@ body {
     justify-content: center;
     width: 100%;
     top: -50px;
+    opacity: 0;
   
     /* height: 40vh; */
     /* align-items: center; */
@@ -198,6 +199,7 @@ body {
 .login {
     position: fixed;
     bottom: 0;
+    opacity: 0;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -405,7 +407,7 @@ body {
 .login-2 .mainPage_text, .login-3 .mainPage_text, .login-4 .mainPage_text {
 /* width: 100%; */
 text-align:left;
-margin-top: 0px;
+margin-top: 8px;
 
 } 
 
@@ -428,6 +430,7 @@ line-height: 1.6rem;
 
 .active {
     opacity: 1;
+    transition: ease-in-out 1s;
 }
 
 .hide {
@@ -479,7 +482,7 @@ line-height: 1.6rem;
     margin-left: auto;
     margin-right: auto;
     width: 96%;
-    height: fit-content;
+    height: 320px;
     background-color: rgba(17, 109, 1, 0.839);
     border-radius: 15px;
 
@@ -555,6 +558,7 @@ line-height: 1.6rem;
     color: rgb(2, 102, 139);
     background-color: #eaeaeac7;
     font-size: 15px; 
+    font-weight: 600;
     border: 0.4px solid rgb(4, 147, 47);
 }
 
@@ -578,7 +582,7 @@ line-height: 1.6rem;
     grid-row: 3;
     grid-column: 1 / 5;
     color: white;
-    background-color: #056f87;
+    background: #056f87;
 }
 
 
@@ -679,7 +683,7 @@ footer p {
     }
 
     .mobile_header {
-        background-color:  rgb(255, 255, 255);
+        background-color:  rgb(236, 163, 163);
         /* rang  */
     }
 /* 
