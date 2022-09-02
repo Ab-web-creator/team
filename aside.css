@@ -17,7 +17,7 @@
 #mark a span {
   text-align: left;
   font-size: 15px;
-  margin-right: 110px;
+  margin-right: 143px;
   cursor: default;
 }
 #mark a {
@@ -26,6 +26,7 @@
   transition: all 0.5s;
   cursor: pointer;
   color: white;
+ float: inline-end;
   
 }
 
@@ -44,10 +45,10 @@ aside {
   top: 0px;
   position: fixed;
   transition: right 0.4s ease;
-  right: -461px;
-  width: 200px;
+  right: -225px;
+  width: 220px;
 
-  background-color: #008b37;
+  background-color: #046d2e;
   padding-top: 0px;
   /* padding-left: 30px; */
   /* padding-right: 20px; */
@@ -107,7 +108,7 @@ aside ul li a {
   font-weight: 500;
 
   color: #ffffff;
-  border-bottom: 2px solid #fbfbfb1e;
+  border-bottom: 2px solid #92fc9f1e;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -148,7 +149,7 @@ aside ul ul li a {
   
   padding-left: 25px;
   text-align: left;
-  border-bottom: 1px solid #1e1e1e;
+  border-bottom: 1px solid #28f840f9;
  
 }
  
@@ -228,6 +229,7 @@ z-index: 50001;
 
 aside button.close_sideMenuBar {
   color: #ffffff;
+  width: 100%;
   font-size: 18px;
   font-weight: 600;
   /* float: left; */
@@ -235,10 +237,10 @@ aside button.close_sideMenuBar {
   background-color: transparent;
   position: relative;
   top: 0px;
-  padding: 30px;
+  /* padding: 30px; */
   font-family: sans-serif;
   font-weight: 100;
-  padding-right: 10px;
+  /* padding-right: 10px; */
   z-index: 199;
 }
 

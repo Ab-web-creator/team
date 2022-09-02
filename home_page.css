@@ -178,12 +178,12 @@ body {
 
 .head span {
     position: fixed;
-    color: rgb(252, 252, 252);
-    font-size: 16px;
+    color: rgb(160, 228, 15);
+    font-size: 20px;
     text-align: left;
     padding-left: 10px;
 
-    top: 62px;
+    top: 58px;
     right: 27px;
 
     
@@ -402,7 +402,7 @@ body {
 
 .login button {
     margin-top: 20px;
-    color: red;
+    color: rgb(3, 119, 145);
     width: 130px;
     height: 40px;
     font-size: 17px;
