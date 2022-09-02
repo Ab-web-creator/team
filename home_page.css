@@ -482,7 +482,7 @@ line-height: 1.6rem;
     margin-left: auto;
     margin-right: auto;
     width: 96%;
-    height: 320px;
+    height: 350px;
     background-color: rgba(17, 109, 1, 0.839);
     border-radius: 15px;
 
@@ -683,7 +683,7 @@ footer p {
     }
 
     .mobile_header {
-        background-color:  rgb(236, 163, 163);
+        background-color:  rgb(255, 255, 255);
         /* rang  */
     }
 /* 
