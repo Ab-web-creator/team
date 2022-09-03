@@ -78,15 +78,19 @@ mainDiv.addEventListener('scroll', () => {
       top < scrollHeight - (page3.scrollHeight + page4.scrollHeight))
   ) {
     console.log('2')
+    
     h1.classList.remove('active')
     l1.classList.remove('active')
+
+    h1.style.opacity = 0
+    l1.style.opacity = 0
 
     h3.classList.remove('active')
     l3.classList.remove('active')
 
     h4.classList.remove('active')
     l4.classList.remove('active')
-    
+
     h2.classList.add('active')
     l2.classList.add('active')
   }

@@ -426,6 +426,15 @@ line-height: 1.6rem;
 font-weight: 500;
 }
 
+.login-2 .mainPage_text span span, .login-4 .mainPage_text span span {
+    float: left;
+    width: 0.7em;
+    font-size: 350%;
+    font-family: algerian, courier;
+    line-height: 80%;
+}
+
+
 .login-1 {
     opacity: 1;
     transition: all 1.5s;
