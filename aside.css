@@ -44,7 +44,7 @@
 aside {
   top: 0px;
   position: fixed;
-  transition: right 0.4s ease;
+  transition: right 0.2s ease;
   right: -225px;
   width: 220px;
 
@@ -118,7 +118,7 @@ aside ul li a {
 aside ul li a:hover {
   /* color: cyan !important; */
   letter-spacing: 0.08rem;
-  transition:  letter-spacing 0.4s ease-in-out;
+  transition:  letter-spacing 0.3s ease-in-out;
   color: rgb(0, 0, 0) !important;
   background: #28f57a !important;
 }

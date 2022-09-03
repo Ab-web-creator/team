@@ -432,7 +432,7 @@ font-weight: 500;
     font-size: 350%;
     font-family: algerian, courier;
     line-height: 80%;
-    padding-top: 2px;
+    padding-top: 3px;
 }
 
 
@@ -450,7 +450,7 @@ font-weight: 500;
 
 .active {
     opacity: 1;
-    transition: ease-in-out 1s;
+    transition: ease-in-out 0.4s;
 }
 
 .hide {
@@ -582,10 +582,12 @@ font-weight: 500;
 .formulier1 {
     grid-row: 1;
     grid-column: 1 / 2;
+    filter:grayscale(0.5) ;
 }
 .formulier2 {
     grid-row: 1;
     grid-column: 2 / 3;
+    filter:grayscale(0.5) ;
 }
 .formulier3 {
     grid-row: 1;
@@ -601,6 +603,7 @@ font-weight: 500;
     color: white;
     background: #056f87;
 }
+
 
 
 /* boshqa betlar uchun */
