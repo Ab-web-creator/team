@@ -493,7 +493,7 @@ font-weight: 500;
     margin-right: auto;
     width: 96%;
     height: 350px;
-    background-color: rgba(17, 109, 1, 0.839);
+    background-color: #116d01dd;
     border-radius: 15px;
 
     
@@ -676,8 +676,7 @@ footer p {
     text-align: center;
 }
 
-  
-    
+   
 
     .coverage {
         position: absolute;
