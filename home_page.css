@@ -145,6 +145,7 @@ body {
     width: 100%;
     top: -50px;
     opacity: 0;
+    transition: ease-in-out 0.4s;
   
     /* height: 40vh; */
     /* align-items: center; */
@@ -385,18 +386,19 @@ body {
 
 .head-1 {
     opacity: 1;
-    transition: all 1.5s;
+    /* transition: all 1.5s; */
     /* z-index: 1; */
 }
 
 .head-2,.head-3,.head-4 {
     opacity: 0;
-    transition: all 1.5s;
+    /* transition: all 1.5s; */
     /* z-index: 1; */
 }
 
 .login {
     opacity: 0;
+    transition: ease-in-out 0.4s;
     /* z-index: 1; */
 }
 
@@ -438,19 +440,19 @@ font-weight: 500;
 
 .login-1 {
     opacity: 1;
-    transition: all 1.5s;
+    /* transition: all 1.5s; */
     /* z-index: 1; */
 }
 
 .login-2,.login-3,.login-4 {
-    opacity: 0;
-    transition: all 1.5s;
+    /* opacity: 0;
+    transition: all 1.5s; */
     /* z-index: 1; */
 }
 
 .active {
     opacity: 1;
-    transition: ease-in-out 0.4s;
+    /* transition: ease-in-out 0.4s; */
 }
 
 .hide {
