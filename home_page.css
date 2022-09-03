@@ -251,7 +251,7 @@ body {
 .arrow {
     position: absolute;
     display: block;
-    bottom: 25px;
+    bottom: 35px;
     left: 45%;
     transform: translate(-50%);
     height: 50px;
@@ -432,6 +432,7 @@ font-weight: 500;
     font-size: 350%;
     font-family: algerian, courier;
     line-height: 80%;
+    padding-top: 2px;
 }
 
 
