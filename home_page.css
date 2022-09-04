@@ -221,9 +221,9 @@ body {
 }
 
 .arrow {
-    position: absolute;
+    position: fixed;
     display: block;
-    bottom: 35px;
+    bottom: 5px;
     left: 45%;
     transform: translate(-50%);
     height: 50px;
