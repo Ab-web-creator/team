@@ -547,19 +547,21 @@ font-weight: 500;
 .mainPage_text  {
     position: relative;
     /* width: 80%; */
-    margin: auto;
+    /* margin: auto; */
     margin-top: 0px;
   
     z-index: 1;
     margin-bottom: 10px;
-    border-radius: 5px 5px 5px 5px;
-    padding: 10px 30px;
+    /* border-radius: 5px 5px 5px 5px; */
+    padding: 10px 25px;
+}
+
+.login-1 .mainPage_text {
+    padding: 10px 15px;
 }
 
 .mainPage_text span {
     margin: auto;
-    
-    /* padding: 20px 20px; */
     color: rgb(255, 255, 255);
     font-size: 12px; 
     font-weight: 500;
@@ -572,9 +574,8 @@ font-weight: 500;
 .login-1 .mainPage_text:first-child {
     margin-top: 0px;
 }
-.login-1 .mainPage_text {
-    /* font-size: 12px; */
-}
+
+
 .formulier  {
     position: relative;
    
@@ -594,7 +595,7 @@ font-weight: 500;
 .vraag_waarom {
     font-size: 10px;
     color: rgb(255, 255, 255);
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .bx {
 
