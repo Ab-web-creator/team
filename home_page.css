@@ -523,9 +523,9 @@ font-weight: 500;
 }
 
 .login-1 .blueZone {
-    top: 300px;
+    top: 250px;
     height: fit-content;
-    width: 80%;
+    width: 90%;
     padding: 10px;
     }
 
@@ -550,8 +550,9 @@ font-weight: 500;
     
     /* padding: 20px 20px; */
     color: rgb(255, 255, 255);
-    font-size: 17px; 
+    font-size: 12px; 
     font-weight: 500;
+    letter-spacing: 0.02rem;
 }
 
 .mainPage_text:first-child {
@@ -560,13 +561,16 @@ font-weight: 500;
 .login-1 .mainPage_text:first-child {
     margin-top: 0px;
 }
-    
+.login-1 .mainPage_text {
+    /* font-size: 12px; */
+}
 .formulier  {
     position: relative;
+   
     margin-top: 0px;
     z-index: 1;
     margin-bottom: 20px;
-    border-radius: 5px 5px 5px 5px;
+    /* border-radius: 5px 5px 5px 5px; */
    
     flex: none;
     display: grid;
@@ -589,8 +593,8 @@ font-weight: 500;
 .formulier div {
     padding: 10px 10px;
     color: rgb(6, 124, 150);
-    background-color: #eaeaeac7;
-    font-size: 15px; 
+    background-color: #eaeaea;
+    font-size: 12px; 
     font-weight: 600;
     border: 0.4px solid rgb(16, 132, 4);
 }
