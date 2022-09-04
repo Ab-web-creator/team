@@ -162,16 +162,16 @@ body {
 .head .logo_on_screen {
     position: fixed;
     top: 62px;
-    left: 27px;
+    left: 23px;
 
-    width: 90px;
+    width: 80px;
     height: 25px;
   
     color: rgb(252, 252, 252);
     font-size: 22px;
     
     background-image: url(images/logo_very_small.png) ;
-    background-size: 80px;
+    background-size: 60px;
     background-repeat: no-repeat;
     background-position: left top;
     z-index: 1;
@@ -181,17 +181,12 @@ body {
 .head span {
     position: fixed;
     color: rgb(160, 228, 15);
-    font-size: 20px;
+    font-size: 15px;
     text-align: left;
     padding-left: 10px;
 
     top: 58px;
-    right: 27px;
-
-    
-    
-
-    /* margin-top: -10px; */
+    right: 23px;
 }
 
 
@@ -216,31 +211,6 @@ body {
 }
 
  
-/* 
-.btn span {
-    color: transparent;
-} */
-/* 
-#order {
-    background-color: #393c4100;
-    color: white;
-}
-
-#invn {
-    background-color: #7b0a0a; 
-    color: #393c416e;
-}
-
-#order, 
-#invn {
-    font-size: 14px;
-    font-weight: 500;
-    padding: 5px 5px;
-} */
-/* 
-.blank {
-    height: 70px;
-} */
 
 #arrow img {
     /* position: absolute; */
@@ -431,9 +401,9 @@ font-weight: 500;
 
 .login-2 .mainPage_text span span, .login-4 .mainPage_text span span {
     float: left;
-    width: 0.7em;
-    font-size: 350%;
-    font-family: algerian, courier;
+    width: 0.8em;
+    font-size: 320%;
+    /* font-family: algerian, courier; */
     line-height: 80%;
     padding-top: 3px;
 }
@@ -452,7 +422,7 @@ font-weight: 500;
 }
 
 .active {
-    opacity: 1;
+    /* opacity: 1; */
     /* transition: ease-in-out 0.4s; */
 }
 
@@ -498,28 +468,37 @@ font-weight: 500;
     display: block;
 }
 
-.above_bluezone {
-    position: absolute;
-    top: 150px;
-    margin-left: auto;
-    margin-right: auto;
+.head-1 .above_bluezone {
+    position: relative;
+    top: 130px;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
     width: 100%;
     color: white;
-    font-size: 26px;
-    background-color: #120587;
-    padding: 30px;
-    justify-items: center;
-    text-align: center;
+    font-size: 15px;
+ 
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* justify-items: center;
+    text-align: center; */
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
 }
 
 .above_bluezone h1 {
-    font-size: 28px;
-    margin: 30px;
-    letter-spacing: 0.2rem;
+    font-size: 16px;
+    margin: 8px 0px;
+    letter-spacing: 0.3rem;
     text-transform: uppercase;
-    margin-left: auto;
-    margin-right: auto;
+    color:#017820;
+    background-color: #fffffff0;
+    /* filter: brightness(50%); */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* height: 10px; */
 }
+
+
 
 
 .login .blueZone {
@@ -544,7 +523,7 @@ font-weight: 500;
 }
 
 .login-1 .blueZone {
-    top: 450px;
+    top: 300px;
     height: fit-content;
     width: 80%;
     padding: 10px;
@@ -578,7 +557,9 @@ font-weight: 500;
 .mainPage_text:first-child {
     margin-top: 15px;
 }
-
+.login-1 .mainPage_text:first-child {
+    margin-top: 0px;
+}
     
 .formulier  {
     position: relative;
@@ -598,7 +579,7 @@ font-weight: 500;
 .vraag_waarom {
     font-size: 10px;
     color: rgb(255, 255, 255);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .bx {
 
