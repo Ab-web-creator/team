@@ -374,13 +374,15 @@ body {
 }
 
 .login button {
+    position: fixed;
+    top: 410px;
     margin-top: 20px;
     color: rgb(3, 119, 145);
     width: 130px;
     height: 40px;
     font-size: 17px;
     font-weight: 500;
-    border-radius: 6%;
+    border-radius: 3%;
     border-width: 0px;
     cursor: pointer;
 }
@@ -509,17 +511,15 @@ font-weight: 500;
     margin-right: auto;
     width: 96%;
     
-    height: 350px;
     background-color: #116d01dd;
-    border-radius: 15px;
-
+    border-radius: 5px;
     
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center center;
+
     z-index: 1;
     flex-direction: column;
-   
 }
 
 .login-1 .blueZone {
@@ -529,8 +529,19 @@ font-weight: 500;
     padding: 10px;
     }
 
-.blueZone div {
+
+.login-3 .blueZone {
+  background-color: #8b000af0;
+    }
+
+.login-4 .blueZone {
+        background-color: #00568bf0;
+          }
     
+    .login-2 .blueZone,
+    .login-3 .blueZone,
+    .login-4 .blueZone {
+        height: 300px;
 }
 
 .mainPage_text  {
