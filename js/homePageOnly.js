@@ -33,11 +33,8 @@ mainDiv.addEventListener('scroll', () => {
 
   // console.log(scrolledHeight)
 
-  if (
-    (scrolledHeight == 0 && scrolledHeight < totalHeight - heightTwoToFour) ||
-    scrolledHeight == page1.scrollHeight * 0.2
-  ) {
-    console.log('page 1')
+  if (scrolledHeight >= 0 && scrolledHeight <= page1.scrollHeight * 0.2) {
+    console.log('Page 1')
     h2.classList.remove('active')
     l2.classList.remove('active')
     h3.classList.remove('active')
@@ -55,7 +52,7 @@ mainDiv.addEventListener('scroll', () => {
     scrolledHeight > page1.scrollHeight * 0.2 &&
     scrolledHeight <= page1.scrollHeight * 0.4
   ) {
-    console.log('1')
+    console.log('0.4')
     h1.classList.remove('active')
     l1.classList.remove('active')
     h1.style.opacity = 0.4
@@ -71,7 +68,7 @@ mainDiv.addEventListener('scroll', () => {
     scrolledHeight > page1.scrollHeight * 0.4 &&
     scrolledHeight <= page1.scrollHeight * 0.6
   ) {
-    console.log('2')
+    console.log('0.6')
     h1.classList.remove('active')
     l1.classList.remove('active')
     h1.style.opacity = 0
@@ -87,7 +84,7 @@ mainDiv.addEventListener('scroll', () => {
     scrolledHeight > page1.scrollHeight * 0.6 &&
     scrolledHeight <= page1.scrollHeight * 0.8
   ) {
-    console.log('2')
+    console.log('0.8')
     h1.classList.remove('active')
     l1.classList.remove('active')
     h1.style.opacity = 0
@@ -101,25 +98,9 @@ mainDiv.addEventListener('scroll', () => {
 
   if (
     scrolledHeight > page1.scrollHeight * 0.8 &&
-    scrolledHeight <= totalHeight - heightTwoToFour - 30
+    scrolledHeight < page1.scrollHeight
   ) {
-    console.log('3')
-    h1.classList.remove('active')
-    l1.classList.remove('active')
-    h1.style.opacity = 0
-    l1.style.opacity = 0
-
-    h2.classList.remove('active')
-    l2.classList.remove('active')
-    h2.style.opacity = 0.4
-    l2.style.opacity = 0.4
-  }
-
-  if (
-    scrolledHeight > page1.scrollHeight * 0.8 &&
-    scrolledHeight <= page1.scrollHeight * 0.9
-  ) {
-    console.log('3')
+    console.log('1')
     h1.classList.remove('active')
     l1.classList.remove('active')
     h1.style.opacity = 0
@@ -132,8 +113,8 @@ mainDiv.addEventListener('scroll', () => {
   }
 
   if (
-    scrolledHeight == page1.scrollHeight &&
-    scrolledHeight < page1.scrollHeight + page2.scrollHeight * 0.25 // 500 < 500 + 100
+    scrolledHeight >= page1.scrollHeight &&
+    scrolledHeight <= page1.scrollHeight + page2.scrollHeight * 0.2 // 500 < 500 + 100
   ) {
     console.log('page 2')
 
@@ -153,14 +134,14 @@ mainDiv.addEventListener('scroll', () => {
   }
 
   if (
-    scrolledHeight > page1.scrollHeight + page2.scrollHeight * 0.25 &&
-    scrolledHeight < page1.scrollHeight + page2.scrollHeight * 0.4
+    scrolledHeight > page1.scrollHeight + page2.scrollHeight * 0.2 &&
+    scrolledHeight <= page1.scrollHeight + page2.scrollHeight * 0.4
   ) {
-    console.log('1')
+    console.log('0.4')
     h2.classList.remove('active')
     l2.classList.remove('active')
-    h2.style.opacity = 0.5
-    l2.style.opacity = 0.5
+    h2.style.opacity = 0.4
+    l2.style.opacity = 0.4
 
     h3.classList.remove('active')
     l3.classList.remove('active')
@@ -169,10 +150,10 @@ mainDiv.addEventListener('scroll', () => {
   }
 
   if (
-    scrolledHeight >= page1.scrollHeight + page2.scrollHeight * 0.4 &&
+    scrolledHeight > page1.scrollHeight + page2.scrollHeight * 0.4 &&
     scrolledHeight <= page1.scrollHeight + page2.scrollHeight * 0.6
   ) {
-    console.log('2')
+    console.log('0.6')
     h2.classList.remove('active')
     l2.classList.remove('active')
     h2.style.opacity = 0
@@ -186,9 +167,9 @@ mainDiv.addEventListener('scroll', () => {
 
   if (
     scrolledHeight > page1.scrollHeight + page2.scrollHeight * 0.6 &&
-    scrolledHeight < totalHeight - heightThreeToFour - 30
+    scrolledHeight <= page1.scrollHeight + page2.scrollHeight * 0.8
   ) {
-    console.log('we need')
+    console.log('0.8')
     h2.classList.remove('active')
     l2.classList.remove('active')
     h2.style.opacity = 0
@@ -196,17 +177,33 @@ mainDiv.addEventListener('scroll', () => {
 
     h3.classList.remove('active')
     l3.classList.remove('active')
-    h3.style.opacity = 0.5
-    l3.style.opacity = 0.5
+    h3.style.opacity = 0.1
+    l3.style.opacity = 0.1
   }
 
   if (
-    scrolledHeight == heightThreeToFour &&
-    scrolledHeight <
-      page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.25
+    scrolledHeight > page1.scrollHeight + page2.scrollHeight * 0.8 &&
+    scrolledHeight < page1.scrollHeight + page2.scrollHeight
+  ) {
+    console.log('1')
+    h2.classList.remove('active')
+    l2.classList.remove('active')
+    h2.style.opacity = 0
+    l2.style.opacity = 0
+
+    h3.classList.remove('active')
+    l3.classList.remove('active')
+    h3.style.opacity = 0.6
+    l3.style.opacity = 0.6
+  }
+
+  if (
+    scrolledHeight >= page1.scrollHeight + page2.scrollHeight &&
+    scrolledHeight <=
+      page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.2
   ) {
     // 500 < 500 + 100) {
-    console.log('3')
+    console.log('page 3')
     h1.classList.remove('active')
     l1.classList.remove('active')
 
@@ -224,9 +221,29 @@ mainDiv.addEventListener('scroll', () => {
 
   if (
     scrolledHeight >
-    page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.25
+      page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.2 &&
+    scrolledHeight <=
+      page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.4
   ) {
-    console.log('')
+    console.log('0.4')
+    h2.classList.remove('active')
+    l2.classList.remove('active')
+    h3.style.opacity = 0.4
+    l3.style.opacity = 0.4
+
+    h3.classList.remove('active')
+    l3.classList.remove('active')
+    h4.style.opacity = 0
+    l4.style.opacity = 0
+  }
+
+  if (
+    scrolledHeight >
+      page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.4 &&
+    scrolledHeight <=
+      page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.6
+  ) {
+    console.log('0.6')
     h2.classList.remove('active')
     l2.classList.remove('active')
     h3.style.opacity = 0
@@ -240,25 +257,11 @@ mainDiv.addEventListener('scroll', () => {
 
   if (
     scrolledHeight >
-    page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.25
+      page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.6 &&
+    scrolledHeight <=
+      page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.8
   ) {
-    console.log('')
-    h2.classList.remove('active')
-    l2.classList.remove('active')
-    h3.style.opacity = 0.5
-    l3.style.opacity = 0.5
-
-    h3.classList.remove('active')
-    l3.classList.remove('active')
-    h4.style.opacity = 0
-    l4.style.opacity = 0
-  }
-
-  if (
-    scrolledHeight >
-    page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.4
-  ) {
-    console.log('')
+    console.log('0.8')
     h2.classList.remove('active')
     l2.classList.remove('active')
     h3.style.opacity = 0
@@ -266,15 +269,17 @@ mainDiv.addEventListener('scroll', () => {
 
     h3.classList.remove('active')
     l3.classList.remove('active')
-    h4.style.opacity = 0
-    l4.style.opacity = 0
+    h4.style.opacity = 0.1
+    l4.style.opacity = 0.1
   }
 
   if (
     scrolledHeight >
-    page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.6
+      page1.scrollHeight + page2.scrollHeight + page3.scrollHeight * 0.8 &&
+    scrolledHeight <
+      page1.scrollHeight + page2.scrollHeight + page3.scrollHeight
   ) {
-    console.log('')
+    console.log('1')
     h2.classList.remove('active')
     l2.classList.remove('active')
     h3.style.opacity = 0
@@ -286,7 +291,10 @@ mainDiv.addEventListener('scroll', () => {
     l4.style.opacity = 0.5
   }
 
-  if (scrolledHeight == totalHeight - page4.scrollHeight) {
+  if (
+    scrolledHeight >=
+    page1.scrollHeight + page2.scrollHeight + page3.scrollHeight
+  ) {
     console.log('4')
     h1.classList.remove('active')
     l1.classList.remove('active')

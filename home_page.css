@@ -54,6 +54,7 @@ img {
 body {
     box-sizing: border-box;
     overflow: hidden;
+    
 }
 
 /* Tepadagi bar  */
@@ -496,14 +497,39 @@ font-weight: 500;
 .blur.active {
     display: block;
 }
-  
-.blueZone {
+
+.above_bluezone {
+    position: absolute;
+    top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    color: white;
+    font-size: 26px;
+    background-color: #120587;
+    padding: 30px;
+    justify-items: center;
+    text-align: center;
+}
+
+.above_bluezone h1 {
+    font-size: 28px;
+    margin: 30px;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.login .blueZone {
     /* display: none; */
     position: fixed;
     top: 150px;
     margin-left: auto;
     margin-right: auto;
     width: 96%;
+    
     height: 350px;
     background-color: #116d01dd;
     border-radius: 15px;
@@ -516,6 +542,13 @@ font-weight: 500;
     flex-direction: column;
    
 }
+
+.login-1 .blueZone {
+    top: 450px;
+    height: fit-content;
+    width: 80%;
+    padding: 10px;
+    }
 
 .blueZone div {
     
