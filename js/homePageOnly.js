@@ -21,17 +21,9 @@ const heightThreeToFour = page3.scrollHeight + page4.scrollHeight
 
 // console.log(document.querySelector('.main-1'))
 mainDiv.addEventListener('scroll', () => {
-  //   console.log(mainDiv.scrollHeight)
-
+  
   const totalHeight = mainDiv.scrollHeight
-
-  //   console.log(page1.scrollHeight)
-
-  //   console.log(page2.scrollHeight)
-
   const scrolledHeight = mainDiv.scrollTop
-
-  // console.log(scrolledHeight)
 
   if (scrolledHeight >= 0 && scrolledHeight <= page1.scrollHeight * 0.2) {
     console.log('Page 1')
@@ -52,7 +44,7 @@ mainDiv.addEventListener('scroll', () => {
     scrolledHeight > page1.scrollHeight * 0.2 &&
     scrolledHeight <= page1.scrollHeight * 0.4
   ) {
-    console.log('0.4')
+    // console.log('0.4')
     h1.classList.remove('active')
     l1.classList.remove('active')
     h1.style.opacity = 0.4
