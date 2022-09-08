@@ -442,7 +442,9 @@ font-weight: 500;
 
 
 .login-3 .blueZone {
-  background-color: #8b000af0;
+  /* background-color: #8b000af0; */
+  background-image: linear-gradient(to top, #be383d 0%, #330570 100%);
+   
     }
 
 .login-4 .blueZone {
@@ -646,7 +648,236 @@ footer p {
         /* rang  */
     }
 
+/* Hidden stuff from desktop version */
 
+header {
+    display: none;
+}
+
+.desktop_container {
+    display: none;
+}
+
+
+    @media only screen and (min-width: 600px) {
+        html {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+        body {
+            overflow: visible;
+            background-color: #a8a6a6;
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .main-1 {
+            scroll-snap-type: none;
+        }
+
+        .main-1 > div {
+            scroll-snap-stop: none ;
+            scroll-snap-align: none ;
+        }
+
+        .mobile_header {
+            display: none;
+        }
+
+        header {
+            display: block;
+            background-color: #120587;
+            align-self: center;
+            width: 100%;
+            max-width: 1200px;
+            /* max-width: 1200px; */
+            position: fixed;
+            display: flex;
+           flex-direction: row;
+           justify-content: space-around;
+           z-index: 99;
+           padding: 12px 10px;
+           
+        }
+
+        .desktop_logo img {
+          
+            width: 20px;
+            height: 20px;
+        }
+
+        header ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 16px;
+        }
+
+        header ul:last-child {
+              margin-right: 40px;
+        }
+
+        header ul li {
+            margin-top: 10px;
+            margin-left: 35px;
+        }
+       
+        header ul li a {
+            
+            color: white;
+        }
+
+        header .end {
+            display: flex;
+            flex-direction: row;
+            color: white;
+        }
+
+        header .end div:first-child  {
+            padding-top: 10px;
+            margin-right: 10px;
+        }
+
+        header .end div:first-child span {
+         color:rgb(255, 255, 255);
+        }
+
+        header .end div:first-child span:last-child {
+         color:rgb(0, 255, 72);
+        }
+
+
+        header .end a i {
+            font-size: 1.5rem; 
+            margin-top: 7px;
+            color: white;
+        }
+
+        .main-1 {
+            display: none;
+        }
+
+        .desktop_container {
+            display: block;
+            position: relative;
+        }
+
+        .landing_page {
+            position: relative;
+            width: 100%;
+            height: 60vh;
+           display: flex;
+           flex-direction: column;
+           justify-items: center;
+        }
+
+        .desktop_login {
+            position: relative;
+            color: white;
+           
+            top: 80px;
+            right: -87%;
+            /* right: 40px; */
+            font-size: 22px;
+            z-index: 11;
+            background-color:transparent ;
+            width: 120px;
+            border-radius: 5px;
+            border: 1px solid white;
+            cursor: pointer;
+        }
+
+        .desktop_login p {
+            padding: 10px 10px;
+            text-align: center;
+        }
+
+        .sarlavha {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            top: 30%;
+           
+            text-align: center;
+            
+            
+            color: white;
+            font-size: 33px;
+            letter-spacing: 0.2rem;
+            text-transform: uppercase;
+        }
+
+        .sarlavha h1 {
+            font-size: 46px;
+            margin: 8px 0px;
+            letter-spacing: 0.3rem;
+         
+            padding-top: 20px;
+            padding-bottom: 20px;   
+        }
+
+        .second_part {
+            font-size: 22px;
+    
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            background-color: rgb(240, 240, 240);
+        }
+
+        .container_for_p {
+            margin: auto;
+            width: 35%;
+            padding: 80px 60px;
+            letter-spacing: 0.13rem;
+        }
+
+        .vergelijk {
+            position: relative;
+            padding: 140px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            align-items: center;
+            background-color: #ffffff;
+            color: rgb(21, 4, 119);
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .formulier {
+            width: 60%; 
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .formulier div {
+            font-size: 18px;
+            padding: 20px 25px;
+        }
+
+        .formulier4 {
+            text-align: center;
+        }
+
+        .formulier5 {
+            text-align: center;
+        }
+
+       .vergelijk:last-child  {
+           
+            /* font-size: 12px;
+            color: yellow; */
+        }
+
+    }
 /* 
 
 git pull
