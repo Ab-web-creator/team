@@ -669,8 +669,6 @@ header {
         body {
             overflow: visible;
             background-color: #a8a6a6;
-            width: 100%;
-            max-width: 1200px;
             margin: auto;
             display: flex;
             flex-direction: column;
@@ -690,25 +688,26 @@ header {
             display: none;
         }
 
+
         header {
             display: block;
             background-color: #120587;
             align-self: center;
             width: 100%;
-            max-width: 1200px;
+           
             /* max-width: 1200px; */
             position: fixed;
             display: flex;
            flex-direction: row;
            justify-content: space-around;
            z-index: 99;
-           padding: 12px 10px;
-           
+           padding: 12px 0px;
+           border-width: none;
         }
 
         .desktop_logo img {
           
-            width: 20px;
+            width: 80px;
             height: 20px;
         }
 
@@ -719,15 +718,17 @@ header {
             font-size: 16px;
         }
 
-        header ul:last-child {
-              margin-right: 40px;
-        }
+    
 
         header ul li {
             margin-top: 10px;
-            margin-left: 35px;
+            margin-right: 35px;
         }
        
+        header ul:last-child {
+            margin-right: -10px;
+      }
+
         header ul li a {
             
             color: white;
@@ -771,10 +772,11 @@ header {
         .landing_page {
             position: relative;
             width: 100%;
-            height: 60vh;
+            height: 80vh;
            display: flex;
            flex-direction: column;
            justify-items: center;
+          
         }
 
         .desktop_login {
@@ -825,37 +827,65 @@ header {
         .second_part {
             font-size: 22px;
     
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
             background-color: rgb(240, 240, 240);
+          
         }
 
         .container_for_p {
+            /* margin: auto; */
             margin: auto;
-            width: 35%;
-            padding: 80px 60px;
+            padding: 80px 80px;
             letter-spacing: 0.13rem;
+            color: rgb(7, 1, 46);
+            background-color: white;
+
+            grid-row: 1 / 3;
+            grid-column: 1 / 3;
+            font-weight: 500;
+
         }
 
         .vergelijk {
+            /* float: right; */
             position: relative;
-            padding: 140px 40px;
+            padding: 70px 40px;
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: center;
+            
 
-            align-items: center;
+            /* align-items: center; */
             background-color: #ffffff;
-            color: rgb(21, 4, 119);
+            color: rgb(7, 1, 46);
             font-size: 18px;
             font-weight: 500;
+            letter-spacing: 0.13rem;
+
+            grid-row: 1 / 3;
+            grid-column: 3 / 5;
+        }
+
+        .vergelijk .image_container {
+            text-align: center;
+        }
+
+        .vergelijk img {
+            width: 70%;
+            
+        }
+
+        .fs-22 p {
+            font-size: 22px;
+            letter-spacing: 0.09rem;
         }
 
         .formulier {
-            width: 60%; 
+            /* width:; 500px; */
             margin-top: 5px;
             margin-bottom: 5px;
+            
         }
 
         .formulier div {
@@ -876,6 +906,126 @@ header {
             /* font-size: 12px;
             color: yellow; */
         }
+
+        .third_part {
+            display: flex;
+            /* flex-wrap: wrap; */
+            flex-direction: row;
+            justify-content: space-evenly;
+            /* float: auto; */
+            
+            background-color: #d2e0ff;
+            padding: 80px 20px;
+        }
+
+        .picture_box {
+            margin-right: 20px;
+            width: 25%;
+        }
+  
+        .picture_box:last-child {
+            margin-right: 0px;
+            
+        }
+
+        .picture_box h1 {
+            color:#017820;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .picture_box p {
+            color: rgb(64, 64, 65);
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        .picture_box button {
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #182a74;   
+            border-width: 0px;
+            border-radius: 5px;
+        }
+
+        .fourth_part {
+            padding: 80px 0px;
+            background-color: white;
+        }
+        .fourth_part div:first-child {
+            padding: 0px 70px;
+            font-size: 28px;
+            text-align: center;
+        }
+
+        .onze_klanten {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding-top: 40px;
+        }
+
+        .onze_klanten img {
+            width: 170px;
+        }
+
+        .fifth_part {
+            background-color: #120587;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding-top: 80px;
+            padding-bottom: 60px;
+            letter-spacing: 2.2px;
+        }
+
+        .fifth_part div:first-child p {
+            margin: 12px 0px;
+            /* color:rgb(160, 228, 15) */
+        }
+
+
+        .big_logo {
+            width: 120px;
+            margin-bottom: 12px;
+        }
+
+        .footer_menu li {
+            color: white;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.174);
+        }
+        
+        .footer_menu li a {
+            color: white;
+           
+        }
+
+        .footer_menu li:first-child  {
+            margin-bottom: 25px;
+            border-width: 0px;
+        }
+
+        .wij_staan {
+            line-height: 1.5rem;
+            letter-spacing: 1.6px;
+        }
+        .footer_menu li:first-child a {
+            color: rgb(162, 251, 170);
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .green_color {
+            color: rgb(162, 251, 170);
+        }
+
+
+
+
 
     }
 /* 
