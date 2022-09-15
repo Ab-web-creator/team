@@ -262,6 +262,105 @@ body {
     animation: show ease-in-out 2s;
 }
 
+
+
+
+.compare_prices {        
+    font-weight: 500;       
+}
+
+.center{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+
+.contain_glow {
+    display: grid;
+    height: 200px;
+}
+
+#Central_Logo .outer {
+    position: relative;
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+    
+}
+
+#Central_Logo .circle {
+height: 120px;
+width: 120px;
+border-radius: 50%;
+}
+
+#Central_Logo .outer button {
+position: absolute;
+top: 33%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+#Central_Logo .outer span {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+#Central_Logo .outer button {
+background: rgba(1, 56, 71, 0.755);
+color: #f2f2f2;
+outline:none;
+border: none;
+font-size: 14px;
+z-index: 9;
+letter-spacing: 1px;
+text-transform: uppercase;
+cursor: pointer;
+}
+
+#Central_Logo .circle button {
+height: 120px;
+width: 120px;
+border-radius: 50%;
+}
+
+#Central_Logo .outer span {
+height: 100%;
+width: 100%;
+background: inherit;
+}
+
+#Central_Logo .circle span {
+border-radius: 50%;
+}
+
+#Central_Logo .outer span {
+filter: blur(14px);
+}
+
+#Central_Logo .outer span:nth-child(1){
+filter: blur(7px);
+}
+#Central_Logo .outer span:nth-child(2){
+filter: blur(14px);
+}
+
+#Central_Logo .outer {
+background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+    filter: hue-rotate(360deg);
+    }
+}
+
 .main .blueZone {
     animation: show  ease-in-out 3s;
 }
@@ -503,9 +602,8 @@ font-weight: 500;
 
 .login-1 .blueZone {
     top: 250px;
-    height: fit-content;
-    width: 90%;
-    padding: 10px;
+    background-color: transparent;
+    z-index: 9;
     }
 
 
@@ -791,6 +889,7 @@ header {
             display: block;
             /* margin: 10px 0; */
             padding: 10px 20px;
+            text-transform: uppercase;
         }
 
         .fancy-link li a.active,
@@ -917,12 +1016,7 @@ header {
             cursor: pointer;
         }
 
-        .compare_prices {
-            /* position: relative; */
-            /* color: white; */
-            
-            /* padding: 10px 20px; */
-          
+        .compare_prices {        
             font-weight: 500;       
         }
 
