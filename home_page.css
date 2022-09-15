@@ -569,9 +569,22 @@ font-weight: 500;
   
     letter-spacing: 0.2rem;
     text-transform: uppercase;
+    width: 300px;
+    align-self: center;
 }
 
+#cent_logo {
+    display: block;
+    width: 300px;
+    height: 60px;
+    background-image: url(./images/logo_big.png);
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    margin-bottom: 15px;
+}
 .above_bluezone h1 {
+
     font-size: 16px;
     margin: 8px 0px;
     letter-spacing: 0.3rem;
@@ -586,6 +599,7 @@ font-weight: 500;
 .above_bluezone p {
     background-color: #04527c;
     padding: 10px 0px;
+    border-radius: 8px;
 }
 
 
