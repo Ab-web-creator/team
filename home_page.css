@@ -1183,11 +1183,11 @@ header {
 
        .second_part .image_container {
            
-            align-items: center;
+            /* align-items: center; */
         }
 
         .second_part .image_container  img {
-            width: 70%;
+            width: 60%;
             padding-right: 50px;
             float: right;
             object-fit: contain;
@@ -1243,42 +1243,44 @@ header {
             color: #019a18;
         }
 
-        .picture_box {
+        .third_part .picture_box {
             margin-right: 20px;
             width: 25%;
         }
   
-        .picture_box:last-child {
+        .third_part .picture_box:last-child {
             margin-right: 0px;
             
         }
 
-        .picture_box p {
+        .third_part .picture_box p {
             color: rgb(64, 64, 65);
             margin-bottom: 15px;
             font-size: 20px;
         }
 
-        .picture_box button {
+        .third_part .picture_box button {
             color: rgb(255, 255, 255);
             background-color: #0077b7;
             padding: 10px 20px;
             font-size: 18px;
             border-width: 0px;
-            border-radius: 20px;
+            border-radius: 5px;
             cursor: pointer;
         }
 
-        .picture_box button:hover {
+        .third_part .picture_box button:hover {
             /* color: #013e5f ; */
             color: white ;
             background-color: #ff4d00;
+            border-radius: 20px;
             /* font-weight: 500; */
             transition: ease-in-out 0.2s;
         }
 
-        .picture_box button a {
+        .third_part .picture_box button a {
             padding: 5px 5px;
+            color: white ;
         }
 
         .fourth_part {
@@ -1291,24 +1293,24 @@ header {
             text-align: center;
         }
 
-        .fourth_B_part {
+        .fifth_part {
             background-color: #d2e6ff;
             color: #013e5f;
             font-weight: 500;
         }
-        .fourth_B_part h1 {
+        .fifth_part h1 {
             /* color: white; */
             margin-bottom: 100px;
         }
 
-        .fourth_B_part h4 {
+        .fifth_part h4 {
             font-size: 26px;
             font-weight: 400;
             margin-bottom: 30px;
             
         }
 
-        .fourth_B_part p,  .fourth_B_part li {
+        .fifth_part p,  .fifth_part li {
             font-size: 20px;
         }
         
@@ -1348,7 +1350,7 @@ header {
             width: 170px;
         }
 
-        .fifth_part {
+        .sixth_part {
             background-color: #013e5f;
             color: white;
             display: flex;
@@ -1359,7 +1361,7 @@ header {
             letter-spacing: 2.2px;
         }
 
-        .fifth_part div:first-child p {
+        .sixth_part div:first-child p {
             margin: 12px 0px;
             /* color:rgb(160, 228, 15) */
         }
