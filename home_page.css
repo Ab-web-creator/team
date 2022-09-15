@@ -289,14 +289,14 @@ body {
 }
 
 #Central_Logo .circle {
-height: 120px;
-width: 120px;
+height: 90px;
+width: 90px;
 border-radius: 50%;
 }
 
 #Central_Logo .outer button {
 position: absolute;
-top: 33%;
+top: 27%;
 left: 50%;
 transform: translate(-50%, -50%);
 }
@@ -306,6 +306,7 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
+/* glow location */
 }
 
 #Central_Logo .outer button {
@@ -313,7 +314,7 @@ background: rgba(1, 56, 71, 0.755);
 color: #f2f2f2;
 outline:none;
 border: none;
-font-size: 14px;
+font-size: 10px;
 z-index: 9;
 letter-spacing: 1px;
 text-transform: uppercase;
@@ -321,8 +322,8 @@ cursor: pointer;
 }
 
 #Central_Logo .circle button {
-height: 120px;
-width: 120px;
+height: 90px;
+width: 90px;
 border-radius: 50%;
 }
 
