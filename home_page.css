@@ -269,7 +269,7 @@ body {
     font-weight: 500;       
 }
 
-.center{
+.center {
     width: 200px;
     height: 200px;
     display: flex;
@@ -558,7 +558,7 @@ font-weight: 500;
 
 .head-1 .above_bluezone {
     position: relative;
-    top: 130px;
+    top: 300px;
   
     width: 100%;
     color: white;
@@ -602,7 +602,7 @@ font-weight: 500;
 }
 
 .login-1 .blueZone {
-    top: 250px;
+    top: 500px;
     background-color: transparent;
     z-index: 9;
     }
@@ -1021,17 +1021,16 @@ header {
             font-weight: 500;       
         }
 
-        .center{
+        .center {
             display: flex;
             text-align: center;
             align-items: center;
-            /* justify-content: center; */
           }
        
 .contain_glow {
     display: grid;
     height: 200px;
-    /* place-items: center; */
+    place-items: center;
     }
 
 #Central_Logo .outer {
@@ -1183,10 +1182,9 @@ header {
             font-size: 46px;
             margin: 8px 0px;
             letter-spacing: 0.3rem;
-          
+            
             padding-top: 20px;
-            padding-bottom: 20px;  
-          
+            padding-bottom: 20px;
         }
 
 
