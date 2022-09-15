@@ -918,27 +918,98 @@ header {
         }
 
         .compare_prices {
-            position: relative;
-            color: white;
-            /* right: 40px; */
-            padding: 10px 20px;
-            font-size: 16px;
-            font-weight: 500;
-            z-index: 11;
-            background-color:#ff4d00 ;
-            width: 170px;
-            border-radius: 20px;
-            border-width: 0px;
-            /* border: 1px solid #120587; */
-            cursor: pointer;
-           
-            margin-top: 100px;
-            left: 50%;
-            transform: translate(-50%);
+            /* position: relative; */
+            /* color: white; */
+            
+            /* padding: 10px 20px; */
+          
+            font-weight: 500;       
         }
 
-
+        .center{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            /* justify-content: center; */
+          }
        
+.contain_glow {
+    display: grid;
+    height: 200px;
+    /* place-items: center; */
+    }
+
+#Central_Logo .outer {
+    position: relative;
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+}
+
+#Central_Logo .circle {
+    height: 0px;
+    width: 27px;
+    border-radius: 50%;
+}
+
+#Central_Logo .outer button, .outer span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#Central_Logo .outer button {
+    background: rgba(1, 56, 71, 0.755);
+    color: #f2f2f2;
+    outline:none;
+    border: none;
+    font-size: 14px;
+    z-index: 9;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#Central_Logo .circle button {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+#Central_Logo .outer span {
+    height: 100%;
+    width: 100%;
+    background: inherit;
+}
+
+#Central_Logo .circle span {
+    border-radius: 50%;
+}
+
+#Central_Logo .outer span {
+    filter: blur(14px);
+}
+
+#Central_Logo .outer span:nth-child(1){
+    filter: blur(7px);
+  }
+  #Central_Logo .outer span:nth-child(2){
+    filter: blur(14px);
+  }
+
+#Central_Logo .outer {
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+    animation: rotate 1.5s linear infinite;
+  }
+
+  @keyframes rotate {
+    0%{
+      filter: hue-rotate(0deg);
+    }
+    100%{
+      filter: hue-rotate(360deg);
+    }
+  }
+
         .desktop_login p {
             padding: 10px 10px;
             text-align: center;
@@ -964,7 +1035,7 @@ header {
         }
 
 
-        .landing_page {
+        /* .landing_page {
             animation: grayscale ease 8s;
         }
         #Central_Logo {
@@ -978,7 +1049,7 @@ header {
         }
         .sarlavha {
             animation: show_fadeOut  ease-in-out 10s;
-        }
+        } */
 
         @keyframes show_fadeOut {
             0% {
@@ -1025,10 +1096,10 @@ header {
 
 
 #Central_Logo {
-    width: 400px;
-    height: auto;
+    width: 300px;
+    height: 100%;
     position: absolute;
-    top: 20%;
+    
     text-align: center;
    
     display: flex;
