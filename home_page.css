@@ -559,7 +559,7 @@ font-weight: 500;
 .head-1 .above_bluezone {
     position: relative;
     top: 230px;
-  
+  background-color: #04527c;
     width: 100%;
     color: white;
     font-size: 15px;
@@ -602,7 +602,7 @@ font-weight: 500;
 }
 
 .login-1 .blueZone {
-    top: 400px;
+    top: 380px;
     background-color: transparent;
     z-index: 9;
     }
