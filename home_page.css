@@ -1035,7 +1035,7 @@ header {
         }
 
 
-        /* .landing_page {
+        .landing_page {
             animation: grayscale ease 8s;
         }
         #Central_Logo {
@@ -1049,7 +1049,7 @@ header {
         }
         .sarlavha {
             animation: show_fadeOut  ease-in-out 10s;
-        } */
+        }
 
         @keyframes show_fadeOut {
             0% {
