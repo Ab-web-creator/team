@@ -957,10 +957,17 @@ header {
          font-weight: 600;
          text-transform: uppercase;
          padding: 10px 20px;
-         margin-right: 3px;
+         margin-right: 0px;
         }
 
-        .end a span:hover {
+       .end a:nth-child(2) {
+            color: white;
+            text-transform: uppercase;
+            padding: 0px 10px;
+            margin-right: 3px;
+        }
+
+        .end a span:hover  {
             color: rgb(255, 255, 255);
             border-radius: 20px;
             background-color: #ff4d00;
@@ -1038,7 +1045,7 @@ header {
         }
 
         .compare_prices {        
-            font-weight: 500;       
+            font-weight: 500;
         }
 
         .center {
@@ -1227,7 +1234,8 @@ header {
     font-size: 24px;
     letter-spacing: 1.2px;
     /* font-family: fantasy; */
-    color: #35e14f;
+    /* color: #35e14f; */
+    color: white;
     /* background-color: #013e5fad; */
     border-radius: 8px;
 }
