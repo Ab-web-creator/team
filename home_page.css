@@ -916,7 +916,7 @@ header {
         .fancy-link li a.active,
         .fancy-link li a:hover {
             color: rgb(255, 255, 255);
-            border-radius: 20px;
+            border-radius: 30px;
             background-color: #ff4d00;
             transition: all 500ms ease-in-out;
             
@@ -930,7 +930,7 @@ header {
         }
 
         header nav ul li {
-            margin-right: 30px;
+            margin-right: 0px;
         }
 
         header ul li a {
@@ -1407,14 +1407,89 @@ header {
         .fourth_part {
             padding: 50px 0px;
             background-color: white;
+            
         }
-        .fourth_part div:first-child {
-            padding: 0px 70px;
+        .fourth_part div {
+            /* padding: 0px 70px; */
             font-size: 28px;
             text-align: center;
         }
 
+        .carousel {
+            position: relative;
+            width: 90%;
+            height: fit-content;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: auto;
+            /* margin-bottom: 130px; */
+            padding: 0px 0px;
+            
+        }
+
+.carousel ul {
+display: grid;
+grid-auto-flow: column;
+gap: 30px;
+grid-auto-columns: 15%;
+margin: auto;
+/* flex-flow: wrap ; */
+/* justify-content: center; */
+
+overflow-x: auto;
+overscroll-behavior-inline: contain;
+
+
+border:1px solid rgb(3, 119, 145);
+
+margin-left: 20px;
+margin-right: 20px;
+
+padding: 0px 0px;
+height: 150px;
+
+
+}
+
+.carousel ul::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+
+.carousel button {
+    margin: auto;
+    /* margin-top: 140px; */
+    border: none;
+    height: 40px;
+    font-size: 33px;
+    background-color: white;
+}
+
+.carousel button .prev {
+    /* position: absolute; */
+    /* margin-right: 1130px; */
+}
+
+.carousel ul li {
+    padding: 0px 40px;
+    margin: auto;
+    /* background: #0077b7; */
+  /* justify-content: center; */
+  
+}
+
+.carousel ul li img {
+    width: 350px;
+    height: fit-content;
+    padding: 0px 0px;
+    /* text-align: center; */
+    /* align-items: center; */
+    float: left;
+}
+
         .fifth_part {
+            position: relative;
             background-color: #d2e6ff;
             color: #013e5f;
             font-weight: 500;
@@ -1461,9 +1536,12 @@ header {
             float: right;
         }
         .onze_klanten {
+            position: relative;
+            max-width: 90%;
+            height: 200px;
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
+            justify-content: space-between;
             margin-top: 40px;
         }
 
