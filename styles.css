@@ -113,19 +113,22 @@ img {
 .img_container {
   margin: auto;
   width: 150px;
-  
+  animation: show ease-in-out 1s;
 }
 
 .zaglavie {
   color: white;
-
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
+
+  animation: show ease-in-out 1s;
 }
+
 .zaglavie h1 {
   font-size: 26px;
+  animation: show ease-in-out 2s;
 }
 
 button {
@@ -136,10 +139,12 @@ button {
   border-radius: 5px;
   margin: auto;
   color: white;
+  animation: show ease-in-out 2s;
 }
 
 button p {
   padding: 5px 10px;
+  animation: show ease-in-out 3s;
 }
 
 .one {
@@ -197,6 +202,29 @@ button p {
 .footer p {
   margin: auto;
 }
+
+
+@keyframes show {
+  0% {
+      transform: translateY(30px);
+      opacity: 0;
+  }
+   
+  40% {
+      transform: translateY(30px);
+      opacity: 0;
+  }
+  70% {
+      transform: translateY(0px);
+      opacity: 0.5;
+  }
+   
+  100% {
+      transform: translateY(0px);
+      opacity: 1;
+  }
+}
+
 
 
 @media only screen and (min-width: 400px) {
