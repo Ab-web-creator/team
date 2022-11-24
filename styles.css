@@ -179,6 +179,10 @@ button p {
   display: none;
 }
 
+.first .texts {
+  animation: show ease-in-out 3s;
+}
+
 .fifth {
   line-height: 30px;
   letter-spacing: 0.23px;
