@@ -82,12 +82,18 @@ img {
     font-weight: 500;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
+    
+  }
+
+  p {
+    line-height: 30px;
+    letter-spacing: 0.23px;
   }
 
 .landing_page {
   
   background-image: url(./images/Het-Bouwbedrijf-Fotos-23_1_1-1.jpg);
-  background-position: center center;
+  background-position: center right;
     background-size: cover;
     overflow: hidden;
     background-repeat: no-repeat;
@@ -166,6 +172,15 @@ button p {
   display: none;
 }
 
+.fifth {
+  line-height: 30px;
+  letter-spacing: 0.23px;
+}
+
+.fifth li {
+  margin-bottom: 10px;
+}
+
 .footer {
   color: white;
   font-size: 12px;
@@ -181,6 +196,7 @@ button p {
 
 .footer p {
   margin: auto;
+ 
 }
 
 
