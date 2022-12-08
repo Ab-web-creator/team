@@ -12,11 +12,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;500&display=swap" rel="stylesheet">
-
 </head>
 
 
 <body>
+  <nav class="nav">
+    <div>
+      <img src="images/smaller_logo.png" alt="">
+    </div>
+    <div class="flex_row navLink_container">
+    <li href="#" class="nav__link"><a>Home</a></li>
+    <li href="#" class="nav__link"><a>About</a></li>
+    <li href="#" class="nav__link"><a>Contact</a></li>
+  </div>
+  <div>
+    <li id="menuBtn"><a href="#" ><i class='bx bx-menu'></i></a></li>
+  </div>
+  </nav>
+
 <section class="landing_page">
   <div class="general_container">
   <div class="img_container">
@@ -116,6 +129,26 @@ Hét Bouwbedrijf компанияси яна-да кенгайишни иста�
   <p>2022 - Het Bouwbedrijf</p>
 </section>
 
+
+
+
+<script>
+  {
+  const nav = document.querySelector(".nav");
+  let lastScrollY = window.scrollY;
+
+  window.addEventListener("scroll", () => {
+    if (lastScrollY < window.scrollY) {
+      nav.classList.add("nav--hidden");
+    } else {
+      nav.classList.remove("nav--hidden");
+    }
+
+    lastScrollY = window.scrollY;
+  });
+}
+
+</script>
 
 </body>
 </html>
