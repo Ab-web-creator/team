@@ -317,6 +317,11 @@ button p {
     padding-right: 50px;
   }
 
+  .logo_top_left {
+    position: fixed;
+    opacity: 0;
+  }
+
   .nav li {
     padding: 5px 7px;
   }
@@ -365,11 +370,20 @@ button p {
 .px_container > div {
   width: 30%;
 }
-
 }
 
-@media only screen and (min-width: 768px) {
+
+@media only screen and (min-width: 678px) {
+
+  .logo_top_left {
+    position: relative;
+    opacity: 1;
+  }
   
+}
+
+
+@media only screen and (min-width: 768px) {
   .landing_page {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)) , url(./images/Het-Bouwbedrijf-Fotos-23_1_1-1.jpg);
 }
