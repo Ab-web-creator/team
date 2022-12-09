@@ -373,18 +373,16 @@ button p {
   .nav, main {
     width: 700px; 
   }
-  .hamburger_menu {
-    margin-right: -25px;
-  }
+
   .logo_top_left_cont {
     position: relative;
     left: 0px;
   }
-  .logo_top_left {
-    position: relative;
-    opacity: 1;
-  }
   
+  .hamburger_menu {
+    margin-right: -25px;
+  }
+
   .display_not {
     display: block;
   }
@@ -439,6 +437,11 @@ button p {
   .nav, main {
     width: 1050px; 
   }
+  
+  .hamburger_menu {
+    margin-right: -12px;
+  }
+
 
   .display_in_end {
     display: block;
