@@ -215,6 +215,7 @@ button p {
 
 .px_container {
   gap: 10px;
+  margin: auto;
 }
 
 .px_container > div {
@@ -238,9 +239,12 @@ button p {
   margin-bottom: 10px;
 }
 
+.fifth .ikki_columnda_reveal {
+  display: none;
+}
+
 .footer {
   color: white;
-  font-size: 14px;
   background-color: #ea4d1b ;
   height: 10px;
   padding: 20px 20px;
@@ -252,6 +256,7 @@ button p {
 }
 
 .footer p {
+  font-size: 10px;
   margin: auto;
 }
 
@@ -356,6 +361,10 @@ button p {
   justify-content: space-evenly;
 }
 
+.footer p {
+  font-size: 12px;
+}
+
 }
 
 
@@ -380,6 +389,12 @@ button p {
     display: block;
   }
 
+  .display_in_end {
+    display: none;
+  }
+
+
+
   .navLink_container li:nth-child(2) {
     margin-left: 5px;
     margin-right: 5px;
@@ -394,6 +409,7 @@ button p {
   padding: 40px 50px;
   background-color: #ffffff;
   box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
 
 .px_container {
@@ -401,7 +417,7 @@ button p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 15px;
+  gap: 25px;
 }
 
 .px_container > div {
@@ -417,7 +433,87 @@ button p {
   }
 }
 
+@media only screen and (min-width: 1250px) {
+  .nav, main {
+    width: 1050px; 
+  }
 
+  .display_in_end {
+    display: block;
+    
+  }
+  .display_in_end img {
+    border-radius: 10px;
+  }
+
+  .fifth main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  .fifth li {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .fifth .ikki_columnda_reveal {
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+
+  .fifth .textga_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  .fifth .textga_container > div {
+    width: 47%;
+    height: fit-content;
+
+  }
+
+  .fifth .ikki_columnda_hide {
+    display: none;
+  }
+
+  .fifth .display_in_end img {
+  box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.3);
+}
+
+
+}
+
+#container_delete {
+  position: fixed;
+  bottom: 10px;
+  right: 5px;
+  width: 70px;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 12px;
+  color:#1005e5;
+  border-radius: 10px;
+}
+
+#container_delete .first {
+  margin: auto;
+}
+#screen_width {
+  color: rgb(2, 19, 255);
+  margin: auto;
+  margin-top: 5px;
+  padding: 10px 10px;
+  font-weight: 600;
+  background-color: rgba(255, 255, 0, 0.395);
+  border-radius: 10px;
+}
 
 /* 
 

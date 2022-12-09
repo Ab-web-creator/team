@@ -33,6 +33,17 @@
     </nav>
   </div>
 
+
+
+
+  <div id="container_delete">
+    <div class="first"><p ></p></div>
+    <div id="screen_width">resize page</div>
+    <!-- <div class="first"><p >Screen Height</p></div>
+    <div id="screen_height"></div> -->
+  </div>
+
+
   
     <section class="landing_page" >
       <main class="general_container">
@@ -63,12 +74,11 @@
       <main>
         <div class="px_container">
           <div><img src="./images/uchdan_biri_A.jpeg" alt=""></div>
-          <div class="display_not"><img src="./images/uchdan_biri_B.jpeg" alt=""></div>
           <div class="display_not"><img src="./images/uchdan_biri_C.jpeg" alt=""></div>
         </div>
 
         <div class="texts chapga_terish">
-          <h3> Иш ҳақида</h3>
+          <h3> Нима иш қиламиз?</h3>
           <p>Hét Bouwbedrijf компанияси яна-да кенгайишни истайди ва бунинг учун бизга профессионал ишчилар керак, яъни уй қурилишларида қатнашган, ишнинг кўзини биладиган одамлар зарур. 
           <br> <br> 
           Масалан, электриклар ва ёки ёғоч усталари. Биз амалга ошираётган лойиҳалар уй-жой корпорациялари томонидан буюртма қилинган пудратчилар учун қилинадиган ишлардир.
@@ -99,13 +109,13 @@
     <section class="fourth">
       <main>
         <div class="px_container">
-          <div><img src="./images/uuchtadan_biri1.jpg" alt=""></div>
+          <div class="display_in_end"><img src="./images/uuchtadan_biri1.jpg" alt=""></div>
           <div class="display_not"><img src="./images/uuchtadan_biri2.jpg" alt=""></div>
           <div class="display_not"><img src="./images/uuchtadan_biri3.jpg" alt=""></div> 
         </div>
 
         <div class="texts chapga_terish">
-          <h3>Бизнинг қурилиш компаниямиз ҳақида</h3>
+          <h3>Қурилиш компаниямиз ҳақида</h3>
           <p> Hét Bouwbedrijf компанияси оддий қурилиш компанияси эмас. Биз одамларни меҳнат бозорига тайёрлаймиз, қурилиш соҳасида профессионал бўлишга ўргатамиз. 
             <br> <br> Компания етук билимли ва ўз касбини севадиган одамлардан иборат. Ишимизнинг якуний даражаси юқори бўлиши учун биз ҳамиша алоҳида вақт ажратамиз. Мақсадимиз доим ўсишда давом этиш.
           </p>
@@ -114,17 +124,23 @@
     </section>
 
     <section style="background-color: #f5f7fa;" class="fifth">
+
       <main>
-        <div class="texts chapga_terish">
-        <h3>
-          Биз билан ҳамкорлик қиласизми?<br> Иш шароитлари: 
-        </h3>
-        <li> Дарҳол доимий шартнома билан ишга олинасиз. Ҳафтасига 40 соатлик иш.</li>
-        <li> Ойлиги қанча бўлади, деб сўрашингиз табиий. Маошингиз шубҳасиз яхши бўлади, ойига ҳатто брутто 3600 еврогача. (Голландияда энг кам иш ҳаққи: соатига 12 евро.)</li>
-        <li> Ишингизда жуда кўп эркинлик берилади, сиз ҳақ тўланадиган иш тадбиркори бўласиз.</li>
-        <li> Мураббийлик қилиш ва бошқаларга ёрдам беришга жуда зўр шанс.</li>
-        <li> Ўсиб бораётган компанияда ўзингизни шахсан ривожлантириш учун имкониятлар бўлади.</li>
+        <div class="ikki_columnda_reveal">
+          <h3> Биз билан ҳамкорлик қиласизми? Иш шароитлари:</h3> 
         </div>
+        <div class="textga_container">
+          <div class="texts chapga_terish">
+          <h3 class="ikki_columnda_hide">Биз билан ҳамкорлик қиласизми?<br> 
+            Иш шароитлари: </h3>
+          <li> Дарҳол доимий шартнома билан ишга олинасиз. Ҳафтасига 40 соатлик иш.</li>
+          <li> <span class="ikki_columnda_hide">Ойлиги қанча бўлади, деб сўрашингиз табиий. </span> Маошингиз шубҳасиз яхши бўлади, ойига ҳатто брутто 3600 еврогача. <span class="ikki_columnda_hide"> (Голландияда энг кам иш ҳаққи: соатига 12 евро.) </span></li>
+          <li> Ишингизда жуда кўп эркинлик берилади, тадбиркорга айланасиз.</li>
+          <li> Мураббийлик қилиш <span class="ikki_columnda_hide">ва бошқаларга ёрдам бериш</span> учун жуда зўр шанс.</li>
+          <li> Ўсиб бораётган компанияда ўзингизни ривожлантириш учун имкониятлар бўлади.</li>
+          </div>
+          <div class="display_in_end"><img src="./images/uchdan_biri_B.jpeg" alt=""></div>
+      </div>
       </main>
     </section>
 
@@ -143,7 +159,7 @@
   let lastScrollY = window.scrollY;
 
   window.addEventListener("scroll", () => {
-    if (lastScrollY < window.scrollY) {
+    if (lastScrollY < window.scrollY || lastScrollY > 45px ) {
       nav.classList.add("nav--hidden");
     } else {
       nav.classList.remove("nav--hidden");
@@ -153,6 +169,20 @@
   });
 }
 </script>
+
+
+
+
+<script>
+  const pageWidth = document.querySelector("#screen_width");
+  
+  window.onresize = function reportWindowSize() {
+    pageWidth.textContent = `${window.innerWidth} px`;
+    };
+</script>
+
+
+
 
 </body>
 </html>
