@@ -37,7 +37,7 @@ button:hover {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #ea4b1b36 ;
+  background-color: #ea4b1b ;
 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s;
