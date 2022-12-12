@@ -31,7 +31,6 @@ button {
   border-radius: 5px;
   margin: auto;
   color: white;
-  animation: show ease-in-out 2s;
   transition: all ease-in-out 0.4s;
   }
 
@@ -115,7 +114,6 @@ button:hover {
   position: fixed;
   display: none;
   width: 0px;
-  animation: show ease-in-out 0s;
   }
 
 .nav--hidden {
@@ -157,11 +155,6 @@ button:hover {
     padding: 5px 10px;
   }
   
-  .hamburger_menu li {
-    animation: show ease-in-out 0s;
-  }
-
-
   .hamburger_menu {
     font-size: 26px;
   }
@@ -294,26 +287,7 @@ button:hover {
 }
 
 
-@keyframes show {
-  0% {
-      transform: translateY(30px);
-      opacity: 0;
-  }
-   
-  40% {
-      transform: translateY(30px);
-      opacity: 0;
-  }
-  70% {
-      transform: translateY(0px);
-      opacity: 0.5;
-  }
-   
-  100% {
-      transform: translateY(0px);
-      opacity: 1;
-  }
-}
+
 
 
 @media only screen and (min-width: 400px) {
@@ -345,6 +319,9 @@ button:hover {
     letter-spacing: 0.3px;
     animation: show ease-in-out 3s;
   }
+  button {
+    animation: show ease-in-out 2s;
+    }
   .nav {
     width: 540px; 
   }
@@ -359,7 +336,9 @@ button:hover {
   .hamburger_menu {
     margin-right: -5px;
   }
-
+  .hamburger_menu li {
+    animation: show ease-in-out 0s;
+  }
 .px_container {
   border-radius: 10px;
   display: flex;
@@ -375,25 +354,8 @@ button:hover {
     -webkit-animation: flash 1.5s;
     animation: flash 1.5s;
  }
- @-webkit-keyframes flash {
-    0% {
-      opacity: .4;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @keyframes flash {
-    0% {
-      opacity: .4;
-    }
-    100% {
-      opacity: 1;
-    }
-  }  
-
-
-  .nav li {
+ 
+ .nav li {
     padding: 10px 10px;
   }
 
@@ -401,8 +363,8 @@ button:hover {
   position: relative;
   display: block;
   width: fit-content;
+  animation: show ease-in-out 0s;
   }
-
 
   .navLink_container li:nth-child(2) {
     margin-left: 20px;
@@ -420,6 +382,44 @@ button:hover {
 .footer p {
   font-size: 12px;
 }
+
+@keyframes show {
+  0% {
+      transform: translateY(30px);
+      opacity: 0;
+  }
+   
+  40% {
+      transform: translateY(30px);
+      opacity: 0;
+  }
+  70% {
+      transform: translateY(0px);
+      opacity: 0.5;
+  }
+   
+  100% {
+      transform: translateY(0px);
+      opacity: 1;
+  }
+}
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes flash {
+  0% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+  }
+}  
 
 }
 
@@ -447,10 +447,6 @@ button:hover {
     display: none;
   }
 
-  main img {
-    /* box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.3); */
-  }
-
   .navLink_container li:nth-child(2) {
     margin-left: 5px;
     margin-right: 5px;
@@ -461,7 +457,6 @@ button:hover {
 }
 
 .fifth .texts {
-  /* border: 3px solid red; */
   padding: 40px 50px;
   background-color: #ffffff;
   box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.3);
@@ -518,7 +513,6 @@ button:hover {
   .fifth .ikki_columnda_reveal h3 {
     text-align: center;
   }
-
   .fifth .textga_container {
     margin: 20px 0px;
     display: flex;
@@ -526,22 +520,19 @@ button:hover {
     justify-content: space-between;
     gap: 5px;
   }
-
   .fifth .textga_container > div {
     width: 47%;
     height: fit-content;
   }
-
   .fifth .ikki_columnda_hide {
     display: none;
   }
-
   .fifth .display_in_end img {
- 
+}
 }
 
 
-}
+
 
 #container_delete {
   position: fixed;
