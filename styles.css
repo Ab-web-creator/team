@@ -54,7 +54,6 @@ button:hover {
 
   .px_container div {
     border-radius: 10px;
-
     overflow: hidden;
   }
 
@@ -87,8 +86,6 @@ button:hover {
   left: 0;
   /* padding: 10px 0px; */
   background-color: #bb2f04 ;
-
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s;
   z-index: 200;
   display: flex;
@@ -147,19 +144,54 @@ button:hover {
   }
 
 .nav  .navLink_container li {
-  padding: 5px 20px;
+  padding: 5px 8px;
   }
 
   .hamburger_menu {
+    position: relative;
+    font-size: 26px;
     margin-right: -25px;
     padding: 5px 10px;
-  }
-  
-  .hamburger_menu {
-    font-size: 26px;
+
+    display: flex;
   }
 
+  .hamburger_menu li {
+    margin: auto;
+  }
+  .hamburger_menu .uzb_flag  {
+    width: 40px;
+  }
+  .hamburger_menu .uzb_flag:hover  {
+    width: 40px;
+    background-color: transparent;
+  }
+  
+  .hamburger_menu:hover .uzb_flag__label {
+    opacity: 1;
+    border: 1px solid red;
+  }
+
+  .hamburger_menu span {
+    position: absolute;
+    color: white;
+    top: 35px;
+    left: 15px;
+    font-size: 12px;
+    display: none;
+}
+
+
+/* #side-menu:hover {
+    width: 400px !important;	
+    display:inline-block;
+} */
+.hamburger_menu:hover span{
+    display: inline-block;
+}
+
   .hamburger_menu i {
+    padding-top: 3px;
     color: white;
   }
 
@@ -196,11 +228,6 @@ button:hover {
     background-image:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(./images/Het-Bouwbedrijf-Fotos-23_1_1-1.jpg);
 }
 
-.first main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
 .landing_page .img_container {
   margin: auto;
@@ -213,10 +240,20 @@ button:hover {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .zaglavie h1 {
   font-size: 26px;
+  margin: auto;
+}
+.zaglavie p {
+  font-family: Courgette;
+  font-size: 16px;
+  text-align: center;
 }
 
 .chapga_terish p, 
@@ -242,6 +279,13 @@ button:hover {
   display: none;
 }
 
+.fourth .ikki_columnda_reveal h3 {
+  text-align: center;
+ }
+
+.fourth .chapga_terish {
+  margin-bottom: 40px;
+}
 .fifth {
   line-height: 30px;
   letter-spacing: 0.23px;
@@ -261,6 +305,10 @@ button:hover {
   display: none;
 }
 
+.sixth main {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .sixth .zaglavie_contact {
   color: #f9f003;
 }
@@ -272,23 +320,35 @@ button:hover {
 .footer {
   color: white;
   background-color: #ea4d1b ;
-  height: 10px;
-  padding: 20px 20px;
+  padding: 10px 20px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 }
 
 .footer p {
   font-size: 10px;
   margin: auto;
 }
+.footer main {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
 
+.video_container {
+  display: flex;
+}
+.video_wrapper {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-
-
+iframe {
+  width: 300px;
+  height: fit-content;
+}
 
 @media only screen and (min-width: 400px) {
   .zaglavie h1 {
@@ -326,6 +386,7 @@ button:hover {
     width: 540px; 
   }
   main {
+    padding: 50px 0px;
     width: 500px; 
     font-size: 18px;
   }
@@ -354,9 +415,13 @@ button:hover {
     -webkit-animation: flash 1.5s;
     animation: flash 1.5s;
  }
+ iframe {
+  width: 500px;
+  height: 300px;
+}
  
  .nav li {
-    padding: 10px 10px;
+    padding: 5px 5px;
   }
 
   .navLink_container li {
@@ -366,13 +431,25 @@ button:hover {
   animation: show ease-in-out 0s;
   }
 
-  .navLink_container li:nth-child(2) {
-    margin-left: 20px;
-    margin-right: 20px;
-    }
+  /* .navLink_container li:nth-child(2) {
+    margin-left: 5px;
+    margin-right: 5px;
+    } */
 
-.first .texts {
-  animation: show ease-in-out 3s;
+.navLink_container a {
+  color: white;
+}
+
+.hamburger_menu .uzb_flag  {
+  width: 40px;
+}
+.hamburger_menu .uzb_flag:hover  {
+  width: 40px;
+  background-color: transparent;
+}
+
+.hamburger_menu i {
+  padding-top: 7px;
 }
 
 .ikki_surat {
@@ -455,6 +532,10 @@ button:hover {
   .landing_page {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)) , url(./images/Het-Bouwbedrijf-Fotos-23_1_1-1.jpg);
 }
+.zaglavie p {
+  font-size: 20px;
+  width: 600px;
+}
 
 .fifth .texts {
   padding: 40px 50px;
@@ -474,6 +555,12 @@ button:hover {
   width: 100%;
   margin: unset ;
 }
+
+iframe {
+  width: 700px;
+  height: 400px;
+}
+ 
 }
 
 
@@ -490,6 +577,47 @@ button:hover {
   
   .display_in_end {
     display: block;
+  }
+
+  .second .px_container div {
+    height: 300px;
+  }
+
+  .fourth .textga_container {
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  .fourth .chapga_terish {
+    margin-bottom: 0px;
+  }
+  iframe {
+    width: 500px;
+    height: 358px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.3);
+  }
+
+  .fourth .texts {
+    width: 48%;
+    height: fit-content;
+    padding: 40px 50px;
+    
+    background-color: #ffffff;
+    box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+
+  .fourth .texts p {
+    line-height: 25px;
+  }
+
+  .fourth .ikki_columnda_reveal {
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
   }
 
   .fifth main {
@@ -522,7 +650,8 @@ button:hover {
   }
   .fifth .textga_container > div {
     width: 47%;
-    height: fit-content;
+    height: 320px;
+    box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.3);
   }
   .fifth .ikki_columnda_hide {
     display: none;

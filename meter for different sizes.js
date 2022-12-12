@@ -1,4 +1,4 @@
-
+// We are not using this js for this project 
 
   let btn = document.querySelector('button');
   let screenSize = document.querySelector('#screenSize');
