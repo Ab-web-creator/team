@@ -77,25 +77,8 @@ button:hover {
   }
   .px_container div:hover img {
     opacity: 1;
-    -webkit-animation: flash 1.5s;
-    animation: flash 1.5s;
   }
-  @-webkit-keyframes flash {
-    0% {
-      opacity: .4;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @keyframes flash {
-    0% {
-      opacity: .4;
-    }
-    100% {
-      opacity: 1;
-    }
-  }  
+
 
 .nav_container {
   width: 100%;
@@ -114,7 +97,7 @@ button:hover {
 
   .nav {
     margin: auto;
-    width: 300px;
+    width: 260px;
 
     display: flex;
     flex-direction: row;
@@ -206,8 +189,6 @@ button:hover {
   p, li {
     line-height: 20px;
     letter-spacing: 0.23px;
-    
-    animation: show ease-in-out 3s;
   }
 
 .landing_page {
@@ -231,7 +212,6 @@ button:hover {
 .landing_page .img_container {
   margin: auto;
   width: 150px;
-  animation: show ease-in-out 1s;
 }
 
 .landing_page .zaglavie {
@@ -240,13 +220,10 @@ button:hover {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-
-  animation: show ease-in-out 1s;
 }
 
 .zaglavie h1 {
   font-size: 26px;
-  animation: show ease-in-out 2s;
 }
 
 .chapga_terish p, 
@@ -270,10 +247,6 @@ button:hover {
 
 .display_not {
   display: none;
-}
-
-.first .texts {
-  animation: show ease-in-out 3s;
 }
 
 .fifth {
@@ -356,9 +329,21 @@ button:hover {
 }
 
 @media only screen and (min-width: 600px) {
+
+  .landing_page .img_container {
+    animation: show ease-in-out 1s;
+  }
+  .landing_page .zaglavie {
+    animation: show ease-in-out 1s;
+  }
+  .zaglavie h1 {
+    font-size: 44px;
+    animation: show ease-in-out 2s;
+  }
   p, li {
     line-height: 32px;
     letter-spacing: 0.3px;
+    animation: show ease-in-out 3s;
   }
   .nav {
     width: 540px; 
@@ -375,9 +360,41 @@ button:hover {
     margin-right: -5px;
   }
 
+.px_container {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+.px_container > div {
+  width: 100%;
+  /* margin: unset ; */
+}
+.px_container div:hover img {
+    -webkit-animation: flash 1.5s;
+    animation: flash 1.5s;
+ }
+ @-webkit-keyframes flash {
+    0% {
+      opacity: .4;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes flash {
+    0% {
+      opacity: .4;
+    }
+    100% {
+      opacity: 1;
+    }
+  }  
+
 
   .nav li {
-    padding: 5px 7px;
+    padding: 10px 10px;
   }
 
   .navLink_container li {
@@ -392,25 +409,8 @@ button:hover {
     margin-right: 20px;
     }
 
-  .nav  li {
-    padding: 10px 10px;
-  }
-
-  .zaglavie h1 {
-    font-size: 44px;
-  }
-
-.px_container {
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-}
-
-.px_container > div {
-  width: 100%;
-  /* margin: unset ; */
+.first .texts {
+  animation: show ease-in-out 3s;
 }
 
 .ikki_surat {
