@@ -29,33 +29,6 @@ body {
   display: block;
 }
 
-/* .blur2 {
-  position: fixed;
-  width: 100%;
-  display: none;
-  height: 100vh;
-  z-index: -1;
-  transition: all 1s;
-  backdrop-filter: blur(4px);
-  background-color: #393c416e;
-} */
-
-/* .blur2.active {
-  display: block;
-} */
-
-/* .blurCompletely {
-  position: fixed;
-  width: 100%;
-  display: none;
-  height: 100vh;
-  z-index: -29;
-  transition: all 1s;
-  backdrop-filter: blur(4px);
-  background-color: #2f77f4;
-} */
-
-
 main {
   font-size: 14px;
   font-weight: 500;
@@ -68,12 +41,11 @@ main {
   }
 
 button {
-  background-color: #f5f7fa;
   width: 130px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #ea4d1b;
+  background-color: #bb2f04;
 
   height: 40px;
   border-width: 0px;
@@ -236,15 +208,16 @@ button:hover {
   }
 
 .landing_page {
-    background-position: center right;
-    background-size: cover;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    margin: auto;
-    width: 100%;
-    height: 500px;
-    padding: 0px 0px;
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(./images/Het-Bouwbedrijf-Fotos-23_1_1-1.jpg);
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(./images/Het-Bouwbedrijf-Fotos-23_1_1-1.jpg);
+  background-position: center right;
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  
+  margin: auto;
+  width: 100%;
+  height: 500px;
+  padding: 0px 0px;
 }
 
 
@@ -344,7 +317,7 @@ button:hover {
 
 .footer {
   color: white;
-  background-color: #ea4d1b ;
+  background-color: #bb2f04 ;
   padding: 10px 20px;
 
   display: flex;
@@ -359,6 +332,31 @@ button:hover {
 .footer main {
   padding-top: 0px;
   padding-bottom: 0px;
+}
+
+.last_piece {
+  color: rgb(214, 214, 214);
+  /* background-color: rgb(27, 27, 27); */
+  width: 100%;
+  height: fit-content;
+  font-size: 14px;
+
+  display: flex;
+  justify-content: center;
+}
+.last_piece p {
+  margin: auto;
+  text-align: center;
+  padding: 20px 50px;
+}
+
+.last_piece a {
+  color: rgb(214, 214, 214);
+  transition:  all 0.8s ease-in-out;
+}
+
+.last_piece a:hover {
+  color: rgb(238, 255, 1);
 }
 
 
