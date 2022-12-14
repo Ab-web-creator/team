@@ -1,12 +1,12 @@
 
 .hdn-cont {
-  margin-top: 0px;
+  margin-top: 10px;
 }
 
 aside {
   position: fixed;
   top: 0px;
-  right: -400px;
+  right: -470px;
   transition: right 0.4s ease;
   width: 250px;
   background-color: #333333;
@@ -33,7 +33,6 @@ aside ul li.active {
 
 aside ul li:last-child {
   margin-top: 20px;
-  margin-left: 15px;
 }
 
 .hdn-cont li {
@@ -49,10 +48,10 @@ aside ul li:last-child {
   margin-top: auto;
   /* margin-bottom: auto;  */
   font-size: 15px;
- 
 }
 
 .mark {
+  margin-bottom: 10px;
   /* margin-top: 10px; */
   position: relative;
   width: 100%;
@@ -115,7 +114,6 @@ aside ul li:last-child {
 .menu_flag {
   width: 35%;
 }
-
 .menu_flag img {
   width: 10px;
 }
@@ -123,18 +121,15 @@ aside ul li:last-child {
 aside ul li a {
   display: block;
   text-decoration: none;
-  padding: 15px 0px;
-  
   font-size: 15px;
   font-weight: 500;
   color: #ffffff;
-  
 }
 
-aside ul li a:hover {
+aside ul li:hover {
   letter-spacing: 0.08rem;
   transition:  letter-spacing 0.4s ease-in-out;
-  /* background: #454545 !important; */
+  background: #454545 !important;
 }
 
 aside ul li.active:hover {
@@ -204,15 +199,51 @@ aside button.close_sideMenuBar {
 }
  
 
-
-
-
-
-
 @media only screen and (min-width: 600px) {
+  .hdn-cont {
+    margin-top: 0px;
+  }
+  aside {
+    width: 450px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 
-  
+  .hdn-cont ul li, .mark ul  {
+    padding-right: 15px;
+  }
+
+  .hdn-cont ul li ul,  .mark ul a,
+  .hdn-cont ul li:last-child a  {
+    font-size: 20px;
+    line-height: 46px;
+  }
+
+  .first_qator {
+    margin-left: 25px;
+    width: 30%;
+  }
+  .second_qator {
+    color: #cccccc;
+    text-align: left;
+    width: 15%;
+  }
+
+  #close_sidemenu {
+    width: 170px;
+  }
    
+  .mark {
+    margin-bottom: 20px;
+  }
+
+
+
+
+
+
+
+
 }
 
 
