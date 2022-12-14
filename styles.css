@@ -10,7 +10,6 @@ body {
   padding-top: var(--nav-height);
   }
 
-
 .blur {
   position: absolute;
   top: 0;
@@ -187,8 +186,8 @@ button:hover {
   }
 
 .nav li:hover {
-  color: #5d1600;
-  background-color: rgb(212, 212, 8);
+  /* color: #5d1600; */
+  /* background-color: rgb(212, 212, 8); */
   border-radius: 15px;
   }
 
@@ -266,9 +265,12 @@ button:hover {
 }
 
 .zaglavie h1 {
-  font-size: 26px;
+  font-family: Vevey ;
+  font-size: 36px;
+  letter-spacing: 2px;
   margin: auto;
 }
+
 .zaglavie p {
   font-family: Courgette;
   font-size: 16px;
@@ -325,16 +327,9 @@ button:hover {
   display: none;
 }
 
-.sixth {
-  background-image:  linear-gradient(rgba(0, 0, 0, 0.827),rgba(0, 0, 0, 0.85)) , url(./images/sectionSixthBG.jpeg);
-  background-size: 400px;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
 .sixth main {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 .sixth .zaglavie_contact {
   color: #f9f003;
@@ -343,7 +338,7 @@ button:hover {
 
 .sixth p {
   color: #ffffff;
-  line-height: 30px;
+  line-height: 22px;
 }
 
 .footer {
@@ -385,11 +380,8 @@ iframe {
 
 @media only screen and (min-width: 400px) {
   .zaglavie h1 {
-    font-size: 34px;
-  }
-
-  .sixth {
-    background-size: 500px;
+    font-size: 44px;
+    letter-spacing: 4px;
   }
 }
 
@@ -397,22 +389,21 @@ iframe {
   .nav, main {
     width: 360px;
   }
-
-  .sixth {
-    background-size: 650px;
-    background-position: top center;
-  }
 }
 
 @media only screen and (min-width: 600px) {
 
-  .nav li:hover a, .nav li:hover i {
+  p, li {
+    line-height: 30px;
+    letter-spacing: 0.23px;
+  }
+
+  .nav li a:hover, .nav li i:hover {
     color: #282525;
   }
 
   .nav li {
     padding: 0px 0px;
-
     }
 
   .nav li:hover {
@@ -420,7 +411,7 @@ iframe {
     }
 
     .nav li a {
-      padding: 5px 10px;
+      padding: 10px 15px;
       transition: all ease-in-out 0.4s;
     }
 
@@ -441,7 +432,7 @@ iframe {
     animation: show ease-in-out 1s;
   }
   .zaglavie h1 {
-    font-size: 44px;
+    font-size: 60px;
     animation: show ease-in-out 2s;
   }
   .landing_page p, .landing_page li, .landing_page button {
@@ -508,10 +499,7 @@ iframe {
 .hamburger_menu .uzb_flag  {
   width: 40px;
 }
-.hamburger_menu .uzb_flag:hover  {
-  width: 40px;
-  background-color: transparent;
-}
+
 
 .hamburger_menu i {
   padding-top: 7px;
@@ -519,6 +507,10 @@ iframe {
 
 .ikki_surat {
   justify-content: space-evenly;
+}
+
+.sixth p {
+  line-height: 32px;
 }
 
 .footer p {
@@ -563,21 +555,11 @@ iframe {
   }
 }  
 
-.sixth {
-  background-image:  linear-gradient(rgba(0, 0, 0, 0.827),rgba(0, 0, 0, 0.85)) , url(./images/sectionSixthBG.jpeg);
-  background-size: 750px;
-  background-position: top center;
-}
-
 }
 
 
 @media only screen and (min-width: 740px) {
-  .sixth {
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.827),rgba(0, 0, 0, 0.85)) , url(./images/sectionSixthBG_600.jpeg);
-    background-size: 1070px;
-    background-position: top center;
-  }
+
 }
 
 @media only screen and (min-width: 800px) {
@@ -648,21 +630,6 @@ iframe {
   }
 }
 
-@media only screen and (min-width: 1050px) {
-  .sixth {
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.827),rgba(0, 0, 0, 0.85)) , url(./images/sectionSixthBG_600.jpeg);
-    background-size: 1170px;
-    background-position: top center;
-  }
-}
-
-@media only screen and (min-width: 1160px) {
-  .sixth {
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.827),rgba(0, 0, 0, 0.85)) , url(./images/sectionSixthBG_600.jpeg);
-    background-size: 1270px;
-    background-position: top center;
-  }
-}
 
 
 
@@ -691,7 +658,7 @@ iframe {
   }
   iframe {
     width: 500px;
-    height: 358px;
+    height: 353px;
     border-radius: 10px;
     box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.3);
   }
@@ -707,7 +674,11 @@ iframe {
   }
 
   .fourth .texts p {
-    line-height: 25px;
+    line-height: 27px;
+  }
+
+  .uzb_cyrga p {
+    line-height: 25px !important;
   }
 
   .fourth .ikki_columnda_reveal {
@@ -757,13 +728,7 @@ iframe {
 
 }
 
-@media only screen and (min-width: 1270px) {
-  .sixth {
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.827),rgba(0, 0, 0, 0.85)) , url(./images/sectionSixthBG_600.jpeg);
-    background-size: 1770px;
-    background-position: top center;
-  }
-}
+
 
 
 

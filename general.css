@@ -49,7 +49,11 @@
   format('Courgette');
   }
 
-
+  @font-face {
+  font-family: Vevey; 
+  src: url(vevey.ttf)
+  format('Vevey');
+  }
 
 
 * {

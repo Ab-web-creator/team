@@ -139,15 +139,6 @@ aside ul li.active:hover {
   background: #7f72f6 !important;
 }
 
-aside ul li a span {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  font-size: 12px;
-  transform: translateY(-50%);
-  transition: transform 1s ease-in-out;
-}
-
 aside ul li a.active {
   /* color: cyan;
   background: #b5c508; */
@@ -214,8 +205,9 @@ aside button.close_sideMenuBar {
   }
 
   .hdn-cont ul li ul,  .mark ul a,
-  .hdn-cont ul li:last-child a  {
-    font-size: 20px;
+  .hdn-cont ul li:last-child a,
+  aside ul li a  {
+    font-size: 18px;
     line-height: 46px;
   }
 
