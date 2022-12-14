@@ -180,15 +180,16 @@ button:hover {
   cursor: pointer;
   }
  
-.nav li {
-  padding: 5px 7px;
+.nav li i {
+  padding: 10px 15px;
   transition: all ease-in-out 0.4s;
   }
 
-.nav li:hover {
-  /* color: #5d1600; */
-  /* background-color: rgb(212, 212, 8); */
+.nav li:hover i {
+  color: #302927;
+  background-color: rgb(212, 212, 8);
   border-radius: 15px;
+  cursor: pointer;
   }
 
 .nav .navLink_container li {
@@ -398,7 +399,7 @@ iframe {
     letter-spacing: 0.23px;
   }
 
-  .nav li a:hover, .nav li i:hover {
+  .nav li a:hover, .nav li:hover i {
     color: #282525;
   }
 
