@@ -681,6 +681,11 @@ iframe {
   .nav, main {
     width: 850px; 
   }
+
+  iframe {
+    width: 840px;
+    height: 450px;
+  }
 }
 
 
