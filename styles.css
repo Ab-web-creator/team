@@ -301,18 +301,54 @@ button:hover {
   display: none;
 }
 
+.sixth {
+  background-image: url(./images/bg_housenn.png);
+  background-position: center right;
+  background-size: 300px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.black_filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #101010eb;
+  z-index: 2;
+}
+
 .sixth main {
   padding-top: 0px;
   padding-bottom: 0px;
+  display: flex;
+  flex-direction: column;
 }
+
+.sixth .contact {
+  padding-left: 10px;
+  border-left: 1px solid rgb(242, 242, 242);
+  z-index: 3;
+}
+
 .sixth .zaglavie_contact {
   color: #f9f003;
   margin-bottom: 10px;
+ 
 }
 
 .sixth p {
   color: #ffffff;
   line-height: 22px;
+}
+
+.social_network_icons {
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
 }
 
 .footer {
@@ -388,9 +424,16 @@ iframe {
   .nav, main {
     width: 360px;
   }
+
+
 }
 
 @media only screen and (min-width: 600px) {
+
+  .sixth  {
+    background-position: center right;
+    background-size: 430px;
+  }
 
   p, li {
     line-height: 30px;
@@ -562,6 +605,17 @@ iframe {
 }
 
 @media only screen and (min-width: 800px) {
+  .sixth  {
+    background-position: center right;
+    background-size: 600px;
+  }
+
+  .social_network_icons {
+    margin-top: 0px;
+    gap: 3px;
+  }
+
+
   .nav, main {
     width: 700px; 
   }
@@ -633,6 +687,12 @@ iframe {
 
 
 @media only screen and (min-width: 1250px) {
+  .sixth {
+    /* background-image: url(./images/bg_housenn.png); */
+    background-position: center right;
+    background-size: 600px;
+  }
+
   .nav, main {
     width: 1050px; 
   }
@@ -723,10 +783,37 @@ iframe {
     display: none;
   }
   .fifth .display_in_end img {
+  }
 }
 
+@media only screen and (min-width: 1320px) {
+  .sixth {
+    /* background-image: url(./images/bg_housenn.png); */
+    background-position: center right;
+    background-size: 700px;
+  }
 }
-
+@media only screen and (min-width: 1420px) {
+  .sixth {
+    /* background-image: url(./images/bg_housenn.png); */
+    background-position: center right;
+    background-size: 800px;
+  }
+}
+@media only screen and (min-width: 1520px) {
+  .sixth {
+    /* background-image: url(./images/bg_housenn.png); */
+    background-position: center right;
+    background-size: 1000px;
+  }
+}
+@media only screen and (min-width: 2020px) {
+  .sixth {
+    /* background-image: url(./images/bg_housenn.png); */
+    background-position: center center;
+    background-size: 800px;
+  }
+}
 
 
 
