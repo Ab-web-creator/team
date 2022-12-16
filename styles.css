@@ -725,7 +725,7 @@ iframe {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 15px;
+    gap: 35px;
   }
   .fourth .chapga_terish {
     margin-bottom: 0px;
@@ -737,9 +737,13 @@ iframe {
     box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.3);
   }
 
+
   .fourth .texts {
-    width: 48%;
-    height: fit-content;
+    text-align: left;
+    margin: auto;
+    margin-top: 0px;
+    /* width: 48%; */
+    height: 352px;
     padding: 40px 50px;
     
     background-color: #ffffff;
@@ -748,7 +752,7 @@ iframe {
   }
 
   .fourth .texts p {
-    line-height: 27px;
+    line-height: 29px;
   }
 
   .uzb_cyrga p {
