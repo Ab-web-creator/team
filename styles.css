@@ -10,6 +10,16 @@ body {
   padding-top: var(--nav-height);
   }
 
+  .black_oon_top {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 73px;
+    background-color: #020201;
+    z-index: 2;
+  }
+
 .blur {
   position: fixed;
   top: 0;
