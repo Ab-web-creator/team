@@ -62,7 +62,7 @@ aside ul li:last-child {
   font-size: 15px;
   /* background-color: #111111; */
   color: white;
-  cursor: pointer;
+  
   /* margin-bottom: 10px; */
 
   display: flex;
@@ -126,7 +126,8 @@ aside ul li a {
   color: #ffffff;
 }
 
-aside ul li:hover {
+aside ul .men_flex:hover,
+aside ul li:last-child:hover {
   letter-spacing: 0.08rem;
   transition:  letter-spacing 0.4s ease-in-out;
   background: #454545 !important;
@@ -170,24 +171,6 @@ aside ul li ul {
 }
 
 
-
-/* close x button and backdrop */
-
-aside button.close_sideMenuBar {
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 600;
-  /* float: left; */
-  border: 0;
-  background-color: transparent;
-  position: relative;
-  top: 0px;
-  padding: 30px;
-  font-family: sans-serif;
-  font-weight: 100;
-  padding-right: 10px;
-  z-index: 199;
-}
  
 
 @media only screen and (min-width: 600px) {
@@ -220,18 +203,15 @@ aside button.close_sideMenuBar {
     text-align: left;
     width: 15%;
   }
-
-  #close_sidemenu {
-    width: 170px;
-  }
    
   .mark {
     margin-bottom: 20px;
+    background-color: #222222;
   }
 
-
-
-
+  .mark   .first_qator {
+    /* background-color: #3c3b3b; */
+  }
 
 
 
