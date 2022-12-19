@@ -248,14 +248,14 @@ button:hover {
   justify-content: center;
 }
 
-.zaglavie h1 {
+.landing_page .zaglavie h1 {
   font-family: Vevey ;
-  font-size: 36px;
+  font-size: 28px;
   letter-spacing: 2px;
   margin: auto;
 }
 
-.zaglavie p {
+.landing_page .zaglavie p {
   font-family: Courgette;
   font-size: 16px;
   text-align: center;
@@ -342,7 +342,7 @@ button:hover {
 }
 
 .sixth .zaglavie_contact {
-  color: #f9f003;
+  color: #f9f103af;
   margin-bottom: 10px;
  
 }
@@ -425,7 +425,7 @@ iframe {
 
 @media only screen and (min-width: 400px) {
   .zaglavie h1 {
-    font-size: 44px;
+    font-size: 32px;
     letter-spacing: 4px;
   }
 }
@@ -483,7 +483,7 @@ iframe {
   .landing_page .zaglavie {
     animation: show ease-in-out 1s;
   }
-  .zaglavie h1 {
+  .landing_page .zaglavie h1 {
     font-size: 60px;
     animation: show ease-in-out 2s;
   }
