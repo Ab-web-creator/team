@@ -250,8 +250,8 @@ button:hover {
 
 .landing_page .zaglavie h1 {
   font-family: Vevey ;
-  font-size: 28px;
-  letter-spacing: 2px;
+  font-size: 26px;
+  letter-spacing: 1px;
   margin: auto;
 }
 
@@ -434,8 +434,6 @@ iframe {
   .nav, main {
     width: 360px;
   }
-
-
 }
 
 @media only screen and (min-width: 600px) {
@@ -485,6 +483,7 @@ iframe {
   }
   .landing_page .zaglavie h1 {
     font-size: 60px;
+    letter-spacing: 2px;
     animation: show ease-in-out 2s;
   }
   .landing_page p, .landing_page li, .landing_page button {
