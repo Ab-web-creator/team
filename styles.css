@@ -31,7 +31,6 @@ body {
  
   backdrop-filter: blur(4px);
   background-color: #121315e1;
-  /* background-color: #393c416e; */
   transition: all 5.4s ease;
 }
 
@@ -115,7 +114,7 @@ button:hover {
   top: 0;
   left: 0;
   /* padding: 10px 0px; */
-  background-color: #bb2f04 ;
+  background-color: #101010f6 ;
   transition: transform 0.2s;
   z-index: 99;
   display: flex;
@@ -448,6 +447,10 @@ iframe {
     letter-spacing: 0.23px;
   }
 
+  .nav_container {
+    background-color: #bb2f04 ;
+  }
+
   .nav li a:hover, .nav li:hover i {
     color: #282525;
   }
@@ -483,7 +486,7 @@ iframe {
   }
   .landing_page .zaglavie h1 {
     font-size: 60px;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     animation: show ease-in-out 2s;
   }
   .landing_page p, .landing_page li, .landing_page button {
