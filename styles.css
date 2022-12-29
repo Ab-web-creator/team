@@ -406,7 +406,7 @@ button:hover {
   color: rgb(238, 255, 1);
 }
 
-.notFooter {
+/* .notFooter {
   position: relative;
   color: rgb(167, 4, 4);
   background-color: #a2a2a2 ;
@@ -415,7 +415,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+} */
 
 
 
