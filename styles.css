@@ -113,9 +113,10 @@ button:hover {
   position: fixed;
   top: 0;
   left: 0;
-  /* padding: 10px 0px; */
+  opacity: 1;
+  transition: opacity .2s ease-in-out;
   background-color: #101010f6 ;
-  transition: transform 0.7s ease-in-out;
+  transition: transform 0.4s ease-in-out;
   z-index: 99;
   display: flex;
   }
@@ -144,6 +145,7 @@ button:hover {
 
 .nav--hidden {
   transform: translateY(calc(-1 * var(--nav-height)));
+  opacity: 0.8;
   box-shadow: none;
   }
 
@@ -402,6 +404,17 @@ button:hover {
 
 .last_piece a:hover {
   color: rgb(238, 255, 1);
+}
+
+.notFooter {
+  position: relative;
+  color: rgb(167, 4, 4);
+  background-color: #a2a2a2 ;
+  padding: 10px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 

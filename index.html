@@ -32,7 +32,7 @@
         <li class="nav__link"><a  href="#ishimiz_haqida">Iş haqida</a></li>
         <li  class="nav__link"><a href="#biz_kimmiz">Biz kimmiz</a></li>
         <li  class="nav__link"><a href="#kontakt_qismi">Bizga ulaning</a></li>
-    </div>
+      </div>
     <div class="hamburger_menu">
       <li id="menuBtn"><i class='bx bx-menu'></i></li>
     </div>
@@ -245,6 +245,32 @@
         </div>
       </main>
     </section>
+
+    <section class="notFooter">
+      <main>
+        
+        <!-- <img src="./images/3_start_menu.gif" alt="Animated GIF" id="myGif" controls> -->
+        
+        <button onclick="setCurTime()" type="button">Set time position to 1 seconds</button><br> 
+        
+        <video id="myVideo" width="320" height="176" autoplay>
+          <source src="./images/daad.mp4" type="video/mp4">
+          <source src="mov_bbb.ogg" type="video/ogg">
+          Your browser does not support HTML5 video.
+        </video>
+        
+      </main>
+    </section>
+
+    <script>
+      var vid = document.getElementById("myVideo");
+            
+      function setCurTime() { 
+        vid.currentTime=0;
+        vid.play()
+      } 
+
+      </script> 
 
 <script src="navContaiiner_toDisappear.js"></script>
 <script src="openAndClose_sidemenu.js"></script> 
