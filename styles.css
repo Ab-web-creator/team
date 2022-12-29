@@ -406,16 +406,7 @@ button:hover {
   color: rgb(238, 255, 1);
 }
 
-/* .notFooter {
-  position: relative;
-  color: rgb(167, 4, 4);
-  background-color: #a2a2a2 ;
-  padding: 10px 20px;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
 
 
 
@@ -691,7 +682,7 @@ iframe {
 
 .px_container > div {
   width: 100%;
-  margin: unset ;
+  /* margin: unset ; */
 }
 
 iframe {
@@ -699,6 +690,9 @@ iframe {
   height: 400px;
 }
  
+
+ 
+
 }
 
 
@@ -733,6 +727,19 @@ iframe {
 
   .second .px_container div {
     height: 300px;
+  }
+  .second .px_container .display_not img {
+    float: right;
+  }
+
+  .third .px_container  {
+    width: 100%;
+  }
+  .third .px_container div {
+    height: 300px;
+  }
+  .third .px_container .display_not img {
+    float: right;
   }
 
   .fourth .textga_container {
@@ -808,7 +815,7 @@ iframe {
     justify-content: space-between;
     gap: 5px;
   }
-  .fifth .textga_container > div {
+  .fifth .textga_container .texts {
     width: 47%;
     height: 320px;
     box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.3);
@@ -816,7 +823,15 @@ iframe {
   .fifth .ikki_columnda_hide {
     display: none;
   }
+  .fifth .px_container {
+    /* width: 47%; */
+    margin: unset;
+    box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.3);
+  }
   .fifth .display_in_end img {
+    height: 320px;
+    float: right;
+    
   }
 }
 
@@ -877,6 +892,19 @@ iframe {
   font-weight: 600;
   background-color: rgba(255, 255, 0, 0.395);
   border-radius: 10px;
+}
+
+
+
+.notFooter {
+  position: relative;
+  color: rgb(167, 4, 4);
+  background-color: #a2a2a2 ;
+  padding: 10px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* 
