@@ -1,286 +1,407 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=63726a816fa502001965e7c3&product=inline-share-buttons' async='async'></script>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quruvçilar zarur</title>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dynet home page</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="general.css">
-    <link rel="stylesheet" href="aside.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
 
+    <script src="https://code.jquery.com/jquery-3.6.0.js"   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="   crossorigin="anonymous"></script>
+   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="home_page.css">
+    <link rel="stylesheet" href="aside.css">
+
 </head>
 
+
 <body>
-<!-- Additional layers  -->
-<div class="blur"></div>
-<!-- <div class="blurCompletely"></div> -->
-<!-- <div class="blur2"></div> -->
 
-  <div class="nav_container">
-    <nav class="nav">
-      <div class="logo_top_left_cont">
-        <img src="images/smaller_logo.png" alt="">
-      </div>
-      <div class="flex_row navLink_container">
-        <li class="nav__link"><a  href="#ishimiz_haqida">Iş haqida</a></li>
-        <li  class="nav__link"><a href="#biz_kimmiz">Biz kimmiz</a></li>
-        <li  class="nav__link"><a href="#kontakt_qismi">Bizga ulaning</a></li>
-      </div>
-    <div class="hamburger_menu">
-      <li id="menuBtn"><i class='bx bx-menu'></i></li>
+    <div class="mobile_header">
+            <li class="nav_question"><a href="#">contact:</a></li>
+            <li class="nav_icons phone_icon">
+              <a href="#"> <i class='bx bx-phone-call'></i></a>
+            </li>
+            <li class="nav_icons whatsapp_icon">
+              <a href="#"><i class='bx bxl-whatsapp' ></i></a>
+            </li>
+            <li class="nav_icons email_icon">
+              <a href="#"><i class='bx bx-envelope' ></i></a>
+            </li>
+            <li class="nav_icons">
+              <a href="#" id="menuBtn"><i class='bx bx-menu'></i></a>
+            </li>
     </div>
-    </nav>
-  </div>
 
-<!-- Start of side-menu  -->
-<aside class="hdn-side">
-  <div class="hdn-cont">
-      <ul>
-          <li class="mark" > 
-              <ul id="home_sidemenu" class="first_qator"><a href="./index.html">Boş bet</a></ul>
-              <ul class="second_qator"></ul> 
-              <ul id="close_sidemenu"><a> &times; </a></ul>
-          </li>
-          <li class="men_flex">
-            <ul class="first_qator"><a href="./index.html">Ózbekça</a></ul>
-            <ul class="second_qator"><a href="./index.html">(Lat)</a></ul>
-            <ul class="third_qator"><a href="./index.html"><img src="./images/Uzbek_flag.png"></a></ul>
-          </li>
-          <li class="men_flex">
-            <ul class="first_qator"><a href="./Uzbek_Cyr.html">Ўзбекча</a></ul>
-            <ul class="second_qator"><a href="./Uzbek_Cyr.html">(Kir)</a></ul>
-            <ul class="third_qator"><a href="./Uzbek_Cyr.html"><img src="./images/Uzbek_flag.png"></a></ul>
-          </li>
-          <li class="men_flex">
-            <ul class="first_qator"><a href="./Russian.html">Русский</a></ul>
-            <ul class="second_qator"><a href="./Russian.html">(Rus)</a></ul>
-            <ul class="third_qator"><a href="./Russian.html"><img src="./images/Russian_flag.png"></a></ul>
-          </li>
-          <li class="men_flex">
-            <ul class="first_qator"><a href="./Dutch.html">Gollandça</a></ul>
-            <ul class="second_qator"><a href="./Dutch.html">(NLs)</a></ul>
-            <ul class="third_qator"><a href="./Dutch.html"><img src="./images/Nederland_flag.png"></a></ul>
-          </li>
-          <li class="men_flex">
-            <ul class="first_qator"><a href="./English.html">Inglizça</a></ul>
-            <ul class="second_qator"><a href="./English.html">(Eng)</a></ul>
-            <ul class="third_qator"><a href="./English.html"><img src="./images/English_flag.png"></a></ul>
-          </li>
-         
-          <li>
-            <ul class="first_qator"><a href="contact.html">Contact</a> </ul>
-          </li>
-      </ul>
-  </div>
-</aside>
-<!-- End of side-menu  -->
+    <aside class="hdn-side">
+        <div id="mark" >
+           <a  class="close_sidemenu"><span>Menu</span><span>X</span> </a>
+        </div>
+        <div class="hdn-cont">
+            <ul>
+                <li><a href="html_pages/doelen.html"> ~ Missie </a></li>
+                <li><a href="html_pages/opbouw.html"> ~ Diensten </a></li>               
+                <li><a href="html_pages/opbouw.html"> ~ Duurzaamheid </a></li>               
+                <li><a href="html_pages/deeltoets.html">~ Over ons </a></li>
+                <li><a href="html_pages/deeltoets.html"> </a></li>
+                <li><a href="html_pages/deeltoets.html">LOGIN </a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <div class="blur"></div>
+
+    <!-- Asosiy qismi  -->
+
+        <div class="main">
+
+            <div class="desktop_container">
+
+                <header class=".desktop_header">
+                    <li class="desktop_logo"><img src="images/logo_very_small.png" alt=""></li>
+   
+                    <nav>
+                        <ul class="fancy-link">
+                            <li><a href="#3d_part"> Missie </a></li>
+                            <li ><a href="#">Diensten </a></li>
+                            <li ><a href="#">Duurzaamheid </a></li>
+                            <li><a href="#">Over ons </a></li>
+                        </ul>
+                    </nav>
+                    <div class="end">
+                            <a href="#"> <span>Contact</span></a>
+                            <a id="desktop_login_button" href="#"> Login</a>
+                            <li><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
+                            <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                    </div>
+                </header>
 
 
-<div id="container_delete">
-    <div class="first"><p ></p></div>
-    <div id="screen_width">resize page</div>
-    <!-- <div class="first"><p >Screen Height</p></div>
-    <div id="screen_height"></div> -->
-  </div>
+                <div class="landing_page" style="background-image: url(images/mainphoto.jpeg) ;
+                background-size: cover;
+                background-position: center bottom;
+                overflow: hidden;">
+
+                <div class="sarlavha"> 
+                        <p>Wij bieden </p>
+                        <h1>internettoegang</h1>
+                        <p>aan huizen </p>
+                </div>
+
+                <div id="Central_Logo" >
+                    <img  src="./images/logo_big.png">
+                    <p>Wij zijn uw Internet Oplossing</p>
+                    <div class="contain_glow">
+                        <div class="center">
+                            <div class="outer circle">
+                                <button class='compare_prices'>Compare prices</button>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- <div id="arrow" class="arrow"><img src="images/arrow-icon-white.png" alt=""></div> -->
+                </div>
+                </div>
+
+
+                <section class="second_part">
+                    <div class="container">
+                        <h1>
+                            Benefits of Fiber-Optics
+                        </h1>
+
+                        <div class="smaller_container">
+                            <div class="container_for_p">
+                                <p>
+                                    Dynet is een specialist op het gebied van bekabelde en draadloze communicatie netwerken voor telecom aanbieders.  
+                                    De missie is heel Nederland een goede snelle werkende verbinding te geven. 
+                                    <br> <br> Wij vinden namelijk dat iedereen recht heeft op een glasvezelverbinding. 
+                                    Daarom sluiten wij niet alleen centrumgebieden maar ook buitengebieden, zodat iedereen toegang heeft tot het glasvezelnetwerk.
+                                </p>
+                            </div>
+
+                            <div class="image_container"><img src="./images/The-Basics-of-Fiber-Optic-Cables.jpeg" alt=""></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="3d_part" class="third_part">
+
+                    <div class="picture_box">
+                        <img src="./images/rasm4.jpeg">
+                        <h3>Missie</h3>
+                        <p>Dynet is een Nederlands bedrijf dat gespecialiseerd is in de aanleg van glasvezel aansluitingen.</p>
+                        <button><a href="#" alt=""> Lees meer</a></button>
+                    </div>
+
+                    <div class="picture_box">
+                        <img src="./images/rasm2.png">
+                        <h3>Diensten</h3>
+                        <p> Klantgerichtheid, continuïteit en kwaliteit van dienstverlening vormen de basis van onze bedrijfsvoering</p>
+                        <button><a href="#" alt=""> Lees meer</a></button>
+                    </div>
+
+                    <div class="picture_box">
+                        <img src="./images/rasm3.jpg">
+                        <h3>Duurzaamheid</h3>
+                        <p>Dynet probeert de negatieve impact op het milieu te verminderen. Add three or four more words...</p>
+                        <button><a href="#" alt=""> Lees meer</a></button>
+                    </div>
+
+                </section>
+
+                <section class="fourth_part">
+                    <div><h1>Onze klanten</h1></div>
+                    
+                    
+                    <div class="onze_klanten carousel">
+                        <button class="carousel-button prev"><i class='bx bx-left-arrow-circle'></i></button>
+                       
+                        <ul>
+                            
+                            <li> <img src="./images/karusel/alling.png" alt=""></li>
+                            <li>  <img src="./images/karusel/baas.png" alt=""></li>
+                            <li>  <img src="./images/karusel/dunniq.png" alt=""></li>
+                            <li> <img src="./images/karusel/heymans.png" alt=""></li>
+                            <li>   <img src="./images/karusel/HVM.png" alt=""></li>
+                            <li>   <img src="./images/karusel/proximus.png" alt=""></li>
+                            <li>   <img src="./images/karusel/schuuring.png" alt=""></li>
+                            <li>   <img src="./images/karusel/splitters.png" alt=""></li>
+                            <li> <img src="./images/karusel/cloud_een.png" alt=""></li>
+                             <li><img src="./images/karusel/globus.png" alt=""></li>
+                            <li><img src="./images/karusel/van_gelder.png" alt=""></li>
+                            <li>  <img src="./images/karusel/konings_group.png" alt=""></li>
+                            <li><img src="./images/karusel/koning&.png" alt=""></li>
+                        </ul>
+                        <button class="carousel-button next"><i class='bx bx-right-arrow-circle' ></i></button>
+                    </div>
+                </section>
+
+                <section class="fifth_part">
+                    <h1> Waar zitten we?</h1>
+                   <div class="smaller_container">
+                       
+                       <div class="left_container">
+                           <h4>Zakelijk glasvezel voor iedere ondernemer</h4>
+                           <p>Het DyNet netwerk ligt op steeds meer bedrijventerreinen. In Noordoost Nederland hebben we al mooie projecten gerealiseerd en daar blijven we mee doorgaan. Hieronder vind je een overzicht.</p>
+                           <ul class="two_columns">
+                               <li><i class='bx bx-check-circle' ></i>Marslanden, Zwolle</li>
+                               <li><i class='bx bx-circle'></i></i>Eekterveld, Vaassen</li>
+                               <li><i class='bx bx-check-circle' ></i> De Haven, Drachten</li>
+                               <li><i class='bx bx-minus-circle' ></i>Biensma, Grou</li>
+                               <li><i class='bx bx-check-circle' ></i>Blankenstein, Meppel</li>
+                               <li><i class='bx bx-check-circle' ></i>Westpoort, Amsterdam</li>
+                               <li><i class='bx bx-check-circle' ></i> De Vaandel , Heerhugowaard</li>
+                               <li><i class='bx bx-minus-circle' ></i>PEC Zwolle - Oosterenk, Zwolle</li>
+                               <li><i class='bx bx-check-circle' ></i>Engelenburg, Twello</li>
+                           </ul>
+                           <div class="flex_row">
+                               <p><i class='bx bx-circle'></i>In vraagbundeling</p>
+                               <p><i class='bx bx-minus-circle' ></i>In uitvoering</p>
+                               <p><i class='bx bx-check-circle'></i>Gerealiseerd</p>
+                           </div>
+                       </div>
+
+
+                       <div class="right_container">
+                           <img src="./images/Nederlandse_map.jpeg" alt="">
+                       </div>
+                   </div>
+               </section>
+
+                <section class="sixth_part">
+
+                    <div class="footer1">
+                        <div class="container">
+                            <img class="big_logo" src="./images/logo_big.png" alt="">
+                            <p class="wij_staan">WIJ STAAN KLAAR OM <br>
+                                U TE HELPEN</p>
+                                <p>Contactformulier</p>
+                                <br>
+                            <p class="footer_contact_ons"><a> CONTACT ONS</a></p>
+                            
+                        </div>
+                    </div>
+
+                    <div class="footer_menu">
+                        <li id="footerda_menu_kalimasi"><a href="html_pages/opbouw.html">Menu </a></li>
+                       
+                        <li><a href="html_pages/doelen.html"> ~Missie </a></li>
+                        <li><a href="html_pages/examen.html">~Diensten </a></li>
+                        <li><a href="html_pages/hoeveel_lessen.html">~Duurzaamheid </a></li>
+                        <li><a href="html_pages/deeltoets.html">~Over ons </a></li>
+                        
+                       
+                    </div>
+
+                    
+                    <div class="footer_menu">
+                        <li ><a href="html_pages/opbouw.html">LINKS:</a></li>
+                        <li><a href="html_pages/hoeveel_lessen.html">~Techspecs </a></li>
+                        <li><a href="html_pages/doelen.html"> ~Contact </a></li>
+                        <li><a href="html_pages/deeltoets.html">~Disclaimer </a></li>
+                        <li><a href="html_pages/examen.html">~Privacy Policy </a></li>
+                    </div>
+                  
+                </section>
+
+                <div class="black">
+                    <p>@Copyright belongs to Shym-Tech, 2022</p>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- mobile-version  -->
+        <div class="main-1">
+
+            <div id="page-1" style="background-image: url(images/mainphoto_mobile_one.jpeg) ;
+            background-size: cover;
+            overflow: hidden;" class="main-2">
+
+                <div class="head head-1">
+                    <!-- <div  class="logo_on_screen"></div>
+                    <span> <a href="#">LOGIN</a> </span> -->
+
+                    <div class="above_bluezone">                  
+                        <div id='cent_logo'> </div>
+                        <p>uw internettoegang </p>
+                    </div>
+                </div>
+            
+                <div class="login login-1">
+                    <div class="blueZone">
+                        
+                        <div id="Central_Logo" >
+                         
+                            <div class="contain_glow">
+                                <div class="center">
+                                    <div class="outer circle">
+                                        <button class='compare_prices'>Compare prices</button>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- <div id="arrow" class="arrow"><img src="images/arrow-icon-white.png" alt=""></div> -->
+                        </div>
   
-<div class="black_oon_top"></div>
 
-    <section class="landing_page" >
+                    </div>
+                </div>               
 
-      <main class="general_container">
-        <div class="img_container">
-          <img src="./images/smaller_logo.png" alt="">
-        </div>
-
-        <div class="zaglavie">
-          <h1>GOLLANDIYADA ISH</h1>
-          <br>
-          <p>Bizga tom işlaydigan yoģoç ustalar zarur. 
-           Biz ularni xavfsiz iş şaroitlari bilan taminlaymiz</p>
-        </div>
-
-        <button  class="first_button" >
-          <p>Qiziqsangiz</p>
-        </button> 
-      </main>
-    </section>
+                <div class="coverage"></div>
+                <!-- <div id="arrow" class="arrow"><img src="images/arrow-icon-white.png" alt=""></div> -->
+            </div>   
 
 
-    <section class="second ikki_surat" id="ishimiz_haqida">
-      <main >
-        <div class="texts chapga_terish">
-          <h3>Nima iş qilamiz?</h3>
-          <p>Hét Bouwbedrijf firmasi yana-da kengayişni istaydi va buning uçun bizga professional ustalar kerak, yáni uy qurilişlarida qatnaşgan, iş kózini biladigan odamlar zarur. 
-          <br> <br> 
-          Birinçi navbatda, tom işlaydigan yoģoç ustalari. Biz ularga yana elektro-montaj işlarini ham órgatamiz. Bizdagi loyihalar: uy-joy korporatsiyalari tomonidan pudratçilar uçun buyurtma qilinadigan işlardir.
-          <br> <br>  
-          Bizda işlab tajriba orttirgaç, siz yangi işçilarga instruktor vazifasini ham bajarasiz, yáni ularni işga órgatasiz. Bu degani, siz iş vaqtingizning yarmida ózingiz işlaysiz, yarmida esa, boşqalarga murabbiylik qilasiz, ularni tartibga solasiz, rejalaştirasiz, buyurtma berasiz, taraqqiyotini kuzatasiz va balki hatto sub-pudratçilar bilan aloqada ham bólasiz.
-          </p>
-        </div>
+            <div id="page-2" style="background-image: url(images/mainphoto_mobile_two.jpeg) ;
+            background-size: cover;
+            overflow: hidden;" class="main-2">
 
-        <div class="px_container">
-          <div class=""><img src="./images/uchdan_biri_A.jpeg" alt=""></div>
-          <div class="display_not "><img src="./images/uchdan_biri_C.jpeg" alt=""></div>
-        </div>
-      </main>
-    </section>
+                <div class="head head-2">
+                    <div   class="logo_on_screen"></div>               
+                    <span><a href="#">MISSIE</a> </span>
+                </div>
+                
 
-    <section class="third" style="background-color: #ededed;">
-      <main>
+                <div class="login login-2">
+                    <div class="blueZone">
+                        
+                                                           
+                        <div class="mainPage_text"> 
+                            <span>
+                                <span>D</span> ynet is een specialist op het gebied van bekabelde en draadloze communicatie netwerken voor telecom aanbieders. <br><br> De missie is heel Nederland een goede snelle werkende verbinding te geven ... 
+                                <br>
+                            </span>
+                            <button>Lees meer</button>
+                        </div>
 
-        <div class="texts chapga_terish">
-          <h3>Masterlik qila olasizmi? 
-            <br> Uning vazifalari:</h3>
+                    </div>
 
-          <p>Biz işni rejalaştirib olgandan sóng, to egalariga yetkazib berişgaça bólgan muddat 6 hafta. Har bir loyiha reja bóyiça amalga oşişi, materiallar óz vaqtida qabul qilinişi kerak. Master sub-pudratçilar bilan doimiy aloqada bóladi va işning yarmida ózi jismonan iştirok etadi.
-          <br> <br> 
-          Masterning qól ostida 3 kişidan iborat kiçik komanda bóladi, yáni siz demak ularni har tomonlama órgatasiz. Bu albatta sabr va étibor talab qiladi. Siz ularning işda "ósişiga", ózlariga bólgan işonçi mustahkamlanişiga yordam berasiz. Oxir-oqibat ular ham diplomga ega bólib, mustaqil işlarga ótadi. Maqsadimiz kengayiş!
-          </p>
-        </div>
-
-        <div class="px_container ikki_surat">
-          <div class=""><img src="./images/ikkidan_biri1.jpeg" alt=""></div>
-          <div class="display_not "><img src="./images/ikkidan_biri2.jpeg" alt=""></div>
-        </div>
-
-      </main>
-    </section>
-
-    <section class="fourth" id="biz_kimmiz">
-      <main>
-        <div class="ikki_columnda_reveal">
-          <h3>Quriliş kompaniyamiz haqida</h3>
-        </div>
-
-       <div class="textga_container">
-        <div class="texts chapga_terish">
-          <p> 
-            Kompaniya asosçisi Siebe Martijn Groenendijk. U azaldan quriliş sohalarida işlagan, lekin 2008 yil (iqtisodiy krizis paytida) volonter sifatida tibbiyot sohasida işladi. Şundan sóng u, biznes qilişdan asosiy maqsad aslida pul topiş emas, balki boşqalarning hayotini yaxşilaş, ózi bilgan bilim va hunarlarni odamlar bilan bólişiş ekanligiga amin bóldi va qaytadan quriliş sohasiga qaytib mana şu kompaniyani oçdi.
-          </p>
-        </div>
-
-        <div class="video_container">
-         
-            <div class="video_wrapper">
-              <iframe title="Het Bouwbedrijf - Voor wie werken wij?"
-              src="https://www.youtube.com/embed/rEP32Rjx2PI?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="coverage"></div>
+                <div id="arrow" class="arrow"></div>
             </div>
-		      </div>
-      </div>
 
-      <div class="">
-        <p>Hét Bouwbedrijf kompaniyasi oddiy quriliş kompaniyasi emas. Biz odamlarni mehnat bozoriga tayyorlaymiz, quriliş sohasida professional usta bólişga órgatamiz. 
-          Kompaniya yetuk bilimli va óz kasbini sevadigan odamlardan iborat. Işimizning yakuniy darajasi yuqori bólişi uçun biz siz uçun hamişa alohida vaqt ajratamiz. Maqsadimiz ósişda doim davom etiş.</p>
-      </div>
+            <div id="page-3" style="background-image: url(images/mainphoto_mobile_three.jpg) ;
+                        background-size: cover; 
+                        overflow: hidden;  " class="main-2">
+                <div class="head head-3">
+                    <div class="logo_on_screen"></div>
+                    <span> <a href="#">DIENSTEN</a> </span>
+                </div>
+            
+                <div class="login login-3">
+                      <div class="blueZone"  >
+                                                           
+                        <div class="mainPage_text"> 
+                            <span>Wij bieden het volgende voor uw netwerkinstallatie: <br><br>
+                                ~ Civiele Werkzaamheden;<br>
+                                ~ Kopertechniek;<br>
+                                ~ HFC-techniek;<br>
+                                ~ Mobiele technologieën;<br>
+                                ~ Glasvezeltechniek;<br>
+                                ~ OTDR-meettechnieken ...<br>                              
+                            </span>
+                            <button>Lees meer</button>
+                        </div>
 
-        <div class="px_container">
-          <div class="display_in_end"><img src="./images/uuchtadan_biri1.jpg" alt=""></div>
-          <div class="display_not "><img src="./images/uuchtadan_biri2.jpg" alt=""></div>
-          <div class="display_not "><img src="./images/uuchtadan_biri3.jpg" alt=""></div> 
-        </div>
-      </main>
-    </section>
+                    </div>
+                </div>
+                <div class="coverage"></div>
+                <div id="arrow" class="arrow"></div>   
+            </div> 
 
-    <section style="background-color: #ededed;" class="fifth">
+            <div id="page-4" style="background-image: url(images/over_ons.jpeg) ;
+                        background-size: cover;
+                        overflow: hidden;" class="main-2">
 
-      <main>
-        <div class="ikki_columnda_reveal">
-          <h3> Biz bilan hamkorlik qilasizmi? <br> 
-            Iş şaroitlari:</h3> 
-        </div>
+                            <div class="head head-4">
+                                <div class="logo_on_screen"></div>
+                                
+                                <span><a href="#">OVER ONS</a> </span>
+                            </div>
 
-        <div class="textga_container">
-          <div class="texts chapga_terish">
-            <h3 class="ikki_columnda_hide">Biz bilan hamkorlik qilasizmi? <br> 
-              Iş şaroitlari: </h3>
-            <li> Darhol doimiy şartnoma bilan işga olinasiz. Haftasiga 40 soatlik iş.</li>
-            <li> <span class="ikki_columnda_hide">Oyligi qança bóladi, deb sóraşingiz tabiiy. </span> Maoşingiz şubhasiz yaxşi bóladi, oyiga hatto brutto 3600 yevrogaça. <span class="ikki_columnda_hide"> (Gollandiyada eng kam iş haqqi: soatiga 12 yevro.) </span></li>
-            <li> Işingizda juda kóp erkinlik beriladi.</li>
-            <li> Murabbiylik qiliş <span class="ikki_columnda_hide">va boşqalarga yordam beriş</span> uçun bu juda yaxşi şans.</li>
-            <li> Ósib borayotgan kompaniyada bilim oşiriş uçun imkoniyatlar bóladi.</li>
-          </div>
-          <div class="px_container">
-            <div class="display_in_end">
-              <img src="./images/uchdan_biri_B.jpeg" alt="">
+                        
+                            <div class="login login-4">
+                                <div class="blueZone"  >
+                                   
+                                    <div class="mainPage_text"> 
+                                        <span>
+                                            <span>D</span>ynet is een Nederlands bedrijf dat gespecialiseerd is in de aanleg van glasvezel aansluitingen. 
+                                            <br><br>Het bedrijf richt zich vooral op het aansluiten van centrumgebieden en woonwijken. Het betreft 
+                                          ...<br>                                
+                                        </span>
+                                        <button>Lees meer</button>
+                                    </div>
+                                </div>
+                            </div>    
+                        <div class="coverage"></div> 
+                        <div id="arrow" class="arrow"></div>
+                       
             </div>
-          </div>
-      </div>
-      </main>
-    </section>
 
-    <section  class="sixth" id="kontakt_qismi">
-      <div class="black_filter"></div>
-      <main >  
-        <div class="contact">
-          <p class="zaglavie_contact">Kontaktlarimiz:</p>
-          <p>Skype: abu_hamid</p>
-          <p>Whatsapp: +3163?63?63?</p>
-          <p>email: Nlda_iş@hetbouwbedrijf.nl</p>
-          <br><br>
-          <p class="zaglavie_contact">Adresimiz:</p>
-          <p>Uiterweg 343, 1435 QI</p>
-          <p>Utrecht, Netherlands</p>
+
         </div>
+    </div>
 
-        <div class="social_network_icons">
-          <div class="sharethis-inline-share-buttons"></div>
-        </div>
-      </main>
-
-    </section>
-
-    <section class="footer">
-      <main>
-        <div class="last_piece">
-          <p>Design is done by Shym-Tech, 2022. 
-            <a href="mailto:abekeasian@gmail.com">Contact email: abekeasian@gmail.com</a>
-          </p>
-        </div>
-      </main>
-    </section>
-
-    <!-- <section class="notFooter">
-      <main>      
-        <button onclick="setCurTime()" type="button">Set time position to 0 seconds</button><br> 
-        
-        <video id="myVideo" width="320" height="176" autoplay>
-          <source src="./images/daad.mp4" type="video/mp4">
-          <source src="mov_bbb.ogg" type="video/ogg">
-          Your browser does not support HTML5 video.
-        </video>
-        
-      </main>
-    </section>
-
-<script>
-      var vid = document.getElementById("myVideo");
-      function setCurTime() { 
-        vid.currentTime=0;
-        vid.play()
-      }
-    </script>  -->
-
+    <script src="js/homePageOnly.js"></script>
+    <script src="js/expand_submenus.js"></script>
+    <script src="js/openAndClose_sidemenu.js"></script>
     
-
-<script src="navContaiiner_toDisappear.js"></script>
-<script src="openAndClose_sidemenu.js"></script> 
-
-<script>
-  const pageWidth = document.querySelector("#screen_width");
-  window.onresize = function reportWindowSize() {
-    pageWidth.textContent = `${window.innerWidth} px`;
-    };
-</script>
-
-
-
-
+    
 </body>
 </html>
