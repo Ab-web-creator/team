@@ -2,6 +2,7 @@
 h1 {
     margin: auto;
     margin-bottom: 20px;
+    font-weight: 700;
 }
 
 h3 {
@@ -52,6 +53,7 @@ h3 {
     text-align: center;
     padding: 3px 6px;
     cursor: pointer;
+    font-size: 14px;
 }
 
 .zoek_elkaar .kalimaat div:hover {

@@ -3,10 +3,16 @@ const  zoekElkaar  = (target_word, target_foto) => {
     const fotka = document.querySelector(target_foto)
 
     word.addEventListener("click", () => {
+    
+
         fotka.style.border = "5px solid green"
         console.log("cliked 1-gap")
         word.style.color = "green"
         word.style.background = "pink"
+
+        setTimeout(() => {
+            fotka.style.border = "5px solid gray"
+        }, 3000)
     })
    }
    
