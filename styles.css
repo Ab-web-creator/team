@@ -1,0 +1,1062 @@
+:root {
+  --topBarColor: #892000;
+  --hoverColor: rgb(197, 197, 197);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position: relative;
+  color: rgb(66, 66, 66);
+  /* js uchun kerak  */
+  --nav-height: 56px;
+  padding-top: var(--nav-height);
+  }
+
+
+body {
+  overflow-y: scroll;
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  display: none;
+}
+
+  h3 {
+    -webkit-transform: scale(1, 1.2);
+    -moz-transform: scale(1, 1.2);
+    -o-transform: scale(1, 1.2);
+    transform: scale(1, 1.2);
+    letter-spacing: 0.028rem;
+    color: var(--topBarColor);
+    text-transform: uppercase;
+    /* letter-spacing: 0.04rem; */
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+
+  .third h3, .fifth h3 {
+    margin-bottom: 20px;
+  }
+
+  h4 {
+    -webkit-transform: scale(1, 1.2);
+    -moz-transform: scale(1, 1.2);
+    -o-transform: scale(1, 1.2);
+    transform: scale(1, 1.2);
+    text-align: center;
+    /* color: var(--topBarColor); */
+    text-transform: uppercase;
+    letter-spacing: 0.028rem;
+    
+    margin-bottom: 50px;
+    font-size: 12px;
+  }
+
+  .third h4, .fifth h4 {
+    margin-bottom: 30px;
+  }
+
+  .black_oon_top {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 56px;
+    background-color: #020201;
+    z-index: 2;
+  }
+
+.blur {
+  position: fixed;
+  top: 0;
+  background-color: red;
+  width: 100%;
+  display: none;
+  height: 100vh;
+  z-index: 100;
+ 
+  backdrop-filter: blur(4px);
+  background-color: #121315e1;
+  transition: all 5.4s ease;
+}
+
+.blur.active {
+  display: block;
+}
+
+main {
+  font-size: 14px;
+  font-weight: 500;
+  width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  }
+
+button {
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--topBarColor);
+
+  height: 40px;
+  border-width: 0px;
+  border-radius: 5px;
+  margin: auto;
+  color: white;
+  transition: all ease-in-out 0.4s;
+  }
+
+  button p {
+    margin: auto;
+    padding: 5px 10px;
+    text-transform: uppercase;
+  }
+
+button:hover {
+  font-weight: bold;
+  color: var(--topBarColor);
+  background-color: var(--hoverColor);
+  border-radius: 15px;
+  /* border: 2px solid rgb(162, 162, 4); */
+  }
+
+  .px_container img {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.3);
+  }
+
+  .px_container div {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .px_container div:hover {
+    border-radius: 10px;
+  }
+
+  .px_container div img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+
+  .px_container div:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+  .px_container div:hover img {
+    opacity: 1;
+  }
+
+.nav_container {
+  width: 100%;
+  height: var(--nav-height);
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: opacity .2s ease-in-out;
+  background-color: var(--topBarColor) ;
+  transition: transform 0.4s ease-in-out;
+  z-index: 1199;
+  display: flex;
+  }
+
+  .nav {
+    margin: auto;
+    width: 100%;
+    padding-right: 20px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+
+    /* ishla  */
+
+  .logo_top_left_cont {
+    background-image: url(./images/small_logo2.png);
+    background-size: cover;
+    height: 56px;
+    width: 370px;
+    margin-left: 0px;
+  }
+
+.navLink_container li {
+  position: fixed;
+  display: none;
+  width: 0px;
+  }
+
+.nav--hidden {
+  transform: translateY(calc(-1 * var(--nav-height)));
+  opacity: 0.8;
+  box-shadow: none;
+  }
+
+.flex_row {
+  display: flex;
+  flex-direction: row;
+  }
+
+.nav__link {
+  color: #ffffff;
+  text-decoration: none;
+ 
+  font-size: 18px;
+  margin: 0 2px;
+  font-weight: bold;
+  /* cursor: pointer; */
+  }
+
+  .nav__link a {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.08rem;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  .hamburger_menu {
+    position: relative;
+    font-size: 26px;
+
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: -25px;
+
+    display: flex;
+  }
+
+  .hamburger_menu li {
+    margin: auto;
+  }
+ 
+  /* ishla  */
+  .hamburger_menu li i {
+    color: white;
+    margin-right: 20px;
+    padding: 5px 15px;
+    transition: all ease-in-out 0.4s;
+  }
+
+.hamburger_menu li i:hover  {
+  color: var(--topBarColor);
+
+  background-color: var(--hoverColor);
+  border-radius: 8px;
+  cursor: pointer;
+  }
+
+.nav .navLink_container li {
+  padding: 5px 8px;
+  }
+
+  #responsiveMenuToggleButton #menuBtn {
+    display: block;
+  }
+
+  #responsiveMenuToggleButton #close_sidemenu {
+    display: none;
+  }
+
+  #responsiveMenuToggleButton.open #menuBtn {
+    display: none;
+  }
+  #responsiveMenuToggleButton.open #close_sidemenu {
+    display: block;
+  }
+
+  section {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 0px;
+  }
+
+  .texts {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    }
+
+  p, li {
+    line-height: 20px;
+    letter-spacing: 0.23px;
+  }
+
+.landing_page {
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(./images/Het-Bouwbedrijf-Fotos-23_1_1-1.jpg);
+  background-position: center right;
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  
+  margin: auto;
+  width: 100%;
+  height: 500px;
+  padding: 0px 0px;
+}
+
+
+.landing_page .img_container {
+  margin: auto;
+  width: 150px;
+}
+
+.landing_page .zaglavie {
+  color: white;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.landing_page .zaglavie h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.01rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: auto;
+}
+
+.landing_page .zaglavie p {
+  font-family: Courgette;
+  font-size: 16px;
+  text-align: center;
+}
+
+.chapga_terish p, 
+.chapga_terish li {
+  text-align: left;
+}
+
+.px_container {
+  gap: 10px;
+  margin: auto;
+}
+
+.px_container > div {
+  margin: auto;
+}
+
+.display_not {
+  display: none;
+}
+
+.fourth main {
+  gap: 0px;
+}
+
+.fourth .in_between_tekst {
+margin: 30px 0px;
+}
+
+.fourth .ikki_columnda_reveal h3 {
+  text-align: center;
+ }
+
+.fourth .chapga_terish {
+  margin-bottom: 20px;
+}
+
+.fifth {
+  /* line-height: 30px; */
+  letter-spacing: 0.23px;
+}
+
+.fifth .textga_container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+
+
+.fifth li {
+  margin-bottom: 10px;
+}
+
+.fifth .ikki_columnda_reveal {
+  display: none;
+}
+
+.sixth {
+  background-image: url(./images/bg_housenn.png);
+  background-position: center right;
+  background-size: 300px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.black_filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #101010f6;
+  z-index: 2;
+}
+
+.sixth main {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sixth .contact {
+  padding-left: 10px;
+  border-left: 1px solid rgba(242, 242, 242, 0.107);
+  z-index: 3;
+}
+
+.sixth .zaglavie_contact {
+  color: #f9f103af;
+  margin-bottom: 10px;
+}
+
+.sixth .email a {
+  color: #ffffffd7;
+  line-height: 22px;
+}
+
+.sixth p {
+  color: #ffffffa5;
+  line-height: 22px;
+}
+
+.social_network_icons {
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+}
+
+.footer {
+  color: white;
+  background-color: var(--topBarColor) ;
+  padding: 10px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer p {
+  font-size: 10px;
+  margin: auto;
+}
+.footer main {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.last_piece {
+  color: rgb(214, 214, 214);
+  /* background-color: rgb(27, 27, 27); */
+  width: 100%;
+  height: fit-content;
+  font-size: 14px;
+
+  display: flex;
+  justify-content: center;
+}
+.last_piece p {
+  margin: auto;
+  text-align: center;
+  padding: 20px 50px;
+}
+
+.last_piece a {
+  color: rgb(214, 214, 214);
+  transition:  all 0.8s ease-in-out;
+}
+
+.last_piece a:hover {
+  color: rgb(238, 255, 1);
+}
+
+
+
+
+
+
+.video_container {
+  margin-top: 30px;
+  display: flex;
+}
+.video_wrapper {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+iframe {
+  width: 300px;
+  height: fit-content;
+}
+
+
+
+
+#container_delete {
+  position: fixed;
+  bottom: 10px;
+  right: 5px;
+  width: 70px;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 12px;
+  color:#1005e5;
+  border-radius: 10px;
+}
+#container_delete .first {
+  margin: auto;
+}
+#screen_width {
+  color: rgb(2, 19, 255);
+  margin: auto;
+  margin-top: 5px;
+  padding: 10px 10px;
+  font-weight: 600;
+  background-color: rgba(255, 255, 0, 0.395);
+  border-radius: 10px;
+}
+
+
+
+@media only screen and (min-width: 340px) {
+  .nav {
+    width: 320px;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .zaglavie h1 {
+    font-size: 32px;
+  }
+}
+@media only screen and (min-width: 415px) {
+  .nav {
+    width: 380px;
+  }
+  .logo_top_left_cont {
+    background-image: url(./images/small_logo3.png);
+    background-size: cover;
+    height: 56px;
+    width: 220px;
+  }
+
+}
+
+@media only screen and (min-width: 450px) {
+  main {
+    width: 360px;
+  }
+
+  iframe {
+    width: 350px;
+    height: fit-content;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+
+
+
+
+  .black_oon_top {
+    background-color: var(--topBarColor);
+    z-index: 105;
+  }
+
+  h3 {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+
+  h4 {
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+
+  .third h4, .fifth h4 {
+    margin-bottom: 50px;
+  }
+
+  .sixth  {
+    background-position: center right;
+    background-size: 430px;
+  }
+
+  p, li {
+    line-height: 30px;
+    letter-spacing: 0.23px;
+  }
+
+  .nav_container {
+    background-color: var(--topBarColor);
+  }
+
+  .nav li a:hover {
+    color: rgb(234, 134, 3);
+    border-radius: 10px;
+    transition:  all 0.4s ease-in-out;
+  }
+
+  .nav li {
+    padding: 0px 0px;
+    }
+
+  .nav li:hover {
+    background-color: transparent;
+    }
+
+    .nav li a {
+      padding: 10px 15px;
+      transition: all ease-in-out 0.4s;
+    }
+  
+  .landing_page .img_container {
+    animation: show ease-in-out 1s;
+  }
+  .landing_page .zaglavie {
+    animation: show ease-in-out 1s;
+  }
+  .landing_page .zaglavie h1 {
+    font-size: 60px;
+    letter-spacing: 0.01rem;
+    animation: show ease-in-out 2s;
+  }
+  .landing_page p, .landing_page li, .landing_page button {
+    line-height: 32px;
+    letter-spacing: 0.3px;
+    animation: show ease-in-out 3s;
+  }
+
+  .nav {
+    width: 100%; 
+    /* padding: 0px 20px; */
+    width: 540px; 
+  }
+  main {
+    padding: 50px 0px;
+    width: 500px; 
+    font-size: 18px;
+  }
+  .logo_top_left_cont {
+    background-image: url(./images/small_logo.png);
+    background-size: cover;
+    height: 30px;
+    position: fixed;
+    width: 90px;
+    left: -200px;
+  }
+  .hamburger_menu {
+    margin-right: -5px;
+  }
+
+  .hamburger_menu li i {
+    padding: 5px 15px;
+  }
+
+.px_container {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+.px_container > div {
+  width: 100%;
+  /* margin: unset ; */
+}
+.px_container div:hover img {
+    -webkit-animation: flash 1.5s;
+    animation: flash 1.5s;
+ }
+ iframe {
+  width: 500px;
+  height: 300px;
+}
+ 
+ .nav li {
+    padding: 5px 5px;
+  }
+
+  .navLink_container li {
+  position: relative;
+  display: block;
+  width: fit-content;
+  }
+
+.navLink_container a {
+  color: white;
+}
+
+.ikki_surat {
+  justify-content: space-evenly;
+}
+
+.sixth p {
+  line-height: 32px;
+}
+
+.footer p {
+  font-size: 12px;
+}
+
+@keyframes show {
+  0% {
+      transform: translateY(30px);
+      opacity: 0;
+  }
+   
+  40% {
+      transform: translateY(30px);
+      opacity: 0;
+  }
+  70% {
+      transform: translateY(0px);
+      opacity: 0.5;
+  }
+   
+  100% {
+      transform: translateY(0px);
+      opacity: 1;
+  }
+}
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes flash {
+  0% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+  }
+}  
+
+}
+
+
+@media only screen and (min-width: 700px) {
+  .nav {
+    width: 100%; 
+    padding: 0px 30px;
+    /* width: 540px;  */
+  }
+
+  .logo_top_left_cont {
+    position: relative;
+    left: 15px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+
+
+  .sixth  {
+    background-position: center right;
+    background-size: 600px;
+  }
+
+  .social_network_icons {
+    margin-top: 0px;
+    gap: 3px;
+  }
+
+
+  main {
+    width: 700px; 
+  }
+
+  .logo_top_left_cont {
+    left: 20px;
+  }
+
+  .display_not {
+    display: block;
+  }
+
+  .display_in_end {
+    display: none;
+  }
+
+  .navLink_container li:nth-child(2) {
+    margin-left: 5px;
+    margin-right: 5px;
+    }
+
+
+  .landing_page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)) , url(./images/Het-Bouwbedrijf-Fotos-23_1_1-1.jpg);
+}
+.zaglavie p {
+  font-size: 20px;
+  width: 600px;
+}
+
+.fifth .texts {
+  padding: 40px 50px;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.fifth .add_marginBottom {
+  margin-bottom: 40px;
+}
+
+.px_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.px_container > div {
+  width: 100%;
+  /* margin: unset ; */
+}
+
+iframe {
+  width: 700px;
+  height: 400px;
+}
+}
+
+
+@media only screen and (min-width: 992px) {
+  main {
+    width: 850px; 
+  }
+
+  iframe {
+    width: 840px;
+    height: 450px;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 1250px) {
+  .sixth {
+    /* background-image: url(./images/bg_housenn.png); */
+    background-position: center right;
+    background-size: 600px;
+  }
+
+  main {
+    width: 1050px; 
+  }
+  
+  .display_in_end {
+    display: block;
+  }
+
+  .second .px_container div {
+    height: 300px;
+  }
+  .second .px_container .display_not img {
+    float: right;
+  }
+
+  .third .px_container  {
+    width: 100%;
+  }
+  .third .px_container div {
+    height: 300px;
+  }
+  .third .px_container .display_not img {
+    float: right;
+  }
+
+  .fourth .textga_container {
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 35px;
+  }
+  .fourth .chapga_terish {
+    margin-bottom: 0px;
+  }
+  .video_container {
+    margin-top: 0px;
+  }
+  iframe {
+    width: 500px;
+    height: 353px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.3);
+  }
+
+
+  .fourth .texts {
+    text-align: left;
+    margin: auto;
+    margin-top: 0px;
+    /* width: 48%; */
+    height: 352px;
+    padding: 40px 50px;
+    
+    background-color: #ffffff;
+    box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+
+  .fourth .texts p {
+    line-height: 29px;
+  }
+
+  .uzb_cyrga p {
+    line-height: 25px !important;
+  }
+
+  .fourth .ikki_columnda_reveal {
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .fourth .in_between_tekst {
+    margin: 40px 0px;
+  }
+
+  .fifth main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  .fifth li {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .fifth .ikki_columnda_reveal {
+    display: block;
+    margin: auto;
+    /* margin-bottom: 40px; */
+  }
+
+  .fifth .ikki_columnda_reveal h3 {
+    text-align: center;
+  }
+  .fifth .textga_container {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  .fifth .textga_container .texts {
+    width: 47%;
+    height: 320px;
+    box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.3);
+  }
+  .fifth .ikki_columnda_hide {
+    display: none;
+  }
+  .fifth .px_container {
+    /* width: 47%; */
+    margin: unset;
+    box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.3);
+  }
+  .fifth .display_in_end img {
+    height: 320px;
+    float: right;
+    
+  }
+}
+
+@media only screen and (min-width: 1320px) {
+  .sixth {
+    /* background-image: url(./images/bg_housenn.png); */
+    background-position: center right;
+    background-size: 700px;
+  }
+}
+@media only screen and (min-width: 1420px) {
+  .sixth {
+    /* background-image: url(./images/bg_housenn.png); */
+    background-position: center right;
+    background-size: 800px;
+  }
+}
+@media only screen and (min-width: 1520px) {
+  .sixth {
+    /* background-image: url(./images/bg_housenn.png); */
+    background-position: center right;
+    background-size: 1000px;
+  }
+}
+@media only screen and (min-width: 2020px) {
+  .sixth {
+    /* background-image: url(./images/bg_housenn.png); */
+    background-position: center center;
+    background-size: 800px;
+  }
+}
+
+
+
+
+/* .notFooter {
+  position: relative;
+  color: rgb(167, 4, 4);
+  background-color: #a2a2a2 ;
+  padding: 10px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+/* 
+
+git pull
+
+git add .
+
+git commit -m "lyuboe sobwenie"
+
+git push
+
+*/
