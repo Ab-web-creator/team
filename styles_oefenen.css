@@ -20,6 +20,47 @@ h3 {
   .waar_of_niet td {
     font-size: 16px;
   }
+
+.zoek_elkaar {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.fotki_col1, 
+.fotki_col2  {
+    display: flex;
+    flex-direction: column;
+}
+
+.zoek_elkaar > div img {
+    margin-bottom: 20px;
+    height: 120px;
+    overflow-y: hidden;
+    border: 5px solid rgba(128, 128, 128, 0.154);
+}
+.zoek_elkaar .kalimaat {
+    margin: auto;
+}
+.zoek_elkaar .kalimaat > div {
+    margin: auto;
+    margin-bottom: 20px;  
+    border-radius: 14px;   
+}
+
+.zoek_elkaar .kalimaat p {
+    text-align: center;
+    padding: 3px 6px;
+    cursor: pointer;
+}
+
+.zoek_elkaar .kalimaat div:hover {
+    
+    background-color: rgb(255, 255, 181);
+    cursor: pointer;
+}
+
+
 /* 
 git add .
 
