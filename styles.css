@@ -295,13 +295,14 @@ button:hover {
 .hammer_container {
   position: relative;
   height: 120px;
+  padding: 0px 20px;
 
   display: flex;
   flex-direction: column;
 }
 .hammer_head {
   position: absolute;
-  left: 20px;
+  left: 30px;
   width: 60px;
   height: 80px;
   
@@ -312,7 +313,7 @@ button:hover {
 .hammer_handle {
   background-color: #8a7344;
   margin: auto;
-  width: 100%;
+  width: fit-content;
   height: 35px;
   margin-left: 10px;
   border-radius: 10px;
@@ -321,6 +322,7 @@ button:hover {
   font-size: 16px;
   text-align: center;
   color: white;
+  padding: 0px 70px;
 }
 
 
