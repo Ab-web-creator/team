@@ -9,8 +9,8 @@ h3 {
 }
 /* tablega */
 .waar_of_niet  td:nth-child(2) {
-    background-color: #005576;
-    color: white;
+    background-color: #a1e4ff;
+    color: rgb(255, 0, 0);
     font-size: 8px;
     padding: 5px;
     text-align: center;
