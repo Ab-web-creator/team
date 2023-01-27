@@ -134,7 +134,7 @@
 
 
 
-  
+
 
 aside {
   position: fixed;
@@ -230,7 +230,7 @@ aside .tillar {
   text-align: center;
 }
 
-aside .tillar:before {
+/* aside .tillar:before {
   content: "";
   position: absolute;
   top: 277px;
@@ -247,7 +247,7 @@ aside .tillar::after {
   width: 100%;
   border: 0.5px solid rgba(255, 255, 255, 0.204); 
   z-index: -1;
-}
+} */
 
 aside .tillar a:hover {
   color: #ffffff;
