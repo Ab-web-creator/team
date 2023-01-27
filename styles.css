@@ -114,18 +114,7 @@ button:hover {
   }
  
 
-  .waar_of_niet  td:nth-child(2) {
-    background-color: #0287b3;
-    color: white;
-    font-size: 8px;
-    padding: 5px;
-    text-align: center;
-    width: 15%;
-  } 
 
-  .waar_of_niet td {
-    font-size: 16px;
-  }
 
 
 .landing_page {
@@ -179,9 +168,11 @@ button:hover {
 
 .first_button {
   width: 150px;
+  margin-top: 20px;
 }
 .first_button p {
   font-size: 12px;
+  color: white;
 }
 
 

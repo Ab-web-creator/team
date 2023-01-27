@@ -41,6 +41,17 @@
 
   .thema {
     color: white;
+    
+  }
+  .thema li {
+    color: white;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+  }
+  .thema li:last-child {
+    font-weight: 700;
+    color: rgb(255, 253, 153);
   }
 
   .navLink_container {
@@ -141,7 +152,7 @@ aside {
   top: 0px;
   right: -470px;
   transition: right 0.4s ease-in-out;
-  width: 300px;
+  width: 250px;
   
   background-color: var(--topBarColor);
   /* background-color: #333333; */

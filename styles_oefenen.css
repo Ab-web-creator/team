@@ -1,0 +1,21 @@
+
+h1 {
+    margin: auto;
+}
+
+h3 {
+    text-align: left;
+}
+/* tablega */
+.waar_of_niet  td:nth-child(2) {
+    background-color: #0287b3;
+    color: white;
+    font-size: 8px;
+    padding: 5px;
+    text-align: center;
+    width: 15%;
+  } 
+
+  .waar_of_niet td {
+    font-size: 16px;
+  }
