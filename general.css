@@ -28,3 +28,118 @@ format('Vevey');
 img {
     max-width: 100%;
   }
+
+  :root {
+    --topBarColor: #892000;
+    --hoverColor: rgb(197, 197, 197);
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    position: relative;
+    color: rgb(66, 66, 66);
+    /* js uchun kerak  */
+    --nav-height: 56px;
+    padding-top: var(--nav-height);
+    /* width: 100%; */
+    }
+  
+  
+  body {
+    overflow-y: scroll;
+  
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  body::-webkit-scrollbar {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    display: none;
+  }
+  
+    h3 {
+      -webkit-transform: scale(1, 1.2);
+      -moz-transform: scale(1, 1.2);
+      -o-transform: scale(1, 1.2);
+      transform: scale(1, 1.2);
+      letter-spacing: 0.028rem;
+      color: var(--topBarColor);
+      text-transform: uppercase;
+      /* letter-spacing: 0.04rem; */
+      margin-bottom: 10px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  
+    .third h3, .fifth h3 {
+      margin-bottom: 20px;
+    }
+  
+    h4 {
+      -webkit-transform: scale(1, 1.2);
+      -moz-transform: scale(1, 1.2);
+      -o-transform: scale(1, 1.2);
+      transform: scale(1, 1.2);
+      text-align: center;
+      /* color: var(--topBarColor); */
+      text-transform: uppercase;
+      letter-spacing: 0.028rem;
+      
+      margin-bottom: 50px;
+      font-size: 12px;
+    }
+  
+    .third h4, .fifth h4 {
+      margin-bottom: 30px;
+    }
+  
+    .black_oon_top {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 56px;
+      background-color: #020201;
+      z-index: 2;
+    }
+  
+  .blur {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: none;
+    height: 100vh;
+    z-index: 100;
+   
+    backdrop-filter: blur(4px);
+    background-color: #121315e1;
+    transition: all 5.4s ease;
+  }
+  
+  .blur.active {
+    display: block;
+  }
+  
+  main {
+    /* font-size: 14px; */
+    /* font-weight: 500; */
+    /* width: 300px; */
+    margin: auto;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    }
+  
+    main > div img {
+      margin: 20px 0px;
+    }
+
+  .red {
+    color: red;
+  }

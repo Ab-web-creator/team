@@ -1,3 +1,141 @@
+
+.nav_container {
+  width: 100%;
+  height: var(--nav-height);
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: opacity .2s ease-in-out;
+  background-color: var(--topBarColor) ;
+  transition: transform 0.4s ease-in-out;
+  z-index: 1199;
+  display: flex;
+  }
+
+  .nav {
+    margin: auto;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+
+    /* ishla  */
+
+  .logo_top_left_cont {
+    /* background-image: url(./images/small_logo2.png);
+    background-size: cover; */
+    width: 30px;
+    /* height: 30px; */
+    margin-left: 0px;
+  }
+
+  .logo_top_left_cont img {
+    padding: 5px 0px;
+  }
+
+  .thema {
+    color: white;
+  }
+
+  .navLink_container {
+    display: none;
+  }
+
+.navLink_container li {
+  position: fixed;
+ 
+  width: 0px;
+  }
+
+.nav--hidden {
+  transform: translateY(calc(-1 * var(--nav-height)));
+  opacity: 0.8;
+  box-shadow: none;
+  }
+
+.flex_row {
+  display: flex;
+  flex-direction: row;
+  }
+
+.nav__link {
+  color: #ffffff;
+  text-decoration: none;
+ 
+  font-size: 18px;
+  margin: 0 2px;
+  font-weight: bold;
+  /* cursor: pointer; */
+  }
+
+  .nav__link a {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.08rem;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  .hamburger_menu {
+    position: relative;
+    font-size: 26px;
+
+    margin-top: auto;
+    margin-bottom: auto;
+    /* margin-right: -25px; */
+
+    display: flex;
+  }
+
+  .hamburger_menu li {
+    margin: auto;
+  }
+ 
+  /* ishla  */
+  .hamburger_menu li i {
+    color: white;
+    /* margin-right: 20px; */
+    padding: 5px 0px;
+    font-size: 26px;
+    transition: all ease-in-out 0.4s;
+  }
+
+.hamburger_menu li i:hover  {
+  color: var(--topBarColor);
+
+  background-color: var(--hoverColor);
+  border-radius: 8px;
+  cursor: pointer;
+  }
+
+.nav .navLink_container li {
+  padding: 5px 8px;
+  }
+
+  #responsiveMenuToggleButton #menuBtn {
+    display: block;
+  }
+
+  #responsiveMenuToggleButton #close_sidemenu {
+    display: none;
+  }
+
+  #responsiveMenuToggleButton.open #menuBtn {
+    display: none;
+  }
+  #responsiveMenuToggleButton.open #close_sidemenu {
+    display: block;
+  }
+
+
+
+  
+
 aside {
   position: fixed;
   top: 0px;
