@@ -71,8 +71,8 @@ img {
       text-transform: uppercase;
       /* letter-spacing: 0.04rem; */
       margin-bottom: 10px;
-      font-size: 14px;
-      font-weight: 600;
+      font-size: 16px;
+            font-weight: 600;
     }
   
     .third h3, .fifth h3 {
@@ -142,4 +142,8 @@ img {
 
   .red {
     color: red;
+  }
+
+  .gray {
+    color: rgb(112, 112, 112);
   }
