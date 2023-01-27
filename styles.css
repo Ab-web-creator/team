@@ -314,6 +314,12 @@ button:hover {
     line-height: 35px;
   }
 
+  br {
+    content: "";
+    display: block;
+    margin-bottom: 16px;
+  }
+
 .landing_page {
   background-image:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(./images/landing.jpg);
   background-position: center right;
@@ -915,9 +921,7 @@ iframe {
     margin-bottom: 30px;
   }
 
-  .fourth .in_between_tekst {
-    margin: 40px 0px;
-  }
+
 
   .fifth main {
     display: flex;
