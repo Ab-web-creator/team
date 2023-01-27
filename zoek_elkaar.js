@@ -7,12 +7,18 @@ const  zoekElkaar  = (target_word, target_foto) => {
 
         fotka.style.border = "5px solid green"
         console.log("cliked 1-gap")
-        word.style.color = "green"
+        word.style.color = "gray"
+        // word.style.color = "green"
         word.style.background = "pink"
 
         setTimeout(() => {
-            fotka.style.border = "5px solid gray"
-        }, 3000)
+            fotka.style.border = "5px solid lightgray"
+        }, 4000)
+
+        setTimeout(() => {
+            word.style.background = "none"
+        }, 6000)
+        
     })
    }
    

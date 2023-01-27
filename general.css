@@ -157,3 +157,8 @@ img {
   .bold {
     font-weight: 700;
   }
+
+  .bg_yellowish {
+    background-color: rgb(254, 255, 235);
+    padding: 50px 20px;
+  }

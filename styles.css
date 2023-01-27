@@ -314,7 +314,7 @@ button:hover {
 .hammer_handle {
   background-color: #8a7344;
   margin: auto;
-  width: fit-content;
+  width: 80%;
   height: 35px;
   margin-left: 10px;
   border-radius: 10px;
@@ -323,10 +323,16 @@ button:hover {
   font-size: 16px;
   text-align: center;
   color: white;
-  padding: 0px 90px;
+  padding-left: 70px;
+  padding-right: 30px;
 }
 
-
+.bold_italic_underline {
+  font-weight: 700;
+  font-family: 'Open Sans ital';
+  color: black;
+  text-decoration: underline;
+}
 
 
 
