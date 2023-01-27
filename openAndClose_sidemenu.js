@@ -27,9 +27,9 @@ menu.addEventListener("click", () => {
         blurs.classList.add("active");
     }, 51)
 
-    setTimeout(() => {
-        topbar.style.background = "transparent";
-    }, 400)
+    // setTimeout(() => {
+    //     topbar.style.background = "transparent";
+    // }, 400)
 })
 
 cross.addEventListener("click", () => {
