@@ -67,7 +67,7 @@ img {
       -o-transform: scale(1, 1.2);
       transform: scale(1, 1.2);
       letter-spacing: 0.028rem;
-      color: var(--topBarColor);
+      color: rgb(0, 87, 25);
       text-transform: uppercase;
       /* letter-spacing: 0.04rem; */
       margin-bottom: 10px;
@@ -146,4 +146,11 @@ img {
 
   .gray {
     color: rgb(112, 112, 112);
+  }
+  .green {
+    color: rgb(0, 87, 25);
+  }
+
+  .bold {
+    font-weight: 700;
   }
