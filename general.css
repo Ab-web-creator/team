@@ -154,6 +154,10 @@ img {
     color: rgb(151, 255, 181);
   }
 
+  .black {
+    color: rgb(40, 40, 40);
+  }
+
   .bold {
     font-weight: 700;
   }
