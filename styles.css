@@ -163,8 +163,10 @@ button:hover {
 
 .landing_page .zaglavie p {
   /* font-family: Courgette; */
+  padding: 0px 20px;
   font-size: 16px;
   text-align: center;
+  line-height: 22px;
 }
 
 .first_button {

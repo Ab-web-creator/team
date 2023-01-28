@@ -99,9 +99,8 @@ font-weight: 700;
     color: gray;
 }
 
-#fage,
+#fage, 
 #fcountry {
- 
     width: 50px;
 }
 
@@ -110,6 +109,7 @@ font-weight: 700;
     display: inline-block;
     margin-bottom: 20px;
 }
+
 
 /* 
 git add .
