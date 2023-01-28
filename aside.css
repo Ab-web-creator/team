@@ -178,7 +178,7 @@ aside.notactive {
 .side_nav {
   position: relative;
   margin-top: 56px;
-  padding: 20px 0px;
+  /* padding: 20px 0px; */
   padding-bottom: 10px;
 }
 

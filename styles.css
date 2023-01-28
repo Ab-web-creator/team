@@ -186,7 +186,7 @@ button:hover {
 .second_button {
   width: fit-content;
   margin-top: 20px;
-
+  background-color: coral;
   border: none;
   color: white;
   padding: 10px 32px;
