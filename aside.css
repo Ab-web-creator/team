@@ -39,19 +39,18 @@
     padding: 5px 0px;
   }
 
-  .thema {
+  .nav_thema {
     color: white;
-    
   }
-  .thema li {
+  .nav_thema li {
     color: white;
     font-size: 14px;
     line-height: 16px;
     text-align: center;
   }
-  .thema li:last-child {
+  .nav_thema li:last-child {
     font-weight: 700;
-    color: rgb(255, 253, 153);
+    color: rgb(214, 140, 4);
   }
 
   .navLink_container {
@@ -152,12 +151,12 @@ aside {
   top: 0px;
   right: -470px;
   transition: right 0.4s ease-in-out;
-  width: 250px;
+  width: 300px;
   
   background-color: var(--topBarColor);
   /* background-color: #333333; */
   padding-top: 0px;
-  padding-bottom: 0px;
+  padding-bottom: 30px;
   z-index: 1000;
   height: fit-content;
   max-height: 100vh;
@@ -179,7 +178,7 @@ aside.notactive {
 .side_nav {
   position: relative;
   margin-top: 56px;
-  padding: 20px 30px;
+  padding: 20px 0px;
   padding-bottom: 10px;
 }
 
@@ -201,9 +200,12 @@ aside ul {
   flex-direction: column;
   justify-content: center; 
 }
+aside .li_tema {
+  padding: 4px 30px;
+}
 
-aside ul li {
-  padding: 4px 0px;
+aside ul li a {
+  padding: 4px 30px;
   text-align: left;
   line-height: 30px; 
   /* border-bottom: 1px solid #fbfbfb1e; */
@@ -228,8 +230,6 @@ aside ul li a:hover {
   transition:  all 0.4s ease-in-out;
 }
 
-
-
 aside #tillar_a {
   margin: auto;
   width: fit-content;
@@ -238,27 +238,9 @@ aside #tillar_a {
 }
 aside .tillar {
   margin-top: 25px;
+  padding: 10px 30px;
   text-align: center;
 }
-
-/* aside .tillar:before {
-  content: "";
-  position: absolute;
-  top: 277px;
-  left: 0px;
-  width: 100%;
-  border: 0.5px solid rgba(255, 255, 255, 0.204); 
-  z-index: -1;
-}
-aside .tillar::after {
-  content: "";
-  position: absolute;
-  top: 280px;
-  left: 0px;
-  width: 100%;
-  border: 0.5px solid rgba(255, 255, 255, 0.204); 
-  z-index: -1;
-} */
 
 aside .tillar a:hover {
   color: #ffffff;
@@ -266,6 +248,7 @@ aside .tillar a:hover {
 }
 
 aside .tillar ul {
+  padding: 15px 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-between; 
@@ -299,15 +282,48 @@ aside .tillar ul li:last-child {
   margin-right: -10px;
 }
 
-/* .side_nav:first-child::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  border: 0.5px solid rgba(255, 255, 255, 0.204); 
-  z-index: -1;
-} */
+.ul_tema1,
+.ul_tema2,
+.ul_tema3,
+.ul_tema4,
+.ul_tema5,
+.ul_tema6,
+.ul_tema7,
+.ul_tema8 {
+  display: none;
+}
+
+.ul_tema1 li,
+.ul_tema2 li,
+.ul_tema3 li,
+.ul_tema4 li,
+.ul_tema5 li,
+.ul_tema6 li,
+.ul_tema7 li,
+.ul_tema8 li {
+  background-color: #1a8115;
+  color: white;
+  padding-left: 65px;
+  font-size: 16px;
+}
+
+.ul_tema1 li:nth-child(even),
+.ul_tema2 li:nth-child(even),
+.ul_tema3 li:nth-child(even),
+.ul_tema4 li:nth-child(even),
+.ul_tema5 li:nth-child(even),
+.ul_tema6 li:nth-child(even),
+.ul_tema7 li:nth-child(even),
+.ul_tema8 li:nth-child(even) {
+  background-color: #1d8a17;
+}
+
+
+
+.expanded {
+  display: block;
+}
+
 
 
 @media only screen and (min-width: 415px) {
@@ -367,7 +383,11 @@ aside .tillar ul li:last-child {
 
     width: 100%;
     margin: auto;
-    padding: 20px 50px;
+    padding: 20px 0px;
+  }
+
+  aside ul {
+    width: 100%;
   }
 
   aside ul li {
