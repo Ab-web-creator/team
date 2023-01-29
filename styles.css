@@ -378,7 +378,15 @@ button:hover {
 .borderi_bor {
   border: 2px solid rgb(209, 209, 209);
   background-color: #f1f0ff;
-  padding: 20px;
+  padding: 20px; 
+}
+.borderi_bor > p {
+  color: #7733ed;
+  line-height: 30px;
+}
+.borderi_bor > br {
+  display: inline-block;
+  line-height: 50px;
 }
 
 
