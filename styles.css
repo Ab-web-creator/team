@@ -197,10 +197,26 @@ button:hover {
   cursor: pointer;
 }
 
+.conversation > div {
+  margin-bottom: 50px;
+}
 
-
-
-
+.man_greeting_klpart {
+  position: absolute;
+  margin-top: 0px;
+  right: 0px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  width: 150px;
+  z-index: -1;
+}
+.woman_greeting_klpart {
+  position: absolute;
+  margin-top: -250px;
+  left: 0px;
+  width: 120px;
+  z-index: -4;
+}
 
 
 
@@ -272,7 +288,7 @@ button:hover {
 
 .footer {
   color: white;
-  background-color: var(--topBarColor) ;
+  background-color: var(--topBarColor) !important;
   /* padding: 10px 20px; */
   padding: 5px 10px;
   line-height: 14px;
@@ -359,7 +375,11 @@ button:hover {
   text-decoration: underline;
 }
 
-
+.borderi_bor {
+  border: 2px solid rgb(209, 209, 209);
+  background-color: #f1f0ff;
+  padding: 20px;
+}
 
 
 .video_container {

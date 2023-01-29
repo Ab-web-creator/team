@@ -60,6 +60,27 @@ img {
     /* Hide scrollbar for Chrome, Safari and Opera */
     display: none;
   }
+
+  .heading {
+    color: rgb(84, 84, 84);
+    background-color:rgb(232, 212, 0);
+    padding: 5px 30px;
+    margin-bottom: 50px;
+  }
+
+  .heading h2 {
+    font-size: 24px;
+    text-align: center;
+    color: rgb(36, 12, 255);
+    font-weight: 700;
+  }
+  .heading p {
+    color: rgb(0, 116, 27);
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+  }
   
     h3 {
       -webkit-transform: scale(1, 1.2);
@@ -161,8 +182,43 @@ img {
   .bold {
     font-weight: 700;
   }
+  .fourteen_font {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .sixteen_font {
+    font-size: 16px;
+    line-height: 20px;
+  }
 
   .bg_yellowish {
     background-color: rgb(254, 255, 235);
     padding: 50px 20px;
+  }
+
+  .chapga_terilgan {
+    background-color: rgb(0, 100, 154);
+    padding: 10px 20px;
+    /* padding-left: 30px; */
+    line-height: 0px;
+    color: white;
+    width: fit-content;
+  }
+
+  .chapga_terilgan p {
+    font-size: 20px;
+  }
+
+  .ungga_terilgan {
+    margin-left: auto;
+    background-color: rgb(157, 36, 118);
+    padding: 10px 20px;
+    /* padding-left: 20px; */
+    line-height: 0px;
+    color: white;
+    width: fit-content;
+  }
+
+  .ungga_terilgan p {
+    font-size: 20px;
   }

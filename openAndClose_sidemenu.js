@@ -21,11 +21,11 @@ menu.addEventListener("click", () => {
 
     setTimeout(() => {
         side.classList.add("active");
-    }, 50)
+    }, 40)
 
     setTimeout(() => {
         blurs.classList.add("active");
-    }, 51)
+    }, 471)
 
     // setTimeout(() => {
     //     topbar.style.background = "transparent";
