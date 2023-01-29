@@ -378,11 +378,11 @@ button:hover {
 
 .borderi_bor {
   border: 2px solid rgb(209, 209, 209);
-  background-color: #f1f0ff;
+  background-color: #f7f6ff;
   padding: 20px; 
 }
 .borderi_bor > p {
-  color: #7733ed;
+  color: #336eed;
   line-height: 30px;
 }
 .borderi_bor > br {

@@ -128,6 +128,20 @@ form p {
     margin-left: 25px;
 }
 
+.boos_etc {
+    width: 50px;
+}
+
+.uzun_qisqa_unlilar {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.uzun_qisqa_unlilar > div {
+    height: 70px;
+}
 /* 
 git add .
 
