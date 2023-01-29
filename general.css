@@ -164,6 +164,9 @@ img {
   .red {
     color: red;
   }
+  .blue {
+    color: rgb(0, 74, 192);
+  }
 
   .gray {
     color: rgb(112, 112, 112);
