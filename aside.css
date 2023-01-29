@@ -13,6 +13,7 @@
   display: flex;
   }
 
+  /* Top-navigation  */
   .nav {
     margin: auto;
     width: 100%;
@@ -174,9 +175,9 @@ aside.notactive {
 
 .side_nav {
   position: relative;
-  margin-top: 56px;
+  margin-top: 76px;
   /* padding: 20px 0px; */
-  padding-bottom: 10px;
+  padding-bottom: 50px;
 }
 
 .room {
@@ -245,7 +246,7 @@ aside .tillar a:hover {
 }
 
 aside .tillar ul {
-  padding: 15px 0px;
+  padding: 10px 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-between; 

@@ -23,9 +23,13 @@ h3 {
   }
 
 .zoek_elkaar {
+    border: 5px solid rgb(173, 172, 172);
+    padding: 2px;
+
     display: flex;
     flex-direction: column;
     gap: 2px;
+
 }
 
 .fotki_col1, 
@@ -46,10 +50,10 @@ h3 {
 }
 .zoek_elkaar .kalimaat {
     margin: auto;
-    border: 3px solid gray;
+    /* border: 1px solid gray; */
     padding: 5px;
     /* background-color: gray; */
-
+    background-color: bisque; 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -59,8 +63,7 @@ h3 {
 .zoek_elkaar .kalimaat > div {
     margin: auto;
     margin-bottom: 0px;  
-    border-radius: 14px;   
-    
+    border-radius: 0px;      
 }
 
 .zoek_elkaar .kalimaat p {
