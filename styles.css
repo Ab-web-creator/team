@@ -72,7 +72,15 @@ button:hover {
     gap: 30px;
   }
 
-  section:nth-child(even) {background: rgb(244, 244, 244)}
+  section .small_height {
+    height: 10px;
+   
+  }
+
+  section:nth-child(even) {
+    background: rgb(244, 244, 244)
+  }
+
   tr:nth-child(even) {
     background: rgb(227, 227, 227);
    
@@ -144,7 +152,7 @@ button:hover {
     gap: 10px;
   }
   .les1_2_check > div {
-    background-color: lightgray;
+    background-color: rgb(193, 208, 255);
     border-radius: 5px;
     /* border: 0.5px solid gray; */
     cursor: pointer;
@@ -153,6 +161,34 @@ button:hover {
     padding: 5px 10px;
     font-size: 16px;
     font-weight: 700;
+  }
+
+  .lishniysi_qaysi table {
+    border-width: 0px;
+  }
+
+  .lishniysi_qaysi2 table {
+    float: right;
+    border-width: 0px;
+  }
+
+  .lishniysi_qaysi tr:nth-child(even) {
+    background: transparent;
+  }
+  
+.lishniysi_qaysi td:nth-child(1) {
+    border-right: 0px solid rgb(187, 187, 187);
+    padding-left: 20px;
+    color: #2d07e9;
+    width: 10px;
+    font-size: 22px;
+  }
+
+  .lishniysi_qaysi td:nth-child(2) {
+    color: #2d07e9;
+    width: 100px;
+    font-size: 22px;
+    padding-left: 20px;
   }
 
 
@@ -256,7 +292,13 @@ button:hover {
   z-index: -4;
 }
 
-
+.lishniysi_qaysi2 .woman_greeting_klpart {
+  position: absolute;
+  margin-top: 0px;
+  left: 0px;
+  width: 120px;
+  z-index: -4;
+}
 
 
  
