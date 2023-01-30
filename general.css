@@ -208,6 +208,16 @@ img {
     width: fit-content;
   }
 
+  .no_uppercase {
+    text-transform: lowercase;
+  }
+
+  .line_height_doublle {
+    line-height: 2rem;
+    text-align: justify;
+
+  }
+
   .chapga_terilgan p {
     font-size: 20px;
   }

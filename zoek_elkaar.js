@@ -3,9 +3,9 @@ const  zoekElkaar  = (target_word, target_foto) => {
     const fotka = document.querySelector(target_foto)
 
     word.addEventListener("click", () => {
-    
-
         fotka.style.border = "5px solid green"
+        // fotka.style.visibility = "visible"
+
         console.log("cliked 1-gap")
         word.style.color = "gray"
         // word.style.color = "green"
@@ -18,7 +18,6 @@ const  zoekElkaar  = (target_word, target_foto) => {
         setTimeout(() => {
             word.style.background = "none"
         }, 6000)
-        
     })
    }
    
@@ -28,3 +27,5 @@ const  zoekElkaar  = (target_word, target_foto) => {
    zoekElkaar(".kalima4", ".fotka3")
    zoekElkaar(".kalima5", ".fotka5")
    zoekElkaar(".kalima6", ".fotka4")
+   
+

@@ -316,24 +316,22 @@ aside .tillar ul li:last-child {
   background-color: #1d8a17;
 }
 
-
-
 .expanded {
   display: block;
 }
 
 
 
-@media only screen and (min-width: 415px) {
+/* @media only screen and (min-width: 415px) {
   aside {
     width: 320px;
   }
-}
+} */
 
-@media only screen and (min-width: 515px) {
+/* @media only screen and (min-width: 515px) {
   aside {
     width: 370px;
-  }
+  } */
 
   /* aside .tillar {
     margin-top: 75px;
@@ -344,8 +342,8 @@ aside .tillar ul li:last-child {
   aside .tillar::after {
     top: 353px;
   } */
-}
-
+/* } */
+/* 
 @media only screen and (min-width: 600px) {
   .room {
     display: none;
@@ -420,7 +418,7 @@ aside .tillar ul li:last-child {
   aside .tillar ul li a {
     font-size: 16px;
   }
-}
+} */
 
 
 /* 

@@ -115,8 +115,42 @@ button:hover {
     width: 45%;
   }
  
+  .les1_2 td:nth-child(2) {
+    color: #4f4f4f;
+    width: 50%;
+  }
 
 
+  .hidden_underlined_container {
+    border-bottom: 0.5px solid gray;
+  }
+  
+  .hidden_underlined1,
+  .hidden_underlined2,
+  .hidden_underlined3,
+  .hidden_underlined4,
+  .hidden_underlined5,
+  .hidden_underlined6 {
+    display: inline-block;
+    visibility: hidden;
+  }
+  
+  .les1_2_check {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .les1_2_check > div {
+    background-color: lightgray;
+    /* border: 0.5px solid gray; */
+    cursor: pointer;
+  }
+  .les1_2_check p {
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: 700;
+  }
 
 
 .landing_page {
