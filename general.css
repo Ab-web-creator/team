@@ -235,3 +235,24 @@ img {
   .ungga_terilgan p {
     font-size: 20px;
   }
+
+  .border {
+    border: 0.5px solid gray;
+    padding: 5px;
+    margin: 0px 5px;
+  }
+
+  .flex_horzntl {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0px 15px;
+  }
+  .flex_horzntl2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 30px;
+    padding: 0px 15px;
+  }

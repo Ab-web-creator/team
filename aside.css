@@ -33,7 +33,8 @@
     background-size: cover; */
     width: 25px;
     /* height: 30px; */
-    margin-left: 0px;
+    margin-left: 10px;
+    
   }
 
   .logo_top_left_cont img {
@@ -102,6 +103,7 @@
 
   .hamburger_menu li {
     margin: auto;
+    margin-right: -11px;
   }
  
   /* ishla  */
@@ -289,6 +291,10 @@ aside .tillar ul li:last-child {
 .ul_tema7,
 .ul_tema8 {
   display: none;
+}
+
+.ul_tema1 {
+  display: block;
 }
 
 .ul_tema1 li,
