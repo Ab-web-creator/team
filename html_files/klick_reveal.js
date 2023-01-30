@@ -6,6 +6,7 @@ const  clickReveal  = (target_word, target_foto) => {
         console.log("cliked 1-gap")
         fotka.style.visibility = "visible"
         fotka.style.color = "red"
+        word.style.color = "red"
        
         // word.style.color = "gray"
         // // word.style.color = "green"

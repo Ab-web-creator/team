@@ -133,6 +133,8 @@ button:hover {
   .hidden_underlined6 {
     display: inline-block;
     visibility: hidden;
+    font-weight: 700;
+    font-size: 18px;
   }
   
   .les1_2_check {
@@ -143,6 +145,7 @@ button:hover {
   }
   .les1_2_check > div {
     background-color: lightgray;
+    border-radius: 5px;
     /* border: 0.5px solid gray; */
     cursor: pointer;
   }
