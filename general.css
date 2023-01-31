@@ -215,7 +215,10 @@ img {
   .line_height_doublle {
     line-height: 2rem;
     text-align: justify;
+  }
 
+  .spacer20px {
+    margin: 20px 0px;
   }
 
   .chapga_terilgan p {
@@ -256,3 +259,6 @@ img {
     gap: 30px;
     padding: 0px 15px;
   }
+
+
+

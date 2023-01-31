@@ -58,6 +58,17 @@ button:hover {
     opacity: 1;
   } */
 
+.go_back_btn {
+background-color: #336eed;
+color: white;
+
+text-align: center;
+margin: auto;
+}
+.go_back_btn p {
+  font-size: 12px;
+text-align: center;
+}
 
   section {
     position: relative;
