@@ -167,6 +167,9 @@ img {
   .blue {
     color: rgb(0, 74, 192);
   }
+  .purple {
+    color: rgb(134, 0, 186);
+  }
 
   .gray {
     color: rgb(112, 112, 112);
@@ -186,12 +189,16 @@ img {
     font-weight: 700;
   }
   .fourteen_font {
-    font-size: 14px;
+    font-size: 14px !important;
     line-height: 18px;
   }
   .sixteen_font {
-    font-size: 16px;
+    font-size: 16px !important;
     line-height: 20px;
+  }
+  .twenty_font {
+    font-size: 20px !important;
+    line-height: 24px;
   }
 
   .bg_yellowish {
@@ -219,6 +226,10 @@ img {
 
   .spacer20px {
     margin: 20px 0px;
+  }
+
+  .spacer40px {
+    margin: 40px 0px;
   }
 
   .chapga_terilgan p {
