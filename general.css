@@ -271,5 +271,6 @@ img {
     padding: 0px 15px;
   }
 
-
-
+.chizib_tashla {
+  text-decoration: line-through;
+}
