@@ -289,7 +289,8 @@ aside .tillar ul li:last-child {
   display: none;
 }
 
-.ul_tema1 {
+.ul_tema1,
+.ul_tema2 {
   display: block;
 }
 
