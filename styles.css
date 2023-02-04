@@ -650,6 +650,98 @@ iframe {
   border-radius: 10px;
 }
 
+/* for the drag&drop exercises */
+.canvas {
+  padding: 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 30px;
+}
+
+.container_for_draggablles {
+  width: fit-content;
+  display: flex;
+  }
+
+ .original_container {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .original_container .targetto .draggable {
+    padding: 0px 5px;
+    color: rgb(1, 130, 44);
+    width: fit-content;
+    margin: auto;
+  }
+
+  .target_container .targetto .draggable {
+    padding: 0px 3px;
+    color: rgb(1, 130, 44);
+    width: fit-content;
+    margin: auto;
+  }
+
+  .general_target_container {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+
+  .target_container {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 7px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+  }
+
+  .words {
+    margin: auto;
+    width: fit-content;
+  }
+  .words p {
+    margin: auto;
+    white-space:nowrap;
+    width: fit-content;
+    font-size: 20px;
+  }
+
+  .original_container .targetto {
+    min-width: 40px;
+    width: fit-content;
+    /* height: fit-content; */
+    height: 30px;
+    border: 0.2px solid rgb(124, 122, 124);
+    border-radius: 6px;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .target_container .targetto {
+    min-width: 70px;
+    width: fit-content;
+    white-space:nowrap;
+    height: 30px;
+
+    /* max-height: fit-content; */
+    border: 0.2px solid rgb(124, 122, 124);
+    border-radius: 6px;
+
+    display: flex;
+    justify-content: center;
+  }
+
 
 
 @media only screen and (min-width: 340px) {
