@@ -590,7 +590,12 @@ const onDragOver = (e) => {
 };
 
 const onDrop = (e) => {
-  // grab droppable element from dataTransfer object
+  
+  if (e.target.className == "targetto" && e.target.childNodes.length == 0) {
+    // check if e.target.childElement.node.length = 0, then append
+
+
+     // grab droppable element from dataTransfer object
   const id = e.dataTransfer.getData('text');
   const draggableElement = document.getElementById(id);
 
@@ -602,6 +607,11 @@ const onDrop = (e) => {
 
   // clean up the dataTransfer object 
   e.dataTransfer.clearData();
+
+  console.log(e.target.hasChildNodes())
+
+  }
+ 
 };
 
 
