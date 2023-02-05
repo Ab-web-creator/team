@@ -721,7 +721,7 @@ iframe {
     width: fit-content;
     /* height: fit-content; */
     height: 30px;
-    border: 0.2px solid rgb(124, 122, 124);
+    border: 0.7px solid rgb(124, 122, 124);
     border-radius: 6px;
 
     display: flex;
@@ -735,7 +735,7 @@ iframe {
     height: 30px;
 
     /* max-height: fit-content; */
-    border: 0.2px solid rgb(124, 122, 124);
+    border: 0.7px solid rgb(124, 122, 124);
     border-radius: 6px;
 
     display: flex;

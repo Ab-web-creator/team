@@ -118,6 +118,36 @@ img {
       margin-bottom: 30px;
     }
   
+    h6 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .welk_woord_past {
+      color: blue;
+    }
+
+    .welk_woord_past p,
+    .welk_woord_past2 p {
+      padding-left: 25px;
+    }
+
+    .welk_woord_past2 {
+      color: rgb(27, 145, 0);
+      margin: 13px 0px;
+    }
+    .welk_woord_past2 p {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    
+    .welk_woord_past2 h6 {
+      font-size: 20px;
+      margin: 3px 0px;
+      font-weight: 700;
+
+    }
+
+
     .black_oon_top {
       position: absolute;
       top: 0px;

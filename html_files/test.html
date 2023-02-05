@@ -22,6 +22,79 @@
     <link rel="stylesheet" href="../aside.css">
     <link rel="stylesheet" href="../styles_oefenen.css">
 
+
+    <script type="module">
+        import interact from 'https://cdn.interactjs.io/v1.9.20/interactjs/index.js';
+    
+        function dragMoveListener(event) {
+          var target = event.target,
+            // keep the dragged position in the data-x/data-y attributes
+            x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx,
+            y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
+    
+          // translate the element
+          target.style.webkitTransform = target.style.transform =
+            'translate(' + x + 'px, ' + y + 'px)';
+    
+          // update the posiion attributes
+          target.setAttribute('data-x', x);
+          target.setAttribute('data-y', y);
+        }
+        /* The dragging code for '.draggable' from the demo above
+         * applies to this demo as well so it doesn't have to be repeated. */
+    
+        // enable draggables to be dropped into this
+        interact('.dropzone').dropzone({
+          // only accept elements matching this CSS selector
+          accept: '.yesdrop',
+          // Require a 75% element overlap for a drop to be possible
+          overlap: 0.75,
+    
+          // listen for drop related events:
+    
+          ondropactivate: function (event) {
+            // add active dropzone feedback
+            event.target.classList.add('drop-active');
+          },
+          ondragenter: function (event) {
+            var draggableElement = event.relatedTarget;
+            var dropzoneElement = event.target;
+    
+            // feedback the possibility of a drop
+            dropzoneElement.classList.add('drop-target');
+            draggableElement.classList.add('can-drop');
+            draggableElement.textContent = 'Dragged in';
+          },
+          ondragleave: function (event) {
+            // remove the drop feedback style
+            event.target.classList.remove('drop-target');
+            event.relatedTarget.classList.remove('can-drop');
+            event.relatedTarget.textContent = 'Dragged out';
+          },
+          ondrop: function (event) {
+            event.relatedTarget.textContent = 'Dropped';
+          },
+          ondropdeactivate: function (event) {
+            // remove active dropzone feedback
+            event.target.classList.remove('drop-active');
+            event.target.classList.remove('drop-target');
+          },
+        });
+    
+        interact('.drag-drop').draggable({
+          inertia: true,
+          modifiers: [
+            interact.modifiers.restrictRect({
+              restriction: 'parent',
+              endOnly: true,
+            }),
+          ],
+          autoScroll: true,
+          // dragMoveListener from the dragging demo above
+          listeners: { move: dragMoveListener },
+        });
+      </script>
+
 </head>
 
 <body>
@@ -345,10 +418,14 @@
       </div>
       <div class="original_container">
 
+
+      
+
+
         <div class="targetto" ondragover="onDragOver(event);" ondrop="onDrop(event)";>
-          <div id="task-1" class="draggable" draggable=true ondragstart="onDragStart(event);">
-            kinderen
-          </div>
+            <div style="touch-action: none; height: 300px; width: 100%">
+                <div className="yesdrop" class="drag-drop">#yes-drop</div>
+            </div>
         </div>
 
             <div class="targetto" ondragover="onDragOver(event);" ondrop="onDrop(event)";>
@@ -408,7 +485,8 @@
             </div>
         </div>
         <div class="target_container">
-            <div class="targetto" ondragover="onDragOver(event);" ondrop="onDrop(event)"; aria-placeholder="...">  </div>
+            
+            <div id="inner-dropzone" class="targetto dropzone" ondragover="onDragOver(event);" ondrop="onDrop(event)"; aria-placeholder="...">  </div>
         </div>
         <div class="target_container">
             <div class="words"  > 
@@ -581,39 +659,28 @@
 
 <script>
 
-const onDragStart = (e) => {
-  e.dataTransfer.setData('text/plain', e.target.id);
-};
-
-const onDragOver = (e) => {
-  e.preventDefault();
-};
-
 const onDrop = (e) => {
-  
-  if (e.target.className == "targetto") {
-    // check if e.target.childElement.node.length = 0, then append
+        if (
+          e.target.className == 'targetto' &&
+          e.target.childNodes.length == 0
+        ) {
+          // check if e.target.childElement.node.length = 0, then append
 
+          // grab droppable element from dataTransfer object
+          const id = e.dataTransfer.getData('text');
+          const draggableElement = document.getElementById(id);
 
-     // grab droppable element from dataTransfer object
-  const id = e.dataTransfer.getData('text');
-  const draggableElement = document.getElementById(id);
+          // get the element we are dropping onto
+          const dropArea = e.target;
 
-  // get the element we are dropping onto 
-  const dropArea = e.target;
+          // append droppable element to the drop area (the "Done" column)
+          dropArea.appendChild(draggableElement);
 
-  // append droppable element to the drop area (the "Done" column)
-  dropArea.appendChild(draggableElement);
+          // clean up the dataTransfer object
+          e.dataTransfer.clearData();
 
-  // clean up the dataTransfer object 
-  e.dataTransfer.clearData();
-
-  console.log(e.target.hasChildNodes())
-
-  }
- 
-};
-
+        }
+      };
 
 </script>
 
