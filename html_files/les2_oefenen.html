@@ -591,7 +591,9 @@ const onDragOver = (e) => {
 
 const onDrop = (e) => {
   
-  if (e.target.className == "targetto") {
+  if (e.target.className == "targetto" &&
+      e.target.childNodes.length == 1
+    ) {
     // check if e.target.childElement.node.length = 0, then append
 
 
