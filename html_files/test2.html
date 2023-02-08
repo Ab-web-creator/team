@@ -15,6 +15,10 @@
         padding: 10px;
         border: 1px solid black;
       }
+      .bir #drag1 {
+        background-color: greenyellow;
+      }
+
     </style>
 
     <script>
@@ -49,26 +53,37 @@
         width="88"
         height="31"
       >
-        Hi
+        Bir
       </div>
     </div>
 
     <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
-      <drag
-        draggable="true"
-        ondragstart="drag(event)"
-        id="drag2"
-        width="88"
-        height="31"
-      >
-        Hello
-      </drag>
+        <div
+          draggable="true"
+          ondragstart="drag(event)"
+          id="drag2"
+          width="88"
+          height="31"
+        >
+          Ikki
+        </div>
     </div>
     
     <br /><br /><br /><br /><br />
-    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <div
+          draggable="true"
+          ondragstart="drag(event)"
+          id="drag3"
+          width="88"
+          height="31"
+        >
+          Uch
+        </div>
+    </div>
     <br /><br /><br /><br /><br /><br />
-    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div2" class="bir" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div2" class="ikki" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div2" class="uch" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
   </body>
 </html>
