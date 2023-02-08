@@ -26,6 +26,9 @@
       }
       function drop(div) {
         div.preventDefault();
+
+        // console.log(div.target.childNodes.length);
+
         var data = div.dataTransfer.getData('text');
         div.target.appendChild(document.getElementById(data));
       }
@@ -34,7 +37,11 @@
 
 
   <body>
-    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <!-- id у всех дропзоун должны быть одинаковые  -->
+    <!-- div таг для элементов, которые переносятся -->
+    <!-- id для drag элементов, которые переносятся, должны быть разные -->
+
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
       <div
         draggable="true"
         ondragstart="drag(event)"
@@ -47,7 +54,7 @@
     </div>
 
     <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
-      <div
+      <drag
         draggable="true"
         ondragstart="drag(event)"
         id="drag2"
@@ -55,9 +62,10 @@
         height="31"
       >
         Hello
-      </div>
+      </drag>
     </div>
 
+<<<<<<< HEAD
     <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
     
     </div>
@@ -66,6 +74,8 @@
 
 
     
+=======
+>>>>>>> e80738dbc037f3e2d305f13561b3b78c40dd548f
     <br /><br /><br /><br /><br />
     <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
     <br /><br /><br /><br /><br /><br />
