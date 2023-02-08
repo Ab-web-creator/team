@@ -24,80 +24,6 @@
 
 </head>
 
-<script type="module">
-    import interact from 'https://cdn.interactjs.io/v1.9.20/interactjs/index.js';
-
-    function dragMoveListener(event) {
-      var target = event.target,
-        // keep the dragged position in the data-x/data-y attributes
-        x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx,
-        y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
-
-      // translate the element
-      target.style.webkitTransform = target.style.transform =
-        'translate(' + x + 'px, ' + y + 'px)';
-
-      // update the posiion attributes
-      target.setAttribute('data-x', x);
-      target.setAttribute('data-y', y);
-    }
-    
-    /* The dragging code for '.draggable' from the demo above
- * applies to this demo as well so it doesn't have to be repeated. */
-
-// enable draggables to be dropped into this
-interact('.dropzone').dropzone({
-  // only accept elements matching this CSS selector
-  accept: '#yes-drop',
-  // Require a 75% element overlap for a drop to be possible
-  overlap: 0.75,
-
-  // listen for drop related events:
-
-  ondropactivate: function (event) {
-    // add active dropzone feedback
-    event.target.classList.add('drop-active')
-  },
-  ondragenter: function (event) {
-    var draggableElement = event.relatedTarget
-    var dropzoneElement = event.target
-
-    // feedback the possibility of a drop
-    dropzoneElement.classList.add('drop-target')
-    draggableElement.classList.add('can-drop')
-    draggableElement.textContent = 'Dragged in'
-  },
-  ondragleave: function (event) {
-    // remove the drop feedback style
-    event.target.classList.remove('drop-target')
-    event.relatedTarget.classList.remove('can-drop')
-    event.relatedTarget.textContent = 'Dragged out'
-  },
-  ondrop: function (event) {
-    event.relatedTarget.textContent = 'Dropped'
-  },
-  ondropdeactivate: function (event) {
-    // remove active dropzone feedback
-    event.target.classList.remove('drop-active')
-    event.target.classList.remove('drop-target')
-  }
-})
-
-interact('.drag-drop')
-  .draggable({
-    inertia: true,
-    modifiers: [
-      interact.modifiers.restrictRect({
-        restriction: 'parent',
-        endOnly: true
-      })
-    ],
-    autoScroll: true,
-    // dragMoveListener from the dragging demo above
-    listeners: { move: dragMoveListener }
-  })
-  </script>
-
 <body>
 <!-- Additional layers  -->
 <div class="blur"></div>
@@ -219,6 +145,190 @@ interact('.drag-drop')
   <!-- End of side-menu  -->
 
 
+<!-- <div id="container_delete">
+    <div class="first"><p ></p></div>
+    <div id="screen_width">resize page</div>
+  </div> -->
+  
+<div class="black_oon_top"></div>
+ 
+<section>
+   <h1>LES 2 OEFENEN</h1>
+    <div>
+        <img  class="habib" src="../images/images_les2/Habibulloh.jpg" alt="">
+    </div>
+    <main>
+        <p>
+        <span class="hidden_underlined_container">
+        <span class="hidden_underlined1">
+            Goedemorgen
+        </span></span>, mijn naam is Habib. 
+        <br>
+        Ik <span class="hidden_underlined_container">
+            <span class="hidden_underlined hidden_underlined2">
+                heb
+            </span></span> een auto. <br>
+        Ik ben 36 <span class="hidden_underlined_container">
+            <span class="hidden_underlined3">
+                jaar
+            </span></span>. <br>
+        Ik woon 7 jaar in <span class="hidden_underlined_container">
+            <span class="hidden_underlined4">
+                Warschau
+            </span></span>, Polen. <br>
+        Ik heb <span class="hidden_underlined_container">
+            <span class="hidden_underlined5">
+                twaalf
+            </span></span> zonen.  <br>
+        Ik <span class="hidden_underlined_container">
+            <span class="hidden_underlined6">
+                kom
+            </span></span> uit Kirgizië.  <br>
+        </p>
+    
+        <p class="green fourteen_font bold gray ">
+            Kies uit: Tanlash uchun sózlar: 
+            <span class="fourteen_font bold red"> &zwnj; &zwnj; Warschau, &zwnj; &zwnj; &zwnj; twaalf,  &zwnj; &zwnj; &zwnj; jaar,  &zwnj; &zwnj; &zwnj;  kom,  &zwnj; &zwnj; &zwnj; heb,  &zwnj; &zwnj; &zwnj;  Goedemorgen</span>
+        </p>
+
+        <p class="green fourteen_font bold"> Controleer jezelf:</p>
+    
+        <div class="les1_2_check">
+            <div class="soz1">
+                <p>1</p>
+            </div>
+            <div class="soz2">
+                <p>2</p>
+            </div>
+            
+            <div class="soz3">
+                <p>3</p>
+            </div>
+            
+            <div class="soz4">
+                <p>4</p>
+            </div>
+            <div class="soz5">
+                <p>5</p>
+            </div>
+            <div class="soz6">
+                <p>6</p>
+            </div>
+        </div>   
+    </main>
+</section>
+
+<section style=" padding: 0px 0px;" class="small_height"> </section>
+
+<section>   
+    <main>
+        <h3> <span class="green bold">
+          Welk woord past niet in het rijtje? </span> <span class="red bold"> Lishniysi qaysi?</span>
+        </h3>
+      </main>
+
+<div class="lishniysi_qaysi">
+    <table>
+        <tr>
+            <td>1.</td>
+            <td class="incorrect_choise">de meneer</td>
+        </tr>
+        <tr>
+            <td> &zwnj;</td>
+            <td class="correct_choise"><span class="correct_choise_span">hoi</span></td>
+        </tr>
+        <tr>
+            <td> &zwnj;</td>
+            <td class="incorrect_choise">het kind</td>
+        </tr>
+        
+        <tr>
+            <td>2.</td>
+            <td class="incorrect_choise">groeten</td>
+            <div class="man_greeting_klpart">
+                <img src="../images/images_les2/man_greeting_klipart.png" alt="">
+            </div>
+        </tr>
+        <tr>
+            <td> &zwnj;</td>
+            <td class="correct_choise">de kinderen</td>
+        </tr>
+        <tr>
+            <td> &zwnj;</td>
+            <td class="incorrect_choise">hallo</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td class="correct_choise">de naam</td>
+        </tr>
+        <tr>
+            <td> &zwnj;</td>
+            <td class="incorrect_choise">goedemiddag</td>
+        </tr>
+        <tr>
+            <td> &zwnj;</td>
+            <td class="incorrect_choise">hoi</td>
+        </tr>
+    </table>
+</div>
+
+
+<div class="lishniysi_qaysi lishniysi_qaysi2">
+    <table>
+        <tr>
+            <td>4.</td>
+            <td class="incorrect_choise">de vrouw
+               </td>
+        </tr>
+        <tr>
+            <td> &zwnj;</td>
+            <td class="incorrect_choise"> het kind
+               </td>
+        </tr>
+        <tr>
+            <td> &zwnj;</td>
+            <td class="correct_choise"> de naam
+                </td>
+        </tr>
+        
+        <tr>
+            <td>5.</td>
+            <td class="incorrect_choise">groeten
+                </td>
+            <div class="woman_greeting_klpart">
+                <img src="../images/images_les2/woman_greeting_klipart.png" alt="">
+            </div>
+        </tr>
+        <tr>
+            <td> &zwnj;</td>
+            <td class="correct_choise">de mevrouw
+               </td>
+        </tr>
+        <tr>
+            <td> &zwnj;</td>
+            <td class="incorrect_choise"> hallo
+                </td>
+        </tr>
+        <tr>
+            <td>6.</td>
+            <td class="incorrect_choise">doei</td>
+        </tr>
+        <tr>
+            <td> &zwnj;</td>
+            <td class="correct_choise">goedemiddag</td>
+        </tr>
+        <tr>
+            <td> &zwnj;</td>
+            <td class="incorrect_choise">tot ziens</td>
+        </tr>
+    </table>
+</div>
+<main>
+  <p class="sixteen_font bold gray">
+    Javoblaringizni tekshirish uchun tepadagi variantlarni bosib kóring.
+  </p>
+</main>
+</section>
 
 
 <section>
@@ -235,7 +345,7 @@ interact('.drag-drop')
       </div>
       <div class="original_container">
 
-        <div style="touch-action: none;" class="targetto" ondragover="onDragOver(event);" ondrop="onDrop(event)";>
+        <div class="targetto" ondragover="onDragOver(event);" ondrop="onDrop(event)";>
           <div id="task-1" class="draggable" draggable=true ondragstart="onDragStart(event);">
             kinderen
           </div>
@@ -264,29 +374,6 @@ interact('.drag-drop')
                 twee
               </div>
             </div>
-
-
-            <div style="touch-action: none; height: 20px; width: 100%" class="targetto" ondragover="onDragOver(event);" ondrop="onDrop(event)";>
-              <!-- <div id="task-6" class="draggable" draggable=true ondragstart="onDragStart(event);" 
-              className="yesdrop" class="drag-drop">
-                #we
-              </div> -->
-
-
-              <div style="touch-action: none; height: 20px; width: 100%">
-                <div className="yesdrop" class="drag-drop">#yes-drop</div>
-              </div>
-
-            </div>
-
-
-
-
-
-  <div style="touch-action: none; height: 20px; width: 100%">
-    <div className="yesdrop" class="drag-drop">#yes-drop</div>
-  </div>
-
 
       </div>
     </div>
@@ -320,17 +407,9 @@ interact('.drag-drop')
               <p>drie</p>
             </div>
         </div>
-
-
         <div class="target_container">
-            <div class="targetto dropzone" ondragover="onDragOver(event);" ondrop="onDrop(event)"; aria-placeholder="...">  </div>
+            <div class="targetto" ondragover="onDragOver(event);" ondrop="onDrop(event)"; aria-placeholder="...">  </div>
         </div>
-
-
-
-
-
-
         <div class="target_container">
             <div class="words"  > 
               <p>
@@ -366,9 +445,6 @@ interact('.drag-drop')
       </div>
     </div>
 
-
-
-  
     <div class="general_target_container"> 
       <div class="target_container">
         <div class="words">
@@ -456,9 +532,35 @@ interact('.drag-drop')
     </div>
   </main>
 </div>
+
 </section>
 
+<section>
 
+    <main>
+      <p class="green sixteen_font">
+        Ofarin! Mana bir zumda 2-darsni ham tugatdingiz. Siz golland tilini tezda órganasiz, deb ishonaman. 
+      </p>
+      <p class="green sixteen_font">
+        Endi nima qilasiz? Agar zarur bólsa 1- va/yoki 2-darsni yana takrorlang. 
+       </p>
+      <p class="green sixteen_font">
+        Zarur bólmasa, <span class="red bold">menu</span>  ni bosing (eng tepada óng tarafda uchta oq chiziq ustma-ust turibdi). Menu ochilgach, <span class="red bold">Thema1</span>  ni bosing. Chunki Thema1 da yana 3 ta dars bor. Thema1 ni bossangiz, uning tagidagi darslar ochiladi, siz endi <span class="red bold">Les3</span>  ni tanlang (bosing). 
+       </p>
+       <br>
+    </main>
+
+  <button class="go_back_btn" onclick="history.back()"><p> Ortga qaytish </p></button>
+     
+</section>
+
+<section class="footer">
+  <div class="last_piece">
+    <p> &copy; Design is done by Shym-Tech, 2023. 
+      <a href="mailto:abekeasian@gmail.com">Contact: abekeasian@gmail.com</a>
+    </p>
+  </div>
+</section>
 
 
 
@@ -477,8 +579,9 @@ interact('.drag-drop')
     };
 </script>
 
-<!-- <script>
 
+<script>
+  
 const onDragStart = (e) => {
   e.dataTransfer.setData('text/plain', e.target.id);
 };
@@ -490,7 +593,7 @@ const onDragOver = (e) => {
 const onDrop = (e) => {
   
   if (e.target.className == "targetto" &&
-      e.target.childNodes.length == 0
+      e.target.childNodes.length == 1
     ) {
     // check if e.target.childElement.node.length = 0, then append
 
@@ -515,9 +618,10 @@ const onDrop = (e) => {
 };
 
 
-</script> -->
+</script>
 
 
-lll
+ 
+
 </body>
 </html>
