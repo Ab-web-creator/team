@@ -407,9 +407,11 @@
               <p>drie</p>
             </div>
         </div>
+        
         <div class="target_container">
             <div class="targetto" ondragover="onDragOver(event);" ondrop="onDrop(event)"; aria-placeholder="...">  </div>
         </div>
+
         <div class="target_container">
             <div class="words"  > 
               <p>
@@ -581,7 +583,7 @@
 
 
 <script>
-  
+
 const onDragStart = (e) => {
   e.dataTransfer.setData('text/plain', e.target.id);
 };
