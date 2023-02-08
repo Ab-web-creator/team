@@ -579,7 +579,7 @@
     };
 </script>
 
-<script>
+<!-- <script>
 
 const onDragStart = (e) => {
   e.dataTransfer.setData('text/plain', e.target.id);
@@ -617,6 +617,99 @@ const onDrop = (e) => {
 };
 
 
+</script> -->
+
+
+<script>
+  // const onDragStart = (e) => {
+  //   e.dataTransfer.setData('text/plain', e.target.id);
+  // };
+
+  // const onDragOver = (e) => {
+  //   e.preventDefault();
+  // };
+
+  // const onDrop = (e) => {
+
+  //   if (e.target.className == "targetto" &&
+  //       e.target.childNodes.length == 1
+  //     ) {
+  //     // check if e.target.childElement.node.length = 0, then append
+
+
+  //      // grab droppable element from dataTransfer object
+  //   const id = e.dataTransfer.getData('text');
+  //   const draggableElement = document.getElementById(id);
+
+  //   // get the element we are dropping onto 
+  //   const dropArea = e.target;
+
+  //   // append droppable element to the drop area (the "Done" column)
+  //   dropArea.appendChild(draggableElement);
+
+  //   // clean up the dataTransfer object 
+  //   e.dataTransfer.clearData();
+
+  //   console.log(e.target.hasChildNodes())
+
+  //   }
+
+  // };
+
+
+  const draggable_elements = document.getElementsByClassName('targetto');
+  const droppable_places = document.getElementsByClassName('place');
+  const container = document.getElementById('draggables');
+
+
+  for (let i = 0; i < draggable_elements.length; i++) {
+    const element = draggable_elements[i];
+    console.log(element);
+
+    function mouseDown(e) {
+      e.preventDefault();
+      element.style.position = 'fixed';
+      element.style.top = `${e.clientY}px`;
+      element.style.left = `${e.clientX}px`;
+      let x, y;
+
+      function move(e) {
+
+        if (e.type == 'mousemove') {
+          x = e.clientX;
+          y = e.clientY;
+        } else {
+          var touch = e.touches[0] || e.changedTouches[0];
+          y = touch.clientY;
+          x = touch.clientX;
+        }
+        element.style.top = `${y}px`;
+        element.style.left = `${x}px`;
+      }
+      document.body.onmousemove = move;
+      document.body.ontouchmove = move;
+
+      function drop(e) {
+        var changedTouch = event.changedTouches[0];
+        var elem = document.elementFromPoint(changedTouch.clientX, changedTouch.clientY);
+        if (elem.dataset.droppable) {
+          elem.appendChild(element);
+          element.style.position = '';
+          document.body.onmousemove = null;
+          document.body.ontouchmove = null;
+        
+        }else {
+          console.log(elem);
+          container.appendChild(element);
+          element.style.position = "";
+        }
+      }
+      element.onmouseup = drop;
+      element.ontouchend = drop;
+    }
+    element.addEventListener("mousedown", mouseDown);
+    element.addEventListener("touchstart", mouseDown);
+  }
 </script>
 
 </body>
