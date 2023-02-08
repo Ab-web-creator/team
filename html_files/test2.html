@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <style>
       #div1,
       #div2 {
@@ -15,6 +16,7 @@
         border: 1px solid black;
       }
     </style>
+
     <script>
       function allowDrop(div) {
         div.preventDefault();
@@ -29,6 +31,8 @@
       }
     </script>
   </head>
+
+
   <body>
     <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
       <div
@@ -41,6 +45,7 @@
         Hi
       </div>
     </div>
+
     <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
       <div
         draggable="true"
@@ -52,7 +57,15 @@
         Hello
       </div>
     </div>
-    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+    
+    </div>
+
+
+
+
+    
     <br /><br /><br /><br /><br />
     <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
     <br /><br /><br /><br /><br /><br />
