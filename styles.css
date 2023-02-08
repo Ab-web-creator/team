@@ -679,7 +679,7 @@ iframe {
     color: rgb(170, 170, 170);
     width: fit-content;
     margin: auto;
-    font-size: 26px;
+    font-size: 24px;
   }
 
   .drag_section .target_container .targetto .draggable {
@@ -724,7 +724,7 @@ iframe {
   .drag_section .original_container .targetto {
     min-width: 50px;
     width: fit-content;
-    min-height: 30px;
+    min-height: 44px;
     height: fit-content;
     background-color: #1005e5;
     border: 0.7px solid rgb(124, 122, 124);
@@ -750,7 +750,7 @@ iframe {
 
   .drag_section .general_target_container .draggable {
     padding: 0px 5px;
-    color: darkgreen;
+    color: rgb(2, 8, 196);
     font-size: 20px;
   }
 
