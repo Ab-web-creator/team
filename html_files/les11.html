@@ -24,7 +24,7 @@
 
 
     </style>
-    <script>
+    <!-- <script>
       function allowDrop(div) {
         div.preventDefault();
       }
@@ -68,14 +68,15 @@
 
         div.target.appendChild(document.getElementById(data));
       }
-    </script>
+    </script> -->
   </head>
   <body>
     <!-- id у всех дропзоун должны быть одинаковые div1  -->
     <!-- div таг для элементов, которые переносятся -->
     <!-- id для drag элементов, которые переносятся, должны быть разные -->
 
-    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"
+    >
       <div
       class="bitta"
         draggable="true"
@@ -99,13 +100,18 @@
         height="31"
         ondragover="return false"
       >
-        Hello!!
+        Hello_senga
       </div>
     </div>
 
-    <div id="div1" class="bir" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div1" class="target_container" ondrop="drop(event)" ondragover="allowDrop(event)">
+    
+    </div>
 
     <div id="div1" class="ikki"  ondrop="drop(event)" ondragover="allowDrop(event)"></div>
     <div id="div1" class="uch" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+
+    <script src="../JS_folder/drag&drop.js"></script> 
   </body>
 </html>
