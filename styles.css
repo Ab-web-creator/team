@@ -73,6 +73,7 @@ text-align: center;
   section {
     position: relative;
     width: 100%;
+    max-width: 650px;
     margin: auto;
     font-family: 'Oswald', sans-serif;
     padding: 50px 0px;
@@ -216,7 +217,7 @@ text-align: center;
   .lishniysi_qaysi_100pr td:nth-child(1) {
     border-right: 0px solid rgb(187, 187, 187);
     padding-left: 15px;
-    color: #474747;
+    /* color: #474747; */
     width: 4px;
     font-size: 22px;
     font-weight: 600;
@@ -997,10 +998,10 @@ iframe {
     gap: 3px;
   }
 
-
+/* 
   main {
     width: 700px; 
-  }
+  } */
 
   .logo_top_left_cont {
     left: 20px;
@@ -1057,9 +1058,9 @@ iframe {
 }
 }
 @media only screen and (min-width: 992px) {
-  main {
+  /* main {
     width: 850px; 
-  }
+  } */
 
   iframe {
     width: 840px;
@@ -1073,9 +1074,9 @@ iframe {
     background-size: 600px;
   }
 
-  main {
+  /* main {
     width: 1050px; 
-  }
+  } */
   
   .display_in_end {
     display: block;
