@@ -1,7 +1,7 @@
 const  click_to_underline  = (target_undrln) => {
     const button = document.querySelector(target_undrln)
     button.addEventListener("click", () => {
-       button.style.textDecoration = "solid underline purple 4px"
+       button.style.textDecoration = "underline"
     })
    }
  
