@@ -324,3 +324,6 @@ img {
   100% { transform: rotate( 0.0deg) }
 }
 
+.hebben_form > span {
+  cursor: pointer;
+}
