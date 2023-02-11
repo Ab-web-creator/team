@@ -230,6 +230,10 @@ img {
     font-size: 20px !important;
     line-height: 24px;
   }
+  .twenty2_font {
+    font-size: 22px !important;
+    line-height: 26px;
+  }
 
   .bg_yellowish {
     background-color: rgb(254, 255, 235);

@@ -1,0 +1,43 @@
+section > div {
+    margin: 0px 20px;
+}
+main h1 {
+    text-align: center;
+    color: green;
+    font-size: 18px;
+}
+main h1 span {
+    color: rgb(5, 100, 145);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.sarlavha {
+    margin-left: 20px;
+    margin-top: 30px;
+    /* width: 100%; */
+}
+.sarlavha p {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+}
+.sarlavha p span {
+    font-size: 20px;
+    font-weight: 700;
+    color:slateblue;
+}
+
+.horiz_flex {
+    margin: 0px 20px;
+    display: flex;
+    gap: 30px;
+}
+.horiz_flex img {
+    width: 60px;
+    /* height: 100px; */
+    gap: 30px;
+}
+.horiz_flex span {
+    color: rgb(2, 65, 132);
+}
