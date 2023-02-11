@@ -1,6 +1,4 @@
-section > div {
-    margin: 0px 20px;
-}
+
 main h1 {
     text-align: center;
     color: green;
@@ -32,6 +30,9 @@ main h1 span {
     margin: 0px 20px;
     display: flex;
     gap: 30px;
+}
+.horiz_flex .text {
+    width: 250px;
 }
 .horiz_flex img {
     width: 60px;
