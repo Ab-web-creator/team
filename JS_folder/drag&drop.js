@@ -63,40 +63,53 @@ ctrl.addEventListener('click', () => {
       resultat.querySelector('#drag3')
     ) {
       resultat.style.boxShadow = "0 0 5px green"
+      resultat.style.border = "1px solid darkgreen"
+      resultat.style.background = "none"
     } else if (
       containerClassName.includes('dropzone2') &&
       resultat.querySelector('#drag5')
     ) {
       resultat.style.boxShadow = "0 0 5px green"
+      resultat.style.border = "1px solid darkgreen"
+      resultat.style.background = "none"
     } else if (
       containerClassName.includes('dropzone3') &&
       resultat.querySelector('#drag1')
     ) {
       resultat.style.boxShadow = "0 0 5px green"
+      resultat.style.border = "1px solid darkgreen"
+      resultat.style.background = "none"
     } else if (
       containerClassName.includes('dropzone4') &&
       resultat.querySelector('#drag2')
     ) {
       resultat.style.boxShadow = "0 0 5px green"
+      resultat.style.border = "1px solid darkgreen"
+      resultat.style.background = "none"
     } else if (
       containerClassName.includes('dropzone5') &&
       resultat.querySelector('#drag4')
     ) {
       resultat.style.boxShadow = "0 0 5px green"
+      resultat.style.border = "1px solid darkgreen"
+      resultat.style.background = "none"
     } else {
       resultat.style.boxShadow = "0 0 5px red"
+      resultat.style.border = "1px solid red"
+      resultat.style.background = "rgb(255, 228, 228)"
     }
   })
 })
 
 
 // remove all results 
-
 const reset = document.querySelector('.reset_your_results')
 reset.addEventListener('click', () => {
   console.log('cliked 1-gap')
 
   nishon.forEach((resultat) => {
     resultat.style.boxShadow = ""
+    resultat.style.border = "1px solid gray"
+    resultat.style.background = "none"
   })
 })
