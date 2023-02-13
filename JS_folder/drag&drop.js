@@ -41,3 +41,20 @@ function allowDrop(div) {
 
     div.target.appendChild(document.getElementById(data));
   }
+
+
+
+
+// Checking the result: 
+
+  const ctrl = document.querySelector(".check_your_results")
+  const nishon = document.querySelectorAll(".nishon")
+
+  ctrl.addEventListener("click", () => {
+    console.log("cliked 1-gap")
+   
+    nishon.forEach((resultat) => {
+      resultat.style.background = "blue"
+    })
+
+   })
