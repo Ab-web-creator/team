@@ -42,3 +42,29 @@ main h1 span {
 .horiz_flex span {
     color: rgb(2, 65, 132);
 }
+
+.horiz_flex2 {
+    margin: 0px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 60px;
+}
+.horiz_flex2 div {
+    width: fit-content;
+    
+}
+.horiz_flex2 i {
+   font-size: 50px;
+}
+
+.horiz_flex3 {
+    margin: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+} 
+
+.horiz_flex3 p {
+    font-size: 22px;
+    color: rgb(1, 157, 1);
+}
