@@ -68,3 +68,16 @@ main h1 span {
     font-size: 22px;
     color: rgb(1, 157, 1);
 }
+
+.special_term {
+    width: fit-content;
+   
+    background-color: darkslateblue;
+    color: white;
+}
+.special_term p {
+    min-width: 70px;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 16px;
+}
