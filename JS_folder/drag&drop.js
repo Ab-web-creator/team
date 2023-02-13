@@ -47,14 +47,56 @@ function allowDrop(div) {
 
 // Checking the result: 
 
-  const ctrl = document.querySelector(".check_your_results")
-  const nishon = document.querySelectorAll(".nishon")
+const ctrl = document.querySelector('.check_your_results')
+const nishon = document.querySelectorAll('.nishon')
 
-  ctrl.addEventListener("click", () => {
-    console.log("cliked 1-gap")
-   
-    nishon.forEach((resultat) => {
-      resultat.style.background = "blue"
-    })
+ctrl.addEventListener('click', () => {
+  console.log('cliked 1-gap')
 
-   })
+  nishon.forEach((resultat) => {
+    // console.log(resultat)
+
+    const containerClassName = resultat.getAttribute('class')
+
+    if (
+      containerClassName.includes('dropzone1') &&
+      resultat.querySelector('#drag3')
+    ) {
+      resultat.style.boxShadow = "0 0 5px green"
+    } else if (
+      containerClassName.includes('dropzone2') &&
+      resultat.querySelector('#drag5')
+    ) {
+      resultat.style.boxShadow = "0 0 5px green"
+    } else if (
+      containerClassName.includes('dropzone3') &&
+      resultat.querySelector('#drag1')
+    ) {
+      resultat.style.boxShadow = "0 0 5px green"
+    } else if (
+      containerClassName.includes('dropzone4') &&
+      resultat.querySelector('#drag2')
+    ) {
+      resultat.style.boxShadow = "0 0 5px green"
+    } else if (
+      containerClassName.includes('dropzone5') &&
+      resultat.querySelector('#drag4')
+    ) {
+      resultat.style.boxShadow = "0 0 5px green"
+    } else {
+      resultat.style.boxShadow = "0 0 5px red"
+    }
+  })
+})
+
+
+// remove all results 
+
+const reset = document.querySelector('.reset_your_results')
+reset.addEventListener('click', () => {
+  console.log('cliked 1-gap')
+
+  nishon.forEach((resultat) => {
+    resultat.style.boxShadow = ""
+  })
+})
