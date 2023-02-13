@@ -71,7 +71,7 @@ main h1 span {
 
 .special_term {
     width: fit-content;
-   
+    border-radius: 5px;
     background-color: darkslateblue;
     color: white;
 }
