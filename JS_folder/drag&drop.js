@@ -116,35 +116,37 @@ ctrl.addEventListener('click', () => {
 
 
 // remove all results
-const reset = document.querySelector('.reset_your_results')
-reset.addEventListener('click', () => {
-  const initialPositionArray = document.getElementsByClassName(
-    'initialPosition',
-  )
+// const reset = document.querySelector('.reset_your_results')
+// reset.addEventListener('click', () => {
+//   const initialPositionArray = document.getElementsByClassName(
+//     'initialPosition',
+//   )
 
-  createDragElement(initialPositionArray[0], 'is', 'drag1')
-  createDragElement(initialPositionArray[1], 'zijn', 'drag2')
-  createDragElement(initialPositionArray[2], 'kinderen', 'drag3')
-  createDragElement(initialPositionArray[3], 'twee', 'drag4')
-  createDragElement(initialPositionArray[4], 'oudste', 'drag5')
+//   createDragElement(initialPositionArray[0], 'is', 'drag1')
+//   createDragElement(initialPositionArray[1], 'zijn', 'drag2')
+//   createDragElement(initialPositionArray[2], 'kinderen', 'drag3')
+//   createDragElement(initialPositionArray[3], 'twee', 'drag4')
+//   createDragElement(initialPositionArray[4], 'oudste', 'drag5')
 
-  nishon.forEach((resultat) => {
-    resultat.style.boxShadow = ''
-    resultat.style.border = '1px solid gray'
-    resultat.style.background = 'none'
-    resultat.innerHTML = ''
-  })
-})
+//   nishon.forEach((resultat) => {
+//     resultat.style.boxShadow = ''
+//     resultat.style.border = '1px solid gray'
+//     resultat.style.background = 'none'
+//     resultat.innerHTML = ''
+//   })
+// })
 
-function createDragElement(parentNode, innerText, id) {
-  if (parentNode.children.length == 0) {
-    const currentElement = document.createElement('div')
-    currentElement.innerHTML = innerText
-    currentElement.setAttribute('id', id)
-    currentElement.setAttribute('class', 'draggable')
-    currentElement.setAttribute('ondragstart', 'drag(event)')
-    currentElement.setAttribute('draggable', 'true')
-    currentElement.setAttribute('ondragenter', 'return false')
-    parentNode.appendChild(currentElement)
-  }
-}
+// function createDragElement(parentNode, innerText, id) {
+//   if (parentNode.children.length == 0) {
+//     const currentElement = document.createElement('div')
+//     currentElement.innerHTML = innerText
+//     currentElement.setAttribute('id', id)
+//     currentElement.setAttribute('class', 'draggable')
+//     currentElement.setAttribute('ondragstart', 'drag(event)')
+//     currentElement.setAttribute('draggable', 'true')
+//     currentElement.setAttribute('ondragenter', 'return false')
+//     parentNode.appendChild(currentElement)
+//   }
+// }
+
+
