@@ -404,6 +404,11 @@ text-align: center;
   cursor: pointer;
 }
 
+.second_button:hover {
+  color: #f7f6ff;
+  background-color: rgb(1, 75, 144);
+}
+
 .conversation > div {
   margin-bottom: 50px;
 }
