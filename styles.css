@@ -12,6 +12,7 @@ button {
   border-radius: 5px;
   margin: auto;
   color: white;
+  box-shadow: 2px 7px 10px rgba(0,0,0,0.4); 
   transition: all ease-in-out 0.4s;
   }
 
@@ -22,12 +23,18 @@ button {
   }
 
 button:hover {
-  font-weight: bold;
+  /* font-weight: bold; */
   color: var(--topBarColor);
-  background-color: var(--hoverColor);
+  /* background-color: var(--hoverColor);  */
   border-radius: 15px;
+  box-shadow: 2px 7px 10px rgba(0,0,0,0.4); 
+
+  color: #fff;
+  background: rgba(44,62,80 ,1);
+
   /* border: 2px solid rgb(162, 162, 4); */
   }
+
 /* 
   .px_container img {
     border-radius: 10px;
@@ -678,11 +685,11 @@ iframe {
   }
 
   .drag_section .original_container .targetto .draggable {
-    padding: 5px 10px;
+    padding: 3px 5px;
     color: rgb(219, 219, 219);
     width: fit-content;
     margin: auto;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .drag_section .target_container .targetto .draggable {
@@ -770,6 +777,11 @@ iframe {
    font-size: 14px;
   }
 
+  /* .underline_with_bg {
+    background: linear-gradient(
+      90deg, blue, red)
+      0 2em/100% 2px no-repeat;
+  } */
 
 @media only screen and (min-width: 340px) {
   .nav {
