@@ -745,7 +745,7 @@ iframe {
   }
 
   .drag_section .general_target_container .targetto {
-    margin-top: 3px;
+    margin-top: 2px;
     min-width: 50px;
     width: fit-content;
     white-space:nowrap;

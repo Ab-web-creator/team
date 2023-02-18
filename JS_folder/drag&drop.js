@@ -51,7 +51,7 @@ const ctrl = document.querySelector('.check_your_results')
 const nishon = document.querySelectorAll('.nishon')
 
 ctrl.addEventListener('click', () => {
-  console.log('cliked 1-gap')
+  console.log('cliked 1st drag&drop')
 
   nishon.forEach((resultat) => {
     // console.log(resultat)
@@ -95,51 +95,54 @@ ctrl.addEventListener('click', () => {
 })
 
 
-// remove all results 
-// const reset = document.querySelector('.reset_your_results')
-// reset.addEventListener('click', () => {
-//   console.log('cliked 1-gap')
-
-//   nishon.forEach((resultat) => {
-//     resultat.style.boxShadow = ""
-//     resultat.style.border = "1px solid gray"
-//     resultat.style.background = "none"
-//   })
-// })
 
 
-// remove all results
-// const reset = document.querySelector('.reset_your_results')
-// reset.addEventListener('click', () => {
-//   const initialPositionArray = document.getElementsByClassName(
-//     'initialPosition',
-//   )
 
-//   createDragElement(initialPositionArray[0], 'is', 'drag1')
-//   createDragElement(initialPositionArray[1], 'zijn', 'drag2')
-//   createDragElement(initialPositionArray[2], 'kinderen', 'drag3')
-//   createDragElement(initialPositionArray[3], 'twee', 'drag4')
-//   createDragElement(initialPositionArray[4], 'oudste', 'drag5')
+// Checking the result: 
 
-//   nishon.forEach((resultat) => {
-//     resultat.style.boxShadow = ''
-//     resultat.style.border = '1px solid gray'
-//     resultat.style.background = 'none'
-//     resultat.innerHTML = ''
-//   })
-// })
+const ctrl_2 = document.querySelector('.check_your_results_2')
+const nishon_2 = document.querySelectorAll('.nishon_2')
 
-// function createDragElement(parentNode, innerText, id) {
-//   if (parentNode.children.length == 0) {
-//     const currentElement = document.createElement('div')
-//     currentElement.innerHTML = innerText
-//     currentElement.setAttribute('id', id)
-//     currentElement.setAttribute('class', 'draggable')
-//     currentElement.setAttribute('ondragstart', 'drag(event)')
-//     currentElement.setAttribute('draggable', 'true')
-//     currentElement.setAttribute('ondragenter', 'return false')
-//     parentNode.appendChild(currentElement)
-//   }
-// }
+ctrl_2.addEventListener('click', () => {
+  console.log('cliked 1st drag&drop')
 
+  nishon_2.forEach((resultat) => {
+    // console.log(resultat)
 
+    const containerClassName = resultat.getAttribute('class')
+
+    if (
+      containerClassName.includes('dropzone1') &&
+      resultat.querySelector('#drag_2_4')
+    ) {
+      resultat.style.boxShadow = "0 0 5px green"
+      resultat.style.border = "1px solid darkgreen"
+      resultat.style.background = "none"
+    } else if (
+      containerClassName.includes('dropzone2') &&
+      resultat.querySelector('#drag_2_5')
+    ) {
+      resultat.style.boxShadow = "0 0 5px green"
+      resultat.style.border = "1px solid darkgreen"
+      resultat.style.background = "none"
+    } else if (
+      containerClassName.includes('dropzone3') &&
+      resultat.querySelector('#drag_2_1')
+    ) {
+      resultat.style.boxShadow = "0 0 5px green"
+      resultat.style.border = "1px solid darkgreen"
+      resultat.style.background = "none"
+    } else if (
+      containerClassName.includes('dropzone4') &&
+      resultat.querySelector('#drag_2_2')
+    ) {
+      resultat.style.boxShadow = "0 0 5px green"
+      resultat.style.border = "1px solid darkgreen"
+      resultat.style.background = "none"
+    } else {
+      resultat.style.boxShadow = "0 0 5px red"
+      resultat.style.border = "1px solid red"
+      resultat.style.background = "rgb(255, 228, 228)"
+    }
+  })
+})
