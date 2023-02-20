@@ -783,6 +783,24 @@ iframe {
       0 2em/100% 2px no-repeat;
   } */
 
+
+
+.incorrect_option_here:active {
+  background-color: red;
+}
+.correct_option_here:active {
+  background-color: rgb(145, 255, 171);
+}
+
+
+
+
+
+
+
+
+
+
 @media only screen and (min-width: 340px) {
   .nav {
     width: 320px;
