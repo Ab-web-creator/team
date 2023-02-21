@@ -146,3 +146,10 @@ ctrl_2.addEventListener('click', () => {
     }
   })
 })
+
+
+
+
+
+
+const ctrl_3 = document.querySelector('.check_your_results_3')

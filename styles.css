@@ -677,6 +677,7 @@ iframe {
   .drag_section .original_container {
     width: fit-content;
     margin-bottom: 10px;
+    margin-left: 0px;
 
     display: flex;
     flex-direction: row;
