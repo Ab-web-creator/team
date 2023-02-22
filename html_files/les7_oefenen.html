@@ -306,7 +306,7 @@
     <main>
       <div>
         <h3 class="gray bold" style="text-align: left;">
-          3.	Zet een <span class="bold blue" style="text-decoration: underline;">streep</span> onder een form van <span class="bold green"> hebben</span>.
+          3.	Zet een <span class="bold blue" style="text-decoration: underline;">streep</span> onder het werkwoord <span class="bold green"> hebben</span>.
         </h3> <br>
         <span class="fourteen_font bold purple">(Har bir gapda <span class="bold green"> hebben </span>   fe’li tagiga (har xil shaklda kelgan) xayolan chiziq torting.)</span>
         
@@ -434,12 +434,28 @@
 <script src="../openAndClose_sidemenu.js"></script> 
 <script src="../expand_submenus.js"></script> 
 <script src="../JS_folder/click_to_green.js"></script>
-<script src="../JS_folder/click_to_underline.js"></script>
+<!-- <script src="../JS_folder/click_to_underline.js"></script> -->
 <!-- <script src="../zoek_elkaar.js"></script>  -->
 <!-- <script src="../JS_folder/lishniysi_qaysi2.js"></script>  -->
 
 
+<script>
+  const  click_to_underline  = (target_undrln) => {
+    const button = document.querySelector(target_undrln)
+    button.addEventListener("click", () => {
+       button.style.textDecoration = "underline";
+    })
+   }
+ 
+   click_to_underline(".hebben_form1")
+   click_to_underline(".hebben_form2")
+   click_to_underline(".hebben_form3")
+   click_to_underline(".hebben_form4")
+   click_to_underline(".hebben_form5")
+   click_to_underline(".hebben_form6")
+   click_to_underline(".hebben_form7")
 
+</script>
 
 <!-- <script>
   const pageWidth = document.querySelector("#screen_width");
