@@ -794,7 +794,29 @@ iframe {
 }
 
 
+.alphabet {
+  margin: 0px; 
+  padding: 22px;
+  
+  display: flex; 
+  gap: 10px; 
+  justify-content: left; 
+  flex-wrap: wrap;
 
+}
+.alphabet > div {
+  padding: 5px 8px;
+  width: 46px;
+  border: 0.5px dotted rgb(57, 57, 57);
+  border-radius: 5px;
+ 
+  background-color: #ffffff;
+}
+.alphabet p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
 
 
 

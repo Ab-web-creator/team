@@ -226,6 +226,10 @@ img {
     font-size: 16px !important;
     line-height: 20px;
   }
+  .eighteen_font {
+    font-size: 18px !important;
+    line-height: 22px;
+  }
   .twenty_font {
     font-size: 20px !important;
     line-height: 24px;

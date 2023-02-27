@@ -87,3 +87,24 @@ main h1 span {
     color: rgb(84, 84, 84) !important; 
     font-weight: 700 !important;
 }
+
+.builders_in_front_of_house p {
+    font-size: 20px;
+}
+.builders_in_front_of_house .heading_for {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    color: brown !important;
+}
+.builders_in_front_of_house td {
+    font-size: 20px !important;
+}
+
+.builders_in_front_of_house .odd {
+    color: rgb(0, 90, 145) !important;
+}
+.ranglarga p {
+    font-size: 16px;
+    text-align: center;
+}

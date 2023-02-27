@@ -78,10 +78,54 @@ h3 {
 }
 
 .zoek_elkaar .kalimaat div:hover {
-    
     background-color: rgb(255, 255, 181);
     cursor: pointer;
 }
+
+
+.zoek_elkaar2 {
+    border: 2px solid rgb(145, 145, 145);
+    padding: 10px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.zoek_elkaar2 p {
+    padding: 5px 9px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.zoek_elkaar2 > div {
+    padding: 10px;
+    border: 2px solid rgb(202, 202, 202);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.zoek_elkaar2 .first_part > div {
+    width: 80px;
+    background-color: #dcdcdc;
+}
+
+.zoek_elkaar2 .first_part .qator1 {
+    margin-bottom: 20px;
+   
+}
+
+.zoek_elkaar2 .first_part .qatorlar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+
 
 .my_comment p {
 text-align: left; 
@@ -142,6 +186,9 @@ form p {
 .uzun_qisqa_unlilar > div {
     height: 70px;
 }
+
+
+
 /* 
 git add .
 
