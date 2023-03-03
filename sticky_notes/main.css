@@ -6,8 +6,16 @@
     margin: 0;
 }
 
-body {
+main {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
     background: rgb(234, 234, 234);
+    background-image: url(../images/fridge.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size:contain;
 }
 
 .zametka {
@@ -59,7 +67,7 @@ body {
 .close_tab a p {
     /* border: 1px solid rgb(0, 255, 42); */
     text-align: right;
-    color: rgb(180, 179, 179);
+    color: rgb(60, 60, 60);
 }
 
 .wrapper2 {
@@ -144,7 +152,7 @@ body {
     resize: none;
     font-size: 12px;
     color: rgb(0, 0, 0);
-    background:   rgba(250, 255, 215, 0.7);
+    background:   rgb(250, 255, 215);
     transition: all 0.3s ease-in-out;
 }
 
@@ -170,9 +178,9 @@ body {
     font-size: 42px;
     box-shadow:0px 0px 10px rgb(0 0 0 / 30%);
     cursor: pointer;
-    background:   rgba(255, 255, 255, 0.1);
+    background:   rgb(225, 244, 255);
     transition: background 0.3s;
 }
 .add-note:hover {
-    background:   rgb(0, 0, 0, 0.2);
+    background:   rgb(121, 206, 255);
 }
