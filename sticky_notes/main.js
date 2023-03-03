@@ -21,25 +21,42 @@ function saveNotes(notes) {
 
 //creates new note-ELEMENT 
 function createNoteElement(id, content) {
- const element = document.createElement("textarea");
 
- element.classList.add("note");
+ const foldercha = document.createElement("div");
+ const subFoldercha1 = document.createElement("div");
+ const subFoldercha2 = document.createElement("div");
+ const element = document.createElement("textarea");
+ const element_delete = document.createElement("button");
+
+ foldercha.appendChild(subFoldercha1)
+ foldercha.appendChild(subFoldercha2)
+ subFoldercha1.appendChild(element)
+ subFoldercha2.appendChild(element_delete)
+
+ foldercha.classList.add("note");
+
+
+
+ element_delete.innerHTML = "&#x2715"
+ element_delete.classList.add("testing_it");
+
+ element.classList.add("note2");
  element.value = content;
- element.placeholder = "empty sticky note"
+ element.placeholder = "пустой"
+
 
  element.addEventListener("change", () => {
     updateNote(id, element.value);
  })
- element.addEventListener("dblclick", () => {
+
+ element_delete.addEventListener("click", () => {
     const doDelete = confirm("Are you sure to delete this note?");
-
     if (doDelete) {
-        deleteNote(id, element);
+        deleteNote(id, foldercha);
     }
-
  })
 
- return element;
+ return foldercha;
 }
 
 //adds a new note-ELEMENT and saves it in the LS
@@ -66,10 +83,10 @@ function updateNote(id, newContent) {
     saveNotes(notes);
 }
 
-//updates changes in the note
+//deletes the note
 function deleteNote(id, element) {
-    const notes = getNotes().filter(note => note.id != id);
-     
-    saveNotes(notes);
-    notesContainer.removeChild(element);
+        const notes = getNotes().filter(note => note.id != id);
+        
+        saveNotes(notes);
+        notesContainer.removeChild(element);
 }
