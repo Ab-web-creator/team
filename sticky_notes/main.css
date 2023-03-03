@@ -12,11 +12,13 @@ body {
 
 .zametka {
     position: fixed;
+    top: 10px;
     width: 100%;
     margin: auto;
     padding: 10px ;
     font-family: sans-serif;
-    background: rgba(54, 54, 54, 0.934);
+    background: rgba(84, 84, 84, 0.934);
+    /* background: linear-gradient(rgba(54, 54, 54, 0.896), rgba(74, 74, 74, 0.651), rgba(110, 110, 110, 0.906)) ; */
     
     /* box-shadow: 0 0 7px rgb(0, 0, 0.15); */
     z-index: 1;
@@ -30,7 +32,7 @@ body {
 }
 .headerga p {
     text-align: center;
-    color: rgb(237, 237, 237);
+    color: rgb(240, 236, 0);
 }
  
 
