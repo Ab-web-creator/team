@@ -123,10 +123,10 @@ body {
 }
 
 .note:hover .material-symbols-outlined  {
-    color: rgba(34, 34, 34, 0.484);
+    color: rgba(173, 18, 18, 0.106);
 }
 .note:focus:hover .material-symbols-outlined {
-    color: rgba(0, 99, 197, 0.7);
+    color: rgba(122, 0, 0, 0.553);
 }
 
 .note2 {
