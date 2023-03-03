@@ -48,15 +48,12 @@
     display: flex;
   }
 
-  .notes_html {
-    /* position: absolute;
-    
-    right: 0px; */
+  /* .notes_html {
     margin: auto;
     width: 20px;
     height: 15px;
     background-color: yellow;
-  }
+  } */
 
   .nav_thema li {
     color: white;
