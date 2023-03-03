@@ -26,7 +26,8 @@ function createNoteElement(id, content) {
  const subFoldercha1 = document.createElement("div");
  const subFoldercha2 = document.createElement("div");
  const element = document.createElement("textarea");
- const element_delete = document.createElement("button");
+//  const element_delete = document.createElement("button");
+ const element_delete = document.createElement("span");
 
  foldercha.appendChild(subFoldercha1)
  foldercha.appendChild(subFoldercha2)
@@ -35,10 +36,11 @@ function createNoteElement(id, content) {
 
  foldercha.classList.add("note");
 
-
-
- element_delete.innerHTML = "&#x2715"
- element_delete.classList.add("testing_it");
+//  element_delete.innerHTML = "&#x2715"
+ element_delete.innerHTML = "delete"
+ 
+//  element_delete.classList.add("testing_it");
+ element_delete.classList.add("material-symbols-outlined");
 
  element.classList.add("note2");
  element.value = content;
