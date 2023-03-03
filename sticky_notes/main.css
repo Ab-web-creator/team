@@ -16,7 +16,7 @@ body {
     margin: auto;
     padding: 10px ;
     font-family: sans-serif;
-    background: rgba(255, 68, 68, 0.934);
+    background: rgba(54, 54, 54, 0.934);
     
     /* box-shadow: 0 0 7px rgb(0, 0, 0.15); */
     z-index: 1;
@@ -30,7 +30,7 @@ body {
 }
 .headerga p {
     text-align: center;
-    color: rgb(227, 216, 0);
+    color: rgb(237, 237, 237);
 }
  
 
