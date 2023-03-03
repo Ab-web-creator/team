@@ -42,8 +42,22 @@
   }
 
   .nav_thema {
+    position: relative;
     color: white;
+
+    display: flex;
   }
+
+  .notes_html {
+    /* position: absolute;
+    
+    right: 0px; */
+    margin: auto;
+    width: 20px;
+    height: 15px;
+    background-color: yellow;
+  }
+
   .nav_thema li {
     color: white;
     font-size: 16px;

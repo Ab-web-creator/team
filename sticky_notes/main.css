@@ -1,0 +1,73 @@
+.wrapper2 {
+    background: rgb(234, 234, 234);
+    /* margin: auto; */
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+#app {
+    /* margin: auto; */
+    padding: 30px 15px;
+
+    /* width: 100%; */
+    /* margin-left: 10px;
+    margin-right: 10px; */
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 120px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.note {
+    height: 120px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 7px rgb(0, 0, 0.15);
+    resize: none;
+    font-size: 12px;
+    background:   rgba(250, 255, 215, 0.7);
+    transition: background 0.3s;
+}
+.note:hover {
+    background:    rgba(255, 255, 255);
+}
+
+.add-note {
+    height: 120px;
+    border: none;
+    outline: none;
+    color:   rgb(0, 0, 0, 0.5);
+    border-radius: 5px;
+    font-size: 42px;
+    box-shadow: 0 0 7px rgb(0, 0, 0.15);
+    cursor: pointer;
+    background:   rgba(255, 255, 255, 0.1);
+    transition: background 0.3s;
+}
+.add-note:hover {
+    background:   rgb(0, 0, 0, 0.2);
+}
+
+.delete_container {
+    margin: auto;
+    width: 70%;
+    /* border: 1px solid red; */
+
+    display: flex;
+}
+.delete_btn {
+    width: 300px;
+    height: 40px;
+    margin: auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background: linear-gradient( blue, red);
+    margin-bottom: 20px;
+}
