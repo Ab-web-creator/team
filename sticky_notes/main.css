@@ -1,19 +1,28 @@
-.wrapper2 {
-    background: rgb(234, 234, 234);
-    /* margin: auto; */
+* {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    height: 100%;
+  }  
 
+body {
+    background: rgb(234, 234, 234);
+}
+
+.wrapper2 {
+    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px; 
 }
 
 #app {
-    /* margin: auto; */
+    flex-grow: 1;
     padding: 30px 15px;
-
-    /* width: 100%; */
-    /* margin-left: 10px;
-    margin-right: 10px; */
 
     display: grid;
     grid-template-columns: repeat(auto-fill, 120px);
@@ -55,18 +64,18 @@
 
 .delete_container {
     margin: auto;
-    width: 70%;
+    padding: 0px 15px;
     /* border: 1px solid red; */
 
     display: flex;
 }
 .delete_btn {
-    width: 300px;
-    height: 40px;
+    width: 100%;
+    height: fit-content;
     margin: auto;
-    padding: 10px 20px;
+    padding: 10px 25px;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     color: white;
     background: linear-gradient( blue, red);
     margin-bottom: 20px;
