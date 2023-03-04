@@ -6,13 +6,20 @@
     margin: 0;
 }
 
+body {
+    background-image: linear-gradient(90deg, rgb(99, 99, 99), rgb(162, 162, 162),rgb(195, 195, 195),rgb(162, 162, 162), rgb(99, 99, 99));
+    background-position: center top;
+    background-size:contain;
+}
+
 main {
     position: fixed;
     width: 100%;
     height: 100vh;
     z-index: -1;
-    background: rgb(234, 234, 234);
-    background-image: url(../images/fridge.png);
+    /* background: linear-gradient(90deg, red, yellow); */
+   
+    background-image: url(../images/fridge2.png);
     background-position: center top;
     background-repeat: no-repeat;
     background-size:contain;
