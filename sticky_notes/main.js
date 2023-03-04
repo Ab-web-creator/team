@@ -8,7 +8,6 @@ getNotes().forEach(note => {
 
 addNoteButton.addEventListener("click", () => addNote());
 
-
 // bring all the existing notes from LocalStorage into browser
 function getNotes() {
     return JSON.parse(localStorage.getItem("stickynotes-notes") || "[]");
@@ -25,33 +24,61 @@ function createNoteElement(id, content) {
  const foldercha = document.createElement("div");
  const subFoldercha1 = document.createElement("div");
  const subFoldercha2 = document.createElement("div");
- const element = document.createElement("textarea");
-//  const element_delete = document.createElement("button");
- const element_delete = document.createElement("span");
+ const varaqcha = document.createElement("textarea");
+ const musorka = document.createElement("span");
 
  foldercha.appendChild(subFoldercha1)
  foldercha.appendChild(subFoldercha2)
- subFoldercha1.appendChild(element)
- subFoldercha2.appendChild(element_delete)
+ subFoldercha1.appendChild(varaqcha)
+ subFoldercha2.appendChild(musorka)
 
  foldercha.classList.add("note");
 
-//  element_delete.innerHTML = "&#x2715"
- element_delete.innerHTML = "delete"
- 
-//  element_delete.classList.add("testing_it");
- element_delete.classList.add("material-symbols-outlined");
+ musorka.classList.add("material-symbols-outlined");
+ musorka.innerHTML = "delete"
 
- element.classList.add("note2");
- element.value = content;
- element.placeholder = "пустой"
+    let rndmNmbr_for_color = Math.floor((Math.random() * 10) + 1);
+    console.log(rndmNmbr_for_color)
 
+    if (rndmNmbr_for_color === 1) {
+         varaqcha.classList.add("blue_varaq");
+    }
+    if (rndmNmbr_for_color === 2) {
+         varaqcha.classList.add("gray_varaq");
+    }
+    if (rndmNmbr_for_color === 3) {
+         varaqcha.classList.add("red_varaq");
+    }
+    if (rndmNmbr_for_color === 4) {
+         varaqcha.classList.add("green_varaq");
+    }
+    if (rndmNmbr_for_color === 5) {
+         varaqcha.classList.add("purple_varaq");
+    }
+    if (rndmNmbr_for_color === 6) {
+         varaqcha.classList.add("golden_varaq");
+    }
+    if (rndmNmbr_for_color === 7) {
+         varaqcha.classList.add("darkBlue_varaq");
+    }
+    if (rndmNmbr_for_color === 8) {
+         varaqcha.classList.add("darkPurple_varaq");
+    }
+    if (rndmNmbr_for_color === 9) {
+         varaqcha.classList.add("pink_varaq");
+    }
+    else {
+         varaqcha.classList.add("note2");
+    }
 
- element.addEventListener("change", () => {
-    updateNote(id, element.value);
+ varaqcha.value = content;
+ varaqcha.placeholder = "пустой"
+
+ varaqcha.addEventListener("change", () => {
+    updateNote(id, varaqcha.value);
  })
 
- element_delete.addEventListener("click", () => {
+ musorka.addEventListener("click", () => {
     const doDelete = confirm("Are you sure to delete this note?");
     if (doDelete) {
         deleteNote(id, foldercha);
@@ -86,9 +113,10 @@ function updateNote(id, newContent) {
 }
 
 //deletes the note
-function deleteNote(id, element) {
+function deleteNote(id, varaqcha) {
         const notes = getNotes().filter(note => note.id != id);
         
         saveNotes(notes);
-        notesContainer.removeChild(element);
+        notesContainer.removeChild(varaqcha);
 }
+

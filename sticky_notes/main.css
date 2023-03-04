@@ -11,9 +11,13 @@
     width: 100%;
     height: 100vh;
     z-index: -2;
-    background: rgb(0,0,0);
+   
+    background: linear-gradient(114.95deg, rgba(235, 0, 255, 0.5) 0%, rgba(0, 71, 255, 0) 34.35%), linear-gradient(180deg, #004B5B 0%, #FFA7A7 100%), linear-gradient(244.35deg, #FFB26A 0%, #3676B1 50.58%, #00A3FF 100%), linear-gradient(244.35deg, #FFFFFF 0%, #004A74 49.48%, #FF0000 100%), radial-gradient(100% 233.99% at 0% 100%, #B70000 0%, #AD00FF 100%), linear-gradient(307.27deg, #1DAC92 0.37%, #2800C6 100%), radial-gradient(100% 140% at 100% 0%, #EAFF6B 0%, #006C7A 57.29%, #2200AA 100%);
+    background-blend-mode: hard-light, overlay, overlay, overlay, difference, difference, normal;
+   
+    /* background: rgb(0,0,0);
     background-position: center top;
-    background-size:contain;
+    background-size:contain; */
 }
 
 main {
@@ -22,11 +26,11 @@ main {
     height: 100vh;
     z-index: -1;
   
-   
+/*    
     background-image: url(../images/fridge.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size:contain; */
 }
 
 .zametka {
@@ -49,7 +53,6 @@ main {
     text-align: center;
     color: rgba(221, 255, 0, 0);
 }
- 
 
 .close_tab {
     position: absolute;
@@ -146,6 +149,15 @@ main {
     color: rgba(122, 0, 0, 0.075);
 }
 
+.blue_varaq,
+.gray_varaq,
+.red_varaq,
+.green_varaq,
+.purple_varaq,
+.golden_varaq,
+.darkBlue_varaq,
+.darkPurple_varaq,
+.pink_varaq,
 .note2 {
     width: 120px;
     height: 120px;
@@ -159,9 +171,55 @@ main {
     resize: none;
     font-size: 12px;
     color: rgb(0, 0, 0);
+}
+
+.note2 {
     background:   rgb(250, 255, 215);
     transition: all 0.3s ease-in-out;
 }
+.blue_varaq {
+    background:   rgb(232, 242, 255);
+    transition: all 0.3s ease-in-out;
+}
+.gray_varaq {
+    color: rgb(255, 255, 255);
+    background:   rgb(65, 65, 65);
+    transition: all 0.3s ease-in-out;
+}
+
+.red_varaq {
+    color: rgb(255, 255, 255);
+    background:   rgb(255, 32, 32);
+    transition: all 0.3s ease-in-out;
+}
+.green_varaq {
+    background:   rgb(215, 255, 216);
+    transition: all 0.3s ease-in-out;
+}
+.purple_varaq {
+    background:   rgb(250, 215, 255);
+    transition: all 0.3s ease-in-out;
+}
+.golden_varaq {
+    background:   rgb(255, 240, 215);
+    transition: all 0.3s ease-in-out;
+}
+.darkBlue_varaq {
+    color:   rgb(255, 255, 255);
+    background:   rgb(0, 110, 255);
+    transition: all 0.3s ease-in-out;
+}
+.darkPurple_varaq {
+    color:   rgb(255, 255, 255);
+    background:   rgb(79, 38, 144);
+    transition: all 0.3s ease-in-out;
+}
+.pink_varaq {
+    color:   rgb(255, 255, 255);
+    background:   rgb(242, 0, 255);
+    transition: all 0.3s ease-in-out;
+}
+
 
 .note2:focus {
     background:   rgb(255, 255, 255);
@@ -169,7 +227,6 @@ main {
 .note2:focus:hover {
     background:   rgb(255, 255, 255);
 }
-
 .note2:hover {
     color: rgb(0, 0, 0);
     background:    rgba(255, 255, 255);
