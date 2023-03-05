@@ -2,9 +2,9 @@ const notesContainer = document.getElementById("app");
 const addNoteButton = notesContainer.querySelector(".add-note");
 
 getNotes().forEach(note => {
-    const noteElement = createNoteElement(note.id, note.content);
+    console.log("note", note)
+    const noteElement = createNoteElement(note.id, note.content, note.numColor);
     notesContainer.insertBefore(noteElement, addNoteButton);
-    // uzgardi
 });
 
 addNoteButton.addEventListener("click", () => addNote());
@@ -20,7 +20,8 @@ function saveNotes(notes) {
 }
 
 //creates new note-ELEMENT 
-function createNoteElement(id, content) {
+let numColor;
+function createNoteElement(id, content, numColor) {
 
  const foldercha = document.createElement("div");
  const subFoldercha1 = document.createElement("div");
@@ -34,43 +35,54 @@ function createNoteElement(id, content) {
  subFoldercha2.appendChild(musorka)
 
  foldercha.classList.add("note");
+ varaqcha.classList.add("yellow_varaq");
 
  musorka.classList.add("material-symbols-outlined");
  musorka.innerHTML = "delete"
 
-    let rndmNmbr_for_color = Math.floor((Math.random() * 10) + 1);
-    console.log(rndmNmbr_for_color)
+    if ((numColor >= 0) && (numColor < 10)) {
+        numColor = "white_varaq";
+    }
+    if ((numColor >= 10) && (numColor < 20)) {
+        numColor = "blue_varaq";
+    }
+    if ((numColor >= 20) && (numColor < 25)) {
+        numColor = "light_red_varaq";
+    }
+    if ((numColor >= 25) && (numColor < 30)) {
+        numColor = "red_varaq";
+    }
+    if ((numColor >= 30) && (numColor < 35)) {
+            numColor = "green_varaq";
+    }
+    if ((numColor >= 35) && (numColor < 40)) {
+            numColor = "darkgreen_varaq";
+    }
+    if ((numColor >= 40) && (numColor < 50)) {
+            numColor = "purple_varaq";
+    }
+    if ((numColor >= 50) && (numColor < 60)) {
+            numColor = "golden_varaq";
+    }
+    if ((numColor >= 60) && (numColor < 70)) {
+            numColor = "darkBlue_varaq";
+    }
+    if ((numColor >= 70) && (numColor < 80)) {
+            numColor = "darkPurple_varaq";
+    }
+    if ((numColor >= 80) && (numColor < 85)) {
+            numColor = "pink_varaq";
+    }
+    if ((numColor >= 85) && (numColor < 90)) {
+            numColor = "lightpink_varaq";
+    }
+    if ((numColor >= 90) && (numColor < 95)) {
+            numColor = "yellow_varaq";
+    }
+    if ((numColor >= 95) && (numColor < 100)) {
+            numColor = "black_varaq";
+    }
 
-    if (rndmNmbr_for_color === 1) {
-         varaqcha.classList.add("blue_varaq");
-    }
-    if (rndmNmbr_for_color === 2) {
-         varaqcha.classList.add("gray_varaq");
-    }
-    if (rndmNmbr_for_color === 3) {
-         varaqcha.classList.add("red_varaq");
-    }
-    if (rndmNmbr_for_color === 4) {
-         varaqcha.classList.add("green_varaq");
-    }
-    if (rndmNmbr_for_color === 5) {
-         varaqcha.classList.add("purple_varaq");
-    }
-    if (rndmNmbr_for_color === 6) {
-         varaqcha.classList.add("golden_varaq");
-    }
-    if (rndmNmbr_for_color === 7) {
-         varaqcha.classList.add("darkBlue_varaq");
-    }
-    if (rndmNmbr_for_color === 8) {
-         varaqcha.classList.add("darkPurple_varaq");
-    }
-    if (rndmNmbr_for_color === 9) {
-         varaqcha.classList.add("pink_varaq");
-    }
-    else {
-         varaqcha.classList.add("note2");
-    }
 
  varaqcha.value = content;
  varaqcha.placeholder = "пустой"
@@ -86,16 +98,21 @@ function createNoteElement(id, content) {
     }
  })
 
+ varaqcha.classList.add(numColor);
+ console.log(numColor)
+
  return foldercha;
 }
 
 //adds a new note-ELEMENT and saves it in the LS
-function addNote(id, content) {
+function addNote() {
+   
     const notes = getNotes();
     const noteObject = {
         id: Math.floor(Math.random() * 1000000),
-        content: ""
-    };
+        content: "",
+        numColor: Math.floor(Math.random() * 100)
+        };
 
     const noteElement = createNoteElement(noteObject.id, noteObject.content);
     notesContainer.insertBefore(noteElement, addNoteButton);
@@ -124,13 +141,13 @@ function deleteNote(id, varaqcha) {
 
 // another part
 
-const word_color_notes = document.querySelector(".headerga");
-const rang_palette = document.querySelector(".rang_palette");
+// const word_color_notes = document.querySelector(".headerga");
+// const rang_palette = document.querySelector(".rang_palette");
 
-word_color_notes.addEventListener('click', function() {
-    console.log("Ishladimi?")
-    rang_palette.classList.toggle("display_none")
- });
+// word_color_notes.addEventListener('click', function() {
+//     console.log("Ishladimi?")
+//     rang_palette.classList.toggle("display_none")
+//  });
 
 
 
