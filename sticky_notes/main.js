@@ -4,6 +4,7 @@ const addNoteButton = notesContainer.querySelector(".add-note");
 getNotes().forEach(note => {
     const noteElement = createNoteElement(note.id, note.content);
     notesContainer.insertBefore(noteElement, addNoteButton);
+    // uzgardi
 });
 
 addNoteButton.addEventListener("click", () => addNote());
@@ -120,3 +121,30 @@ function deleteNote(id, varaqcha) {
         notesContainer.removeChild(varaqcha);
 }
 
+
+// another part
+
+const word_color_notes = document.querySelector(".headerga");
+const rang_palette = document.querySelector(".rang_palette");
+
+word_color_notes.addEventListener('click', function() {
+    console.log("Ishladimi?")
+    rang_palette.classList.toggle("display_none")
+ });
+
+
+
+// const element = document.querySelectorAll('ul li');
+// const list = [];
+
+// document.body.classList.add(localStorage.getItem('color'));
+
+// element.forEach(e => {
+//     list.push(e.getAttribute('data-color'));
+
+//     e.addEventListener('click', function() {
+//         document.body.classList.remove(...list);
+//         document.body.classList.add(this.getAttribute('data-color'));
+//         localStorage.setItem('color', this.getAttribute('data-color'))
+//     });
+// });
