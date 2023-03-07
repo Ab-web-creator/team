@@ -52,6 +52,9 @@
     font-size: 18px;
     text-transform: uppercase;
     cursor: pointer;
+    animation-name: example;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
 }
 
 .close_tab {
@@ -71,10 +74,26 @@
 }
 
 .close_tab a p { 
-    text-align: right;
-    color: rgb(255, 255, 255);
+
 }
 
+.x_sign {
+    text-align: right;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    animation-name: example;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0%   {color:red; left:0px; top:0px;}
+    25%  {color:yellow; left:200px; top:0px;}
+    80%  {color:blue; left:200px; top:200px;}
+    90%  {color:green; left:0px; top:200px;}
+    100% {color:red; left:0px; top:0px;}
+  }
+  
 .wrapper2 {
    position: relative;
     padding-top: 10px;
