@@ -30,10 +30,14 @@
     font-family: sans-serif;
     z-index: 100;
     background-color: #ae00ff38;
-  
     
     display: flex;
     justify-content: space-between;
+
+    animation-name: changing_bg_colors;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
 }
 
 .headerga {
@@ -52,9 +56,11 @@
     font-size: 18px;
     text-transform: uppercase;
     cursor: pointer;
-    animation-name: example;
+
+    animation-name: changing_colors;
     animation-duration: 20s;
     animation-iteration-count: infinite;
+    animation-delay: 1s;
 }
 
 .close_tab {
@@ -81,12 +87,12 @@
     text-align: right;
     color: rgb(255, 255, 255);
     font-size: 24px;
-    animation-name: example;
-    animation-duration: 14s;
+    animation-name: changing_colors;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
 }
 
-@keyframes example {
+@keyframes changing_colors {
     0%   {color:red; left:0px; top:0px;}
     25%  {color:yellow; left:200px; top:0px;}
     80%  {color:blue; left:200px; top:200px;}
@@ -262,11 +268,31 @@
     cursor: pointer;
     background:   rgb(146, 213, 252);
     transition: background 0.3s;
+
+    animation-name: changing_colors;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+
 }
 .add-note:hover {
     background:   rgb(0, 120, 190);
 }
 
+/* #adding_zametka {
+    animation-name: changing_bg_colors;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+} */
+
+@keyframes changing_bg_colors {
+    0%   {background-color:rgba(255, 0, 0, 0.452); left:0px; top:0px;}
+    30%  {background-color:rgba(255, 255, 0, 0.479); left:0px; top:0px;}
+    50%  {background-color:rgba(149, 149, 255, 0.466); left:0px; top:0px;}
+    60%  {background-color:rgba(255, 255, 0, 0.563); left:0px; top:0px;}
+    80%  {background-color:rgba(42, 111, 42, 0.164); left:0px; top:0px;}
+    90%  {background-color:rgba(255, 255, 0, 0.24); left:0px; top:0px;}
+    100%   {background-color:rgba(255, 0, 0, 0.354); left:0px; top:0px;}
+  }
 
 .rang_palette {
     /* position: absolute; */
