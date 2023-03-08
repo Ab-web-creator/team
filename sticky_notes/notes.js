@@ -27,7 +27,8 @@ function createNoteElement(id, content, numColor, rang_barang) {
  const subFoldercha1 = document.createElement("div");
  const subFoldercha2 = document.createElement("div");
  const varaqcha = document.createElement("textarea");
- const musorka = document.createElement("span");
+ const musorka = document.createElement("img");
+ musorka.src = `./sticky_notes/trash_can.svg`
 
  foldercha.appendChild(subFoldercha1)
  foldercha.appendChild(subFoldercha2)
@@ -35,9 +36,10 @@ function createNoteElement(id, content, numColor, rang_barang) {
  subFoldercha2.appendChild(musorka)
 
  foldercha.classList.add("note");
+ subFoldercha2.classList.add("subFoldercha2");
 
- musorka.classList.add("material-symbols-outlined");
- musorka.innerHTML = "delete"
+ musorka.classList.add("trash_red");
+//  musorka.innerHTML = "delete"
 //  let rang_barang;
 
     if ((numColor >= 0) && (numColor < 10)) {
