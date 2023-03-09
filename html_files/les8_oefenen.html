@@ -168,52 +168,290 @@
       <h3 class="gray bold" style="text-align: left;">
         1. Praat samen.
       </h3>
+    </main>
 
-      <div class="welk_woord_past2" style="margin: 0px;">
-        <h6> A:	Hallo! Hoe heet jij? <span class="wave"> &#128400;</span>
-        </h6>        
-        <h6 style="color: rgb(231, 231, 231);"> 
-          B:	Dag, ik heet Pele. </h6>
-      </div>
+    <div> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet" />
+        <style>
+          .wrap_qstn {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          }
+          .savol {
+            background: rgb(230, 230, 230);
+            border-radius: 0.5rem;
+            padding: 10px 15px;
+            margin: 0px 5px;
+          }
+          .p_container {
+            display: flex;
+            justify-content: left;
+            gap: 5px;
+          }
+          .savol-text2 p {
+            padding-top: 0px;
+          }
+          .savol-text {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+          }
+          .savol-text p {
+            margin-bottom: 0;
+            font-size: 18px;
+          }
+          .savol-btn {
+            margin: 0px;
+            margin-top: -3px;
+            font-size: 24px;
+            width: fit-content;
+            background: transparent;
+            box-shadow: none;
+            cursor: pointer;
+            transition: all 0.3s linear;
+          }
+          .savol-btn:hover {
+            background: transparent !important;
+            box-shadow: none;
+          }
+          .savol-btn i {
+            color: rgba(89, 89, 89, 0.789);
+            color: green;
+            background: transparent;
+          }
+          .savol-text2 {
+            display: none;
+          }
+          .show-text .savol-text2 {
+            display: block;
+          }
+          .minus-icon {
+            display: none;
+          }
+          .show-text .minus-icon {
+            display: inline;
+          }
+          .show-text .plus-icon {
+            display: none;
+          }
+        </style>
+        <div class="wrap_qstn">
+        <article class="savol">
+          <!-- question title -->
+          <div class="savol-text">
+           <div class="p_container" style="color: green;">
+            <p class="bold purple">A:</p>
+            <p class="bold">
+              Hallo! Hoe heet jij?
+              <span class="wave"> &#128400;</span>
+            </p>
+           </div>
+            <button type="button" class="savol-btn">
+              <span class="plus-icon">
+                <i class='bx bx-plus'></i>
+              </span>
+              <span class="minus-icon">
+                <i class='bx bx-minus'></i>
+              </span>
+            </button>
+          </div>
+          <div class="savol-text savol-text2">
+            <div class="p_container" style="color: blue;">
+              <p class="bold purple">B:</p>
+              <p class="bold">Dag, ik heet Pele. </p>
+             </div>
+          </div>
+        </article>
 
-      <div class="welk_woord_past2" style="margin: 0px;">
-        <h6> A:	Waar kom je vandaan? </h6>        
-        <h6 style="color: rgb(231, 231, 231);"> B:	Ik kom uit Brazilië. </h6>
-      </div>
+        <article class="savol">
+          <!-- question title -->
+          <div class="savol-text">
+           <div class="p_container" style="color: green;">
+            <p class="bold purple">A:</p>
+            <p class="bold">Waar kom je vandaan?</p>
+           </div>
+            <button type="button" class="savol-btn">
+              <span class="plus-icon">
+                <i class='bx bx-plus'></i>
+              </span>
+              <span class="minus-icon">
+                 <i class='bx bx-minus'></i>
+              </span>
+            </button>
+          </div>
+          <div class="savol-text savol-text2">
+            <div class="p_container" style="color: blue;">
+              <p class="bold purple">B:</p>
+              <p class="bold">Ik kom uit Brazilië. </p>
+             </div>
+          </div>
+        </article>
 
-      <div class="welk_woord_past2" style="margin: 0px;">
-        <h6> A:	Echt? Niet uit Navoi? </h6>        
-        <h6 style="color: rgb(231, 231, 231);"> 
-          B:	Nee <span class="gray">😄</span>. Ik kom uit Rio de Janeiro.
-        </h6>
+        <article class="savol">
+          <!-- question title -->
+          <div class="savol-text">
+           <div class="p_container" style="color: green;">
+            <p class="bold purple">A:</p>
+            <p class="bold">Echt? Niet uit Navoi?</p>
+           </div>
+            <button type="button" class="savol-btn">
+              <span class="plus-icon">
+                <i class='bx bx-plus'></i>
+              </span>
+              <span class="minus-icon">
+                 <i class='bx bx-minus'></i>
+              </span>
+            </button>
+          </div>
+  
+          <div class="savol-text savol-text2">
+            <div class="p_container" style="color: blue;">
+              <p class="bold purple">B:</p>
+              <p class="bold">Nee <span class="gray">😄</span>. Ik kom uit Rio de Janeiro. </p>
+             </div>
+          </div>
+        </article>
+        <article class="savol">
+          <!-- question title -->
+          <div class="savol-text">
+           <div class="p_container" style="color: green;">
+            <p class="bold purple">A:</p>
+            <p class="bold">Heb je kinderen, Pele?</p>
+           </div>
+            <button type="button" class="savol-btn">
+              <span class="plus-icon">
+                <i class='bx bx-plus'></i>
+              </span>
+              <span class="minus-icon">
+                 <i class='bx bx-minus'></i>
+              </span>
+            </button>
+          </div>
+  
+          <div class="savol-text savol-text2">
+            <div class="p_container" style="color: blue;">
+              <p class="bold purple">B:</p>
+              <p class="bold">Ja. <span class="gray"></span> Ik heb zes kinderen. </p>
+             </div>
+          </div>
+        </article>
+        <article class="savol">
+          <!-- question title -->
+          <div class="savol-text">
+           <div class="p_container" style="color: green;">
+            <p class="bold purple">A:</p>
+            <p class="bold">Echt? Waarom zo veel?</p>
+           </div>
+            <button type="button" class="savol-btn">
+              <span class="plus-icon">
+                <i class='bx bx-plus'></i>
+              </span>
+              <span class="minus-icon">
+                 <i class='bx bx-minus'></i>
+              </span>
+            </button>
+          </div>
+  
+          <div class="savol-text savol-text2">
+            <div class="p_container" style="color: blue;">
+              <p class="bold purple">B:</p>
+              <p class="bold">
+                Ik weet dat niet. <span class="gray"> 😅😅 </span> 
+                <br style="margin: 0px;">
+                Vraag het aan mijn vrouw. </p>
+             </div>
+          </div>
+        </article>
+        <article class="savol">
+          <!-- question title -->
+          <div class="savol-text">
+           <div class="p_container" style="color: green;">
+            <p class="bold purple">A:</p>
+            <p class="bold">Zijn je kinderen groot?</p>
+           </div>
+            <button type="button" class="savol-btn">
+              <span class="plus-icon">
+                <i class='bx bx-plus'></i>
+              </span>
+              <span class="minus-icon">
+                 <i class='bx bx-minus'></i>
+              </span>
+            </button>
+          </div>
+  
+          <div class="savol-text savol-text2">
+            <div class="p_container" style="color: blue;">
+              <p class="bold purple">B:</p>
+              <p class="bold">Nee, mijn kinderen zijn klein.</p>
+             </div>
+          </div>
+        </article>
+        <article class="savol">
+          <!-- question title -->
+          <div class="savol-text">
+           <div class="p_container" style="color: green;">
+            <p class="bold purple">A:</p>
+            <p class="bold">Heb je familie hier?</p>
+           </div>
+            <button type="button" class="savol-btn">
+              <span class="plus-icon">
+                <i class='bx bx-plus'></i>
+              </span>
+              <span class="minus-icon">
+                 <i class='bx bx-minus'></i>
+              </span>
+            </button>
+          </div>
+  
+          <div class="savol-text savol-text2">
+            <div class="p_container" style="color: blue;">
+              <p class="bold purple">B:</p>
+              <p class="bold">Nee, ik heb geen familie hier. </p>
+             </div>
+          </div>
+        </article>
       </div>
-
-      <div class="welk_woord_past2" style="margin: 0px;">
-        <h6> A:	Heb je kinderen, Pele? </h6>        
-        <h6 style="color: rgb(231, 231, 231);"> 
-          B:	Ja. <span class="gray"></span> Ik heb zes kinderen.
-        </h6>
-      </div>
-      <div class="welk_woord_past2" style="margin: 0px;">
-        <h6> A:	Echt? Waarom zo veel? </h6>        
-        <h6 style="color: rgb(231, 231, 231);"> 
-          B:	Ik weet dat niet. <span class="gray"> 😅😅</span> Vraag het aan mijn vrouw.
-        </h6>
-      </div>
-      <div class="welk_woord_past2" style="margin: 0px;">
-        <h6> A:	Zijn je kinderen groot? </h6>        
-        <h6 style="color: rgb(231, 231, 231);"> 
-          B:	Nee, mijn kinderen zijn klein.
-        </h6>
-      </div>
-      <div class="welk_woord_past2" style="margin: 0px;">
-        <h6> A:	Heb je familie hier? </h6>        
-        <h6 style="color: rgb(231, 231, 231);"> 
-          B:	Nee, ik heb geen familie hier.
-        </h6>
-      </div>
+        <script>
+          const questions = document.querySelectorAll(".savol");
+  
+          questions.forEach(function (question) {
+              const btn = question.querySelector(".savol-btn");
+              const savol = question.querySelector(".savol-text");
+              var rotated = false;
+  
+              savol.addEventListener("click", function() {
+                  questions.forEach(function (ddd) {
+                      if (ddd !== question) {
+                          ddd.classList.remove("show-text");
+                      }
+                  })
+                  question.classList.toggle("show-text");
+  
+                  // var div = document.getElementById('div'),
+                  deg = rotated ? 0 : 360;
+  
+                  btn.style.webkitTransform = 'rotate('+deg+'deg)'; 
+                  btn.style.mozTransform    = 'rotate('+deg+'deg)'; 
+                  btn.style.msTransform     = 'rotate('+deg+'deg)'; 
+                  btn.style.oTransform      = 'rotate('+deg+'deg)'; 
+                  btn.style.transform       = 'rotate('+deg+'deg)'; 
+  
+                  rotated = !rotated;
+              });
+          });
+        </script>
+    </div>
  
-    </main>    
+    <main>
+      <div class="my_comment">
+        <p>
+          <span class="gray"> Avval yuqoridagi savollarga  ovoz chiqarib javob bering.  <span class="green bold">Mabodo</span> javob berolmasangiz, "+" belgisini bosing. 
+          <br> Keyin u yerdagi javobga óxshash qilib, yangi javob ixtiro qiling.
+        </p>
+      </div>
+    </main>
   </section>
 
   <section> 

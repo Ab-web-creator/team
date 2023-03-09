@@ -1,136 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
-
-*{
-  padding: 0;
-  margin: 0;
-}
-
-body{
-  position: relative;
-  background-color:  #c68c53a8;
-  font-family: 'Architects Daughter', cursive;
-}
-
-button{
-  padding: 8px;
-  outline: none;
-  cursor: pointer;
-  font-family: inherit;
-  border-radius: 5px;
-  background: whitesmoke;
-  border: 1px solid lightgray;
-}
-
-button:hover{
-  color: white;
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-#modal{
-  position: fixed;
-  z-index: 1;
-  width: 100%;
-  min-height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  /* background-color: red; */
-
-}
-
-#inner_modal{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
-#inner_modal textarea{
-  width: 276px;
-  height: 276px;
-  padding: 25px;
-  outline: none;
-  resize: none;
-  font-size: 1.5rem;
-  font-family: inherit;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.9);
-}
-
-#inner_modal i{
-  font-size: 1.4rem;
+/* .btn {
+  text-transform: uppercase;
+  background: transparent;
   color: gray;
+  padding: 0.375rem 0.75rem;
+  letter-spacing: 0.25rem;
+  display: inline-block;
+  transition: all 0.3s linear;
+  font-size: 0.875rem;
+  border: 2px solid black;
   cursor: pointer;
-  margin-top: -285px;
-  margin-left: -35px;
-  transition: 1s ease-in-out;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
 }
-
-#inner_modal i:hover{
-  color: lightgray;
-}
-
-.container{
-  width: 1280px;
-  margin: auto;
-}
-
-#header{
+.btn:hover {
   color: white;
-  padding: 0 20px;
-  min-height: 70px;
-  text-shadow: 1px 1px black;
+  background: white;
+}
+  */
+
+.wrap_qstn {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+}
+.savol {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 15px;
+  margin: 0px 5px;
+  padding-top: 20px;
+}
+.p_container {
+  display: flex;
+  justify-content: left;
+  gap: 5px;
+}
+.savol-text2 {
+  margin-top: 16px;
+  border-top: 1px solid rgb(105, 105, 105);
+}
+.savol-text2 p {
+  padding-top: 16px;
+}
+.savol-text {
+  display: flex;
   justify-content: space-between;
-  align-items: center;
+  gap: 10px;
 }
-
-.fas{
-  color: #c2ff3d;
+.savol-text p {
+  margin-bottom: 0;
+  font-size: 20px;
 }
-
-#all_notes{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding-top: 10px;
-}
-
-.note{
-  width:300px;
-  height: 300px;
-  transition: 2s;
+.savol-btn {
+  margin: 0px;
+  margin-top: -3px;
+  font-size: 24px;
+  width: fit-content;
+  background: transparent;
+  box-shadow: none;
   cursor: pointer;
-  overflow-wrap: break-word;
-  box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.75);
+  transition: all 0.3s linear;
 }
-
-.note h1{
-  font-size: 1.5rem;
+.savol-btn:hover {
+  background: transparent !important;
+  box-shadow: none;
 }
-
-.details {
-  margin-top: 25px;
-  padding: 0 15px;
-  font-size: 1.5rem;
+.savol-btn i {
+  color: rgba(89, 89, 89, 0.789);
+  background: transparent;
 }
-
-.details i{
-  color: whitesmoke;
-  cursor: pointer;
-  text-shadow: 1px 1px #BBB;
+.savol-text2 {
+  display: none;
 }
-
-@media(max-width:1280px){
-  .container{
-    width: 100%;
-  }
+.show-text .savol-text2 {
+  display: block;
 }
-
-@media(max-width:768px){
-  #header{
-    padding: 20px;
-    gap: 10px;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+.minus-icon {
+  display: none;
+}
+.show-text .minus-icon {
+  display: inline;
+}
+.show-text .plus-icon {
+  display: none;
 }

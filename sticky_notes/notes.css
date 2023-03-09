@@ -16,7 +16,6 @@
     background-blend-mode: hard-light, overlay, overlay, overlay, difference, difference, normal;
 }
 
-
 header {
     position: fixed;
     width: 100%;
@@ -53,7 +52,7 @@ header {
 .sarlavha {
     position: relative;
     display: flex;
-    margin-left: 5px;
+    margin-left: 15px;
     color: white;
     font-size: 20px;
     text-transform: uppercase;
@@ -87,7 +86,6 @@ header {
 }
 
 .x_sign {
-    /* text-align: right; */
     color: rgb(255, 255, 255);
     font-size: 24px;
     animation-name: changing_colors;
@@ -113,7 +111,7 @@ header {
     100%   {rotate:0deg}
   }
   
-.wrapper2 {
+.main {
     position: relative;
     padding-top: 10px;
     height: 100%;
@@ -262,34 +260,58 @@ textarea:hover {
 }
 
 .light_red_varaq,
-.golden_varaq,
+.golden_varaq {
+    animation-name: swing_notes;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+
 .red_varaq,
 .darkPurple_varaq {
     animation-name: swing_notes;
-    animation-duration: 10s;
+    animation-duration: 13s;
     animation-iteration-count: infinite;
     animation-delay: 2s;
 }
 .lightpink_varaq,
-.black_varaq,
+.black_varaq {
+    animation-name: swing_notes;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+
 .pink_varaq,
 .darkBlue_varaq {
     animation-name: swing_notes;
-    animation-duration: 10s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
     animation-delay: 4s;
 }
 
-.gray_varaq,
+.gray_varaq {
+    animation-name: swing_notes;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+
 .blue_varaq,
 .white_varaq {
     animation-name: swing_notes;
-    animation-duration: 10s;
+    animation-duration: 13s;
     animation-iteration-count: infinite;
     animation-delay: 6s;
 }
 
-.purple_varaq,
+.purple_varaq {
+    animation-name: swing_notes;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 7s;
+}
+
 .darkgreen_varaq,
 .green_varaq {
     animation-name: swing_notes;
@@ -330,7 +352,6 @@ textarea:hover {
     100%  {background-color:rgba(255, 0, 0, 0.452); left:0px; top:0px;}
   }
 
-
 .trash_red {
     position: relative;
     margin: auto;
@@ -340,6 +361,8 @@ textarea:hover {
     filter: invert(48%) sepia(79%) saturate(1476%) hue-rotate(16deg) brightness(68%) contrast(19%);
     width: 20px;
 }
+
+
 
 /* 
 
