@@ -157,7 +157,7 @@
 
 <div class="big_main">
 
-  <section>
+  <section style="color:rgb(199, 199, 199)">
     <h1>Les 8 Oefenen</h1>
     
     <div>
@@ -422,14 +422,15 @@
               var rotated = false;
   
               savol.addEventListener("click", function() {
-                  questions.forEach(function (ddd) {
-                      if (ddd !== question) {
-                          ddd.classList.remove("show-text");
+                  questions.forEach(function (banana) {
+                      if (banana !== question) {
+                        banana.classList.remove("show-text");
+                        banana.style.background = "rgb(199, 199, 199)"
                       }
                   })
                   question.classList.toggle("show-text");
+                  question.style.background = "rgb(235, 235, 235)"
   
-                  // var div = document.getElementById('div'),
                   deg = rotated ? 0 : 360;
   
                   btn.style.webkitTransform = 'rotate('+deg+'deg)'; 
