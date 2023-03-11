@@ -86,6 +86,7 @@ h3 {
 .zoek_elkaar2 {
     border: 2px solid rgb(145, 145, 145);
     padding: 10px;
+   
     display: flex;
     gap: 30px;
     justify-content: space-between;
@@ -111,6 +112,11 @@ h3 {
     width: 80px;
     background-color: #dcdcdc;
 }
+
+.zoek_elkaar2 .first_part {
+    cursor: pointer;
+}
+
 
 .zoek_elkaar2 .first_part .qator1 {
     margin-bottom: 20px;
