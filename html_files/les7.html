@@ -268,6 +268,156 @@
   </div>
 </section>
 
+<section 
+style="padding: 0; position: relative;">
+<style>
+  .divisions_container {
+    width: 100%;
+    height: 50vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: grid;
+    grid-template-columns: 100% 100%;
+    scroll-snap-type: x mandatory;
+  
+    gap: 0px;
+
+  }
+.divisions_container .division {
+  padding: 40px;
+  flex-wrap: wrap;
+  color: white;
+  height: 50vh;
+  font-size: 20px;
+
+  scroll-snap-stop: always;
+  scroll-snap-align: center;
+
+  background-image: url(../images/images_les2/inst_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.divisions_container .division .asos_tekst {
+  position: relative;
+  margin-bottom: 20px;
+}
+.divisions_container .division2 span {
+ color: rgb(26, 255, 0);
+}
+.division2 .check_sign {
+  margin-left: 30px;
+ font-size: 34px;
+}
+.divisions_container .division1,
+.divisions_container .division2 {
+  position: relative;
+}
+.divisions_container .company_subcontainer {
+  display: flex;
+}
+.divisions_container .company {
+  position: absolute;
+  /* padding: 10px; */
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  background-color: rgb(255, 70, 70);
+  right: 10px;
+  bottom: 10px;
+  overflow: hidden;
+  display: flex;
+}
+.divisions_container .company_subcontainer {
+  position: relative;
+  rotate: -45deg;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.divisions_container .company_subcontainer p {
+  text-align: center;
+  font-size: 10px;
+  line-height: 12px;
+  z-index: 10;
+}
+.divisions_container .met {
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  /* background-color: rgb(192, 236, 255); */
+}
+.check_sign_white {
+  position: absolute;
+  /* width: 200px; */
+  right: 10px;
+  bottom: -25px;
+  height: 100px;
+}
+.check_sign_white p {
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 120px;
+}
+
+</style>
+
+<div class="divisions_container">
+
+  <div class="division division1">
+    <p class="asos_tekst">
+      Ik <span>_______</span> zombies.
+    </p>
+    <ul>
+      <li>a. 
+        bedank
+      </li>
+      <li>b. 
+        haat
+      </li>
+      <li>c. 
+        respecteer
+      </li>
+    </ul>
+   
+      <div class="company">
+        <div class="company_subcontainer">
+        <p> Nederlands</p>
+        <p class="met">met</p>
+        <p class="ikkinchiP">het BouwB</p>
+        </div>
+      </div>
+      <div class="check_sign_white">
+        <p >&#x2713;</p>
+      </div>
+   
+  </div>
+
+  <div class="division division2">
+    <p class="asos_tekst">
+      Ik <span>haat</span> zombies.</p>
+    <ul>
+      <li>a. bedank   </li>
+      <li>b. haat   <span class="check_sign">&#x2713;</span>  </li>
+      <li>c. respecteer 
+       
+      </li>
+    </ul>
+
+    <div class="company">
+      <div class="company_subcontainer">
+      <p> Nederlands</p>
+      <p class="met">met</p>
+      <p class="ikkinchiP">het BouwB</p>
+      </div>
+    </div>
+    <div class="check_sign_white">
+      <p >&#x2713;</p>
+    </div>
+    
+  </div>
+</div>
+</section>
+
 <section>
   <main>
     <div>
@@ -312,6 +462,14 @@
       <td>Tot straks!</td>
       <td>Tezda kórishguncha</td>
     </tr>
+    <tr>
+      <td>haat</td>
+      <td>yomon kórish</td>
+    </tr>
+    <tr>
+      <td>respecteer</td>
+      <td>hurmat qilaman</td>
+    </tr>
   </table>
 
   <div class="hammer_container">
@@ -354,6 +512,66 @@
       </div>
     </main>
   </section>
+
+  <section 
+style="padding: 0; position: relative;">
+
+
+<div class="divisions_container">
+
+  <div class="division division1">
+    <p class="asos_tekst">
+      Hoe gaat het met <span>_______</span>?
+    </p>
+    <ul>
+      <li>a. 
+        wij
+      </li>
+      <li>b. 
+        hij
+      </li>
+      <li>c. 
+        jou
+      </li>
+    </ul>
+   
+      <div class="company">
+        <div class="company_subcontainer">
+        <p> Nederlands</p>
+        <p class="met">met</p>
+        <p class="ikkinchiP">het BouwB</p>
+        </div>
+      </div>
+      <div class="check_sign_white">
+        <p >&#x2713;</p>
+      </div>
+   
+  </div>
+
+  <div class="division division2">
+    <p class="asos_tekst">
+      Hoe gaat het met <span>jou</span>?
+    </p>
+    <ul>
+      <li>a. wij   </li>
+      <li>b. hij    </li>
+      <li>c. jou <span class="check_sign">&#x2713;</span>   </li>
+    </ul>
+
+    <div class="company">
+      <div class="company_subcontainer">
+      <p> Nederlands</p>
+      <p class="met">met</p>
+      <p class="ikkinchiP">het BouwB</p>
+      </div>
+    </div>
+    <div class="check_sign_white">
+      <p >&#x2713;</p>
+    </div>
+    
+  </div>
+</div>
+</section>
 
   <section>
     <main>
