@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="../general.css">
     <link rel="stylesheet" href="../styles_oefenen.css">
     <link rel="stylesheet" href="../aside.css">
-    <link rel="stylesheet" href="../test_flex1.css">
+    <!-- <link rel="stylesheet" href="../test_flex1.css"> -->
    
 </head>
 
@@ -158,31 +158,323 @@
 <div class="big_main">
 
   <section>
-    <h1>Les 10</h1>
-    <main>
-      <!-- <div>
+    <h1 style="text-align: center;">Les 10: luisteren,
+      <br>
+      <span class="bold"> lezen, schrijven..</span>
+    </h1>
+    <main style="margin-left: 0px;">
+      <div>
+        <img style="margin: 0px 0px;" src="../images/images_les2/teacher_board.jpeg" alt="">
+      </div>
+      <div>
         <h3 style="text-align: left;">
-          1. 	<span class="bold">Ke...ie</span>
+          1. 	<span class="bold">Lees de tekst. Wat betekenen de rode woorden?</span>
         </h3>
       </div>
       <div>
-          <img style="margin: 0px 0px;" src="../images/images_les2/fami.jpeg" alt="">
+        <p class="twenty_font">De cursisten <span class="red">leren</span> Nederlands.</p>
       </div>
-
-      <p class="fourteen_font "></p> -->
+      <div>
+        <p class="twenty_font">Ze <span class="red">luisteren</span> naar de docent.</p>
+      </div>
+      <div>
+        <p class="twenty_font">De docent <span class="red">schrijft</span> de woorden op het <span class="red">bord</span>.</p>
+      </div>
+      <div>
+        <p class="twenty_font">De cursisten schrijven met een <span class="red">pen</span>.</p>
+      </div>
+      <div>
+        <p class="twenty_font">De cursisten <span class="red">lezen</span> de tekst in het <span class="red">boek</span>.</p>
+      </div>
+      <div>
+        <p class="twenty_font">Ze maken de <span class="red">opdracht</span> in het boek.</p>
+      </div>
+      <div>
+        <p class="twenty_font">En ze maken opdrachten op hun <span class="red">telefoon</span>.</p>
+      </div>
+      <div>
+        <p class="twenty_font">De cursisten <span class="red">spreken</span> samen Nederlands.</p>
+      </div>
+     
       
     </main>
-  </section>
+   
+    <main style="width: 290px; margin-top: 30px;">
+      <style>
 
-  <section style="background-color: red; color: white;">
-    <main >
-      <h3 style="background-color: red; color: white;">Bu dars hali tayyor emas</h3>
+        .item_container {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+        .item_container img {
+          margin: auto;
+          width: 100px;
+          /* height: 100px; */
+          overflow: hidden;
+        }
+        .item_container p {
+          margin-bottom: 20px;
+        
+        }
+      </style>
+      <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: space-between;">
+
+        <div class="item_container">
+          <img style="border-radius: 10px; width: 80px;" src="../images/images_les2/speakEmtk.png" alt="">
+          <p style="text-align: center;" class="sixteen_font bold blue"><span></span> spreken</p>
+        </div>
+        <div class="item_container">
+          <img style="  border-radius: 10px;" src="../images/images_les2/writeEmtk.jpeg" alt="">
+          <p style="text-align: center;" class="sixteen_font bold blue"><span></span> schrijven</p>
+        </div>
+        <div class="item_container">
+          <img style=" border-radius: 10px;" src="../images/images_les2/readEmt.png" alt="">
+          <p style="text-align: center; margin-left: 5px" class="sixteen_font bold blue">lezen</p>
+        </div>
+        <div class="item_container">
+          <img style="border-radius: 10px;" src="../images/images_les2/listen2.png" alt="">
+          <p style="text-align: center;" class="sixteen_font bold blue"><span></span> luisteren</p>
+        </div>
+        
+      </div>
+  
     </main>
   </section>
 
   <section>
+    <main style="margin-left: 0px;">
+     <h3>
+      Vragen en antwoorden:
+     </h3>
+    </main>
+    <div style="border-radius: 7px;" class="borderi_bor">
+      <p style="color: green; font-size: 18px;">
+        De cursisten leren Nederlands.
+      </p>
+    
+      <p style="color: rgb(0, 70, 128); font-size: 18px;">
+        Wat leren de cursisten?
+      </p>
+    
+      <p style="color: green; font-size: 18px;">
+        De cursisten leren Nederlands.
+      </p>
+    </div>
+
+    <div style="border-radius: 7px;" class="borderi_bor">
+      <p style="color: green; font-size: 18px;">
+        Ze leren Nederlands.
+      </p>
+    
+      <p style="color: rgb(0, 70, 128); font-size: 18px;">
+        Wie leren Nederlands?
+      </p>
+    
+      <p style="color: green; font-size: 18px;">
+        De cursisten leren Nederlands.
+      </p>
+    </div>
+
+    <div style="border-radius: 7px;" class="borderi_bor">
+      <p style="color: green; font-size: 18px;">
+        De docent schrijft de woorden.
+      </p>
+      <p style="color: rgb(0, 70, 128); font-size: 18px;">
+        Wat schrijft de docent?
+      </p>
+      <p style="color: green; font-size: 18px;">
+        De docent schrijft de woorden.
+      </p>
+    </div>
+
+    <div style="border-radius: 7px;" class="borderi_bor">
+      <p style="color: green; font-size: 18px;">
+        Ik luister naar muziek.
+      </p>
+      <p style="color: rgb(0, 70, 128); font-size: 18px;">
+        Wat luister ik?
+      </p>
+      <p style="color: green; font-size: 18px;">
+        Ik luister naar muziek.
+      </p>
+    </div>
+
+    <div style="border-radius: 7px;" class="borderi_bor">
+      <p style="color: green; font-size: 18px;">
+        Ze lezen nu de tekst.
+      </p>
+      <p style="color: rgb(0, 70, 128); font-size: 18px;">
+        Wat lezen ze nu?
+      </p>
+      <p style="color: green; font-size: 18px;">
+        Ze lezen nu de tekst.
+      </p>
+    </div>
+
+    <div style="border-radius: 7px;" class="borderi_bor">
+      <p style="color: green; font-size: 18px;">
+        De docent schrijft de woorden op het bord. <br>
+      </p>
+      <p style="color: rgb(0, 70, 128); font-size: 18px;">
+        Waar schrijft de docent op? <br>
+      </p>
+      <p style="color: green; font-size: 18px;">
+        Hij schrijft op het bord. <br>
+      </p>
+      <p style="color: green; font-size: 18px;">
+        Hij schrijft de woorden op het bord. <br>
+      </p>
+      <p style="color: green; font-size: 18px;">
+        Hij schrijft ze op het bord.
+      </p>
+    </div>
+  </section>
+
+  <section 
+    style="padding: 0; position: relative;">
+    <style>
+      .divisions_container {
+        width: 100%;
+        height: 50vh;
+        overflow-x: scroll;
+        overflow-y:hidden;
+        display: grid;
+        grid-template-columns: 100% 100%;
+        scroll-snap-type: x mandatory;
+      
+        gap: 0px;
+
+      }
+    .divisions_container .division {
+      padding: 40px;
+      flex-wrap: wrap;
+      color: white;
+      height: 50vh;
+      font-size: 20px;
+
+      scroll-snap-stop: always;
+      scroll-snap-align: center;
+
+      background-image: url(../images/images_les2/inst_bg.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .divisions_container .division .asos_tekst {
+      position: relative;
+      margin-bottom: 20px;
+    }
+    .divisions_container .division2 span {
+     color: rgb(26, 255, 0);
+    }
+    .division2 .check_sign {
+      margin-left: 30px;
+     font-size: 34px;
+    }
+    .divisions_container .division1,
+    .divisions_container .division2 {
+      position: relative;
+    }
+    .divisions_container .company_subcontainer {
+      display: flex;
+    }
+    .divisions_container .company {
+      position: absolute;
+      /* padding: 10px; */
+      width: 30%;
+      height: 30%;
+      border-radius: 50%;
+      background-color: rgb(255, 70, 70);
+      right: 10px;
+      bottom: 10px;
+      overflow: hidden;
+      display: flex;
+    }
+    .divisions_container .company_subcontainer {
+      position: relative;
+      rotate: -45deg;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .divisions_container .company_subcontainer p {
+      text-align: center;
+      font-size: 10px;
+      line-height: 12px;
+      z-index: 10;
+    }
+    .divisions_container .met {
+      color: rgb(255, 255, 255);
+      font-weight: 700;
+      /* background-color: rgb(192, 236, 255); */
+    }
+    .check_sign_white {
+      position: absolute;
+      /* width: 200px; */
+      right: 10px;
+      bottom: -25px;
+      height: 100px;
+    }
+    .check_sign_white p {
+      color: rgba(255, 255, 255, 0.66);
+      font-size: 120px;
+    }
+
+    </style>
+
+    <div class="divisions_container">
+
+      <div class="division division1">
+        <p class="asos_tekst">De cursisten leren de <span>_______</span> in het boek.</p>
+        <ul>
+          <li>a. boek</li>
+          <li>b. bord</li>
+          <li>c. tekst</li>
+        </ul>
+       
+          <div class="company">
+            <div class="company_subcontainer">
+            <p> Nederlands</p>
+            <p class="met">met</p>
+            <p class="ikkinchiP">het BouwB</p>
+            </div>
+          </div>
+          <div class="check_sign_white">
+            <p >&#x2713;</p>
+          </div>
+       
+      </div>
+
+      <div class="division division2">
+        <p class="asos_tekst">De cursisten leren de <span>tekst</span> in het boek.</p>
+        <ul>
+          <li>a. boek</li>
+          <li>b. bord</li>
+          <li>c. tekst <span class="check_sign">&#x2713;</span></li>
+        </ul>
+
+        <div class="company">
+          <div class="company_subcontainer">
+          <p> Nederlands</p>
+          <p class="met">met</p>
+          <p class="ikkinchiP">het BouwB</p>
+          </div>
+        </div>
+        <div class="check_sign_white">
+          <p >&#x2713;</p>
+        </div>
+        
+      </div>
+
+    </div>
+
+  </section>
+
+  <section>
     <button  class="second_button" onclick="window.location.href='./les9_oefenen.html'">
-      oefenen: maśqlar
+      oefenen
     </button> 
   </section>
   <!-- end of .big_main /div -->
