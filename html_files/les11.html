@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les 9</title>
+    <title>Les 11</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
 <!-- 
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="../general.css">
     <link rel="stylesheet" href="../styles_oefenen.css">
     <link rel="stylesheet" href="../aside.css">
-    <link rel="stylesheet" href="../test_flex1.css">
+    <!-- <link rel="stylesheet" href="../test_flex1.css"> -->
    
 </head>
 
@@ -38,7 +38,7 @@
       </a>
       </div>
       <div class="nav_thema">
-        <li>Les 9</li>
+        <li>Les 11</li>
       </div>
       <div class="navLink_container">
         <li class="nav__link"><a  href="#">Lalala</a></li>
@@ -158,30 +158,567 @@
 <div class="big_main">
 
   <section>
-    <h1>Les 9</h1>
+    <h1 style="text-align: center;">
+      Les 11: Vraagwoorden
+    </h1>
     <main>
-      <!-- <div>
-        <h3 style="text-align: left;">
-          1. 	<span class="bold">Ke...ie</span>
+      <div style="position: relative; margin: 3px; border: 2px solid gray; padding: 10px;">
+          <img style="margin: 0px 0px;" src="../images/images_les2/vraagwoorden_waar.jpeg" alt="">
+          <p style="position: absolute; top: 0%; left: 0%; font-size: 26px;  background-color: rgba(128, 128, 128, 0.314); padding-left: 5%; width: 100%; color: rgba(162, 173, 163, 0.918); font-weight: 700;">waar</p>
+          <p style="position: absolute; bottom: 0%; right: 0%; font-size: 22px; color: rgba(151, 164, 152, 0.918); font-weight: 700;  background-color: rgba(128, 128, 128, 0.314); padding-right: 5%; width: 100%; text-align: right;">vraagwoord</p>
+      </div>
+      <div class="spaver20px"></div>
+      <div>
+        <h3 style="text-align: left; margin-left: 10px;">
+          1. 	<span class="bold">Voorbeelden:</span>
         </h3>
       </div>
-      <div>
-          <img style="margin: 0px 0px;" src="../images/images_les2/fami.jpeg" alt="">
+    </main>
+    <div>
+      <style>
+        .wrap_qstn {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        }
+        .savol {
+          background: rgb(230, 230, 230);
+          border-radius: 0.5rem;
+          padding: 10px 15px;
+          margin: 0px 20px;
+          
+        }
+        .p_container {
+          margin-top: auto;
+          margin-bottom: auto;
+          display: flex;
+          justify-content: left;
+          gap: 5px;
+        }
+        .savol-text2 p {
+          padding-top: 0px;
+        }
+        .savol-text {
+          display: flex;
+          justify-content: space-between;
+          gap: 10px;
+        }
+        .savol-text p {
+          margin-bottom: 0;
+          font-size: 18px;
+        }
+        .savol-btn {
+          margin: 0px;
+          /* margin-top: -3px; */
+          font-size: 24px;
+          width: fit-content;
+          background: transparent;
+          box-shadow: none;
+          transition: all 0.3s linear;
+          cursor: pointer;
+        }
+        .savol-btn:hover {
+          background: transparent !important;
+          box-shadow: none;
+        }
+        .savol-btn i {
+          color: rgba(89, 89, 89, 0.789);
+          color: green;
+          background: transparent;
+        }
+        .cursor-point {
+          cursor: pointer;
+        }
+        .savol-text2 {
+          display: none;
+        }
+        .show-text .savol-text2 {
+          display: block;
+        }
+        .minus-icon {
+          display: none;
+        }
+        .show-text .minus-icon {
+          display: inline;
+        }
+        .show-text .plus-icon {
+          display: none;
+        }
+        .wrap_qstn .bx-minus {
+          background-color: rgba(255, 0, 0, 0.51);
+          border-radius: 50%;
+        }
+        .wrap_qstn .bx-plus {
+          background-color: rgba(173, 173, 173, 0.51);
+          border-radius: 50%;
+        }
+      </style>
+      <div class="wrap_qstn">
+      <article class="savol">
+        <!-- question title -->
+        <div class="savol-text cursor-point">
+         <div class="p_container" style="color: green;">
+          <p class="bold purple">~ </p>
+          <p class="bold">
+            Hallo, wie ben jij?
+            <span class="wave"> &#128400;</span>
+          </p>
+         </div>
+          <button type="button" class="savol-btn">
+            <span class="plus-icon">
+              <i class='bx bx-plus'></i>
+            </span>
+            <span class="minus-icon">
+              <i class='bx bx-minus'></i>
+            </span>
+          </button>
+        </div>
+        <div class="savol-text savol-text2">
+          <div class="p_container" style="color: blue;">
+            <p class="bold purple">~ </p>
+            <p class="bold">Dag, ik heet Salim. </p>
+           </div>
+        </div>
+      </article>
+  
+      <article class="savol">
+        <!-- question title -->
+        <div class="savol-text cursor-point">
+         <div class="p_container" style="color: green;">
+          <p class="bold purple">~ </p>
+          <p class="bold">
+            Wat hoor je, Salim?
+            
+          </p>
+         </div>
+          <button type="button" class="savol-btn">
+            <span class="plus-icon">
+              <i class='bx bx-plus'></i>
+            </span>
+            <span class="minus-icon">
+              <i class='bx bx-minus'></i>
+            </span>
+          </button>
+        </div>
+        <div class="savol-text savol-text2">
+          <div class="p_container" style="color: blue;">
+            <p class="bold purple">~ </p>
+            <p class="bold">Ik hoor de trekker. </p>
+           </div>
+        </div>
+      </article>
+      <article class="savol">
+        <!-- question title -->
+        <div class="savol-text cursor-point">
+         <div class="p_container" style="color: green;">
+          <p class="bold purple">~ </p>
+          <p class="bold">
+            En wie is dat?
+            
+          </p>
+         </div>
+          <button type="button" class="savol-btn">
+            <span class="plus-icon">
+              <i class='bx bx-plus'></i>
+            </span>
+            <span class="minus-icon">
+              <i class='bx bx-minus'></i>
+            </span>
+          </button>
+        </div>
+        <div class="savol-text savol-text2">
+          <div class="p_container" style="color: blue;">
+            <p class="bold purple">~ </p>
+            <p class="bold">Dat is mijn docent. </p>
+           </div>
+        </div>
+      </article>
+
+      <article class="savol">
+        <!-- question title -->
+        <div class="savol-text cursor-point">
+         <div class="p_container" style="color: green;">
+          <p class="bold purple">~ </p>
+          <p class="bold">
+            Waar woont hij?
+            
+          </p>
+         </div>
+          <button type="button" class="savol-btn">
+            <span class="plus-icon">
+              <i class='bx bx-plus'></i>
+            </span>
+            <span class="minus-icon">
+              <i class='bx bx-minus'></i>
+            </span>
+          </button>
+        </div>
+        <div class="savol-text savol-text2">
+          <div class="p_container" style="color: blue;">
+            <p class="bold purple">~ </p>
+            <p class="bold">Hij woont in Utrecht. </p>
+           </div>
+        </div>
+      </article>
+    </div>
+      <script>
+        window.addEventListener("DOMContentLoaded", function () {
+
+        const questions = document.querySelectorAll(".savol");
+
+        questions.forEach(function (question) {
+            const btn = question.querySelector(".savol-btn");
+            const savol = question.querySelector(".savol-text");
+            var rotated = false;
+
+            savol.addEventListener("click", function() {
+                questions.forEach(function (banana) {
+                    if (banana !== question) {
+                      // banana.classList.remove("show-text");
+                      // banana.style.background = "rgb(199, 199, 199)"
+                    }
+                })
+                question.classList.toggle("show-text");
+                question.style.background = "rgb(235, 235, 245)"
+
+                deg = rotated ? 0 : 360;
+
+                btn.style.webkitTransform = 'rotate('+deg+'deg)'; 
+                btn.style.mozTransform    = 'rotate('+deg+'deg)'; 
+                btn.style.msTransform     = 'rotate('+deg+'deg)'; 
+                btn.style.oTransform      = 'rotate('+deg+'deg)'; 
+                btn.style.transform       = 'rotate('+deg+'deg)'; 
+
+                rotated = !rotated;
+            });
+        });
+      })
+      </script>
+  </div>
+  <main style="margin-left: 6px;">
+    <p style="line-height: 26px;" class="sixteen_font bold blue">'Wie,'  'wat' va 'waar'  kabi sózlar <span class="red bold">'vraagwoorden'</span> deb ataladi. </p>
+    <p style="line-height: 26px;" class="sixteen_font bold blue">
+      Ózbekcha qilib aytganda: 'sóroq-sózlar'.
+    </p>
+    <div class="spacer10px"></div>
+    <div>
+      <p style="line-height: 26px;" class="twenty_font  green">
+        Boshqa misollar:
+      </p>
+    </div>
+    <div>
+      <p style="line-height: 26px;" class="twenty_font gray">
+       <i>Hoeveel</i>  boeken heeft hij?
+      </p>
+    </div>
+    <div>
+      <p style="line-height: 26px;" class="twenty_font gray">
+       <i>Hoeveel</i> kost het?
+      </p>
+    </div>
+    <div>
+      <p style="line-height: 26px;" class="twenty_font gray">
+        <i>Wanneer</i> ga je naar school?
+      </p>
+    </div>
+    <div>
+      <p style="line-height: 26px;" class="twenty_font gray">
+        <i>Hoe laat</i> is het nu?
+      </p>
+    </div>
+ 
+    <div>
+      <p style="line-height: 26px;" class="twenty_font gray">
+        <i>Hoe</i> oud ben jij?
+      </p>
+    </div>
+
+    <div>
+      <p style="line-height: 26px;" class="twenty_font gray">
+        <i>Waar</i> kom je vandaan?
+      </p>
+    </div>
+    <div>
+      <p style="line-height: 26px;" class="twenty_font gray">
+        <i>Waarom</i> vraag je dat?
+      </p>
+    </div>
+  </main>
+</section>
+
+<section>
+  <main style="margin-left: 0px;">
+    <h3>
+      2. Twintig, dertig, veertig:
+     </h3>
+     <div>
+      <p style="font-size: 22px; line-height: 30px;" class="blue">
+        Je hebt vroeger de <span>getallen</span> 0 tot 20 geleerd.
+      </p>
+    </div>
+     <div>
+      <p style="font-size: 22px; line-height: 30px;" class="blue">
+        Je leert nu de getallen tot en met 29:
+      </p>
+    </div>
+    
+    <div style="padding: 20px;  background-color: rgb(255, 243, 232);">
+    <div style="display: flex; gap: 14px;">
+      <p style="font-size: 20px; margin-bottom: 21px;">
+        20
+      </p>
+      <p style="font-size: 20px; margin-bottom: 21px;"> 
+        twintig
+      </p>
+    </div>
+    <div style="display: flex; gap: 20px; ">
+      <p style="font-size: 20px; margin-bottom: 21px;">
+        21
+      </p>
+      <p style="font-size: 20px; margin-bottom: 21px;"> 
+        een<span class="bold">en</span>twintig
+      </p>
+    </div>
+    <div style="display: flex; gap: 20px; ">
+      <p style="font-size: 20px; margin-bottom: 21px;">
+        22
+      </p>
+      <p style="font-size: 20px; margin-bottom: 21px;"> 
+        twee<span class="bold">ën</span>twintig
+      </p>
+    </div>
+    <div style="display: flex; gap: 20px; ">
+      <p style="font-size: 20px; margin-bottom: 21px;">
+        23
+      </p>
+      <p style="font-size: 20px; margin-bottom: 21px;"> 
+        drie<span class="bold">ën</span>twintig
+      </p>
+    </div>
+    <div style="display: flex; gap: 20px; ">
+      <p style="font-size: 20px; margin-bottom: 21px;">
+        24
+      </p>
+      <p style="font-size: 20px; margin-bottom: 21px;"> 
+        vier<span class="bold">en</span>twintig
+      </p>
+    </div>
+    <div style="display: flex; gap: 20px; ">
+      <p style="font-size: 20px; margin-bottom: 21px;">
+        25
+      </p>
+      <p style="font-size: 20px; margin-bottom: 21px;"> 
+        vijf<span class="bold">en</span>twintig
+      </p>
+    </div>
+    <div style="display: flex; gap: 20px; ">
+      <p style="font-size: 20px; margin-bottom: 21px;">
+        26
+      </p>
+      <p style="font-size: 20px; margin-bottom: 21px;"> 
+        zes<span class="bold">en</span>twintig
+      </p>
+    </div>
+    <div style="display: flex; gap: 20px; ">
+      <p style="font-size: 20px; margin-bottom: 21px;">
+        27
+      </p>
+      <p style="font-size: 20px; margin-bottom: 21px;"> 
+        zeven<span class="bold">en</span>twintig
+      </p>
+    </div>
+    <div style="display: flex; gap: 20px; ">
+      <p style="font-size: 20px; margin-bottom: 21px;">
+        28
+      </p>
+      <p style="font-size: 20px; margin-bottom: 21px;"> 
+        acht<span class="bold">en</span>twintig
+      </p>
+    </div>
+    <div style="display: flex; gap: 20px; ">
+      <p style="font-size: 20px; margin-bottom: 21px;">
+        29
+      </p>
+      <p style="font-size: 20px; margin-bottom: 21px;"> 
+        negen<span class="bold">en</span>twintig
+      </p>
+    </div>
+  </div>
+
+  <div>
+    <p style="font-size: 22px; line-height: 30px;" class="blue">
+      Nu de getallen tot 100:
+    </p>
+  </div>
+  
+  <div style="padding: 20px;  background-color: rgb(255, 243, 232);">
+  <div style="display: flex; gap: 14px;">
+    <p style="font-size: 20px; margin-bottom: 21px;">
+      30
+    </p>
+    <p style="font-size: 20px; margin-bottom: 21px;"> 
+      dertig
+    </p>
+  </div>
+  <div style="display: flex; gap: 20px; ">
+    <p style="font-size: 20px; margin-bottom: 21px;">
+      31
+    </p>
+    <p style="font-size: 20px; margin-bottom: 21px;"> 
+      een<span class="bold">en</span>dertig
+    </p>
+  </div>
+  <div style="display: flex; gap: 20px; ">
+    <p style="font-size: 20px; margin-bottom: 21px;">
+      32
+    </p>
+    <p style="font-size: 20px; margin-bottom: 21px;"> 
+      twee<span class="bold">ën</span>dertig
+    </p>
+  </div>
+  <div style="display: flex; gap: 20px; ">
+    <p style="font-size: 20px; margin-bottom: 21px;">
+      40
+    </p>
+    <p style="font-size: 20px; margin-bottom: 21px;"> 
+      viertig
+    </p>
+  </div>
+  <div style="display: flex; gap: 20px; ">
+    <p style="font-size: 20px; margin-bottom: 21px;">
+      50
+    </p>
+    <p style="font-size: 20px; margin-bottom: 21px;"> 
+      vijftig
+    </p>
+  </div>
+  <div style="display: flex; gap: 20px; ">
+    <p style="font-size: 20px; margin-bottom: 21px;">
+      60
+    </p>
+    <p style="font-size: 20px; margin-bottom: 21px;"> 
+      zestig
+    </p>
+  </div>
+  <div style="display: flex; gap: 20px; ">
+    <p style="font-size: 20px; margin-bottom: 21px;">
+      70
+    </p>
+    <p style="font-size: 20px; margin-bottom: 21px;"> 
+      zeventig
+    </p>
+  </div>
+  <div style="display: flex; gap: 20px; ">
+    <p style="font-size: 20px; margin-bottom: 21px;">
+      80
+    </p>
+    <p style="font-size: 20px; margin-bottom: 21px;"> 
+      tachtig
+    </p>
+  </div>
+  <div style="display: flex; gap: 20px; ">
+    <p style="font-size: 20px; margin-bottom: 21px;">
+      90
+    </p>
+    <p style="font-size: 20px; margin-bottom: 21px;"> 
+      negentig
+    </p>
+  </div>
+  <div style="display: flex; gap: 20px; ">
+    <p style="font-size: 20px; margin-bottom: 21px;">
+      100
+    </p>
+    <p style="font-size: 20px; margin-bottom: 21px;"> 
+      honderd
+    </p>
+  </div>
+</div>
+  </main>
+</section>
+
+<section style="padding-bottom: 10px;">
+  <main>
+    <h3>
+      3. Hoe lees jij de volgende getallen:
+    </h3>
+    <div>
+      <p style="font-size: 16px; line-height: 30px; margin: 0px;" class="blue bold">
+        21, 22, 43, 64 kabi <span class="red bold">ikki xonali</span> sonlar golland tilida teskari óqiladi.
+      </p>
+    </div>
+    <div>
+      <p style="font-size: 16px; line-height: 30px; margin: 0px;" class="blue bold">
+        Yáni avval <span class="red bold">orqadagi son</span> aytiladi, keyin <span class="red bold">"en" </span> sózi va undan keyin <span class="red bold">ónli son</span> aytiladi (yigirma, óttiz, qirq va hkz).
+      </p>
+    </div>
+  </main>
+
+  <div style="display: flex; flex-direction: column; border: 2px solid gray; margin: 10px; padding: 20px;">
+    <main style="position: relative; display: flex; flex-direction: row; padding: 0px; margin-bottom: 50px;">
+  
+      <div style="margin-top: 10px;">
+          <div style=" margin: auto;">
+              <p style="text-align: center; font-size: 60px;">3<span class="red">4</span></p>
+          </div>     
+          <div style="margin: auto; width: 70px;">
+            <img src="../images/images_les2/arrows2.png" alt="">
+          </div>
+          <div style="margin: auto;">
+            <p style="text-align: center; font-size: 18px;">
+              <span class="red">vier</span><span class="black bold">en</span>dertig
+            </p>
+          </div>
       </div>
-
-      <p class="fourteen_font "></p> -->
-      
+  
+      <div style="margin-top: 10px;">
+        <div style=" margin: auto;">
+            <p style="text-align: center; font-size: 60px;">2<span class="red">6</span></p>
+        </div>     
+        <div style="margin: auto; width: 70px;">
+          <img src="../images/images_les2/arrows2.png" alt="">
+        </div>
+        <div style="margin: auto;">
+          <p style="text-align: center; font-size: 18px;">
+            <span class="red">zes</span><span class="black bold">en</span>twintig
+          </p>
+        </div>
+    </div>
     </main>
-  </section>
-
-  <section style="background-color: red; color: white;">
-    <main >
-      <h3 style="background-color: red; color: white;">Bu dars hali tayyor emas</h3>
+    <main style="position: relative; display: flex; flex-direction: row; padding: 0px;">
+  
+      <div style="margin-top: 10px;">
+          <div style=" margin: auto;">
+              <p style="text-align: center; font-size: 60px;">6<span class="red">5</span></p>
+          </div>     
+          <div style="margin: auto; width: 70px;">
+            <img src="../images/images_les2/arrows2.png" alt="">
+          </div>
+          <div style="margin: auto;">
+            <p style="text-align: center; font-size: 18px;">
+              <span class="red">vijf</span><span class="black bold">en</span>zestig
+            </p>
+          </div>
+      </div>
+  
+      <div style="margin-top: 10px;">
+        <div style=" margin: auto;">
+            <p style="text-align: center; font-size: 60px;">4<span class="red">1</span></p>
+        </div>     
+        <div style="margin: auto; width: 70px;">
+          <img src="../images/images_les2/arrows2.png" alt="">
+        </div>
+        <div style="margin: auto;">
+          <p style="text-align: center; font-size: 18px;">
+            <span class="red">een</span><span class="black bold">en</span>veertig
+          </p>
+        </div>
+    </div>
     </main>
-  </section>
+  </div>
+</section>
 
   <section>
-    <button  class="second_button" onclick="window.location.href='./les9_oefenen.html'">
+    <button  class="second_button" onclick="window.location.href='./les11_oefenen.html'">
       oefenen: maśqlar
     </button> 
   </section>
