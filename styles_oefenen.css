@@ -243,7 +243,7 @@ form p {
     background-color: #ccc;
     border-radius: 15px;
     background-color: #2e8631;
-
+    cursor: pointer;
     display: flex;
   }
 
