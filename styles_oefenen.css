@@ -195,6 +195,131 @@ form p {
 
 
 
+.german {
+    background-color: rgb(186, 223, 255) !important;
+    padding: 20px 0px;
+}
+
+.german .a_territory {
+    margin: 0px 10px;
+    /* padding: 10px; */
+    border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+    min-height: 150px;
+    height: fit-content;
+  }
+
+
+  .german .pustoy_div {
+    /* display: inline-block; */
+    min-width: 90px;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px dotted gray;
+
+    background-color: #ffffffdb;
+    margin: 20px;
+
+    display: flex;
+  }
+
+  .sharh_container {
+    /* background-color: #eee; */
+    margin: 10px 5px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+  }
+  .german .sharhi {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .german .sharhi p {
+    text-align: left;
+  }
+
+
+.german .btn-container {
+    background-color: #ccc;
+    border-radius: 15px;
+    background-color: #2e8631;
+
+    display: flex;
+  }
+
+  .german .b_territory {
+    border-radius: 15px;
+    position: relative;
+    padding: 20px;
+    min-height: 130px;
+    background-color: rgb(156, 250, 156);
+    margin: 0px 10px;
+  }
+
+  .german .b_territory > div:nth-child(1) {
+    position: absolute;
+    width: 120px;
+    top: 10px;
+    left: 10px;
+  }
+  .german .b_territory > div:nth-child(2) {
+    position: absolute;
+    width: 120px;
+    top: 10px;
+    right: 10px;
+  }
+  .german .b_territory > div:nth-child(3) {
+    position: absolute;
+    width: 120px;
+    bottom: 10px;
+    left: 10px;
+  }
+  .german .b_territory > div:nth-child(4) {
+    position: absolute;
+    width: 120px;
+    bottom: 10px;
+    right: 10px;
+  }
+
+
+  .german .b_territory > div {
+    /* margin: auto; */
+
+    height: fit-content;
+  }
+
+.german p {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #2e8631;
+  }
+ 
+  .german .a_territory .btn_cha {
+    margin: auto;
+  }
+  .german .a_territory .btn_cha p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #009b53;
+  }
+
+  .german .b_territory .btn_cha {
+    margin: auto;
+    padding: 10px;
+    width: fit-content;
+  }
+  .german .b_territory .btn_cha p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #e8e8e8;
+  }
+
+  
+
+
 /* 
 git add .
 
