@@ -42,9 +42,6 @@ function allowDrop(div) {
     div.target.appendChild(document.getElementById(data));
   }
 
-
-
-
 // Checking the result: 
 
 const ctrl = document.querySelector('.check_your_results')
@@ -95,10 +92,7 @@ ctrl.addEventListener('click', () => {
 })
 
 
-
-
-
-// Checking the result: 
+// Checking the result 2: 
 
 const ctrl_2 = document.querySelector('.check_your_results_2')
 const nishon_2 = document.querySelectorAll('.nishon_2')

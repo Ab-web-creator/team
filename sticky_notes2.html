@@ -274,30 +274,45 @@
       </div>
           
       <script>
-        function moveButton(button) {
-            // Find the first available div
-            var pustoy_div = document.getElementsByClassName("pustoy_div");
-            var targetDiv;
-            for (var i = 0; i < pustoy_div.length; i++) {
-              if (pustoy_div[i].innerHTML === "") {
-                targetDiv = pustoy_div[i];
-                pustoy_div[i].style.minWidth = "10px";
-                pustoy_div[i].style.marginRight = "5px";
-                break;
-              }
+     function moveButton(button) {
+        
+
+          // Find the first available div
+          var pustoy_div = document.getElementsByClassName('pustoy_div');
+          var targetDiv;
+          for (var i = 0; i < pustoy_div.length; i++) {
+            if (pustoy_div[i].innerHTML === '') {
+              targetDiv = pustoy_div[i];
+              pustoy_div[i].style.minWidth = '10px';
+              pustoy_div[i].style.marginRight = '5px';
+              break;
             }
+          }
+
+          // Move the button to the target div
+          if (targetDiv) {
+            targetDiv.appendChild(button);
+            button.onclick = null;
+          }
+
+          const initialContainers = document.getElementsByClassName('btn-container');
+
+          // each btn-container has a child
+          let btnContainerCount = 4;
+
+          // subtract 1 every time a btn-container loses its child element
+          for (let i = 0; i < initialContainers.length; i++) {
+            if (initialContainers[i].children.length === 0) {
+              btnContainerCount--;
+            }
+          }
+
+          // when they are empty this runs
+          if (btnContainerCount === 0) {
+            console.log('run here what you need');
             
-            // Move the button to the target div
-            if (targetDiv) {
-              targetDiv.appendChild(button);
-              button.onclick = null;
-            }
-          };
-
-
-
-          // ВОПРОС: я хочу в конце - когда все 4 дивы перенеслись наверх, т.е. когда серая зона освободилась от всех дивов, начинать другую функцию. Пробовал childElement plus еще один childElement — не получается
-
+          }
+        }
       </script>
     </section>
 

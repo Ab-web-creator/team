@@ -1062,7 +1062,7 @@
     <div class="a_territory">
       <div style="display: flex;">
         <div style="display: flex;">
-          <div class="pustoy_div"></div> 
+          <div  class="pustoy_div pustoy_div1"></div> 
         </div>
 
         <div class="sharh_container">
@@ -1080,7 +1080,7 @@
 
       <div style="display: flex;">
         <div style="display: flex;">
-          <div class="pustoy_div"></div> 
+          <div class="pustoy_div pustoy_div2"></div> 
         </div>
         <div class="sharh_container">
         <div class="sharhi">
@@ -1097,7 +1097,7 @@
 
       <div style="display: flex;">
         <div style="display: flex;">
-          <div class="pustoy_div"></div> 
+          <div class="pustoy_div pustoy_div3"></div> 
         </div>
         <div class="sharh_container">
           <div class="sharhi">
@@ -1112,7 +1112,7 @@
 
       <div style="display: flex;">
         <div style="display: flex;">
-          <div class="pustoy_div"></div> 
+          <div class="pustoy_div pustoy_div4"></div> 
         </div>
         <div class="sharh_container">
           <div class="sharhi">
@@ -1125,28 +1125,43 @@
 
 
 
-    <div id="b_territoriya" class="b_territory">
+    <div id="b_territory"  class="b_territory">
       <div class="btn-container">
-        <div class="btn_cha" onclick="moveButton(this)">
+        <div class="btn_cha btn_cha1" onclick="moveButton(this)">
           <p>Waar</p>
         </div>
       </div>
       <div class="btn-container">
-        <div class="btn_cha" onclick="moveButton(this)">
+        <div class="btn_cha btn_cha2" onclick="moveButton(this)">
           <p>Hoeveel</p>
         </div>
       </div>
       <div class="btn-container">
-        <div class="btn_cha" onclick="moveButton(this)">
+        <div class="btn_cha btn_cha3" onclick="moveButton(this)">
           <p>Hoe</p>
         </div>
       </div>
       <div class="btn-container">
-        <div class="btn_cha" onclick="moveButton(this)">
+        <div class="btn_cha btn_cha4" onclick="moveButton(this)">
           <p>Waarom</p>
         </div>
       </div>
     </div>
+
+    <div id="c_territoriya" class="c_territory">
+      <div  class="buttons_forC_container">
+        <div id="buttons_forC" class="buttons_forC">
+          <div class="ctrl_german">
+            <p>ctrl</p>
+          </div>
+          <div>
+            <p>reset</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+   
         
     <script>
       function moveButton(button) {
@@ -1167,7 +1182,84 @@
             targetDiv.appendChild(button);
             button.onclick = null;
           }
+
+          const initialContainers = document.getElementsByClassName('btn-container');
+
+          // each btn-container has a child
+          let btnContainerCount = 4;
+
+          // subtract 1 every time a btn-container loses its child element
+          for (let i = 0; i < initialContainers.length; i++) {
+            if (initialContainers[i].children.length === 0) {
+              btnContainerCount--;
+            }
+          }
+
+         
+          // when they are empty this runs
+          if (btnContainerCount === 0) {
+            console.log('run here what you need');
+            // const b_territory = document.getElementById('b_territory');
+            // b_territory.classList.add("display_it_none");
+
+            // const announcement = document.getElementById('announcement');
+            // announcement.classList.toggle("show_it");
+           
+            const buttons_forC = document.getElementById('buttons_forC');
+            buttons_forC.classList.toggle("show_it");
+          }
         };
+ 
+        const ctrl_german = document.querySelector('.ctrl_german')
+        const pustoy_div = document.querySelectorAll('.pustoy_div')
+
+        ctrl_german.addEventListener('click', () => {
+        console.log('cliked 1st knopkacha')
+
+        pustoy_div.forEach((resultat) => {
+        const containerClassName = resultat.getAttribute('class')
+
+        if (
+          containerClassName.includes('pustoy_div1') &&
+          resultat.querySelector('.btn_cha3')
+        ) {
+          resultat.style.textDecoration = "underline"
+          // resultat.style.border = "1px solid darkgreen"
+          // resultat.style.background = "none"
+        } else if (
+          containerClassName.includes('pustoy_div2') &&
+          resultat.querySelector('.btn_cha2')
+        ) {
+          resultat.style.textDecoration = "underline"
+          // resultat.style.border = "1px solid darkgreen"
+          // resultat.style.background = "none"
+        } else if (
+          containerClassName.includes('pustoy_div3') &&
+          resultat.querySelector('.btn_cha1')
+        ) {
+          resultat.style.textDecoration = "underline"
+          // resultat.style.border = "1px solid darkgreen"
+          // resultat.style.background = "none"
+        } else if (
+          containerClassName.includes('pustoy_div4') &&
+          resultat.querySelector('.btn_cha4')
+        ) {
+          resultat.style.textDecoration = "underline"
+          // resultat.style.border = "1px solid darkgreen"
+          // resultat.style.background = "none"
+        } else {
+          // resultat.style.boxShadow = "0 0 5px red";
+          // resultat.style.borderRadius = "15px";
+          // resultat.style.border = "1px solid red"
+          resultat.style.textDecorationLine = "line-through";
+          // resultat.style.textDecoration = "underline";
+          resultat.style.background = "red";
+          resultat.style.rotate = "-25deg";
+          resultat.style.opacity = "0.4";
+        }
+      })
+    })
+
     </script>
   </section>
 
@@ -1262,7 +1354,7 @@ ctrl.addEventListener('click', () => {
       containerClassName.includes('dropzone1') &&
       resultat.querySelector('#drag3')
     ) {
-      resultat.style.boxShadow = "0 0 5px green"
+      resultat.style.textDecoration = "underline"
       resultat.style.border = "1px solid darkgreen"
       resultat.style.background = "none"
     } else if (
