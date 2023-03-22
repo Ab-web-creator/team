@@ -195,37 +195,50 @@ form p {
 
 
 
+
+/* --- ---- ---- Move Exercise -- --- ---  */
+
 .german {
     background-color: rgb(186, 223, 255) !important;
-    padding: 20px 0px;
+    padding: 50px 0px;
 }
 
 .german .a_territory {
+    padding: 20px;
     margin: 0px 10px;
-    /* padding: 10px; */
     border-radius: 10px;
     background-color: rgb(240, 240, 240);
-    min-height: 150px;
     height: fit-content;
   }
 
+.german .a_territory .mejdu_strok {
+   margin-bottom: 20px;
+  }
+
+  .german .rasstoyanie {
+    /* width: 12px; */
+    width: 0px;
+    /* background-color: red; */
+  }
 
   .german .pustoy_div {
     /* display: inline-block; */
-    min-width: 90px;
-    height: 40px;
-    border-radius: 15px;
-    border: 1px dotted gray;
+    width: fit-content;
+    min-width: 50px;
+    max-width: fit-content;
+    /* margin-right: 20px; */
+    margin-right: 15px;
 
-    background-color: #ffffffdb;
-    margin: 20px;
-
+    height: 30px;
+    border-radius: 5px;
+    background-color: #b6b6b6db;
     display: flex;
   }
 
-  .sharh_container {
+  .german .sharh_container {
     /* background-color: #eee; */
-    margin: 10px 5px;
+    margin-right: 5px;
+    /* margin-left: 0px; */
     width: 100%;
     display: flex;
     justify-content: left;
@@ -238,6 +251,14 @@ form p {
     text-align: left;
   }
 
+.mejdu_strok {
+    height: fit-content;
+}
+
+.mejdu_strok p {
+    min-height: 30px;
+    line-height: 28px;
+}
 
 .german .btn-container {
     background-color: #ccc;
@@ -250,33 +271,33 @@ form p {
   .german .b_territory {
     border-radius: 15px;
     position: relative;
-    padding: 20px;
-    min-height: 130px;
-    background-color: rgb(156, 250, 156);
+    padding: 10px;
+    min-height: 100px;
+    background-color: rgba(86, 86, 86, 0.444);
     margin: 0px 10px;
   }
 
   .german .b_territory > div:nth-child(1) {
     position: absolute;
-    width: 120px;
+    width: 90px;
     top: 10px;
     left: 10px;
   }
   .german .b_territory > div:nth-child(2) {
     position: absolute;
-    width: 120px;
+    width: 90px;
     top: 10px;
     right: 10px;
   }
   .german .b_territory > div:nth-child(3) {
     position: absolute;
-    width: 120px;
+    width: 90px;
     bottom: 10px;
     left: 10px;
   }
   .german .b_territory > div:nth-child(4) {
     position: absolute;
-    width: 120px;
+    width: 90px;
     bottom: 10px;
     right: 10px;
   }
@@ -302,13 +323,19 @@ form p {
     text-align: center;
     font-size: 18px;
     font-weight: 700;
-    color: #009b53;
+    color: #0080ff;
+    padding: 0px 0px;
+    padding-top: 1px;
+    background-color: #ffffff;
+    background-color: rgb(240, 240, 240);
+    height: 30px;
   }
 
   .german .b_territory .btn_cha {
     margin: auto;
-    padding: 10px;
+    padding: 3px 5px;
     width: fit-content;
+  
   }
   .german .b_territory .btn_cha p {
     text-align: center;

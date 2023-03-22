@@ -159,7 +159,7 @@
     <h1>Les 11 Oefenen</h1>
 
     <div>
-      <img style="margin: 0px 0px; height: fit-content;" src="../images/images_les2/wat_is_vraagwoord.jpeg" alt="">
+      <img style="margin: 0px 0px;" src="../images/images_les2/wat_is_vraagwoord.jpeg" alt="">
     </div>
   
 
@@ -1053,92 +1053,122 @@
 
 
   <section class="german">
-      
+    <main  style="margin-left: 0px;" >
+        <h3>
+          10. Kies de juiste optie.
+        </h3>
+    </main>
+
     <div class="a_territory">
-      <div style="display: flex; gap: 0px">
-        <div class="pustoy_div"></div> 
+      <div style="display: flex;">
+        <div style="display: flex;">
+          <div class="pustoy_div"></div> 
+        </div>
 
         <div class="sharh_container">
           <div class="sharhi">
-            <p>ukadan katta</p>
+            <p>oud ben jij? </p>
           </div>
         </div>
       </div>
 
-      <div style="display: flex; gap: 0px">
-        <div class="pustoy_div"></div> 
+      <div class="mejdu_strok">
+        <!-- <p>fasdf af sdaf asdfas dfa sdf asdfadsfasd asd fas </p> -->
+      </div>
+
+     
+
+      <div style="display: flex;">
+        <div style="display: flex;">
+          <div class="pustoy_div"></div> 
+        </div>
         <div class="sharh_container">
         <div class="sharhi">
-          <p>sigirning kuyovi</p>
+          <p> kost je mobiel?</p>
         </div>
         </div>
       </div>
 
-      <div style="display: flex; gap: 0px">
-        <div class="pustoy_div"></div> 
-        <div class="sharh_container">
-        <div class="sharhi">
-          <p> sovuq yil fasli</p>
-        </div>
-        </div>
+    
+
+      <div class="mejdu_strok">
+        <!-- <p>fasdf af sdaf asdfas dfa sdf asdfadsfasd asd fas </p> -->
       </div>
 
-      <div style="display: flex; gap: 0px">
-        <div class="pustoy_div"></div> 
+      <div style="display: flex;">
+        <div style="display: flex;">
+          <div class="pustoy_div"></div> 
+        </div>
         <div class="sharh_container">
           <div class="sharhi">
-            <p>ózbeklar ramzi</p>
+            <p>woon jij?</p>
           </div>
         </div>
       </div>
+
+      <div class="mejdu_strok">
+        <!-- <p>fasdf af sdaf asdfas dfa sdf asdfadsfasd asd fas </p> -->
+      </div>
+
+      <div style="display: flex;">
+        <div style="display: flex;">
+          <div class="pustoy_div"></div> 
+        </div>
+        <div class="sharh_container">
+          <div class="sharhi">
+            <p>vraag je dat?</p>
+          </div>
+        </div>
+      </div>
+
     </div>
 
-    <div class="b_territory">
+
+
+    <div id="b_territoriya" class="b_territory">
       <div class="btn-container">
         <div class="btn_cha" onclick="moveButton(this)">
-          <p>paxta</p>
+          <p>Waar</p>
         </div>
       </div>
       <div class="btn-container">
         <div class="btn_cha" onclick="moveButton(this)">
-          <p>aka</p>
+          <p>Hoeveel</p>
         </div>
       </div>
       <div class="btn-container">
         <div class="btn_cha" onclick="moveButton(this)">
-          <p>buqa</p>
+          <p>Hoe</p>
         </div>
       </div>
       <div class="btn-container">
         <div class="btn_cha" onclick="moveButton(this)">
-          <p>qish</p>
+          <p>Waarom</p>
         </div>
       </div>
     </div>
         
-  <script>
-    function moveButton(button) {
-      // Find the first available div
-      var pustoy_div = document.getElementsByClassName("pustoy_div");
-      var targetDiv;
-      for (var i = 0; i < pustoy_div.length; i++) {
-        if (pustoy_div[i].innerHTML === "") {
-          targetDiv = pustoy_div[i];
-          break;
-        }
-      }
-      
-      // Move the button to the target div
-      if (targetDiv) {
-        targetDiv.appendChild(button);
-        
-        button.onclick = null;
-
-
-
-      }
-    }
-  </script>
+    <script>
+      function moveButton(button) {
+          // Find the first available div
+          var pustoy_div = document.getElementsByClassName("pustoy_div");
+          var targetDiv;
+          for (var i = 0; i < pustoy_div.length; i++) {
+            if (pustoy_div[i].innerHTML === "") {
+              targetDiv = pustoy_div[i];
+              pustoy_div[i].style.minWidth = "10px";
+              pustoy_div[i].style.marginRight = "5px";
+              break;
+            }
+          }
+          
+          // Move the button to the target div
+          if (targetDiv) {
+            targetDiv.appendChild(button);
+            button.onclick = null;
+          }
+        };
+    </script>
   </section>
 
   <section>
