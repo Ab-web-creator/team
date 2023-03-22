@@ -262,7 +262,7 @@ form p {
 
 .german .btn-container {
     background-color: #ccc;
-    border-radius: 15px;
+    border-radius: 6px;
     background-color: #2e8631;
     cursor: pointer;
     display: flex;
@@ -272,32 +272,33 @@ form p {
     border-radius: 15px;
     position: relative;
     padding: 10px;
+
     min-height: 100px;
-    background-color: rgba(86, 86, 86, 0.444);
-    margin: 0px 10px;
+    /* background-color: rgba(86, 86, 86, 0.444); */
+    margin: 0px 20px;
   }
 
   .german .b_territory > div:nth-child(1) {
     position: absolute;
-    width: 90px;
+    min-width: 90px;
     top: 10px;
     left: 10px;
   }
   .german .b_territory > div:nth-child(2) {
     position: absolute;
-    width: 90px;
+    min-width: 90px;
     top: 10px;
     right: 10px;
   }
   .german .b_territory > div:nth-child(3) {
     position: absolute;
-    width: 90px;
+    min-width: 90px;
     bottom: 10px;
     left: 10px;
   }
   .german .b_territory > div:nth-child(4) {
     position: absolute;
-    width: 90px;
+    min-width: 90px;
     bottom: 10px;
     right: 10px;
   }
