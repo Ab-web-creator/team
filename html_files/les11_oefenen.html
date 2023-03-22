@@ -246,6 +246,276 @@
   </section>
 
 
+  <section>
+    <main  style="margin-left: 0px;" >
+    <div>
+      <h3 style="text-align: left; margin-left: 10px;">
+        2. Beantwoord de vragen 	
+      </h3>
+    </div>
+
+    <div>
+      <h3 style="text-align: center; margin: 0px 10px; margin-bottom: 0px;">
+        met deze woorden:	
+      </h3>
+    </div>
+
+    <article style="border: 2px solid rgb(206, 206, 206); padding: 20px;">
+    
+
+      <div style="text-align: left;   display: flex; gap: 10px; flex-wrap: wrap; justify-content: space-between;">
+
+        <div style="margin: auto; min-width: 110px; width: fit-content; background-color: green; border-radius: 5px; ">
+          <p style="color: white; text-align: center; padding: 2px 6px;" class="bold sixteen_font "> Wie</p>
+        </div>
+       
+
+        <div style="margin: auto; min-width: 110px; width: fit-content; background-color: green; border-radius: 5px; ">
+          <p style="color: white; text-align: center; padding: 2px 6px;" class="bold sixteen_font ">  Waar </p>
+        </div>
+        <div style="margin: auto; min-width: 110px; width: fit-content; background-color: green; border-radius: 5px; ">
+          <p style="color: white; text-align: center; padding: 2px 6px;" class="bold sixteen_font ">  Wat </p>
+        </div>
+        <div style="margin: auto; min-width: 110px; width: fit-content; background-color: green; border-radius: 5px; ">
+          <p style="color: white; text-align: center; padding: 2px 6px;" class="bold sixteen_font ">  Wanneer</p>
+        </div>
+         
+        <div style="margin: auto; min-width: 110px; width: fit-content; background-color: green; border-radius: 5px; ">
+          <p style="color: white; text-align: center; padding: 2px 6px;" class="bold sixteen_font ">  Hoeveel </p>
+        </div>
+         
+        <div style="margin: auto; min-width: 110px; width: fit-content; background-color: green; border-radius: 5px; ">
+          <p style="color: white; text-align: center; padding: 2px 6px;" class="bold sixteen_font ">  Hoe </p>
+        </div>
+
+      </div>
+    </article>
+  </main>
+  <div>
+    <style>
+      .wrap_qstn {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      }
+      .savol {
+        background: rgb(230, 230, 230);
+        border-radius: 0.5rem;
+        padding: 10px 15px;
+        margin: 0px 20px;
+        
+      }
+      .p_container {
+        margin-top: auto;
+        margin-bottom: auto;
+        display: flex;
+        justify-content: left;
+        gap: 5px;
+      }
+      .savol-text2 p {
+        padding-top: 0px;
+      }
+      .savol-text {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      .savol-text p {
+        margin-bottom: 0;
+        font-size: 18px;
+      }
+      .savol-btn {
+        margin: 0px;
+        /* margin-top: -3px; */
+        font-size: 24px;
+        width: fit-content;
+        background: transparent;
+        box-shadow: none;
+        transition: all 0.3s linear;
+        cursor: pointer;
+      }
+      .savol-btn:hover {
+        background: transparent !important;
+        box-shadow: none;
+      }
+      .savol-btn i {
+        color: rgba(89, 89, 89, 0.789);
+        color: green;
+        background: transparent;
+      }
+      .cursor-point {
+        cursor: pointer;
+      }
+      .savol-text2 {
+        display: none;
+      }
+      .show-text .savol-text2 {
+        display: block;
+      }
+      .minus-icon {
+        display: none;
+      }
+      .show-text .minus-icon {
+        display: inline;
+      }
+      .show-text .plus-icon {
+        display: none;
+      }
+      .wrap_qstn .bx-minus {
+        background-color: rgba(255, 0, 0, 0.51);
+        border-radius: 50%;
+      }
+      .wrap_qstn .bx-plus {
+        background-color: rgba(173, 173, 173, 0.51);
+        border-radius: 50%;
+      }
+    </style>
+    <div class="wrap_qstn">
+    <article class="savol">
+      <!-- question title -->
+      <div class="savol-text cursor-point">
+       <div class="p_container" style="color: green;">
+        <p class="bold purple">~ </p>
+        <p class="bold">
+          Hallo, wie ben jij?
+          <span class="wave"> &#128400;</span>
+        </p>
+       </div>
+        <button type="button" class="savol-btn">
+          <span class="plus-icon">
+            <i class='bx bx-plus'></i>
+          </span>
+          <span class="minus-icon">
+            <i class='bx bx-minus'></i>
+          </span>
+        </button>
+      </div>
+      <div class="savol-text savol-text2">
+        <div class="p_container" style="color: blue;">
+          <p class="bold purple">~ </p>
+          <p class="bold">Dag, ik heet Salim. </p>
+         </div>
+      </div>
+    </article>
+
+    <article class="savol">
+      <!-- question title -->
+      <div class="savol-text cursor-point">
+       <div class="p_container" style="color: green;">
+        <p class="bold purple">~ </p>
+        <p class="bold">
+          Wat hoor je, Salim?
+          
+        </p>
+       </div>
+        <button type="button" class="savol-btn">
+          <span class="plus-icon">
+            <i class='bx bx-plus'></i>
+          </span>
+          <span class="minus-icon">
+            <i class='bx bx-minus'></i>
+          </span>
+        </button>
+      </div>
+      <div class="savol-text savol-text2">
+        <div class="p_container" style="color: blue;">
+          <p class="bold purple">~ </p>
+          <p class="bold">Ik hoor de trekker. </p>
+         </div>
+      </div>
+    </article>
+    <article class="savol">
+      <!-- question title -->
+      <div class="savol-text cursor-point">
+       <div class="p_container" style="color: green;">
+        <p class="bold purple">~ </p>
+        <p class="bold">
+          En wie is dat?
+          
+        </p>
+       </div>
+        <button type="button" class="savol-btn">
+          <span class="plus-icon">
+            <i class='bx bx-plus'></i>
+          </span>
+          <span class="minus-icon">
+            <i class='bx bx-minus'></i>
+          </span>
+        </button>
+      </div>
+      <div class="savol-text savol-text2">
+        <div class="p_container" style="color: blue;">
+          <p class="bold purple">~ </p>
+          <p class="bold">Dat is mijn docent. </p>
+         </div>
+      </div>
+    </article>
+
+    <article class="savol">
+      <!-- question title -->
+      <div class="savol-text cursor-point">
+       <div class="p_container" style="color: green;">
+        <p class="bold purple">~ </p>
+        <p class="bold">
+          Waar woont hij?
+          
+        </p>
+       </div>
+        <button type="button" class="savol-btn">
+          <span class="plus-icon">
+            <i class='bx bx-plus'></i>
+          </span>
+          <span class="minus-icon">
+            <i class='bx bx-minus'></i>
+          </span>
+        </button>
+      </div>
+      <div class="savol-text savol-text2">
+        <div class="p_container" style="color: blue;">
+          <p class="bold purple">~ </p>
+          <p class="bold">Hij woont in Utrecht. </p>
+         </div>
+      </div>
+    </article>
+  </div>
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+
+      const questions = document.querySelectorAll(".savol");
+
+      questions.forEach(function (question) {
+          const btn = question.querySelector(".savol-btn");
+          const savol = question.querySelector(".savol-text");
+          var rotated = false;
+
+          savol.addEventListener("click", function() {
+              questions.forEach(function (banana) {
+                  if (banana !== question) {
+                    // banana.classList.remove("show-text");
+                    // banana.style.background = "rgb(199, 199, 199)"
+                  }
+              })
+              question.classList.toggle("show-text");
+              question.style.background = "rgb(235, 235, 245)"
+
+              deg = rotated ? 0 : 360;
+
+              btn.style.webkitTransform = 'rotate('+deg+'deg)'; 
+              btn.style.mozTransform    = 'rotate('+deg+'deg)'; 
+              btn.style.msTransform     = 'rotate('+deg+'deg)'; 
+              btn.style.oTransform      = 'rotate('+deg+'deg)'; 
+              btn.style.transform       = 'rotate('+deg+'deg)'; 
+
+              rotated = !rotated;
+          });
+      });
+    })
+    </script>
+</div>
+  </section>
+
+
+
   <section 
   style="padding: 0; position: relative;">
   <style>
@@ -392,11 +662,6 @@
     </div>
   </div>
 </section>
-
-  
-
- 
-  
 
 
   <section class="german">
