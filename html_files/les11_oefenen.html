@@ -1058,7 +1058,7 @@
       <div style="background-color: #f5f5f5; border-radius: 6px;
       padding-top: 10px; width: 100%;">
         <h3 style="color: #484848; text-align: center;">
-          10. Kies de juiste optie
+          4. Kies de juiste optie
         </h3>
       </div>
     </main>
@@ -1324,10 +1324,161 @@
   </section>
 
   <section>
+    <main style="margin-left: 0px;">
+      <div>
+        <h3 class="bold" style="text-align: left;">
+          5. Berekenen. <span class="red bold"></span>
+        </h3>
+      </div>
+  </main> 
+
+  <div style="line-height: 26px;  margin: 0px 10px;">
+    <article class="calculus">
+      <div class="first_div">
+        <div class="tartib_son">
+          1.
+        </div>
+        <div class="basa">
+          Hoeveel is <span class="first_number">70</span>  + <span class="sec_number">20</span>?
+        </div>
+      </div>
+
+      <div class="hisob">
+        <input type="number" class="quantity"  name="quantity" min="1" max="1000">
+      </div>
+    </article>
+
+    <article class="calculus"> <div class="first_div"> <div class="tartib_son">
+          2.
+        </div> <div class="basa">
+          Hoeveel is <span class="first_number">20</span>  + <span class="sec_number">10</span>?
+        </div> </div> <div class="hisob"> <input type="number" class="quantity"  name="quantity" min="1" max="1000"> </div>
+    </article>
+
+    <article class="calculus"> <div class="first_div"> <div class="tartib_son">
+          3.
+        </div> <div class="basa">
+          Hoeveel is <span class="first_number">10</span>  + <span class="sec_number">30</span>?
+        </div> </div> <div class="hisob"> <input type="number" class="quantity"  name="quantity" min="1" max="1000"> </div>
+    </article>
+
+    <article class="calculus"> <div class="first_div"> <div class="tartib_son">
+          4.
+        </div> <div class="basa">
+          Hoeveel is <span class="first_number">10</span>  + <span class="sec_number">10</span>?
+        </div> </div> <div class="hisob"> <input type="number" class="quantity"  name="quantity" min="1" max="1000"> </div>
+    </article>
+
+    <article class="calculus"> <div class="first_div"> <div class="tartib_son">
+          5.
+        </div> <div class="basa">
+          Hoeveel is <span class="first_number">20</span>  + <span class="sec_number">30</span>?
+        </div> </div> <div class="hisob"> <input type="number" class="quantity"  name="quantity" min="1" max="1000"> </div>
+    </article>
+
+    <article class="calculus"> <div class="first_div"> <div class="tartib_son">
+          6.
+        </div> <div class="basa">
+          Hoeveel is <span class="first_number">30</span>  + <span class="sec_number">40</span>?
+        </div> </div> <div class="hisob"> <input type="number" class="quantity"  name="quantity" min="1" max="1000"> </div>
+    </article>
+
+    <article class="calculus"> <div class="first_div"> <div class="tartib_son">
+          7.
+        </div> <div class="basa">
+          Hoeveel is <span class="first_number">30</span>  + <span class="sec_number">30</span>?
+        </div> </div> <div class="hisob"> <input type="number" class="quantity"  name="quantity" min="1" max="1000"> </div>
+    </article>
+
+    <article class="calculus"> <div class="first_div"> <div class="tartib_son">
+          8.
+        </div> <div class="basa">
+          Hoeveel is <span class="first_number">50</span>  + <span class="sec_number">30</span>?
+        </div> </div> <div class="hisob"> <input type="number" class="quantity"  name="quantity" min="1" max="1000"> </div>
+    </article>
+
+    <article class="calculus"> <div class="first_div"> <div class="tartib_son">
+          9.
+        </div> <div class="basa">
+          Hoeveel is <span class="first_number">50</span>  + <span class="sec_number">40</span>?
+        </div> </div> <div class="hisob"> <input type="number" class="quantity"  name="quantity" min="1" max="1000"> </div>
+    </article>
+
+    <article class="calculus"> <div class="first_div"> <div class="tartib_son">
+          10.
+        </div> <div class="basa">
+          Hoeveel seizoenen zijn er in een jaar?
+        </div> </div> <div class="hisob"> <input type="number" class="quantityNum2 quantityN2_1"  name="quantity" min="1" max="1000"> </div>
+    </article>
+
+    <article class="calculus"> <div class="first_div"> <div class="tartib_son">
+          11.
+        </div> <div class="basa">
+          Hoeveel uren zitten er in een dag?
+        </div> </div> <div class="hisob"> <input type="number" class="quantityNum2 quantityN2_2"  name="quantity" min="1" max="1000"> </div>
+    </article>
+
+    <article class="calculus"> <div class="first_div"> <div class="tartib_son">
+          12.
+        </div> <div class="basa">
+          Hoeveel weken zijn er in een jaar?
+        </div> </div> <div class="hisob"> <input type="number" class="quantityNum2 quantityN2_3"  name="quantity" min="1" max="1000"> </div>
+    </article>
+
+  </div>
+  <script>
+    // Get all the input elements with a class of "quantity"
+    const inputs = document.querySelectorAll('.quantity');
+    
+    // Loop through each input element and add an event listener for when the user inputs a value
+    inputs.forEach(input => {
+      input.addEventListener('input', () => {
+        // Get the corresponding first_number and sec_number values
+        const firstNumber = parseInt(input.closest('.calculus').querySelector('.first_number').textContent);
+        const secNumber = parseInt(input.closest('.calculus').querySelector('.sec_number').textContent);
+        
+        // Calculate the correct answer
+        const correctAnswer = firstNumber + secNumber;
+        
+        // Get the user's answer
+        const userAnswer = parseInt(input.value);
+        
+        // Compare the user's answer to the correct answer and change the input color accordingly
+        if (userAnswer === correctAnswer) {
+          input.style.color = 'green';
+        } else {
+          input.style.color = 'red';
+        }
+      });
+    });
+    </script>
+
+    <script>
+      const questions = [
+        { input: document.querySelector(".quantityN2_1"), answer: 4 },
+        { input: document.querySelector(".quantityN2_2"), answer: 24 },
+        { input: document.querySelector(".quantityN2_3"), answer: 52 }
+      ];
+
+      questions.forEach((question) => {
+        question.input.addEventListener("input", () => {
+          const value = parseInt(question.input.value);
+          
+          if (value === question.answer) {
+            question.input.style.color = "green";
+          } else {
+            question.input.style.color = "red";
+          }
+        });
+      });
+    </script>
+  </section>
+
+  <section>
     <button style="width: 150px;" class="go_back_btn" onclick="history.back()">
       <p> Ortga qaytish </p>
     </button>
-    <button style="background-color: blueviolet; width: 150px; text-align: center !important;"  class=" go_back_btn" onclick="window.location.href='./les11.html'">
+    <button style="background-color: blueviolet; width: 150px; text-align: center !important;"  class=" go_back_btn" onclick="window.location.href='./les12.html'">
       <p>Les 12 ~ (twaalf)</p>
     </button> 
   </section>

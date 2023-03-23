@@ -193,9 +193,65 @@ form p {
     height: 70px;
 }
 
+/* next thing  */
 
+.calculus {
+    width: 100%;
+    margin-bottom: 20px;
 
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+.calculus .first_div {
+    display: flex;
+    gap: 5px;
+    justify-content: left;
+}
+.calculus .tartib_son,
+.calculus .basa {
+    font-size: 20px;
+  
+}
 
+.calculus .tartib_son {
+    margin-top: 1px;
+    width: 35px;
+    background-color: transparent;
+    /* background-color: red; */
+}
+
+.calculus .basa {
+    width: 200px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: transparent;
+    /* background-color: rgb(64, 255, 0); */
+}
+
+.calculus .hisob {
+    
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.calculus .quantity {
+    display: inline;
+    text-align: center;
+    width: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(55, 55, 55);
+}
+ 
+.calculus .quantityNum2 {
+    display: inline;
+    text-align: center;
+    width: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(55, 55, 55);
+}
  
 
 /* 

@@ -1,320 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-  <style>
+<article class="calculus">
+  <div class="first_div">
+    <div class="tartib_son">
+      1.
+    </div>
+    <div class="basa">
+      Hoeveel is <span class="first_number">70</span> + <span class="sec_number">20</span>?
+    </div>
+  </div>
+
+  <div class="hisob">
+    <input type="number" class="quantity"  name="quantity" min="1" max="1000">
+  </div>
+</article>
+<article class="calculus">
+  <div class="first_div">
+    <div class="tartib_son">
+      2.
+    </div>
+    <div class="basa">
+      Hoeveel is <span class="first_number">50</span> + <span class="sec_number">10</span>?
+    </div>
+  </div>
+
+  <div class="hisob">
+    <input type="number" class="quantity"  name="quantity" min="1" max="1000">
+  </div>
+</article>
+<article class="calculus">
+  <div class="first_div">
+    <div class="tartib_son">
+      3.
+    </div>
+    <div class="basa">
+      Hoeveel is <span class="first_number">10</span> + <span class="sec_number">30</span>?
+    </div>
+  </div>
+
+  <div class="hisob">
+    <input type="number" class="quantity"  name="quantity" min="1" max="1000">
+  </div>
+</article>
 
 
-* {
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    padding: 0;
-    margin: 0;
-    font-weight: 400;
-    letter-spacing: 0.23px;
-    font-family: 'Open Sans', sans-serif;
-    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-      Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
-  }
+<script>
+// Get all the input elements with a class of "quantity"
+const inputs = document.querySelectorAll('.quantity');
 
-
-    .german {
-        background-color: rgb(186, 223, 255) !important;
-        padding: 50px 0px;
+// Loop through each input element and add an event listener for when the user inputs a value
+inputs.forEach(input => {
+  input.addEventListener('input', () => {
+    // Get the corresponding first_number and sec_number values
+    const firstNumber = parseInt(input.closest('.calculus').querySelector('.first_number').textContent);
+    const secNumber = parseInt(input.closest('.calculus').querySelector('.sec_number').textContent);
+    
+    // Calculate the correct answer
+    const correctAnswer = firstNumber + secNumber;
+    
+    // Get the user's answer
+    const userAnswer = parseInt(input.value);
+    
+    // Compare the user's answer to the correct answer and change the input color accordingly
+    if (userAnswer === correctAnswer) {
+      input.style.color = 'green';
+    } else {
+      input.style.color = 'red';
     }
-
-    .german > div {
-        margin-bottom: 20px;
-    }
-    
-    .german .a_territory {
-        padding: 20px;
-        margin: 0px 10px;
-        border-radius: 10px;
-        background-color: rgb(240, 240, 240);
-        height: fit-content;
-      }
-    
-    .german .a_territory .mejdu_strok {
-       margin-bottom: 20px;
-      }
-    
-      .german .rasstoyanie {
-        /* width: 12px; */
-        width: 0px;
-        /* background-color: red; */
-      }
-    
-      .german .pustoy_div {
-        /* display: inline-block; */
-        width: fit-content;
-        min-width: 50px;
-        max-width: fit-content;
-        /* margin-right: 20px; */
-        margin-right: 15px;
-    
-        height: 30px;
-        border-radius: 5px;
-        background-color: #b6b6b6db;
-        display: flex;
-      }
-    
-      .german .sharh_container {
-        /* background-color: #eee; */
-        margin-right: 5px;
-        /* margin-left: 0px; */
-        width: 100%;
-        display: flex;
-        justify-content: left;
-      }
-      .german .sharhi {
-        margin-top: auto;
-        margin-bottom: auto;
-      }
-      .german .sharhi p {
-        text-align: left;
-      }
-    
-    .mejdu_strok {
-        height: fit-content;
-    }
-    
-    .mejdu_strok p {
-        min-height: 30px;
-        line-height: 28px;
-    }
-    
-    .german .btn-container {
-        background-color: #ccc;
-        border-radius: 15px;
-        background-color: #2e8631;
-        cursor: pointer;
-        display: flex;
-      }
-    
-      .german .b_territory {
-        border-radius: 15px;
-        position: relative;
-        padding: 20px;
-        min-height: 130px;
-        background-color: rgba(86, 86, 86, 0.444);
-        margin: 0px 10px;
-      }
-    
-      .german .b_territory > div:nth-child(1) {
-        position: absolute;
-        width: 120px;
-        top: 10px;
-        left: 10px;
-      }
-      .german .b_territory > div:nth-child(2) {
-        position: absolute;
-        width: 120px;
-        top: 10px;
-        right: 10px;
-      }
-      .german .b_territory > div:nth-child(3) {
-        position: absolute;
-        width: 120px;
-        bottom: 10px;
-        left: 10px;
-      }
-      .german .b_territory > div:nth-child(4) {
-        position: absolute;
-        width: 120px;
-        bottom: 10px;
-        right: 10px;
-      }
-    
-    
-      .german .b_territory > div {
-        /* margin: auto; */
-    
-        height: fit-content;
-      }
-    
-    .german p {
-        font-size: 18px;
-        line-height: 28px;
-        font-weight: 700;
-        color: #2e8631;
-      }
-     
-      .german .a_territory .btn_cha {
-        margin: auto;
-        /* margin-right: 20px; */
-      }
-      .german .a_territory .btn_cha p {
-    
-        text-align: center;
-        font-size: 18px;
-        font-weight: 700;
-        color: #0080ff;
-        padding: 0px 0px;
-        padding-top: 1px;
-        background-color: #ffffff;
-        background-color: rgb(240, 240, 240);
-        /* border-radius: 6px; */
-        height: 30px;
-        /* margin-right: 10px; */
-      }
-    
-      .german .b_territory .btn_cha {
-        margin: auto;
-        padding: 10px;
-        width: fit-content;
-      
-      }
-      .german .b_territory .btn_cha p {
-        text-align: center;
-        font-size: 16px;
-        font-weight: 700;
-        color: #e8e8e8;
-      }
-    
-    </style>
-    
-    <section class="german">
-      <main  style="margin-bottom: 20px;" >
-          <h3>
-            10. Kies de juiste optie.
-          </h3>
-      </main>
-    
-
-      <div class="a_territory" style="margin-bottom: 20px;">
-        <div style="display: flex;">
-          <div style="display: flex;">
-            <div class="pustoy_div"></div> 
-          </div>
-    
-          <div class="sharh_container">
-            <div class="sharhi">
-              <p>oud ben jij? </p>
-            </div>
-          </div>
-        </div>
-    
-        <div class="mejdu_strok">
-          <!-- <p>fasdf af sdaf asdfas dfa sdf asdfadsfasd asd fas </p> -->
-        </div>
-    
-        <div style="display: flex;">
-          <div style="display: flex;">
-            <div class="pustoy_div"></div> 
-          </div>
-          <div class="sharh_container">
-            <div class="sharhi">
-              <p>vraagt je dat?</p>
-            </div>
-          </div>
-        </div>
-    
-        <div class="mejdu_strok">
-          <!-- <p>fasdf af sdaf asdfas dfa sdf asdfadsfasd asd fas </p> -->
-        </div>
-    
-        <div style="display: flex;">
-          <div style="display: flex;">
-            <div class="pustoy_div"></div> 
-          </div>
-          <div class="sharh_container">
-          <div class="sharhi">
-            <p> kost het?</p>
-          </div>
-          </div>
-        </div>
-    
-        <div class="mejdu_strok">
-          <!-- <p>fasdf af sdaf asdfas dfa sdf asdfadsfasd asd fas </p> -->
-        </div>
-    
-        <div style="display: flex;">
-          <div style="display: flex;">
-            <div class="pustoy_div"></div> 
-          </div>
-          <div class="sharh_container">
-            <div class="sharhi">
-              <p>wonen ze?</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-    
-    
-      <div id="b_territoriya" class="b_territory" style="margin-bottom: 20px;">
-        <div class="btn-container">
-          <div class="btn_cha" onclick="moveButton(this)">
-            <p>Waar</p>
-          </div>
-        </div>
-        <div class="btn-container">
-          <div class="btn_cha" onclick="moveButton(this)">
-            <p>Hoeveel</p>
-          </div>
-        </div>
-        <div class="btn-container">
-          <div class="btn_cha" onclick="moveButton(this)">
-            <p>Hoe</p>
-          </div>
-        </div>
-        <div class="btn-container">
-          <div class="btn_cha" onclick="moveButton(this)">
-            <p>Waarom</p>
-          </div>
-        </div>
-      </div>
-          
-      <script>
-     function moveButton(button) {
-        
-
-          // Find the first available div
-          var pustoy_div = document.getElementsByClassName('pustoy_div');
-          var targetDiv;
-          for (var i = 0; i < pustoy_div.length; i++) {
-            if (pustoy_div[i].innerHTML === '') {
-              targetDiv = pustoy_div[i];
-              pustoy_div[i].style.minWidth = '10px';
-              pustoy_div[i].style.marginRight = '5px';
-              break;
-            }
-          }
-
-          // Move the button to the target div
-          if (targetDiv) {
-            targetDiv.appendChild(button);
-            button.onclick = null;
-          }
-
-          const initialContainers = document.getElementsByClassName('btn-container');
-
-          // each btn-container has a child
-          let btnContainerCount = 4;
-
-          // subtract 1 every time a btn-container loses its child element
-          for (let i = 0; i < initialContainers.length; i++) {
-            if (initialContainers[i].children.length === 0) {
-              btnContainerCount--;
-            }
-          }
-
-          // when they are empty this runs
-          if (btnContainerCount === 0) {
-            console.log('run here what you need');
-            
-          }
-        }
-      </script>
-    </section>
-
-</body>
-</html>
+  });
+});
+</script>
