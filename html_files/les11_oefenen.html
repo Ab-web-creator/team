@@ -852,7 +852,7 @@
 
 .german {
     position: relative;
-    background-color: rgb(58, 58, 58) !important;
+    background-color: rgb(119, 119, 119) !important;
     padding: 50px 0px;
 }
 
@@ -1054,10 +1054,13 @@
     display: none;
   }
     </style>
-    <main  style="margin-left: 0px;" >
-        <h3 style="color: #fffff7;">
-          10. Kies de juiste optie.
+    <main  style=" display: flex; width: 100%; padding: 0px 10px;" >
+      <div style="background-color: #f5f5f5; border-radius: 6px;
+      padding-top: 10px; width: 100%;">
+        <h3 style="color: #484848; text-align: center;">
+          10. Kies de juiste optie
         </h3>
+      </div>
     </main>
 
     <div class="a_territory">
@@ -1203,6 +1206,7 @@
     </div>
     <script>
       function moveButton(button) {
+        
           // Find the first available div
           var pustoy_div = document.getElementsByClassName("pustoy_div");
           var targetDiv;
@@ -1233,7 +1237,6 @@
             }
           }
 
-         
           // when they are empty this runs
           if (btnContainerCount === 0) {           
             const buttons_forC = document.getElementById('buttons_forC');
@@ -1253,6 +1256,7 @@
         pustoy_div.forEach((resultat) => {
         const containerClassName = resultat.getAttribute('class')
 
+       var sanoq = 0;
         if (
           containerClassName.includes('pustoy_div1') &&
           resultat.querySelector('.btn_cha3')
@@ -1260,10 +1264,11 @@
           resultat.style.textDecoration = "underline"
           // resultat.style.border = "1px solid darkgreen"
           // resultat.style.background = "none"
+          
         } else if (
           containerClassName.includes('pustoy_div2') &&
           resultat.querySelector('.btn_cha2')
-        ) {
+        ) {   
           resultat.style.textDecoration = "underline"
           // resultat.style.border = "1px solid darkgreen"
           // resultat.style.background = "none"
@@ -1296,9 +1301,10 @@
           containerClassName.includes('pustoy_div6') &&
           resultat.querySelector('.btn_cha6')
         ) {
-          resultat.style.textDecoration = "underline"
+          resultat.style.textDecoration = "underline" 
           // resultat.style.border = "1px solid darkgreen"
           // resultat.style.background = "none"
+          
         } 
         
         else {
@@ -1347,12 +1353,12 @@
 <script src="../JS_folder/lishniysi_qaysi2.js"></script> 
 
  
-
+<!-- 
 <section style="display: flex;">
   <div style="margin: auto; width: 70%;">
     <img   src="../images/images_les2/vraagwoorden2.jpg" alt="">
   </div>
-</section>
+</section> -->
 
 </body>
 </html>
