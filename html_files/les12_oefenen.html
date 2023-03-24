@@ -404,7 +404,8 @@
 
 	<script>
     function checkAnswer1() {
-    var answer = document.getElementById("answer1").value;
+    var any_answer = document.getElementById("answer1").value;
+    var answer = any_answer.toLowerCase()
     if (answer == "moet") {
         document.getElementById("resultt1").innerHTML = "&#10004; Ik moet morgen vroeg naar school.";
     } else {
