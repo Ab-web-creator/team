@@ -708,7 +708,109 @@
     </main>
   </section>
   
- 
+  <section class="reveal_answer_exerc">
+    <style>
+  
+  .main18 p,
+  .main18 li {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  
+  .reveal_ol li {
+    list-style-type: lower-alpha;
+    margin: 10px 20px;
+    width: 95%;
+    margin-bottom: 20px;
+  }
+  
+  .reveal_answer_exerc .flex_it {
+   margin-bottom: 10px;
+    display: flex; 
+   gap: 10px;
+   justify-content: space-between;
+  
+  }
+  
+  .reveal_answer_exerc .javob {
+    color: rgb(243, 243, 243);
+    background-color: rgb(0, 154, 41);
+    border-radius: 4px;
+   
+    margin: 15px 0px;
+    padding: 8px 16px;
+  }
+  
+  .reveal_answer_exerc .click {
+    background-color: rgb(58, 151, 251);
+    color: black;
+    border-radius: 7px;
+    width: 50px;
+    height: 40px;
+    font-size: 14px;
+    margin-left: 10px;
+    padding: 8px 16px;
+    text-align: center;
+  }
+    </style>
+    <main class="main18" style="margin-left: 0px;">
+      <h3>
+        8. Vertaal de zinnen:
+      </h3>  
+       
+      <ol id="sentences" class="reveal_ol">
+        <li>
+          <div class="flex_it">
+            <p> Qayerda yashaysan?</p>
+            <p class="click" onclick="checkAnswer(0)">ctrl</p>
+          </div>
+          <p class="black bold"> 
+            (Waar ... jij?) 
+          </p>
+          <div id="result0" class="javob" style="display: none;">
+            Waar woont jij? </div>
+        </li>
+        <li>
+          <div class="flex_it">
+            <p> Nechta bolang bor?</p>
+            <p class="click" onclick="checkAnswer(1)">ctrl</p>
+          </div>
+          <p class="black bold"> (Hoeveel ... heb jij?) </p>
+          <div id="result1" class="javob" style="display: none;">
+            Hoeveel kinderen heb jij?
+          </div>
+        </li>
+        <li>
+          <div class="flex_it">
+            <p> Uning ismi Bekzod.</p>
+            <p class="click" onclick="checkAnswer(2)">ctrl</p>
+          </div>
+          <p class="black bold"> (... heet Bekzod.) </p>
+          <div id="result2" class="javob" style="display: none;">
+            Hij heet Bekzod.
+          </div>
+        </li>
+      
+        <li>
+          <div class="flex_it">
+            <p> Menda farzand yóq.</p>
+            <p class="click" onclick="checkAnswer(3)">ctrl</p>
+          </div>
+          <p class="black bold">(Ik heb ... kinderen.)</p>
+          <div id="result3" class="javob" style="display: none;">
+            Ik heb geen kinderen.
+          </div>
+        </li>
+      </ol>
+    </main>
+
+    <script>
+        function checkAnswer(index) {
+        const resultDiv = document.getElementById(`result${index}`);
+        resultDiv.style.display = "block";
+        }
+    </script>
+  </section>
 
   <section>
     <button style="background-color: blueviolet;"  class="second_button" onclick="window.location.href='./les8.html'">

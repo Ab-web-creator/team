@@ -752,7 +752,109 @@
     </div>
   </main>
 </div>
+</section>
 
+<section class="reveal_answer_exerc">
+  <style>
+
+.main18 p,
+.main18 li {
+  font-size: 18px;
+  line-height: 22px;
+}
+.main18 li {
+/*     
+  background-color: red; */
+}
+
+.reveal_ol li {
+  list-style-type: lower-alpha;
+  margin: 10px 20px;
+  width: 95%;
+  margin-bottom: 20px;
+}
+
+.reveal_answer_exerc .flex_it {
+ margin-bottom: 10px;
+  display: flex; 
+ gap: 10px;
+ justify-content: space-between;
+
+}
+
+.reveal_answer_exerc .javob {
+  color: rgb(243, 243, 243);
+  background-color: rgb(0, 154, 41);
+  border-radius: 4px;
+ 
+  margin: 15px 0px;
+  padding: 8px 16px;
+}
+
+.reveal_answer_exerc .click {
+  background-color: rgb(58, 151, 251);
+  color: black;
+  border-radius: 7px;
+  width: 50px;
+  height: 40px;
+  font-size: 14px;
+  margin-left: 10px;
+  padding: 8px 16px;
+  text-align: center;
+}
+  </style>
+  <main class="main18" style="margin-left: 0px;">
+    <h3>
+      6. Tarjima qiling:
+    </h3>  
+     
+    <ol id="sentences" class="reveal_ol">
+      <li>
+        <div class="flex_it">
+          <p> Mening ismim Siebe.</p>
+          <p class="click" onclick="checkAnswer(0)">ctrl</p>
+        </div>
+        <p class="black bold"> (Mijn ... is Siebe.) </p>
+        <div id="result0" class="javob" style="display: none;">
+          Mijn naam is Siebe. </div>
+      </li>
+      <li>
+        <div class="flex_it">
+          <p> Salim Zomindan.</p>
+          <p class="click" onclick="checkAnswer(1)">ctrl</p>
+        </div>
+        <p class="black bold"> (Salim ... uit Zomin.) </p>
+        <div id="result1" class="javob" style="display: none;">Salim komt uit Zomin.</div>
+      </li>
+      <li>
+        <div class="flex_it">
+          <p> Laylo Utrechtda turadi.</p>
+          <p class="click" onclick="checkAnswer(2)">ctrl</p>
+        </div>
+        <p class="black bold"> (Laylo ... in Utrecht.) </p>
+        <div id="result2" class="javob" style="display: none;">
+          Laylo woont in Utrecht.
+        </div>
+      </li>
+    
+      <li>
+        <div class="flex_it">
+          <p> Ularda 2 ta farzand bor.</p>
+          <p class="click" onclick="checkAnswer(3)">ctrl</p>
+        </div>
+        <p class="black bold">(Salim en Laylo ... 2 kinderen.)</p>
+        <div id="result3" class="javob" style="display: none;">
+          Salim en Laylo hebben 2 kinderen.
+        </div>
+      </li>
+    </ol>
+  </main>
+<script  >
+    function checkAnswer(index) {
+    const resultDiv = document.getElementById(`result${index}`);
+    resultDiv.style.display = "block";
+    }
+</script>
 </section>
 
 <section>
@@ -789,59 +891,6 @@
 <script src="../JS_folder/klick_reveal.js"></script> 
 <script src="../JS_folder/lishniysi_qaysi.js"></script> 
 <script src="../JS_folder/drag&drop.js"></script> 
-
-<!-- <script src="../click_to_green.js"></script> -->
-<!-- <script src="../zoek_elkaar.js"></script>  -->
-
-<!-- <script>
-  const pageWidth = document.querySelector("#screen_width");
-  window.onresize = function reportWindowSize() {
-    pageWidth.textContent = `${window.innerWidth} px`;
-    };
-</script> -->
-
-
-<!-- <script>
-
-const onDragStart = (e) => {
-  e.dataTransfer.setData('text/plain', e.target.id);
-};
-
-const onDragOver = (e) => {
-  e.preventDefault();
-};
-
-const onDrop = (e) => {
-  
-  if (e.target.className == "targetto" &&
-      e.target.childNodes.length == 1
-    ) {
-    // check if e.target.childElement.node.length = 0, then append
-
-
-     // grab droppable element from dataTransfer object
-  const id = e.dataTransfer.getData('text');
-  const draggableElement = document.getElementById(id);
-
-  // get the element we are dropping onto 
-  const dropArea = e.target;
-
-  // append droppable element to the drop area (the "Done" column)
-  dropArea.appendChild(draggableElement);
-
-  // clean up the dataTransfer object 
-  e.dataTransfer.clearData();
-
-  console.log(e.target.hasChildNodes())
-
-  }
- 
-};
-
-
-</script> -->
-
-
  
 
 </body>

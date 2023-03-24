@@ -252,16 +252,6 @@ form p {
     font-weight: 700;
     color: rgb(55, 55, 55);
 }
- 
-
-/* 
-git add .
-
-git commit -m "lyuboe sobwenie"
-
-git push 
-*/
-
 
 .speaker {
     background-color: rgb(230, 230, 230); 
@@ -280,4 +270,13 @@ git push
 .uzbek_guy {
     color: rgb(16, 161, 0);
 }
+
+
+/* 
+git add .
+
+git commit -m "lyuboe sobwenie"
+
+git push 
+*/
 

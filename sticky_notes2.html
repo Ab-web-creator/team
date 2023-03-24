@@ -1,70 +1,31 @@
-<article class="calculus">
-  <div class="first_div">
-    <div class="tartib_son">
-      1.
-    </div>
-    <div class="basa">
-      Hoeveel is <span class="first_number">70</span> + <span class="sec_number">20</span>?
-    </div>
-  </div>
 
-  <div class="hisob">
-    <input type="number" class="quantity"  name="quantity" min="1" max="1000">
-  </div>
-</article>
-<article class="calculus">
-  <div class="first_div">
-    <div class="tartib_son">
-      2.
-    </div>
-    <div class="basa">
-      Hoeveel is <span class="first_number">50</span> + <span class="sec_number">10</span>?
-    </div>
-  </div>
+<li> Waar kom je vandaan? </li>
+  <ul>
+    <li>  a. Ik ben Oezbeek. </li>
+    <li>  b. Ik ben 35 jaar oud. </li>
+    <li>  c. Ik kom uit Nederland. </li>
+  </ul>
 
-  <div class="hisob">
-    <input type="number" class="quantity"  name="quantity" min="1" max="1000">
-  </div>
-</article>
-<article class="calculus">
-  <div class="first_div">
-    <div class="tartib_son">
-      3.
-    </div>
-    <div class="basa">
-      Hoeveel is <span class="first_number">10</span> + <span class="sec_number">30</span>?
-    </div>
-  </div>
+<li> Wat is de datum vandaag?  </li>
+  <ul>
+    <li>  a. Het is dinsdag.   </li>
+    <li> b. Het is 24 maart.  </li>
+    <li> c. Het is 3 uur 's middags.   </li>
+  </ul>
 
-  <div class="hisob">
-    <input type="number" class="quantity"  name="quantity" min="1" max="1000">
-  </div>
-</article>
+  
 
+<li>Hoe zeg je "hello" in het Nederlands?  </li>
+  <ul>
+    <li>  a. Hoe gaat het?</li>
+    <li> b. Dag! </li>
+    <li> c. tot ziens! </li>
+  </ul>
 
-<script>
-// Get all the input elements with a class of "quantity"
-const inputs = document.querySelectorAll('.quantity');
-
-// Loop through each input element and add an event listener for when the user inputs a value
-inputs.forEach(input => {
-  input.addEventListener('input', () => {
-    // Get the corresponding first_number and sec_number values
-    const firstNumber = parseInt(input.closest('.calculus').querySelector('.first_number').textContent);
-    const secNumber = parseInt(input.closest('.calculus').querySelector('.sec_number').textContent);
-    
-    // Calculate the correct answer
-    const correctAnswer = firstNumber + secNumber;
-    
-    // Get the user's answer
-    const userAnswer = parseInt(input.value);
-    
-    // Compare the user's answer to the correct answer and change the input color accordingly
-    if (userAnswer === correctAnswer) {
-      input.style.color = 'green';
-    } else {
-      input.style.color = 'red';
-    }
-  });
-});
-</script>
+<li>Wat is de hoofdstad van Nederland?</li>
+  <ul>
+    <li>  a. Amsterdam </li>
+    <li> b. Rotterdam </li>
+    <li> c. Den Haag (The Hague) </li>
+  </ul>
+</ol>
