@@ -704,7 +704,7 @@
           dochters
         </li>
         <li>b. 
-          zaturdag
+          zaterdag
         </li>
         <li>c. 
           morgen
@@ -729,7 +729,7 @@
         heb jij? </p>
       <ul>
         <li>a. dochters  <span class="check_sign">&#x2713;</span>   </li>
-        <li>b. zaturdag   </li>
+        <li>b. zaterdag   </li>
         <li>c.  morgen  </li>
       </ul>
 
@@ -1039,15 +1039,19 @@
   }
 
   .german .c_territory .buttons_forC {
-    display: flex;
-    gap: 60px;
+    display: none;
     opacity: 0;
     transition: opacity 0.6s ease-in;
+    z-index: -10;
   }
 
   .german .c_territory .buttons_forC.show_it {
     margin: auto;
     opacity: 1;
+    z-index: 10;
+
+    display: flex;
+    gap: 60px;
   }
 
   .display_it_none {
@@ -1204,6 +1208,7 @@
         </div>
       </div>
     </div>
+
     <script>
       function moveButton(button) {
         

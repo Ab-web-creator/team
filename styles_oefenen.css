@@ -262,3 +262,22 @@ git commit -m "lyuboe sobwenie"
 git push 
 */
 
+
+.speaker {
+    background-color: rgb(230, 230, 230); 
+    color: rgb(200, 200, 200);
+    padding: 5px 10px; 
+    font-size: 16px; 
+    line-height: 20px; 
+}
+
+.dutch_guy,
+.uzbek_guy {
+    font-size: 18px; 
+    line-height: 25px; 
+    color: rgb(0, 123, 255);
+}
+.uzbek_guy {
+    color: rgb(16, 161, 0);
+}
+
