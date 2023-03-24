@@ -400,63 +400,70 @@
     </div>
       <p class="neutral" id="resultt6"></p>
    
+ 
+   
 </main>
 
 	<script>
-    function checkAnswer1() {
-    var any_answer = document.getElementById("answer1").value;
-    var answer = any_answer.toLowerCase()
-    if (answer == "moet") {
-        document.getElementById("resultt1").innerHTML = "&#10004; Ik moet morgen vroeg naar school.";
-    } else {
-        document.getElementById("resultt1").innerHTML = "&#10008;  Probeer het nog eens";
-    }
+  function checkAnswer1() {
+  var any_answer = document.getElementById("answer1").value;
+  var answer = any_answer.toLowerCase();
+  if (answer == "moet") {
+      document.getElementById("resultt1").innerHTML = "&#10004; Ik moet morgen vroeg naar school.";
+  } else {
+      document.getElementById("resultt1").innerHTML = "&#10008;  Probeer het nog eens";
+  }
 }
 
 function checkAnswer2() {
-    var answer = document.getElementById("answer2").value;
-    if (answer == "moet") {
-        document.getElementById("resultt2").innerHTML = "&#10004; Jij moet thee drinken.";
-    } else {
-        document.getElementById("resultt2").innerHTML = "&#10008;  Probeer het nog eens";
-    }
+  var any_answer = document.getElementById("answer2").value;
+  var answer = any_answer.toLowerCase();
+    
+  if (answer == "moet") {
+      document.getElementById("resultt2").innerHTML = "&#10004; Jij moet thee drinken.";
+  } else {
+      document.getElementById("resultt2").innerHTML = "&#10008;  Probeer het nog eens";
+  }
 }
 
 function checkAnswer3() {
-    var answer = document.getElementById("answer3").value;
-    if (answer == "moeten") {
-        document.getElementById("resultt3").innerHTML = " &#10004; Wij moeten ons huiswerk maken.";
+  var any_answer = document.getElementById("answer3").value;
+  var answer = any_answer.toLowerCase();
+ 
+  if (answer == "moeten") {
+     document.getElementById("resultt3").innerHTML = " &#10004; Wij moeten ons huiswerk maken.";
     } else {
-        document.getElementById("resultt3").innerHTML = "&#10008;  Probeer het nog eens";
+      document.getElementById("resultt3").innerHTML = "&#10008;  Probeer het nog eens";
     }
 }
 
 function checkAnswer4() {
-    var answer = document.getElementById("answer4").value;
+  var any_answer = document.getElementById("answer4").value;
+  var answer = any_answer.toLowerCase();
     if (answer == "moet") {
-        document.getElementById("resultt4").innerHTML = " &#10004; Hij moet zijn rijbewijs halen.";
+      document.getElementById("resultt4").innerHTML = " &#10004; Hij moet zijn rijbewijs halen.";
     } else {
-        document.getElementById("resultt4").innerHTML = "&#10008;  Probeer het nog eens";
+      document.getElementById("resultt4").innerHTML = "&#10008;  Probeer het nog eens";
     }
 }
 function checkAnswer5() {
-    var answer = document.getElementById("answer5").value;
-    if (answer == "moeten") {
-        document.getElementById("resultt5").innerHTML = " &#10004; Jullie moeten boodschappen doen.";
-    } else {
-        document.getElementById("resultt5").innerHTML = "&#10008;  Probeer het nog eens";
-    }
+  var any_answer = document.getElementById("answer5").value;
+  var answer = any_answer.toLowerCase();
+  if (answer == "moeten") {
+    document.getElementById("resultt5").innerHTML = " &#10004; Jullie moeten boodschappen doen.";
+  } else {
+    document.getElementById("resultt5").innerHTML = "&#10008;  Probeer het nog eens";
+  }
 }
 function checkAnswer6() {
-    var answer = document.getElementById("answer6").value;
-    if (answer == "moet") {
-        document.getElementById("resultt6").innerHTML = " &#10004; Jij moet je vriendin bellen.";
-    } else {
-        document.getElementById("resultt6").innerHTML = "&#10008;  Probeer het nog eens";
-    }
+  var any_answer = document.getElementById("answer6").value;
+  var answer = any_answer.toLowerCase();
+  if (answer == "moet") {
+    document.getElementById("resultt6").innerHTML = " &#10004; Jij moet je vriendin bellen.";
+  } else {
+    document.getElementById("resultt6").innerHTML = "&#10008;  Probeer het nog eens";
+  }
 }
-
-
 
 
 	</script>
@@ -480,6 +487,7 @@ function checkAnswer6() {
       .quiz_with_radio button {
         margin-left: 0px;
         margin-top: 20px;
+        margin-bottom: 20px;
         width: 90px;
       }
       .quiz_with_radio button p {
@@ -503,6 +511,15 @@ function checkAnswer6() {
       .quiz_with_radio .incorrect {
         color: red;
       }
+      
+      .quiz_with_radio #result_of_quiz {
+        color: rgb(0, 132, 255);
+        background-color: rgb(218, 255, 196);
+        text-align: center;
+        padding: 8px 14px;
+        border-radius: 5px;
+      }
+
     </style>
 
     <main style="gap: 0px;">
@@ -515,21 +532,46 @@ function checkAnswer6() {
     <label><input type="radio" name="q1" value="c"> c) Goedemorgen.</label>
     
     <h4>2. Hoe gaat het met je?</h4>
-    <label><input type="radio" name="q2" value="a"> a) Ja, ik kom uit Oezbeekistan. </label>
+    <label><input type="radio" name="q2" value="a"> a) Ja, het is juist. </label>
     <label><input type="radio" name="q2" value="b"> b) Het gaat goed. </label>
     <label><input type="radio" name="q2" value="c"> c) Nee, dank je wel. </label>
+    
+    <h4>3. Waar kom je vandaan?</h4>
+    <label><input type="radio" name="q3" value="a"> a) Ik ben Oezbeek. </label>
+    <label><input type="radio" name="q3" value="b"> b) Ik ben 35 jaar oud. </label>
+    <label><input type="radio" name="q3" value="c"> c) Ik kom uit China. </label>
+    
+    <h4>4. Wat is de datum?</h4>
+    <label><input type="radio" name="q4" value="a"> a) Het is dinsdag. </label>
+    <label><input type="radio" name="q4" value="b"> b) Het is 24 maart. </label>
+    <label><input type="radio" name="q4" value="c"> c) Het is 3 uur 's middags. </label>
+    
+    <h4>5. Hoe zeg je "hello"?</h4>
+    <label><input type="radio" name="q5" value="a"> a) Hoe gaat het? </label>
+    <label><input type="radio" name="q5" value="b"> b) Dag! </label>
+    <label><input type="radio" name="q5" value="c"> c) Tot ziens! </label>
+    
+    
+    <h4>6. Wat is de hoofdstad van Nederland?</h4>
+    <label><input type="radio" name="q6" value="a"> a) Amsterdam. </label>
+    <label><input type="radio" name="q6" value="b"> b) Rotterdam. </label>
+    <label><input type="radio" name="q6" value="c"> c) Den Haag. </label>
     
     <br>
     <button onclick="submitQuiz()"><p>Submit</p></button>
     <br>
     <br>
-    <p id="result"></p>
+    <p id="result_of_quiz"></p>
 
     </main>
     <script>
-          function submitQuiz() {
+      function submitQuiz() {
         var q1 = document.querySelector('input[name="q1"]:checked');
         var q2 = document.querySelector('input[name="q2"]:checked');
+        var q3 = document.querySelector('input[name="q3"]:checked');
+        var q4 = document.querySelector('input[name="q4"]:checked');
+        var q5 = document.querySelector('input[name="q5"]:checked');
+        var q6 = document.querySelector('input[name="q6"]:checked');
 
         if (q1 == null || q2 == null) {
           alert("Please answer all questions.");
@@ -552,8 +594,36 @@ function checkAnswer6() {
           q2.parentNode.classList.add("incorrect");
         }
 
-        var resultElement = document.getElementById("result");
-        resultElement.innerHTML = "You scored " + score + " out of 2.";
+        if (q3.value === "c") {
+          score++;
+          q3.parentNode.classList.add("correct");
+        } else {
+          q3.parentNode.classList.add("incorrect");
+        }
+
+        if (q4.value === "b") {
+          score++;
+          q4.parentNode.classList.add("correct");
+        } else {
+          q4.parentNode.classList.add("incorrect");
+        }
+
+        if (q5.value === "b") {
+          score++;
+          q5.parentNode.classList.add("correct");
+        } else {
+          q5.parentNode.classList.add("incorrect");
+        }
+
+        if (q6.value === "a") {
+          score++;
+          q6.parentNode.classList.add("correct");
+        } else {
+          q6.parentNode.classList.add("incorrect");
+        }
+
+        var resultElement = document.getElementById("result_of_quiz");
+        resultElement.innerHTML = "You scored " + score + " out of 6.";
       }
     </script>
   </section>
