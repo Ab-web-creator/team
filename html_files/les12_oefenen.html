@@ -511,12 +511,13 @@ function checkAnswer6() {
       .quiz_with_radio .incorrect {
         color: red;
       }
+     
       
       .quiz_with_radio #result_of_quiz {
         color: rgb(0, 132, 255);
-        background-color: rgb(218, 255, 196);
+        background-color: rgb(196, 232, 255);
         text-align: center;
-        padding: 8px 14px;
+        /* padding: 8px 14px; */
         border-radius: 5px;
       }
 
@@ -623,16 +624,32 @@ function checkAnswer6() {
         }
 
         var resultElement = document.getElementById("result_of_quiz");
-        resultElement.innerHTML = "You scored " + score + " out of 6.";
+          resultElement.innerHTML = "You scored " + score + " out of 6.";
+          resultElement.style.padding = "8px 14px";
+
+        if (score <= 1) {
+          resultElement.style.background = "red";
+        } 
+        if (score === 2) {
+          resultElement.style.background = "rgb(255, 149, 0)";
+        } 
+        if (score === 3) {
+          resultElement.style.background = "rgb(255, 230, 0)";
+        } 
+        if (score === 4) {
+          resultElement.style.background = "rgb(196, 232, 255)";
+        } 
+        if (score === 5) {
+          resultElement.style.background = "rgb(195, 255, 0)";
+        } 
+        if (score >= 6) {
+          resultElement.style.background = "rgb(195, 255, 0)";
+        }
+        
       }
     </script>
   </section>
-
-
-
-
-
-
+ 
 
   <section>
     <button style="width: 150px;" class="go_back_btn" onclick="history.back()">
