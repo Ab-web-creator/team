@@ -253,106 +253,102 @@
     </main>
     <div class="spacer40px"></div>
   </div>
-	<script  >
-      function checkAnswer(index) {
-      const resultDiv = document.getElementById(`result${index}`);
-      resultDiv.style.display = "block";
-      }
-  </script>
- 
+    <script  >
+        function checkAnswer(index) {
+        const resultDiv = document.getElementById(`result${index}`);
+        resultDiv.style.display = "block";
+        }
+    </script>
   </section>
 
   <section style="padding: 0; position: relative;">
-  <style>
-    .divisions_container {
-      width: 100%;
-      height: 50vh;
-      overflow-x: scroll;
-      overflow-y: hidden;
-      display: grid;
-      grid-template-columns: 100% 100%;
-      scroll-snap-type: x mandatory;
-    
-      gap: 0px;
+    <style>
+      .divisions_container {
+        width: 100%;
+        height: 50vh;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        display: grid;
+        grid-template-columns: 100% 100%;
+        scroll-snap-type: x mandatory;
+        gap: 0px;
+      }
+      .divisions_container .division {
+        padding: 40px;
+        flex-wrap: wrap;
+        color: white;
+        height: 50vh;
+        font-size: 20px;
 
-    }
-  .divisions_container .division {
-    padding: 40px;
-    flex-wrap: wrap;
-    color: white;
-    height: 50vh;
-    font-size: 20px;
+        scroll-snap-stop: always;
+        scroll-snap-align: center;
 
-    scroll-snap-stop: always;
-    scroll-snap-align: center;
-
-    background-image: url(../images/images_les2/inst_bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .divisions_container .division .asos_tekst {
-    position: relative;
-    margin-bottom: 20px;
-  }
-  .divisions_container .division2 span {
-   color: rgb(26, 255, 0);
-  }
-  .division2 .check_sign {
-    margin-left: 30px;
-   font-size: 34px;
-  }
-  .divisions_container .division1,
-  .divisions_container .division2 {
-    position: relative;
-  }
-  .divisions_container .company_subcontainer {
-    display: flex;
-  }
-  .divisions_container .company {
-    position: absolute;
-    /* padding: 10px; */
-    width: 30%;
-    height: 30%;
-    border-radius: 50%;
-    background-color: rgb(255, 70, 70);
-    right: 10px;
-    bottom: 10px;
-    overflow: hidden;
-    display: flex;
-  }
-  .divisions_container .company_subcontainer {
-    position: relative;
-    rotate: -45deg;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-  .divisions_container .company_subcontainer p {
-    text-align: center;
-    font-size: 10px;
-    line-height: 12px;
-    z-index: 10;
-  }
-  .divisions_container .met {
-    color: rgb(255, 255, 255);
-    font-weight: 700;
-    /* background-color: rgb(192, 236, 255); */
-  }
-  .check_sign_white {
-    position: absolute;
-    /* width: 200px; */
-    right: 10px;
-    bottom: -25px;
-    height: 100px;
-  }
-  .check_sign_white p {
-    color: rgba(255, 255, 255, 0.66);
-    font-size: 120px;
-  }
-
-  </style>
+        background-image: url(../images/images_les2/inst_bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .divisions_container .division .asos_tekst {
+        position: relative;
+        margin-bottom: 20px;
+      }
+      .divisions_container .division2 span {
+      color: rgb(26, 255, 0);
+      }
+      .division2 .check_sign {
+        margin-left: 30px;
+      font-size: 34px;
+      }
+      .divisions_container .division1,
+      .divisions_container .division2 {
+        position: relative;
+      }
+      .divisions_container .company_subcontainer {
+        display: flex;
+      }
+      .divisions_container .company {
+        position: absolute;
+        /* padding: 10px; */
+        width: 30%;
+        height: 30%;
+        border-radius: 50%;
+        background-color: rgb(255, 70, 70);
+        right: 10px;
+        bottom: 10px;
+        overflow: hidden;
+        display: flex;
+      }
+      .divisions_container .company_subcontainer {
+        position: relative;
+        rotate: -45deg;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      .divisions_container .company_subcontainer p {
+        text-align: center;
+        font-size: 10px;
+        line-height: 12px;
+        z-index: 10;
+      }
+      .divisions_container .met {
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        /* background-color: rgb(192, 236, 255); */
+      }
+      .check_sign_white {
+        position: absolute;
+        /* width: 200px; */
+        right: 10px;
+        bottom: -25px;
+        height: 100px;
+      }
+      .check_sign_white p {
+        color: rgba(255, 255, 255, 0.66);
+        font-size: 120px;
+      }
+    </style>
 
   <div class="divisions_container">
 
@@ -411,71 +407,807 @@
   </div>
 </section>
 
-  <section class="reveal_answer_exercB">
+<section>
+  <div>
+    <style>
+      .wrap_qstn {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      }
+      .savol {
+        background: rgb(230, 230, 230);
+        border-radius: 0.5rem;
+        padding: 10px 15px;
+        margin: 0px 20px;
+        
+      }
+      .p_container {
+        margin-top: auto;
+        margin-bottom: auto;
+        display: flex;
+        justify-content: left;
+        gap: 5px;
+      }
+      .savol-text2 p {
+        padding-top: 0px;
+      }
+      .savol-text {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      .savol-text p {
+        margin-bottom: 0;
+        font-size: 18px;
+      }
+      .savol-btn {
+        margin: 0px;
+        /* margin-top: -3px; */
+        font-size: 24px;
+        width: fit-content;
+        background: transparent;
+        box-shadow: none;
+        transition: all 0.3s linear;
+        cursor: pointer;
+      }
+      .savol-btn:hover {
+        background: transparent !important;
+        box-shadow: none;
+      }
+      .savol-btn i {
+        color: rgba(89, 89, 89, 0.789);
+        color: green;
+        background: transparent;
+      }
+      .cursor-point {
+        cursor: pointer;
+      }
+      .savol-text2 {
+        display: none;
+      }
+      .show-text .savol-text2 {
+        display: block;
+      }
+      .minus-icon {
+        display: none;
+      }
+      .show-text .minus-icon {
+        display: inline;
+      }
+      .show-text .plus-icon {
+        display: none;
+      }
+      .wrap_qstn .bx-minus {
+        background-color: rgba(255, 0, 0, 0.51);
+        border-radius: 50%;
+      }
+      .wrap_qstn .bx-plus {
+        background-color: rgba(173, 173, 173, 0.51);
+        border-radius: 50%;
+      }
+    </style>
+     <main  style="margin-left: 0px;" >
+      <div>
+        <h3 style="text-align: left;">
+          2. 	<span class="bold">Beantwoord de vragen:</span>
+        </h3>
+      </div>
+     </main>
+     <div class="spacer40px"></div>
+    <div class="wrap_qstn">
+    <article class="savol">
+      <!-- question title -->
+      <div class="savol-text cursor-point">
+       <div class="p_container" style="color: green;">
+        <p class="bold purple">~ </p>
+        <p class="bold">
+          Hoe lang ben jij in Nederland?
+        </p>
+       </div>
+        <button type="button" class="savol-btn">
+          <span class="plus-icon">
+            <i class='bx bx-plus'></i>
+          </span>
+          <span class="minus-icon">
+            <i class='bx bx-minus'></i>
+          </span>
+        </button>
+      </div>
+      <div class="savol-text savol-text2">
+        <div class="p_container" style="color: blue;">
+          <p class="bold purple">~ </p>
+          <p class="bold">Ik woon hier sinds 2022.</p>
+         </div>
+      </div>
+    </article>
 
+    <article class="savol">
+      <!-- question title -->
+      <div class="savol-text cursor-point">
+       <div class="p_container" style="color: green;">
+        <p class="bold purple">~ </p>
+        <p class="bold">
+          Was je  vorig jaar in Dubai?
+          
+          
+        </p>
+       </div>
+        <button type="button" class="savol-btn">
+          <span class="plus-icon">
+            <i class='bx bx-plus'></i>
+          </span>
+          <span class="minus-icon">
+            <i class='bx bx-minus'></i>
+          </span>
+        </button>
+      </div>
+      <div class="savol-text savol-text2">
+        <div class="p_container" style="color: blue;">
+          <p class="bold purple">~ </p>
+          <p class="bold">Nee, vorig jaar niet. Ik was 2020 in Dubai. </p>
+         </div>
+      </div>
+    </article>
+    <article class="savol">
+      <!-- question title -->
+      <div class="savol-text cursor-point">
+       <div class="p_container" style="color: green;">
+        <p class="bold purple">~ </p>
+        <p class="bold">
+          
+          Hoeveel talen spreek jij?
+        </p>
+       </div>
+        <button type="button" class="savol-btn">
+          <span class="plus-icon">
+            <i class='bx bx-plus'></i>
+          </span>
+          <span class="minus-icon">
+            <i class='bx bx-minus'></i>
+          </span>
+        </button>
+      </div>
+      <div class="savol-text savol-text2">
+        <div class="p_container" style="color: blue;">
+          <p class="bold purple">~ </p>
+          <p class="bold">
+            Ik spreek Farsi en Nederlands.        
+          </p>
+         </div>
+      </div>
+    </article>
+
+    <article class="savol">
+      <!-- question title -->
+      <div class="savol-text cursor-point">
+       <div class="p_container" style="color: green;">
+        <p class="bold purple">~ </p>
+        <p class="bold">
+          Moet je nu gaan?
+        </p>
+       </div>
+        <button type="button" class="savol-btn">
+          <span class="plus-icon">
+            <i class='bx bx-plus'></i>
+          </span>
+          <span class="minus-icon">
+            <i class='bx bx-minus'></i>
+          </span>
+        </button>
+      </div>
+      <div class="savol-text savol-text2">
+        <div class="p_container" style="color: blue;">
+          <p class="bold purple">~ </p>
+          <p class="bold">Ja, ik moet naar mijn werk. Tot ziens!
+            <span class="wave"> &#128400;</span>
+          </p>
+         </div>
+      </div>
+    </article>
+    </div>
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+
+      const questions = document.querySelectorAll(".savol");
+
+      questions.forEach(function (question) {
+          const btn = question.querySelector(".savol-btn");
+          const savol = question.querySelector(".savol-text");
+          var rotated = false;
+
+          savol.addEventListener("click", function() {
+              questions.forEach(function (banana) {
+                  if (banana !== question) {
+                    // banana.classList.remove("show-text");
+                    // banana.style.background = "rgb(199, 199, 199)"
+                  }
+              })
+              question.classList.toggle("show-text");
+              question.style.background = "rgb(235, 235, 245)"
+
+              deg = rotated ? 0 : 360;
+
+              btn.style.webkitTransform = 'rotate('+deg+'deg)'; 
+              btn.style.mozTransform    = 'rotate('+deg+'deg)'; 
+              btn.style.msTransform     = 'rotate('+deg+'deg)'; 
+              btn.style.oTransform      = 'rotate('+deg+'deg)'; 
+              btn.style.transform       = 'rotate('+deg+'deg)'; 
+
+              rotated = !rotated;
+          });
+      });
+    })
+    </script>
+  </div>
+</section>
+
+<section class="german">
   <style>
-    .reveal_answer_exercB #result1, 
-    .reveal_answer_exercB #result2, 
-    .reveal_answer_exercB #result3 {
-			font-weight: bold;
-			margin-top: 10px;
-		}
-    .reveal_answer_exercB p {
-      font-size: 20px;
-    }
-    .reveal_answer_exercB input {
-      background-color: rgb(223, 223, 223);
-      width: 90px;
-      font-size: 20px;
-      color: black;
-      border: none;
-      border-radius: 5px;
-      text-align: center;
-    }
-    .reveal_answer_exercB input:focus {
-      background-color: rgba(226, 255, 83, 0.134);
-      color:black;
-      width: 90px;
-      border: none;
-      border-radius: 5px;
-      font-size: 20px;
-    }
+.german {
+  position: relative;
+  background-color: rgb(119, 119, 119) !important;
+  padding: 50px 0px;
+}
 
-    .reveal_answer_exercB button {
-      margin-left: 0px;
-      padding: 3px 16px;
-      width: 50px;
-      background-color: rgb(208, 184, 0);
-    }
-    
-    .reveal_answer_exercB .correct {
-      background-color: rgb(192, 18, 255);
-      color: rgb(23, 255, 7);
-      padding: 3px 19px;
-      margin-bottom: 20px;
-    }
-    .reveal_answer_exercB .incorrect {
-      background-color: rgb(192, 18, 255);
-      color:rgb(208, 0, 0);
-      padding: 3px 19px;
-      margin-bottom: 20px;
-    }
-    .reveal_answer_exercB .neutral {
-      background-color: rgb(179, 228, 255);
-      color: rgb(0, 95, 98);
-      margin-bottom: 20px;
-      padding: 3px 19px;
-    }
+.german .a_territory {
+  padding: 20px;
+  margin: 0px 10px;
+  border-radius: 10px;
+  background-color: rgb(240, 240, 240);
+  height: fit-content;
+}
 
-    .reveal_answer_exercB .flex_it {
-    margin-bottom: 0px;
-    display: flex; 
-    gap: 10px;
-    justify-content: space-between;
-    }
+.german .a_territory .mejdu_strok {
+ margin-bottom: 20px;
+}
+
+.german .rasstoyanie {
+  width: 0px;
+}
+
+.german .pustoy_div {
+  width: fit-content;
+  min-width: 50px;
+  max-width: fit-content;
+  margin-right: 15px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #bfbfbf;
+  display: flex;
+}
+
+.german .sharh_container {
+  margin-right: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+}
+.german .sharhi {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.german .sharhi p {
+  text-align: left;
+}
+
+.german .mejdu_strok {
+  height: fit-content;
+  }
+  .german .mejdu_strok p {
+      min-height: 30px;
+      line-height: 28px;
+  }
+
+.german .btn-container {
+  background-color: #ccc;
+  border-radius: 6px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  display: flex;
+}
+
+.german .b_territory {
+  border-radius: 15px;
+  position: relative;
+  padding: 10px;
+  min-height: 115px;
+  margin: 0px 10px;
+  padding: 10px 20px;
+  background-color: gray;
+  background-color: transparent;
+}
+
+.german .b_territory > div:nth-child(1) {
+  position: absolute;
+  min-width: 90px;
+  top: 10px;
+  left: 0px;
+  z-index: 3;
+}
+.german .b_territory > div:nth-child(2) {
+  position: absolute;
+  min-width: 90px;
+  top: 10px;
+  left: 105px;
+  z-index: 3;
+}
+.german .b_territory > div:nth-child(3) {
+  position: absolute;
+  min-width: 90px;
+  top: 10px;
+  right: 0px;
+  z-index: 3;
+}
+.german .b_territory > div:nth-child(4) {
+  position: absolute;
+  min-width: 90px;
+  top: 70px;
+  left: 0px;
+  z-index: 3;
+}
+.german .b_territory > div:nth-child(5) {
+  position: absolute;
+  min-width: 90px;
+  top: 70px;
+  left: 105px;
+  z-index: 3;
+}
+.german .b_territory > div:nth-child(6) {
+  position: absolute;
+  min-width: 90px;
+  top: 70px;
+  right: 0px;
+  z-index: 3;
+}
+
+.german .b_territory > div {
+   height: fit-content;
+}
+
+  .german p {
+      font-size: 18px;
+      line-height: 28px;
+      font-weight: 700;
+  }
+  .german .sharhi p {
+      color: #292929; 
+      opacity: 0.9;
+  }
+.german .a_territory .btn_cha {
+  margin: auto;
+}
+.german .a_territory .btn_cha p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0px 0px;
+  padding-top: 1px;
+  background-color: #ffffff;
+  background-color: rgb(240, 240, 240);
+  height: 30px;
+}
+.german .b_territory .btn_cha {
+  margin: auto;
+  padding: 3px 5px;
+  width: fit-content;
+}
+.german .b_territory .btn_cha p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(58, 58, 58);
+}
+
+.german .c_territory {
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.german .c_territory .buttons_forC > div {
+  margin: auto;
+  width: 90px;
+  border-radius: 5px;
+  background-color: #0080ff !important;
+  background-color: #80ff63 !important;
+}
+
+.german .c_territory .buttons_forC > div:last-child {
+  background-color: #ff8000 !important;
+}
+
+.german .c_territory .buttons_forC  p {
+  text-align: center;
+  color: #ffffff !important;
+  font-weight: 500;
+  padding: 3px 5px;
+}
+
+.german .c_territory .buttons_forC {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.6s ease-in;
+  z-index: -10;
+}
+
+.german .c_territory .buttons_forC.show_it {
+  margin: auto;
+  opacity: 1;
+  z-index: 10;
+
+  display: flex;
+  gap: 60px;
+}
+
+.display_it_none {
+  display: none;
+}
+  </style>
+
+  <main  style=" display: flex; width: 100%; padding: 0px 10px;" >
+    <div style="background-color: #f5f5f5; border-radius: 6px;
+    padding-top: 10px; width: 100%;">
+      <h3 style="color: #484848; text-align: center;">
+        4. Kies de juiste optie
+      </h3>
+    </div>
+  </main>
 
 
-	</style>
+
+  <div class="a_territory">
+
+    <div class="sharhi">
+      <p class="sharhi_p">Hallo Fred! Alles is oké?</p>
+    </div>
+
+    <div style="display: flex;">
+      <div style="display: flex;">
+        <div class="pustoy_div pustoy_div6"></div> 
+      </div>
+      <div class="sharh_container">
+        <div class="sharhi">
+          <p class="sharhi_p">gaat het met jou?</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="mejdu_strok">
+      <p class="blue" style="font-size: 18px;
+      line-height: 28px;
+      font-weight: 700;">
+      Hi Zakir! Het gaat goed.
+    </p>
+    </div>
+
+    <div style="display: flex;">
+      <div style="display: flex;">
+        
+        <div  class="pustoy_div pustoy_div1"></div> 
+      </div>
+
+      <div class="sharh_container">
+        <div class="sharhi">
+          <p class="sharhi_p">is dat? Is dat een nieuwe auto? </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mejdu_strok">
+      <p class="blue" style="font-size: 18px;
+      line-height: 28px;
+      font-weight: 700;">
+      Het is niet van mij. Het is van mijn vriend.
+    </p>
+    </div>
+
+    <div class="mejdu_strok">
+      <!-- <p>fasdf af sdaf asdfas dfa sdf asdfadsfasd asd fas </p> -->
+</div>
+
+<div style="display: flex;">
+<div style="display: flex;">
+  <div class="pustoy_div pustoy_div5"></div> 
+</div>
+<div class="sharh_container">
+  <div class="sharhi">
+    <p class="sharhi_p">jaar is dit?</p>
+  </div>
+</div>
+</div>
+
+<div class="mejdu_strok">
+  <p class="blue" style="font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;">
+  Ik denkt 2023.
+</p>
+</div>
+
+    <div style="display: flex;">
+      <div style="display: flex;">
+        <div class="pustoy_div pustoy_div2"></div> 
+      </div>
+      <div class="sharh_container">
+      <div class="sharhi">
+        <p class="sharhi_p"> kost het?</p>
+      </div>
+      </div>
+    </div>
+
+    <div class="mejdu_strok">
+      <p class="blue" style="font-size: 18px;
+      line-height: 28px;
+      font-weight: 700;">
+      Ik weet dat niet. Misschien 40 duizend?
+    </p>
+    </div>
+
+    <div style="display: flex;">
+      <div style="display: flex;">
+        <div class="pustoy_div pustoy_div3"></div> 
+      </div>
+      <div class="sharh_container">
+        <div class="sharhi">
+          <p class="sharhi_p">woont hij?</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mejdu_strok">
+      <!-- <p>fasdf af sdaf asdfas dfa sdf asdfadsfasd asd fas </p> -->
+    </div>
+
+    <div style="display: flex;">
+      <div style="display: flex;">
+        <div class="pustoy_div pustoy_div4"></div> 
+      </div>
+      <div class="sharh_container">
+        <div class="sharhi">
+          <p class="sharhi_p"> <span class="blue bold">vraag je dat?</span></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="b_territory"  class="b_territory">
+    <div class="btn-container">
+      <div class="btn_cha btn_cha1" onclick="moveButton(this)">
+        <p>Waar</p>
+      </div>
+    </div>
+    <div class="btn-container">
+      <div class="btn_cha btn_cha2" onclick="moveButton(this)">
+        <p>Hoeveel</p>
+      </div>
+    </div>
+  
+    <div class="btn-container">
+      <div class="btn_cha btn_cha6" onclick="moveButton(this)">
+        <p>Hoe</p>
+      </div>
+    </div>
+
+    <div class="btn-container">
+      <div class="btn_cha btn_cha3" onclick="moveButton(this)">
+        <p>Wat</p>
+      </div>
+    </div>
+   
+    <div class="btn-container">
+      <div class="btn_cha btn_cha5" onclick="moveButton(this)">
+        <p> Welk</p>
+      </div>
+    </div>
+
+    <div class="btn-container">
+      <div class="btn_cha btn_cha4" onclick="moveButton(this)">
+        <p>Waarom</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="c_territoriya" class="c_territory">
+    <div  class="buttons_forC_container">
+      <div id="buttons_forC" class="buttons_forC">
+        <div class="ctrl_german" >
+          <p>ctrl</p>
+        </div>
+        <div onClick="window.location.reload()">
+          <p>reset</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function moveButton(button) {
+      
+        // Find the first available div
+        var pustoy_div = document.getElementsByClassName("pustoy_div");
+        var targetDiv;
+        for (var i = 0; i < pustoy_div.length; i++) {
+          if (pustoy_div[i].innerHTML === "") {
+            targetDiv = pustoy_div[i];
+            pustoy_div[i].style.minWidth = "10px";
+            pustoy_div[i].style.marginRight = "5px";
+            break;
+          }
+        }
+        
+        // Move the button to the target div
+        if (targetDiv) {
+          targetDiv.appendChild(button);
+          button.onclick = null;
+        }
+
+        const initialContainers = document.getElementsByClassName('btn-container');
+
+        // each btn-container has a child
+        let btnContainerCount = 6;
+
+        // subtract 1 every time a btn-container loses its child element
+        for (let i = 0; i < initialContainers.length; i++) {
+          if (initialContainers[i].children.length === 0) {
+            btnContainerCount--;
+          }
+        }
+
+        // when they are empty this runs
+        if (btnContainerCount === 0) {           
+          const buttons_forC = document.getElementById('buttons_forC');
+          buttons_forC.classList.toggle("show_it");
+
+          const b_territory = document.getElementById('b_territory');
+          b_territory.style.background = "transparent" ;
+        }
+      };
+
+      const ctrl_german = document.querySelector('.ctrl_german')
+      const pustoy_div = document.querySelectorAll('.pustoy_div')
+
+      ctrl_german.addEventListener('click', () => {
+      console.log('cliked 1st knopkacha')
+
+      pustoy_div.forEach((resultat) => {
+      const containerClassName = resultat.getAttribute('class')
+
+     var sanoq = 0;
+      if (
+        containerClassName.includes('pustoy_div1') &&
+        resultat.querySelector('.btn_cha3')
+      ) {
+        resultat.style.textDecoration = "underline"
+        // resultat.style.border = "1px solid darkgreen"
+        // resultat.style.background = "none"
+        
+      } else if (
+        containerClassName.includes('pustoy_div2') &&
+        resultat.querySelector('.btn_cha2')
+      ) {   
+        resultat.style.textDecoration = "underline"
+        // resultat.style.border = "1px solid darkgreen"
+        // resultat.style.background = "none"
+      } else if (
+        containerClassName.includes('pustoy_div3') &&
+        resultat.querySelector('.btn_cha1')
+      ) {
+        resultat.style.textDecoration = "underline"
+        // resultat.style.border = "1px solid darkgreen"
+        // resultat.style.background = "none"
+      } else if (
+        containerClassName.includes('pustoy_div4') &&
+        resultat.querySelector('.btn_cha4')
+      ) {
+        resultat.style.textDecoration = "underline"
+        // resultat.style.border = "1px solid darkgreen"
+        // resultat.style.background = "none"
+      } 
+
+      else if (
+        containerClassName.includes('pustoy_div5') &&
+        resultat.querySelector('.btn_cha5')
+      ) {
+        resultat.style.textDecoration = "underline"
+        // resultat.style.border = "1px solid darkgreen"
+        // resultat.style.background = "none"
+      } 
+
+      else if (
+        containerClassName.includes('pustoy_div6') &&
+        resultat.querySelector('.btn_cha6')
+      ) {
+        resultat.style.textDecoration = "underline" 
+        // resultat.style.border = "1px solid darkgreen"
+        // resultat.style.background = "none"
+        
+      } 
+      
+      else {
+        // resultat.style.boxShadow = "0 0 5px red";
+        // resultat.style.borderRadius = "15px";
+        // resultat.style.border = "1px solid red"
+        resultat.style.textDecorationLine = "line-through";
+        // resultat.style.textDecoration = "underline";
+        // resultat.style.background = "red";
+        resultat.style.rotate = "-25deg";
+        resultat.style.opacity = "0.4";
+      }
+    })
+  })
+
+  </script>
+</section>
+
+  <section class="reveal_answer_exercB">
+    <style>
+      .reveal_answer_exercB #result1, 
+      .reveal_answer_exercB #result2, 
+      .reveal_answer_exercB #result3 {
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      .reveal_answer_exercB p {
+        font-size: 20px;
+      }
+      .reveal_answer_exercB input {
+        background-color: rgb(223, 223, 223);
+        width: 90px;
+        font-size: 20px;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+      }
+      .reveal_answer_exercB input:focus {
+        background-color: rgba(226, 255, 83, 0.134);
+        color:black;
+        width: 90px;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+      }
+
+      .reveal_answer_exercB button {
+        margin-left: 0px;
+        padding: 3px 16px;
+        width: 50px;
+        background-color: rgb(208, 184, 0);
+      }
+      
+      .reveal_answer_exercB .correct {
+        background-color: rgb(192, 18, 255);
+        color: rgb(23, 255, 7);
+        padding: 3px 19px;
+        margin-bottom: 20px;
+      }
+      .reveal_answer_exercB .incorrect {
+        background-color: rgb(192, 18, 255);
+        color:rgb(208, 0, 0);
+        padding: 3px 19px;
+        margin-bottom: 20px;
+      }
+      .reveal_answer_exercB .neutral {
+        background-color: rgb(179, 228, 255);
+        color: rgb(0, 95, 98);
+        margin-bottom: 20px;
+        padding: 3px 19px;
+      }
+
+      .reveal_answer_exercB .flex_it {
+      margin-bottom: 0px;
+      display: flex; 
+      gap: 10px;
+      justify-content: space-between;
+      }
+    </style>
   
   <main  style="margin-left: 0px;" >
     <div>
