@@ -158,14 +158,14 @@
   <section >
     <h1>Les 12 Oefenen</h1>
 
-    <div>
+    <div style="margin: auto;">
       <img style="margin: 0px 0px;" src="../images/images_les2/usta.jpg" alt="">
     </div>
   
   
   </div>
 
- <div class="reveal_answer_exerc">
+ <div class="reveal_answer_exerc" style="margin: auto;">
     <style>
 
     .main18 p,
@@ -646,20 +646,28 @@
   <style>
 .german {
   position: relative;
-  background-color: rgb(119, 119, 119) !important;
+  background-color: rgb(47, 47, 47) !important;
   padding: 50px 0px;
 }
 
 .german .a_territory {
+  position: relative;
   padding: 20px;
   margin: 0px 10px;
   border-radius: 10px;
   background-color: rgb(240, 240, 240);
   height: fit-content;
 }
-
+.tesla_on_bg {
+  position: absolute;
+  right: 0px;
+  bottom: -180px;
+  opacity: 1;
+  /* z-index: 0; */
+}
 .german .a_territory .mejdu_strok {
  margin-bottom: 20px;
+ z-index: 10;
 }
 
 .german .rasstoyanie {
@@ -674,20 +682,26 @@
   height: 30px;
   border-radius: 5px;
   background-color: #bfbfbf;
+  z-index: 10;
+
   display: flex;
 }
 
 .german .sharh_container {
   margin-right: 5px;
   width: 100%;
+  z-index: 10;
+
   display: flex;
   justify-content: left;
 }
 .german .sharhi {
   margin-top: auto;
   margin-bottom: auto;
+  z-index: 10;
 }
 .german .sharhi p {
+  z-index: 10;
   text-align: left;
 }
 
@@ -853,7 +867,7 @@
     <div style="background-color: #f5f5f5; border-radius: 6px;
     padding-top: 10px; width: 100%;">
       <h3 style="color: #484848; text-align: center;">
-        4. Kies de juiste optie
+        3. Kies de juiste optie
       </h3>
     </div>
   </main>
@@ -862,17 +876,14 @@
 
   <div class="a_territory">
 
-    <div class="sharhi">
-      <p class="sharhi_p">Hallo Fred! Alles is oké?</p>
-    </div>
-
-    <div style="display: flex;">
+    <div style="display: flex; gap: 10px;">
+      <div> <p class="sharhi_p">Hallo!</p></div>
       <div style="display: flex;">
-        <div class="pustoy_div pustoy_div6"></div> 
+        <div class="pustoy_div pustoy_div6" style="margin-right: 0px !important;"></div> 
       </div>
       <div class="sharh_container">
         <div class="sharhi">
-          <p class="sharhi_p">gaat het met jou?</p>
+          <p class="sharhi_p">gaat het?</p>
         </div>
       </div>
     </div>
@@ -885,7 +896,7 @@
     </p>
     </div>
 
-    <div style="display: flex;">
+    <div style="display: flex; gap: 10px;">
       <div style="display: flex;">
         
         <div  class="pustoy_div pustoy_div1"></div> 
@@ -893,11 +904,18 @@
 
       <div class="sharh_container">
         <div class="sharhi">
-          <p class="sharhi_p">is dat? Is dat een nieuwe auto? </p>
+          <p class="sharhi_p">is dat?  </p>
         </div>
       </div>
     </div>
 
+    <div class="mejdu_strok">
+      <p  style="font-size: 18px; color: #292929;
+      line-height: 28px;
+      font-weight: 700;">
+      Is dat een nieuwe auto?
+      </p>
+    </div>
     <div class="mejdu_strok">
       <p class="blue" style="font-size: 18px;
       line-height: 28px;
@@ -906,11 +924,9 @@
       </p>
     </div>
 
-    <div class="mejdu_strok">
-      <!-- <p>fasdf af sdaf asdfas dfa sdf asdfadsfasd asd fas </p> -->
-    </div>
+  
 
-<div style="display: flex;">
+<div style="display: flex; gap: 10px;">
   <div style="display: flex;">
     <div class="pustoy_div pustoy_div5"></div> 
   </div>
@@ -925,7 +941,7 @@
   
 </div>
 
-    <div style="display: flex;">
+    <div style="display: flex; gap: 10px;">
       <div style="display: flex;">
         <div class="pustoy_div pustoy_div2"></div> 
       </div>
@@ -944,7 +960,7 @@
     </p>
     </div>
 
-    <div style="display: flex;">
+    <div style="display: flex; gap: 10px;">
       <div style="display: flex;">
         <div class="pustoy_div pustoy_div3"></div> 
       </div>
@@ -959,7 +975,7 @@
       <!-- <p>fasdf af sdaf asdfas dfa sdf asdfadsfasd asd fas </p> -->
     </div>
 
-    <div style="display: flex;">
+    <div style="display: flex; gap: 10px;">
       <div style="display: flex;">
         <div class="pustoy_div pustoy_div4"></div> 
       </div>
@@ -969,7 +985,9 @@
         </div>
       </div>
     </div>
-
+    <div class="tesla_on_bg">
+      <img src="../images/images_les2/tesla.png" alt="">
+    </div>
   </div>
 
   <div id="b_territory"  class="b_territory">
@@ -985,8 +1003,8 @@
     </div>
   
     <div class="btn-container">
-      <div class="btn_cha btn_cha6" onclick="moveButton(this)">
-        <p>Hoe</p>
+      <div   class="btn_cha btn_cha6" onclick="moveButton(this)">
+        <p style="text-align: center;">Hoe</p>
       </div>
     </div>
 
@@ -1033,7 +1051,7 @@
           if (pustoy_div[i].innerHTML === "") {
             targetDiv = pustoy_div[i];
             pustoy_div[i].style.minWidth = "10px";
-            pustoy_div[i].style.marginRight = "5px";
+            pustoy_div[i].style.marginRight = "0px";
             break;
           }
         }
@@ -1208,7 +1226,7 @@
   <main  style="margin-left: 0px;" >
     <div>
       <h3 style="text-align: left;">
-        2. 	<span class="bold">Vul in met de juiste vorm </span>
+        4. 	<span class="bold">Vul in met de juiste vorm </span>
       </h3>
     </div>
 
@@ -1554,7 +1572,7 @@ function checkAnswer6() {
     </style>
 
     <main style="gap: 0px;">
-      <h1>Taal Quiz</h1>
+      <h1>5. Taal Quiz</h1>
     <p>Kies het juiste antwoord:</p>
     
     <h4>1. Wat is jouw naam? </h4>
@@ -1680,13 +1698,305 @@ function checkAnswer6() {
     </script>
   </section>
  
+  <section style="padding: 0; position: relative;">
+    <style>
+      .divisions_container {
+        width: 100%;
+        height: 50vh;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        display: grid;
+        grid-template-columns: 100% 100%;
+        scroll-snap-type: x mandatory;
+        gap: 0px;
+      }
+      .divisions_container .division {
+        padding: 40px;
+        flex-wrap: wrap;
+        color: white;
+        height: 50vh;
+        font-size: 20px;
+
+        scroll-snap-stop: always;
+        scroll-snap-align: center;
+
+        background-image: url(../images/images_les2/inst_bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .divisions_container .division .asos_tekst {
+        position: relative;
+        margin-bottom: 20px;
+      }
+      .divisions_container .division2 span {
+      color: rgb(26, 255, 0);
+      }
+      .division2 .check_sign {
+        margin-left: 30px;
+      font-size: 34px;
+      }
+      .divisions_container .division1,
+      .divisions_container .division2 {
+        position: relative;
+      }
+      .divisions_container .company_subcontainer {
+        display: flex;
+      }
+      .divisions_container .company {
+        position: absolute;
+        /* padding: 10px; */
+        width: 30%;
+        height: 30%;
+        border-radius: 50%;
+        background-color: rgb(255, 70, 70);
+        right: 10px;
+        bottom: 10px;
+        overflow: hidden;
+        display: flex;
+      }
+      .divisions_container .company_subcontainer {
+        position: relative;
+        rotate: -45deg;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      .divisions_container .company_subcontainer p {
+        text-align: center;
+        font-size: 10px;
+        line-height: 12px;
+        z-index: 10;
+      }
+      .divisions_container .met {
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        /* background-color: rgb(192, 236, 255); */
+      }
+      .check_sign_white {
+        position: absolute;
+        /* width: 200px; */
+        right: 10px;
+        bottom: -25px;
+        height: 100px;
+      }
+      .check_sign_white p {
+        color: rgba(255, 255, 255, 0.66);
+        font-size: 120px;
+      }
+    </style>
+
+  <div class="divisions_container">
+
+    <div class="division division1">
+      <p class="asos_tekst">
+        Ik kwam hier  <span>______</span>.
+      </p>
+      <ul>
+        <li>a. 
+          vorig jaar
+        </li>
+        <li>b. 
+          volgend jaar
+        </li>
+        <li>c. 
+          volgende week
+        </li>
+      </ul>
+     
+        <div class="company">
+          <div class="company_subcontainer">
+          <p> Nederlands</p>
+          <p class="met">met</p>
+          <p class="ikkinchiP">het BouwB</p>
+          </div>
+        </div>
+        <div class="check_sign_white">
+          <p >&#x2713;</p>
+        </div>
+     
+    </div>
+
+    <div class="division division2">
+      <p class="asos_tekst">
+        Ik kwam hier  <span>vorig jaar</span>.</p>
+      <ul>
+        <li>a. vorig jaar <span class="check_sign">&#x2713;  </li>
+        <li>b. volgend jaar </span>   </li>
+        <li>c. volgende week 
+          
+        </li>
+      </ul>
+
+      <div class="company">
+        <div class="company_subcontainer">
+        <p> Nederlands</p>
+        <p class="met">met</p>
+        <p class="ikkinchiP">het BouwB</p>
+        </div>
+      </div>
+      <div class="check_sign_white">
+        <p >&#x2713;</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+  <section style="background-color: rgb(254, 255, 243); color: rgb(1, 102, 164);">
+    <main  style="margin-left: 0px;" >
+      <h3>
+        6. Nieuwe woorden
+      </h3>    
+    </main>
+   
+    <table>
+      <tr>
+        <td>vertaal / vertalen</td>
+        <td>tarjima-qilish</td>
+      </tr>
+      <tr>
+        <td>zin / zinnen</td>
+        <td>gap / gaplar</td>
+      </tr>
+      <tr>
+        <td>hard</td>
+        <td>qattiq</td>
+      </tr>
+      <tr>
+        <td>vertrekken</td>
+        <td>ketish</td>
+      </tr>
+      <tr>
+        <td>nu</td>
+        <td>hozir</td>
+      </tr>
+      <tr>
+        <td>onthouden</td>
+        <td>yodlash</td>
+      </tr>
+      <tr>
+        <td>gisteren</td>
+        <td>kecha</td>
+      </tr>
+      <tr>
+        <td>treinstation</td>
+        <td>vokzal</td>
+      </tr>
+      <tr>
+        <td>kwam</td>
+        <td>keldim / kelding / keldi </td>
+      </tr>
+      
+      <tr>
+        <td>verbeteren</td>
+        <td>yaxshilash</td>
+      </tr>
+      
+      <tr>
+        <td>morgen</td>
+        <td>ertaga</td>
+      </tr>
+      
+      <tr>
+        <td>bellen</td>
+        <td>telefon qilish</td>
+      </tr>
+      <tr>
+        <td>juiste antwoord</td>
+        <td>tóg'ri javob</td>
+      </tr>
+      
+      <tr>
+        <td>hoe lang</td>
+        <td>qancha uzoq</td>
+      </tr>
+      
+      <tr>
+        <td>sinds</td>
+        <td>-dan beri</td>
+      </tr>
+      
+      <tr>
+        <td>de datum</td>
+        <td>chislo</td>
+      </tr>
+      
+      <tr>
+        <td>'s middags</td>
+        <td>tushlikdan sóng</td>
+      </tr>
+      <tr>
+        <td>ik begrijp</td>
+        <td>tushunaman</td>
+      </tr>
+      <tr>
+        <td> vorig jaar</td>
+        <td>ótkan yil</td>
+      </tr>
+      <tr>
+        <td>nieuwe auto</td>
+        <td>yangi mashina</td>
+      </tr>
+      
+      <tr>
+        <td>welk / welke</td>
+        <td>qaysi</td>
+      </tr>
+
+      <tr>
+        <td>kost</td>
+        <td>turish (bahoga nisbatan)</td>
+      </tr>
+
+      <tr>
+        <td>hoofd</td>
+        <td>bosh / kalla</td>
+      </tr>
+
+      <tr>
+        <td>hoofdstad</td>
+        <td>bosh shahar: poytaxt</td>
+      </tr>
+
+      <tr>
+        <td>vroeg</td>
+        <td> vaqtli / erta</td>
+      </tr>
+
+      <tr>
+        <td>drink / drinken</td>
+        <td> ichish </td>
+      </tr>
+
+      <tr>
+        <td>rijbewijs</td>
+        <td> haydovchilik pravasi </td>
+      </tr>
+
+      <tr>
+        <td>boodschappen doen</td>
+        <td> oziq-ovqat xaridiga borish </td>
+      </tr>
+    </table>
+
+    <div class="hammer_container">
+      <div class="hammer_head">
+          <img src="../images/hammer_head.png" alt="">
+      </div>
+      <div class="hammer_handle">
+        <p>vorig jaar</p>
+      </div>
+    </div>
+  </section>
 
   <section>
     <button style="width: 150px;" class="go_back_btn" onclick="history.back()">
       <p> Ortga qaytish </p>
     </button>
-    <button style="background-color: blueviolet; width: 150px; text-align: center !important;"  class=" go_back_btn" onclick="window.location.href='./les12.html'">
-      <p>Les 12 ~ (twaalf)</p>
+    <button style="background-color: blueviolet; width: 150px; text-align: center !important;"  class=" go_back_btn" onclick="window.location.href='./les13.html'">
+      <p>Les 13 ~ (dertien)</p>
     </button> 
   </section>
 
