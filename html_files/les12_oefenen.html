@@ -155,65 +155,61 @@
 
 <div class="black_oon_top"></div>
 
-  <section>
+  <section >
     <h1>Les 12 Oefenen</h1>
 
     <div>
-      <img style="margin: 0px 0px;" src="../images/images_les2/TrumpPutin.jpg" alt="">
+      <img style="margin: 0px 0px;" src="../images/images_les2/usta.jpg" alt="">
     </div>
   
   
   </div>
-  </section>
 
-  <section class="reveal_answer_exerc">
+ <div class="reveal_answer_exerc">
     <style>
 
-.main18 p,
-.main18 li {
-    font-size: 18px;
-    line-height: 22px;
-}
-.main18 li {
-/*     
-    background-color: red; */
-}
+    .main18 p,
+    .main18 li {
+        font-size: 18px;
+        line-height: 22px;
+    }
 
-.reveal_ol li {
-    list-style-type: lower-alpha;
-    margin: 10px 20px;
-    width: 95%;
-    margin-bottom: 20px;
-}
+    .reveal_ol li {
+        list-style-type: lower-alpha;
+        margin: 10px 20px;
+        width: 95%;
+        margin-bottom: 20px;
+    }
 
-.reveal_answer_exerc .flex_it {
-   margin-bottom: 20px;
-    display: flex; 
-   gap: 10px;
-   justify-content: space-between;
-}
+    .reveal_answer_exerc .flex_it {
+      margin-bottom: 20px;
+        display: flex; 
+      gap: 10px;
+      justify-content: space-between;
+    }
 
-.reveal_answer_exerc .javob {
-    color: rgb(243, 243, 243);
-    background-color: rgb(0, 154, 41);
-    border-radius: 4px;
-   
-    margin: 15px 0px;
-    padding: 8px 16px;
-}
+    .reveal_answer_exerc .javob {
+        color: rgb(243, 243, 243);
+        background-color: rgb(0, 154, 41);
+        border-radius: 4px;
+      
+        margin: 15px 0px;
+        padding: 8px 16px;
+    }
 
-.reveal_answer_exerc .click {
-    background-color: rgb(58, 151, 251);
-    color: black;
-    border-radius: 7px;
-    width: 50px;
-    height: 40px;
-    font-size: 14px;
-    margin-left: 10px;
-    padding: 8px 16px;
-    text-align: center;
-}
+    .reveal_answer_exerc .click {
+        background-color: rgb(58, 151, 251);
+        color: black;
+        border-radius: 7px;
+        width: 50px;
+        height: 40px;
+        font-size: 14px;
+        margin-left: 10px;
+        padding: 8px 16px;
+        text-align: center;
+    }
     </style>
+
     <main class="main18" style="margin-left: 0px;">
       <h3>
         1. Vertaal deze zinnen:
@@ -224,7 +220,7 @@
             <p> Men kóp ishlashim kerak.</p>
             <p class="click" onclick="checkAnswer(0)">ctrl</p>
           </div>
-          <p class="black bold"> (Je ... hard werken.) </p>
+          <p class="black bold"> (Ik ... hard werken.) </p>
           <div id="result0" class="javob" style="display: none;">
             Ik moet hard werken. </div>
         </li>
@@ -255,13 +251,165 @@
         </li>
       </ol>
     </main>
+    <div class="spacer40px"></div>
+  </div>
 	<script  >
       function checkAnswer(index) {
       const resultDiv = document.getElementById(`result${index}`);
       resultDiv.style.display = "block";
       }
   </script>
+ 
   </section>
+
+  <section style="padding: 0; position: relative;">
+  <style>
+    .divisions_container {
+      width: 100%;
+      height: 50vh;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      display: grid;
+      grid-template-columns: 100% 100%;
+      scroll-snap-type: x mandatory;
+    
+      gap: 0px;
+
+    }
+  .divisions_container .division {
+    padding: 40px;
+    flex-wrap: wrap;
+    color: white;
+    height: 50vh;
+    font-size: 20px;
+
+    scroll-snap-stop: always;
+    scroll-snap-align: center;
+
+    background-image: url(../images/images_les2/inst_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .divisions_container .division .asos_tekst {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .divisions_container .division2 span {
+   color: rgb(26, 255, 0);
+  }
+  .division2 .check_sign {
+    margin-left: 30px;
+   font-size: 34px;
+  }
+  .divisions_container .division1,
+  .divisions_container .division2 {
+    position: relative;
+  }
+  .divisions_container .company_subcontainer {
+    display: flex;
+  }
+  .divisions_container .company {
+    position: absolute;
+    /* padding: 10px; */
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    background-color: rgb(255, 70, 70);
+    right: 10px;
+    bottom: 10px;
+    overflow: hidden;
+    display: flex;
+  }
+  .divisions_container .company_subcontainer {
+    position: relative;
+    rotate: -45deg;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .divisions_container .company_subcontainer p {
+    text-align: center;
+    font-size: 10px;
+    line-height: 12px;
+    z-index: 10;
+  }
+  .divisions_container .met {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    /* background-color: rgb(192, 236, 255); */
+  }
+  .check_sign_white {
+    position: absolute;
+    /* width: 200px; */
+    right: 10px;
+    bottom: -25px;
+    height: 100px;
+  }
+  .check_sign_white p {
+    color: rgba(255, 255, 255, 0.66);
+    font-size: 120px;
+  }
+
+  </style>
+
+  <div class="divisions_container">
+
+    <div class="division division1">
+      <p class="asos_tekst">
+        Ik was  <span>______</span> op het treinstation.
+      </p>
+      <ul>
+        <li>a. 
+          morgen
+        </li>
+        <li>b. 
+          gisteren
+        </li>
+        <li>c. 
+          verbeteren
+        </li>
+      </ul>
+     
+        <div class="company">
+          <div class="company_subcontainer">
+          <p> Nederlands</p>
+          <p class="met">met</p>
+          <p class="ikkinchiP">het BouwB</p>
+          </div>
+        </div>
+        <div class="check_sign_white">
+          <p >&#x2713;</p>
+        </div>
+     
+    </div>
+
+    <div class="division division2">
+      <p class="asos_tekst">
+        Ik was  <span>gisteren</span>  op het treinstation.</p>
+      <ul>
+        <li>a. morgen   </li>
+        <li>b. gisteren <span class="check_sign">&#x2713;</span>   </li>
+        <li>c. verbeteren 
+          
+        </li>
+      </ul>
+
+      <div class="company">
+        <div class="company_subcontainer">
+        <p> Nederlands</p>
+        <p class="met">met</p>
+        <p class="ikkinchiP">het BouwB</p>
+        </div>
+      </div>
+      <div class="check_sign_white">
+        <p >&#x2713;</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
 
   <section class="reveal_answer_exercB">
 
@@ -469,6 +617,160 @@ function checkAnswer6() {
 	</script>
   </section>
  
+  <section style="padding: 0; position: relative;">
+    <style>
+      .divisions_container {
+        width: 100%;
+        height: 50vh;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        display: grid;
+        grid-template-columns: 100% 100%;
+        scroll-snap-type: x mandatory;
+      
+        gap: 0px;
+  
+      }
+    .divisions_container .division {
+      padding: 40px;
+      flex-wrap: wrap;
+      color: white;
+      height: 50vh;
+      font-size: 20px;
+  
+      scroll-snap-stop: always;
+      scroll-snap-align: center;
+  
+      background-image: url(../images/images_les2/inst_bg.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .divisions_container .division .asos_tekst {
+      position: relative;
+      margin-bottom: 20px;
+    }
+    .divisions_container .division2 span {
+     color: rgb(26, 255, 0);
+    }
+    .division2 .check_sign {
+      margin-left: 30px;
+     font-size: 34px;
+    }
+    .divisions_container .division1,
+    .divisions_container .division2 {
+      position: relative;
+    }
+    .divisions_container .company_subcontainer {
+      display: flex;
+    }
+    .divisions_container .company {
+      position: absolute;
+      /* padding: 10px; */
+      width: 30%;
+      height: 30%;
+      border-radius: 50%;
+      background-color: rgb(255, 70, 70);
+      right: 10px;
+      bottom: 10px;
+      overflow: hidden;
+      display: flex;
+    }
+    .divisions_container .company_subcontainer {
+      position: relative;
+      rotate: -45deg;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .divisions_container .company_subcontainer p {
+      text-align: center;
+      font-size: 10px;
+      line-height: 12px;
+      z-index: 10;
+    }
+    .divisions_container .met {
+      color: rgb(255, 255, 255);
+      font-weight: 700;
+      /* background-color: rgb(192, 236, 255); */
+    }
+    .check_sign_white {
+      position: absolute;
+      /* width: 200px; */
+      right: 10px;
+      bottom: -25px;
+      height: 100px;
+    }
+    .check_sign_white p {
+      color: rgba(255, 255, 255, 0.66);
+      font-size: 120px;
+    }
+  
+    </style>
+  
+    <div class="divisions_container">
+  
+      <div class="division division1">
+        <p class="asos_tekst">
+          Hij gaat  <span>______</span> naar zijn werk.
+        </p>
+        <ul>
+          <li>a. 
+            morgen
+          </li>
+          <li>b. 
+            gisteren
+          </li>
+          <li>c. 
+            geleden
+          </li>
+        </ul>
+       
+          <div class="company">
+            <div class="company_subcontainer">
+            <p> Nederlands</p>
+            <p class="met">met</p>
+            <p class="ikkinchiP">het BouwB</p>
+            </div>
+          </div>
+          <div class="check_sign_white">
+            <p >&#x2713;</p>
+          </div>
+       
+      </div>
+  
+      <div class="division division2">
+        <p class="asos_tekst">
+          Hij gaat  <span>morgen</span> naar zijn werk.</p>
+        <ul>
+          <li>a. 
+            morgen  
+            <span class="check_sign">&#x2713; 
+
+            </li>
+          <li>b. 
+            gisteren 
+          </span>   </li>
+          <li>c. 
+            geleden 
+          </li>
+        </ul>
+  
+        <div class="company">
+          <div class="company_subcontainer">
+          <p> Nederlands</p>
+          <p class="met">met</p>
+          <p class="ikkinchiP">het BouwB</p>
+          </div>
+        </div>
+        <div class="check_sign_white">
+          <p >&#x2713;</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
 
   <section class="quiz_with_radio">
     <style>
