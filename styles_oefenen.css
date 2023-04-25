@@ -280,3 +280,16 @@ git commit -m "lyuboe sobwenie"
 git push 
 */
 
+.qizil {
+    width: 500px;
+    height: 100px;
+    color: white;
+    margin: auto;
+    background-color: black;
+   margin-bottom: 100px;
+   font-size: 24px;
+}
+.qizil p {
+    text-align: center;
+    padding: 40px;
+}
