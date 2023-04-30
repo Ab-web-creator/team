@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My notes</title>
+
+    <link rel="stylesheet" href="./roll_dice/roll_dice.css">
+    <!-- <script src="./roll_dice/roll_dice.js" defer></script> -->
+</head>
+
+<body>
+  <div class="main0"></div>
+   
+  <header>
+    <div class="sarlavha">
+      <img id="logo" src="./roll_dice/roll_dice.png" alt="">
+      <p class="span1">Roll the Dice:</p>
+    </div>
+
+    <div class="close_tab" >
+      <div>
+        <a href="javascript:close_window();">
+          <p class="x_sign"> &#x2715 </p>
+        </a>
+      </div>
+    </div>
+  </header>
+
+    <main>
+        <div class="scene_container">
+             
+        <div class = "scene" >
+            <div class="cube">
+
+
+                <div class="cube__face cube__face--1">
+                   <div>
+                    <div>1</div>
+                   </div>
+                </div>
+
+                <div class="cube__face cube__face--2">
+                    <div>
+                        <div>2</div>
+                    </div>
+                </div>
+                <div class="cube__face cube__face--3">
+                    <div>
+                        <div>3</div>
+                    </div>
+                </div>
+                <div class="cube__face cube__face--4">
+                    <div>
+                        <div>4</div>
+                    </div>
+                </div>
+                <div class="cube__face cube__face--5">
+                    <div>
+                        <div>5</div>
+                    </div>
+                </div>
+                <div class="cube__face cube__face--6">
+                    <div>
+                        <div>6</div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class = "rollBtn">Roll the Dice</button>
+        </div>
+        </div>
+    </main>
+
+    <script>
+        var cube = document.querySelector('.cube');
+        var rollBtn = document.querySelector('.rollBtn');
+        var currentClass = '';
+
+        function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+        }
+
+        function rollDice() {
+            // cube.rotate(720)
+            var randNum =getRandomInt(1,7)
+            console.log(randNum )
+            var showClass = 'show-' + randNum;
+            console.log(showClass)
+            if ( currentClass ) {
+                cube.classList.remove( currentClass );
+            }
+            cube.classList.add( showClass );
+            currentClass = showClass;
+        }
+        // set initial side
+        rollDice();
+
+        rollBtn.addEventListener("click", rollDice);
+    </script>
+</body>
+</html>
